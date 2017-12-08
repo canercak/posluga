@@ -1,0 +1,83 @@
+<div class="pageboxpart padbottomfixed">
+    <h1 class="pageboxpart__heading helq white22 pageboxredoverall pageboxtitletext">
+        <span translate="">
+            What do you think of the
+        </span>
+        <span>
+            {{ request.service.subcategory | translateFilter:languageKey }}
+        </span>
+        <span translate="">
+            service you've got?
+        </span>
+    </h1>
+    <div class="pageboxpart__inner-border">
+        <div class="soft">
+            <div class="row">
+                <div class="large-12 columns">
+                    <h2 class="schematextfer helq padbottonfixedsmaller">
+                        <span translate="">
+                            You've got service from
+                        </span>
+                        <a target="_blank" ui-sref="provider({slug:(quote.provider.slug | providerSlugFilter:languageKey) })">
+                            {{ quote.provider.businesstype.objectid=== 2 ? quote.provider.company : (quote.provider.firstname + ' ' + quote.provider.lastname) }}.
+                        </a>
+                        <span ng-show="!readonlycomment" translate="">
+                            Tell about your experience to help others!
+                        </span>
+                    </h2>
+                    <div class="row">
+                        <form ng-controller="QuoteCtrl" ng-submit="addComment()" novalidate="novalidate">
+                            <div class="large-9 columns padbottom10 form-group">
+                                <label class="settobolder" translate="">
+                                    How many stars would you give?
+                                </label>
+                                <ng-rating editable="true" iconclass="fa fa-star" ng-model="quote.comment.rating" ng-show="!readonlycomment" show-grade="false" stars-count="5">
+                                </ng-rating>
+                                <ng-rating editable="false" iconclass="fa fa-star" ng-model="quote.comment.rating" ng-show="readonlycomment" required="" show-grade="false" stars-count="5">
+                                </ng-rating>
+                            </div>
+                            <div class="large-9 columns padbottom10 form-group">
+                                <label class="settobolder" for="invite_message" translate="">
+                                    Your comments about the service you got
+                                </label>
+                                <textarea class="heightauto marginbottom5" cols="20" ng-disabled="readonlycomment" ng-model="quote.comment.message" required="" rows="3">
+                                </textarea>
+                                <div class="padtop5">
+                                    <button accept="image/*" class="btn btn-primary btn-sm" multiple="" ng-show="!readonlycomment" ngf-keep="false" ngf-max-size="10MB" ngf-multiple="true" ngf-select="onFileSelect($files)" translate="">
+                                        Add photos of the finished work
+                                    </button>
+                                    <div ng-repeat="f in quote.comment.files" style="display:inline-block;padding-right: 5px;color:blue">
+                                        <div class="img-wrap">
+                                            <span class="close" confirm="{{'Are you sure you want to delete?' | translate}}" ng-click="deleteFile($index)" ng-show="!readonlycomment">
+                                                ×
+                                            </span>
+                                            <img height="48" src="{{ f.location }}" width="48"/>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li ng-repeat="f in errFiles" style="font:smaller">
+                                            {{ f.$error }} {{ f.$errorParam }}
+                                        </li>
+                                    </ul>
+                                    {{ errorMsg }}
+                                </div>
+                            </div>
+                            <div class="large-9 columns padbottom10 form-group">
+                                <label class="settobolder" for="paid" translate="">
+                                    How much did you pay?
+                                </label>
+                                <input class="forcetext form-control width100px" name="paid" ng-disabled="readonlycomment" ng-model="quote.comment.paid.value" required="" type="text" ui-number-mask="0">
+                                </input>
+                            </div>
+                            <div class="large-12 columns padbottom10" ng-show="!readonlycomment">
+                                <button class="button orange marginxtop expand--small flush--bottom js-send-quote btn-block" translate="" type="submit">
+                                    Save Comment
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

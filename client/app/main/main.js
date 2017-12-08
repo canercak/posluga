@@ -1,0 +1,57 @@
+'use strict';
+angular.module('poslugaApp').config(function($stateProvider) {
+    $stateProvider.state('main', {
+        url: '/',
+        templateUrl: 'app/main/main.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+    }).state('aboutus', {
+        url: '/o-nas',
+        templateUrl: 'app/main/about.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+    }).state('howitworks', {
+        url: '/kak-eto-rabotaet',
+        templateUrl: 'app/main/howitworks.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+    }).state('terms', {
+        url: '/uslovija-ekspluatacii',
+        templateUrl: 'app/main/terms.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+    }).state('sendgrid', {
+        url: '/sendgrid',
+        templateUrl: 'app/main/sendgrid.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+    }).state('privacy', {
+        url: '/politika-konfidencialnosti',
+        templateUrl: 'app/main/privacy.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+    }).state('faq', {
+        url: '/chasto-zadavaemye-voprosy',
+        templateUrl: 'app/main/faq.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+    }).state('blog', {
+        url: '/blog',
+        templateUrl: 'app/main/blog.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+    }).state('article', {
+        url: '/blog/:slug',
+        templateUrl: 'app/main/article.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main',
+        params: {
+            slug: undefined
+        }
+    }).state('testimonials', {
+        url: '/otzyvy',
+        templateUrl: 'app/main/testimonials.html',
+        controller: 'MainCtrl',
+        controllerAs: 'main'
+    })
+});

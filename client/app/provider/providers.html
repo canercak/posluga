@@ -1,0 +1,18 @@
+<section class="pageboxlayout">
+    <div class="row">
+        <div class="pageboxpart padbottomfixed">
+            <h1 class="pageboxpart__heading helq white22 pageboxredoverall pageboxtitletext" ng-hide="state==='quotesuccess'">
+                <span translate="">
+                    Profiles
+                </span>
+                <div class="float--right white14 fontweight200">
+                    <a class="tiny button marginbottom0" translate="" ui-sref="profile({type: 'new'})">
+                        Add New Profile
+                    </a>
+                </div>
+            </h1>
+            <div ng-include="'app/provider/_profilebox.html'" ng-repeat="provider in providers">
+            </div>
+        </div>
+    </div>
+</section>

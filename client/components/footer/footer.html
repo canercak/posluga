@@ -1,0 +1,158 @@
+<div class="site-footer avenir">
+    <!--  <a class="site-footer__stamp-container" ui-sref="main">
+        <img alt="" id="footerimage" src="/assets/images/poslugalogo.png" srcset="/assets/images/poslugalogo.png 2x" width="185">
+        </img>
+    </a> -->
+    <a class="site-footer__stamp-container" ui-sref="main">
+        <img alt="" id="navbarimage" src="/assets/images/poslugalogo.png" srcset="/assets/images/poslugalogo.png 2x" width="185">
+        </img>
+    </a>
+    <div class="navbarlogopoint margin4xbottom">
+        <span class="logotextfooter" data-drop-type="browse" translate="">
+            отримай кращу цiну
+        </span>
+    </div>
+    <div class="row text--left fittocenter--small margin4xbottom row-wider">
+        <div class="large-12 large-centered columns site-footer__column-shift">
+            <div class="row">
+                <div class="large-3 columns">
+                    <h4 class="settobolder padtop10 padbottom5" translate="">
+                        Info
+                    </h4>
+                    <ul class="bullet--none">
+                        <li>
+                            <a class="link--gray" translate="" ui-sref="aboutus">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link--gray" translate="" ui-sref="howitworks">
+                                How it Works?
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link--gray" translate="" ui-sref="faq">
+                                FAQ
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link--gray" translate="" ui-sref="blog({reload:true})">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link--gray" translate="" ui-sref="terms">
+                                Terms of Use
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link--gray" translate="" ui-sref="privacy">
+                                Privacy Policy
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="large-3 columns">
+                    <h4 class="settobolder padtop10 padbottom5" translate="">
+                        Top Services
+                    </h4>
+                    <ul class="bullet--none">
+                        <li ng-repeat="s in topservices">
+                            <a class="link--gray" rel="nofollow" ui-sref="request({type: 'new', serviceid: s._id})">
+                                {{s.subcategory | translateFilter:languageKey }}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="large-3 columns">
+                    <h4 class="settobolder padtop10 padbottom5" translate="">
+                        All Services
+                    </h4>
+                    <ul class="bullet--none">
+                        <li ng-repeat="s in subjects">
+                            <a class="link--gray" rel="nofollow" ui-sref="subject({slug: (s.subject | slugFilter:languageKey)})">
+                                {{s.subject | translateFilter:languageKey }}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="large-3 columns">
+                    <h4 class="settobolder padtop10 padbottom5" translate="">
+                        Support
+                    </h4>
+                    <p>
+                        <a class="link--gray" href="mailto:support@posluga.ua">
+                            support@posluga.ua
+                        </a>
+                        <br/>
+                        <h4 class="settobolder" translate="">
+                            If you need service:
+                        </h4>
+                        <p>
+                            <a class="btn btn-warning btn-lg" rel="nofollow" translate="" ui-sref="request({type:'new'})">
+                                Get Quote
+                            </a>
+                        </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row relative fittocenter margin2xtop">
+        <div class="large-12 columns">
+            <div class="social-icons social-icons--monochrome padbottonfixedsmaller">
+                <a href="https://www.facebook.com/poslugaua" rel="external" target="_blank" title="Facebook">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x icon-background1">
+                        </i>
+                        <i class="fa fa-facebook fa-stack-1x">
+                        </i>
+                    </span>
+                </a>
+                <a href="https://vk.com/public132891888" rel="external" target="_blank" title="Vkontakte">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x icon-background1">
+                        </i>
+                        <i class="fa fa-vk fa-stack-1x">
+                        </i>
+                    </span>
+                </a>
+                <a href="https://twitter.com/poslugaua" rel="external" target="_blank" title="Twitter">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x icon-background1">
+                        </i>
+                        <i class="fa fa-twitter fa-stack-1x">
+                        </i>
+                    </span>
+                </a>
+                <a href="https://www.pinterest.com/poslugaua" rel="external" target="_blank" title="Pinterest">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x icon-background1">
+                        </i>
+                        <i class="fa fa-pinterest fa-stack-1x">
+                        </i>
+                    </span>
+                </a>
+                <a href="https://www.instagram.com/poslugaua" rel="external" target="_blank" title="Instagram">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x icon-background1">
+                        </i>
+                        <i class="fa fa-instagram fa-stack-1x">
+                        </i>
+                    </span>
+                </a>
+                <a href="https://plus.google.com/106506773586563739901" rel="external" target="_blank" title="Google Plus">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x icon-background1">
+                        </i>
+                        <i class="fa fa-google-plus fa-stack-1x">
+                        </i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <a class="pull-right" href="https://heapanalytics.com/?utm_source=badge">
+        <img alt="Heap | Mobile and Web Analytics" src="//heapanalytics.com/img/badgeLight.png" style="width:1px;height:1px;"/>
+    </a>
+</div>

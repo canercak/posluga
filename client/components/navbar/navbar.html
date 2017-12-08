@@ -1,0 +1,155 @@
+<div class="row relative" style="max-width: 64em;*">
+    <div class="small-12 columns">
+        <div class="navbardesktop">
+            <div class="navbarleft" ng-show="nav.isLoggedIn()">
+                <ul style="list-style: none;">
+                    <li class="dropdown">
+                        <select class="form-control col-md-4 navbarselect marginright10" ng-change="updateLanguage(true, true)" ng-model="languageKey" ng-options="t for t in ['en','ru','uk']">
+                        </select>
+                        <img class="navbarimage" height="36" ng-src="{{nav.getCurrentUser().picture}}" width="36">
+                            <span on-toggle="toggled(open)" uib-dropdown="">
+                                <a class="dropdown-toggle profile-image link--gray" id="my_picture" rel="nofollow" uib-dropdown-toggle="">
+                                    <span class="navbarfixed">
+                                        {{nav.getCurrentUser().name}}
+                                    </span>
+                                </a>
+                                <ul aria-labelledby="simple-dropdown" class="dropdown-menu" uib-dropdown-menu="">
+                                    <li>
+                                        <a translate="" ui-sref="settings">
+                                            Settings
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a id="giveservice" translate="" ui-sref="profile({type: 'new'})">
+                                            Give Service
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a translate="" ui-sref="logout">
+                                            Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </span>
+                        </img>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbarleft" ng-hide="nav.isLoggedIn()">
+                <div class="col-md-7">
+                    <select class="form-control col-md-4 navbarselect mobiledisplaynone" ng-change="updateLanguage(true, true)" ng-model="languageKey" ng-options="t for t in ['en','ru','uk']">
+                    </select>
+                    <a class="link--gray col-md-4 padtop5" id="login" rel="nofollow" translate="" ui-sref="login">
+                        Login
+                    </a>
+                    <a class="link--gray col-md-4 padtop5" id="signup" rel="nofollow" translate="" ui-sref="signup">
+                        Signup
+                    </a>
+                </div>
+            </div>
+            <div class="navbarmiddle">
+                <a class="navbarlogo" ui-sref="main">
+                    <img alt="" id="navbarimage" src="/assets/images/poslugalogo.png" srcset="/assets/images/poslugalogo.png 2x" width="185">
+                    </img>
+                </a>
+                <div class="navbarlogopoint">
+                    <span class="logotext" data-drop-type="browse" translate="">
+                        отримай кращу цiну
+                    </span>
+                </div>
+            </div>
+            <div class="navbarright mobiledisplaynone">
+                <button class="bttn button tiny marginbottom0" ng-click="gotoSelected()" translate="" ui-sref-opts="{inherit: false}">
+                    Give Service
+                </button>
+                <button class="bttn button tiny orange marginbottom0" id="get_quote" translate="" ui-sref="request({type: 'new'})" ui-sref-opts="{inherit: false}">
+                    Get Quote
+                </button>
+               <!--  <div style="float:right; padding-right: 6px;">
+                    <i class="fa fa-phone ">
+                    </i>
+                    <span style="font-size: 14px">
+                        (063) 796-01-88
+                    </span>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="menu-bar" id="menu-bar" role="">
+    <div class="row largerrow">
+        <nav class="large-12 columns display--table">
+            <ul class="inline-block-list avenir fittocenter " ng-show="(nav.isAdmin() === true || nav.isEditor() === true) && nav.isLoggedIn() === true">
+                <li ui-sref-active="active">
+                    <a class="menu-bar__link" rel="nofollow" translate="" ui-sref="preproviderlist">
+                        Preregister
+                    </a>
+                </li>
+                <li ui-sref-active="active">
+                    <a class="menu-bar__link" rel="nofollow" translate="" ui-sref="providerlist">
+                        Providers
+                    </a>
+                </li>
+                <li ui-sref-active="active">
+                    <a class="menu-bar__link" rel="nofollow" translate="" ui-sref="requestlist">
+                        Requests
+                    </a>
+                </li>
+                <li ui-sref-active="active">
+                    <a class="menu-bar__link" rel="nofollow" translate="" ui-sref="userlist">
+                        Users List
+                    </a>
+                </li>
+                <li ui-sref-active="active">
+                    <a class="menu-bar__link" rel="nofollow" translate="" ui-sref="servicelist">
+                        Services
+                    </a>
+                </li>
+                <li ui-sref-active="active">
+                    <a class="menu-bar__link" rel="nofollow" translate="" ui-sref="servicegroup">
+                        Service Groups
+                    </a>
+                </li>
+                <li ui-sref-active="active">
+                    <a class="menu-bar__link" rel="nofollow" translate="" ui-sref="articlelist">
+                        Articles
+                    </a>
+                </li>
+            </ul>
+            <ul class="inline-block-list avenir fittocenter" ng-show="nav.isAdmin() === false && nav.isEditor() === false && nav.isLoggedIn() === true">
+                <li ui-sref-active="active">
+                    <a class="menu-bar__link" rel="nofollow" translate="" ui-sref="dashboard">
+                        Dashboard
+                    </a>
+                </li>
+                <li ui-sref-active="active">
+                    <a class="menu-bar__link" rel="nofollow" translate="" ui-sref="myrequests">
+                        Requests
+                    </a>
+                </li>
+                <li ng-show="showprovider === true  || nav.isProvider()===true" ui-sref-active="active">
+                    <a class="menu-bar__link" rel="nofollow" translate="" ui-sref="myquotes">
+                        Quotes
+                    </a>
+                </li>
+                <li ng-show="showprovider === true  || nav.isProvider()===true" ui-sref-active="active">
+                    <a class="menu-bar__link" rel="nofollow" translate="" ui-sref="providers">
+                        Profiles
+                    </a>
+                </li>
+                <li ng-show="showprovider === true || nav.isProvider()===true" ui-sref-active="active">
+                    <a class="menu-bar__link" rel="nofollow" translate="" ui-sref="finances">
+                        Finances
+                    </a>
+                </li>
+            </ul>
+            <ul class="inline-block-list avenir fittocenter mobiledisplaynone" ng-hide="nav.isLoggedIn()">
+                <li ng-repeat="s in subjects">
+                    <a class="menu-bar__link" ui-sref="subject({slug: (s.subject | slugFilter:languageKey)})">
+                        {{s.subject | translateFilter:languageKey }}
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</nav>

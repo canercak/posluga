@@ -1,0 +1,322 @@
+<nav class="breadcrumbs__background mobiledisplaynone bg--opacity-10 wrapper16" ng-include="'app/places/_toptenbread.html'">
+</nav>
+<section class="header pageboxtop">
+    <img class="pageboxbackground-image" ng-src="{{ provider.logo.location }}" rel="”nofollow”"/>
+    <div class="pageboxpr pageboxopacity-overlay">
+    </div>
+    <div class="row pageboxseen padtopfixedsmaller padbottomfixedsmaller">
+        <div class="small-12 columns fittocenter wrapper18">
+            <div class="pageboxprofile-image-container">
+                <img class="pageboxprofile-image" ng-src="{{ provider.logo.location }}" rel="”nofollow”"/>
+            </div>
+            <h1 class="loosetext helq colorwhite">
+                {{ provider.businesstype.objectid=== 2 ? provider.company : (provider.firstname + ' ' + provider.lastname) }}
+            </h1>
+            <div class="pageboxrating rating" ng-show="usergotquote">
+                <a class="text--light-gray" href="#" scroll-to="reviews">
+                    <ng-rating based-on="5" editable="false" iconclass="fa fa-star" ng-model="providerrating" show-grade="false" stars-count="5">
+                    </ng-rating>
+                    <span>
+                        ({{ provider.stats.reviewcount }}
+                    </span>
+                    <span translate="">
+                        reviews
+                    </span>
+                    <span>
+                        )
+                    </span>
+                </a>
+                <!--   <div class="hide" itemscope="" itemtype="http://schema.org/Product">
+                    <span itemprop="name">
+                        {{ provider.businesstype.objectid=== 2 ? provider.company : (provider.firstname + ' ' + provider.lastname) }}
+                    </span>
+                    <div itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+                        <span itemprop="ratingValue">
+                            {{ providerrating }}
+                        </span>
+                        /
+                        <span itemprop="bestRating">
+                            5
+                        </span>
+                        <span translate="">
+                            stars – based on
+                        </span>
+                        <span itemprop="reviewCount">
+                            4
+                        </span>
+                        <span translate="">
+                            reviews
+                        </span>
+                    </div>
+                </div> -->
+            </div>
+            <div class="font--14 colorwhite padtop10" ng-show="!usergotquote && switchgetquote">
+                <span translate="">
+                    Get a free quote to view reviews
+                </span>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="fixpartboxx fittocenter padtopfixedmiddle">
+    <div class="row rowsixtyeight">
+        <div class="small-12 columns">
+            <ul class="inline-block-list pageboxlist wrapper16">
+                <li class="pageboxlist-item">
+                    <i class="fa fa-map-marker" style="color:#FF7A5A">
+                    </i>
+                    <span class="pageboxlist-item--default-color">
+                        {{provider | placeFilter:languageKey}}
+                    </span>
+                </li>
+                <li class="pageboxlist-item">
+                    <i class="fa fa-bullseye" style="color:#FF7A5A">
+                    </i>
+                    <span class="pageboxlist-item--default-color" translate="">
+                        Specialises in
+                    </span>
+                    <span>
+                        {{ provider.service.subcategory | translateFilter:languageKey }}
+                    </span>
+                </li>
+                <!--  <li class="pageboxlist-item" ng-show="!isEmpty(currentUser)">
+                    <i class="fa fa-clock-o" style="color:#FF7A5A">
+                    </i>
+                    <span translate="">
+                        Member for
+                    </span>
+                    <span>
+                        {{provider.createdAt | durationFilter:languageKey}}
+                    </span>
+                </li> -->
+                <li class="pageboxlist-item" ng-show="provider.established && !isEmpty(currentUser)">
+                    <i class="fa fa-ticket" style="color:#FF7A5A">
+                    </i>
+                    <span translate="">
+                        Established on
+                    </span>
+                    <span>
+                        {{ provider.established.name }}
+                    </span>
+                </li>
+            </ul>
+            <ul class="inline-block-list pageboxlist wrapper16" ng-show="!isEmpty(currentUser)">
+                <li class="pageboxlist-item" ng-repeat="option in provider.stats.securitychecks">
+                    <i class="fa fa-check" style="color:#00AAA0">
+                    </i>
+                    <span ng-show="option.objectid===1">
+                        {{securityTypes[0].name}}
+                    </span>
+                    <span ng-show="option.objectid===2">
+                        {{securityTypes[1].name}}
+                    </span>
+                    <span ng-show="option.objectid===4">
+                        {{option.value}} {{securityTypes[3].name}}
+                    </span>
+                    <span ng-show="option.objectid===5">
+                        {{option.value}} {{securityTypes[4].name}}
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="small-12 columns fittocenter padbottomfixedsmaller" ng-show="switchgetquote">
+            <a class="button orange pageboxcontact-button" ng-click="openviewprofileModal()" translate="">
+                Get a free quote from me
+            </a>
+        </div>
+        <div class="small-12 columns fittocenter padbottomfixedsmaller" ng-show="!switchgetquote">
+            <a class="button pageboxcontact-button" translate="" ui-sref="profile({providerid:provider._id, type: 'editfromproviders'})">
+                Edit my profile
+            </a>
+        </div>
+    </div>
+</section>
+<section class="pageboxtitletext relative padtopfixedbigger soft-triple--bottom pageboxredoverall" style="background-color: #87cadb;">
+    <section class="row padbottomfixedsmaller" id="description">
+        <div class="large-12 columns fittocenter wrapper18">
+            <div class="soft bg--white js-show-container">
+                <div class="row pageboxcomments padbottomfixed">
+                    <div class="row">
+                        <div class="pageboxview pageboxlinerobject pageboxliner padbottonfixedsmaller" translate="">
+                            Description
+                        </div>
+                        <blockquote cite="{{provider.website}}" class="small-11 large-10 small-centered columns">
+                            <span>
+                                “{{ provider.description  | characters:500  }}”
+                            </span>
+                            <p ng-show="isEmpty(currentUser)">
+                                —
+                                <a ng-href="{{provider.website}}" target="_blank">
+                                    {{provider.website}}
+                                </a>
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="row padbottomfixedsmaller" id="photos">
+        <div class="large-12 columns fittocenter wrapper18">
+            <div class="soft bg--white pageboxterms pageboxterms--reduced-padding fittocenter">
+                <div class="pageboxview pageboxlinerobject pageboxliner padbottonfixedsmaller" translate="">
+                    Photos
+                </div>
+                <div class="soft bg--white js-show-container" ng-show="provider.files.length=== 0">
+                    <h3 class="font--18 fittocenter">
+                        <span>
+                            {{ provider.businesstype.objectid=== 2 ? provider.company : (provider.firstname + ' ' + provider.lastname) }}
+                        </span>
+                        <span translate="">
+                            doesn't have photos yet
+                        </span>
+                    </h3>
+                </div>
+                <flex-slider animation="slide" class="fittocenter" flex-slide="f in provider.files track by f._id" next-text="" prev-text="">
+                    <li>
+                        <blockquote cite="{{provider.website}}">
+                            <img class="img" ng-src="{{ f.location }}" rel="nofollow"/>
+                            <p ng-show="isEmpty(currentUser)">
+                                —
+                                <a ng-href="{{provider.website}}" rel="nofollow" target="_blank">
+                                    {{provider.website}}
+                                </a>
+                            </p>
+                        </blockquote>
+                    </li>
+                </flex-slider>
+            </div>
+        </div>
+    </section>
+    <section class="row padbottomfixedsmaller" id="reviews">
+        <div class="large-12 columns fittocenter wrapper18">
+            <div class="soft bg--white js-show-container">
+                <div class="row pageboxcomments">
+                    <div class="row padbottonfixedsmaller">
+                        <div class="small-11 large-10 small-centered columns">
+                            <div class="pageboxview pageboxlinerobject pageboxliner padbottonfixedsmaller" translate="">
+                                Reviews
+                            </div>
+                            <div class="soft bg--white js-show-container" ng-show="quotesWithComments.length=== 0">
+                                <h3 class="font--18 fittocenter" ng-show="!usergotquote">
+                                    <span translate="">
+                                        Get a free quote to view reviews
+                                    </span>
+                                </h3>
+                                <h3 class="font--18 fittocenter" ng-show="usergotquote">
+                                    <span>
+                                        {{ provider.businesstype.objectid=== 2 ? provider.company : (provider.firstname + ' ' + provider.lastname) }}
+                                    </span>
+                                    <span translate="">
+                                        doesn't have reviews yet
+                                    </span>
+                                </h3>
+                            </div>
+                            <flex-slider animation="slide" class="fittocenter" flex-slide="quote in quotesWithComments track by quote._id" next-text="" prev-text="">
+                                <li>
+                                    <div class="padtopfixedbigger padbottomfixedsmaller">
+                                        <div class="pageboxstarsold pageboxstarsnew">
+                                            <span class="png_bg full_star star">
+                                            </span>
+                                            <span class="png_bg full_star star">
+                                            </span>
+                                            <span class="png_bg full_star star">
+                                            </span>
+                                            <span class="png_bg full_star star">
+                                            </span>
+                                            <span class="png_bg full_star star">
+                                            </span>
+                                        </div>
+                                        <h6 class="righttexter line-height--2em padbottonfixedsmaller">
+                                            “{{quote.comment.message}}”
+                                        </h6>
+                                        <h6 class="wrapper18 line-height--2em padbottonfixedsmaller">
+                                            <span>
+                                                {{quote.request.service.subcategory | translateFilter:languageKey}} - {{quote.price.value}} грн. - {{quote.comment.leftAt | amDateFormat:'D MMMM YYYY'}}
+                                            </span>
+                                        </h6>
+                                        <cite class="wrapper12 micro avenir weight--bold letter-spacing--2 text--uppercase" id="fadeSlideContent2">
+                                            {{quote.request.firstname}} {{quote.request.lastname}} - {{quote.request | placeFilter:languageKey}}
+                                        </cite>
+                                        <div class="hide" itemscope="" itemtype="http://schema.org/Review">
+                                            <a href="jill_salzman_chicagoXXXXXXXX.html" itemprop="url">
+                                                <div itemprop="name">
+                                                    <strong>
+                                                        {{ provider.businesstype.objectid=== 2 ? provider.company : (provider.firstname + ' ' + provider.lastname) }}
+                                                    </strong>
+                                                </div>
+                                            </a>
+                                            <div itemprop="description">
+                                                {{ quote.request.subcategory | translateFilter:languageKey }} {{provider | placeFilter:languageKey}}
+                                            </div>
+                                            <div itemprop="reviewBody">
+                                                {{ quote.comment.message }}
+                                            </div>
+                                            <div itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+                                                <span translate="">
+                                                    Written by:
+                                                </span>
+                                                <span itemprop="name">
+                                                    {{ quote.request.user.name }}
+                                                </span>
+                                            </div>
+                                            <div itemprop="itemReviewed" itemscope="" itemtype="http://schema.org/Product">
+                                                <span itemprop="name">
+                                                    {{ quote.request.subcategory | translateFilter:languageKey }} {{ quote.request.distict.name }},{{ quote.request.province.name }}
+                                                </span>
+                                            </div>
+                                            <div itemprop="reviewRating" itemscope="" itemtype="http://schema.org/Rating">
+                                                <meta content="1" itemprop="worstRating"/>
+                                                <span itemprop="ratingValue">
+                                                    {{ quote.comment.rating }}
+                                                </span>
+                                                /
+                                                <span itemprop="bestRating">
+                                                    5
+                                                </span>
+                                                <span translate="">
+                                                    stars
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </flex-slider>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="row padbottomfixedsmaller" id="documents">
+        <div class="large-12 columns wrapper18 fittocenter">
+            <div class="soft bg--white pageboxterms pageboxterms--reduced-padding fittocenter">
+                <div class="pageboxview pageboxlinerobject pageboxliner padbottonfixedsmaller" translate="">
+                    Documents
+                </div>
+                <div class="soft bg--white js-show-container" ng-show="provider.documents.length=== 0">
+                    <h3 class="font--18 fittocenter">
+                        <span>
+                            {{ provider.businesstype.objectid=== 2 ? provider.company : (provider.firstname + ' ' + provider.lastname) }}
+                        </span>
+                        <span translate="">
+                            doesn't have documents yet
+                        </span>
+                    </h3>
+                </div>
+                <flex-slider animation="slide" class="fittocenter" flex-slide="d in provider.documents track by d._id" next-text="" prev-text="">
+                    <li class="fittocenter">
+                        <img class="img" ez-plus="" ezp-model="{thumb:IMGPATH, small:IMGPATH, large:IMGPATH}" ezp-options="{scrollZoom: true, easing: true}" ng-src="{{ d.docfile }}"/>
+                        {{ d.doctype.name }} / {{ d.docname }},
+                        <span translate="">
+                            No:
+                        </span>
+                        {{ d.docnumber }}, {{ d.docdate  | amDateFormat:'DD.MM.YYYY' }}
+                    </li>
+                </flex-slider>
+            </div>
+        </div>
+    </section>
+</section>
+<div ng-include="'components/modal/_viewprofileModalContent.html'">
+</div>

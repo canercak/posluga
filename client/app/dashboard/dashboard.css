@@ -1,0 +1,187 @@
+.table-row {
+    border-top: 1px solid #ddd;
+    padding-top: 8px;
+    margin-bottom: 8px
+}
+
+.article {
+    font-size: 14px
+}
+
+.article-introduction {
+    font-style: italic;
+    margin-top: 18px
+}
+
+.article-related {
+    display: block;
+    color: #333;
+    margin-bottom: 15px
+}
+
+.article-related h3 {
+    line-height: 32px
+}
+
+.article-banner-image {
+    height: 200px;
+    background: no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+.article-banner-image.small {
+    height: 100px
+}
+
+.mouse-hover-fade {
+    opacity: .5;
+    filter: alpha(opacity=50)
+}
+
+#article-slideout {
+    position: fixed;
+    display: block;
+    background-color: white;
+    border-top: 3px solid #e88639;
+    box-shadow: -1px 1px 3px 0 rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    width: 300px;
+    top: 300px;
+    right: -350px;
+    -webkit-transition: left .25s ease-in;
+    -moz-transition: left .25s ease-in;
+    -o-transition: left .25s ease-in;
+    transition: left .25s ease-in;
+    -webkit-transition: right .25s ease-in;
+    -moz-transition: right .25s ease-in;
+    -o-transition: right .25s ease-in;
+    transition: right .25s ease-in
+}
+
+#article-slideout.affix {
+    right: 0
+}
+
+@media(max-width:979px) {
+    #article-slideout {
+        top: 0
+    }
+    #article-slideout.affix {
+        left: 0;
+        width: auto
+    }
+}
+
+.affix-sidebar {
+    margin-left: 0 !important
+}
+
+.affix-sidebar.affix {
+    position: fixed;
+    top: 52px;
+    bottom: auto
+}
+
+.affix-sidebar.affix-bottom {
+    position: absolute;
+    top: auto;
+    bottom: 520px
+}
+
+@media(max-width:767px) {
+    .affix-sidebar.affix, .affix-sidebar.affix-bottom {
+        position: static;
+        width: auto;
+        top: 0
+    }
+}
+
+.affix {
+    position: fixed
+}
+
+
+/*!
+ * infobox.scss
+ * Styles for Service-Central specific info boxes.
+ *
+ * Copyright 2012 Service Central Aust Pty Ltd
+ */
+
+.infobox {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #666
+}
+
+.infobox-inner {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 9px 9px 0 9px;
+    border: 1px solid #DDD;
+    background-color: #fafafa
+}
+
+.infobox h4 {
+    font-size: 14px;
+    margin-top: 0;
+    border-bottom: 1px solid #EEE;
+    color: #777
+}
+
+.infobox h4>.close {
+    margin-top: -8px
+}
+
+.infobox-simple p, .infobox p {
+    font-size: 12px
+}
+
+.infobox-simple p.lead, .infobox p.lead {
+    margin-bottom: 18px;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 27px
+}
+
+.infobox-header {
+    position: relative
+}
+
+.infobox-header h3 {
+    margin: 0;
+    line-height: 1em
+}
+
+.infobox-header h4 {
+    color: #999 !important
+}
+
+.infobox-header .infobox-image {
+    position: absolute;
+    right: 0;
+    bottom: -9px
+}
+
+.infobox-simple {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 2px solid #dadada;
+    background-color: #f0f0f0;
+    color: #777;
+    padding: 8px
+}
+
+.infobox-simple h3 {
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 0;
+    border-bottom: 1px solid #EEE;
+    color: #777
+}

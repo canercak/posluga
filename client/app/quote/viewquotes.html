@@ -1,0 +1,156 @@
+<div>
+    <section class="pageboxlayout" ng-controller="QuoteCtrl">
+        <div class="row">
+            <div class="alert alert-info" focus-if="" role="alert">
+                <h3>
+                    <span translate="">
+                        There are
+                    </span>
+                    <span class="settobolder">
+                        {{request.quotes.length}}
+                    </span>
+                    <span translate="">
+                        quotes for your request and they are valid until
+                    </span>
+                    <span class="settobolder">
+                        {{request.validUntil | amDateFormat:'D MMMM YYYY HH:mm'}}
+                    </span>
+                </h3>
+            </div>
+            <div class="large-12 columns" ng-include="'app/quote/_wrapper.html'" ng-repeat="quote in request.quotes">
+            </div>
+            <div class="large-12 columns" ng-include="'app/request/_detailbox.html'">
+            </div>
+        </div>
+    </section>
+    <script id="quoteModalContent.html" type="text/ng-template">
+        <h3 class="pageboxpart__heading helq white22 pageboxredoverall pageboxtitletext fittocenter" translate="">
+            Enter your details for the reservation
+        </h3>
+        <div class="pageboxpart__inner-border">
+            <div class="soft">
+                <div class="row">
+                    <div class="modal-body" style="padding: 1px !important">
+                        <form class="form-horizontal soft font20set" ng-submit="updateQuoteRequest(request)" novalidate="novalidate">
+                            <div class="form-group">
+                               
+                                    <div class="alert alert-info fittocenter" role="alert"     style="font-size: 15px;">
+                                        <span translate="">
+                                            By accepting this price quote, you are agreeing to
+                                        </span>
+                                        <a ui-sref="terms" target="_blank">
+                                            {{'user agreement.' | translate}}
+                                        </a>
+                                        <span translate="">
+                                            When you accept this quote, service provider will reserve his own time for you and he will pay us a small commission for our service. The price you accept and information in this form will be a binding legal contract between you and the provider. If you are unsure to get this service or you may change your mind later on, do not accept this quote.
+                                        </span>
+                                    </div>
+                              
+                                <label class="col-lg-3 control-label" translate="">
+                                    Firstname
+                                </label>
+                                <div class="col-lg-8">
+                                    <input class="forcetext form-control" maxlength="100" ng-model="request.firstname" placeholder="{{'Your firstname' | translate}}" required="" type="text">
+                                    </input>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label" translate="">
+                                    Lastname
+                                </label>
+                                <div class="col-lg-8">
+                                    <input class="forcetext form-control" maxlength="100" ng-model="request.lastname" placeholder="{{'Your lastname' | translate}}" required="" type="text">
+                                    </input>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label" translate="">
+                                    Address
+                                </label>
+                                <div class="col-lg-8">
+                                    <textarea class="heightauto marginbottom5" id="description" ng-model="request.address" placeholder="{{'Please write your address.' | translate }}" required="" rows="3">
+                                    </textarea>
+                                </div>
+                            </div> 
+                            <div class="form-group">
+                                <button class="button blue marginxtop expand--small flush--bottom js-send-quote btn-block" translate="" type="submit">
+                                    Send
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+    <!--   <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="divShare" role="dialog" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="close" data-dismiss="modal">
+                        X
+                    </a>
+                    <h3>
+                        <span translate="">
+                            When you decide, click
+                        </span>
+                        <span class="bttn orange" data-dismiss="modal" style="padding: 2px 8px; margin: 0;" translate="">
+                            Select This Quote
+                        </span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-body">
+        <p translate="">
+            Tell us that you have decided, make a reservation
+        </p>
+        <p translate="">
+            Get our free support service. Let us follow every step of your work to ensure your satisfaction. Let us deal with any event of dispute.
+        </p>
+        <p translate="">
+            When the work is completed, get the right to write a review on the quality of service.
+        </p>
+    </div>
+    <div class="modal-footer">
+        <div style="height: 40px; text-align: center;">
+            <span translate="">
+                If you have questions:
+            </span>
+            <img src="https://posluga.ua/images/customer-service.png">
+                <span>
+                    08501232312 - support@posluga.ua
+                </span>
+            </img>
+        </div>
+        <button class="bttn orange" data-dismiss="modal" translate="" type="button">
+            Close
+        </button>
+    </div>
+    <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="divRemoveQuote" role="dialog" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="close" data-dismiss="modal">
+                        X
+                    </a>
+                    <h3 translate="">
+                        Why didn't you like this quote?
+                    </h3>
+                </div>
+                <div class="modal-body">
+                    <input class="textbox" id="ContentPlaceHolder1_txtOther" maxlength="300" type="text">
+                        <br>
+                            <br>
+                                <a class="bttn orange" id="ContentPlaceHolder1_imbBtnDone" translate="">
+                                    Send
+                                </a>
+                            </br>
+                        </br>
+                    </input>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</div>

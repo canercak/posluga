@@ -1,0 +1,74 @@
+<section class="pageboxlayout">
+    <section class="row">
+        <div class="large-3 columns">
+            <div ng-include="'app/finances/_menu.html'">
+            </div>
+        </div>
+        <div class="large-9 columns">
+            <div class="pageboxpart">
+                <h1 class="pageboxpart__heading white24 helq pageboxredoverall pageboxtitletext" translate="">
+                    Add Money By Bank Transfer
+                </h1>
+                <div class="pageboxpart__inner-border">
+                    <div class="soft">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="soft--sides--large padtop10 font16set padleft10">
+                                    <div class="row" ng-show="{{currentUser.finances.balance.value < 0}}">
+                                        <div class="col-md-3" translate="">
+                                            Amount To Send:
+                                        </div>
+                                        <div class="col-md-9 settobolder wrapper18">
+                                            {{currentUser.finances.balance | MonetaryUnitAbs}}
+                                        </div>
+                                    </div>
+                                    <hr ng-show="{{currentUser.finances.balance.value < 0}}">
+                                        <div class="row">
+                                            <div class="col-md-3" translate="">
+                                                Bank:
+                                            </div>
+                                            <div class="col-md-9 settobolder wrapper18">
+                                                ПриватБанк
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3" translate="">
+                                                Name:
+                                            </div>
+                                            <div class="col-md-9 settobolder wrapper18">
+                                                ТОВ "ПОСЛУГА.ЮА"
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3" translate="">
+                                                Account No:
+                                            </div>
+                                            <div class="col-md-9 settobolder wrapper18">
+                                                5169 3305 0985 3518
+                                            </div>
+                                        </div>
+                                        <!--  <div class="row">
+                                            <div class="col-md-3" translate="">
+                                                Explanation:
+                                            </div>
+                                            <div class="col-md-9 settobolder wrapper18" translate="">
+                                                my email address is {{currentUser.email}}
+                                            </div>
+                                        </div> -->
+                                        <!--  <hr>
+                                            <div class="wrapper18">
+                                                <u translate="">
+                                                    Please send an email to support@posluga.ua after you make a payment
+                                                </u>
+                                            </div>
+                                        </hr> -->
+                                    </hr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

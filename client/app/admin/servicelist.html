@@ -1,0 +1,133 @@
+<div class="large-12 columns">
+    <div class="alert alert-success" focus-if="" ng-show="saveservice || updateservice" role="alert">
+        <h3 class="body-title">
+            <span id="success_message" ng-show="saveservice" translate="">
+                Successfully created service
+            </span>
+            <span id="update_message" ng-show="updateservice" translate="">
+                Successfully updated service
+            </span>
+        </h3>
+    </div>
+    <div class="form-group pull-left padtop10">
+        <h2 translate="">
+            Service List
+        </h2>
+    </div>
+    <!--     <div class="form-group pull-left padtop10 padleft10 marginbottom5">
+        <button class="tiny button pink" translate="" ui-sref="adminservice">
+            Add New
+        </button>
+    </div> -->
+    <div class="form-group">
+        <div class="input-group" style="width: 300px; float:right;">
+            <input class="search form-control" disable-invalid-styling="true" disable-valid-styling="true" ng-model="query.filter" ng-model-options="filter.options" placeholder="{{'Search' | translate}}" type="text"/>
+        </div>
+    </div>
+    <span class="counter pull-right">
+    </span>
+    <table class="table table-bordered" style="font-size:12px" ts-wrapper="">
+        <thead>
+            <tr>
+                <th translate="" ts-criteria="subjectid">
+                    Subject ID
+                </th>
+                <th translate="" ts-criteria="Subject">
+                    Subject
+                </th>
+                <th translate="" ts-criteria="categoryid">
+                    Category ID
+                </th>
+                <th translate="" ts-criteria="Category">
+                    Category
+                </th>
+                <th translate="" ts-criteria="subcategoryid">
+                    Subcategory ID
+                </th>
+                <th translate="" ts-criteria="Subcategory">
+                    Subcategory
+                </th>
+                <th style="width:5%" translate="" ts-criteria="Popular?">
+                    Popular?
+                </th>
+                <th style="width:5%" translate="" ts-criteria="Image">
+                    Image
+                </th>
+                <th translate="">
+                    Questions
+                </th>
+                <th translate="">
+                    Top Service
+                </th>
+                <th style="width:5%" translate="">
+                    Action
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="service in services | filter: searchKeyword  track by service._id  " ts-hide-no-data="" ts-repeat="">
+                <td style="width:5%">
+                    {{service.subjectid}}
+                </td>
+                <td>
+                    {{service.subject.en.text}} / {{service.subject.ru.text}} / {{service.subject.uk.text}}
+                </td>
+                <td style="width:5%">
+                    {{service.categoryid}}
+                </td>
+                <td>
+                    {{service.category.en.text}} / {{service.category.ru.text}} / {{service.category.uk.text}}
+                </td>
+                <td style="width:5%">
+                    {{service.subcategoryid}}
+                </td>
+                <td>
+                    {{service.subcategory.en.text}} / {{service.subcategory.ru.text}} / {{service.subcategory.uk.text}}
+                </td>
+                <td style="width:5%">
+                    {{service.popular}}
+                </td>
+                <td style="width:5%">
+                    <img height="80" ng-src="{{service.image}}" width="80"/>
+                </td>
+                <td>
+                    <table style="font-size:12px">
+                        <tr ng-repeat="q in service.questions" style="border-bottom-color: black; border-bottom-width: 1px;  border-bottom-style: dotted;">
+                            <th>
+                                {{q.question.en}} / {{q.question.ru}}  / {{q.question.uk}}
+                            </th>
+                            <th>
+                                <table style="font-size:12px">
+                                    <tr ng-repeat="o in q.options" style="border-bottom-color: black; border-bottom-width: 1px;  border-bottom-style: dotted;">
+                                        <th>
+                                            - {{o.option.en}} /  {{o.option.ru}} / {{o.option.uk}}
+                                        </th>
+                                    </tr>
+                                </table>
+                            </th>
+                        </tr>
+                    </table>
+                </td>
+                <td style="width:5%">
+                    {{service.topservice}}
+                </td>
+                <td>
+                    <a class="btn btn-warning btn-xs" ng-hide="nav.isEditor() === true" type="button" ui-sref="adminservice({serviceid: service._id, createsimilar: false})">
+                        <span translate="">
+                            Edit
+                        </span>
+                    </a>
+                    <p>
+                    </p>
+                    <a class="btn btn-info btn-xs" ng-hide="nav.isEditor() === true" ui-sref="adminservice({serviceid: service._id, createsimilar: true})">
+                        <span translate="">
+                            Create Similar
+                        </span>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<ul boundary-link-numbers="true" class="pagination-sm" max-size="maxSize" ng-change="pageChangedService()" ng-model="currentPage" total-items="totalItems" uib-pagination="">
+</ul>

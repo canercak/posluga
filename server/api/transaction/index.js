@@ -1,0 +1,10 @@
+'use strict';
+var express = require('express');
+var controller = require('./transaction.controller');
+var router = express.Router();
+router.get('/', controller.index);
+router.get('/:id', controller.show);
+router.get('/user/:userid', controller.showTransactions);
+router.post('/', controller.create);
+router.put('/:id', controller.update);
+module.exports = router;

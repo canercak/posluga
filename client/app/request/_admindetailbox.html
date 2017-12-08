@@ -1,0 +1,200 @@
+<div class="row padbottom10">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-dot-circle-o fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Service:
+        </span>
+    </div>
+    <div class="col-md-8">
+        <span ng-show="request.service === null">
+            {{request.searchtext}}
+        </span>
+        <span ng-show="request.service !== null">
+            {{request.service.subcategory | translateFilter:languageKey}}
+        </span>
+    </div>
+</div>
+<div class="row padbottom10">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-hand-o-right fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Description:
+        </span>
+    </div>
+    <div class="col-md-8">
+        {{request.description}}
+    </div>
+</div>
+<div class="row padbottom5 padtop10" ng-show="request.service.questions.length > 0">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-file-text-o fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Details:
+        </span>
+    </div>
+    <div class="col-md-8">
+        <div class="row padbottom5 padrightnone" ng-repeat="q in request.service.questions">
+            <div class="col-md-6 padrightnone">
+                {{q.question | translateFilterSimple:languageKey}}
+            </div>
+            <div class="col-md-6 italic">
+                <span ng-if="q.qtype==='Multiselect'" ng-repeat="answer in request.answers[q.order-1] track by $index">
+                    {{answer.option | translateFilterSimple:languageKey}}{{$last ? '' : ', '}}
+                </span>
+                <span ng-if="q.qtype==='Singleselect'">
+                    {{request.answers[q.order-1].option | translateFilterSimple:languageKey}}
+                </span>
+                <span ng-if="q.qtype==='Textinput'">
+                    {{request.answers[q.order-1]}}
+                </span>
+                <span ng-if="q.qtype==='Numberinput'">
+                    {{request.answers[q.order-1]}}
+                </span>
+                <span ng-if="q.qtype==='Priceinput'">
+                    {{request.answers[q.order-1]}}
+                </span>
+                <span ng-if="q.qtype==='Placeselect'" ng-repeat="answer in request.answers[q.order-1] track by $index">
+                    {{answer  | translateFilterSimple:languageKey}}{{$last ? '' : ', '}}
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row padbottom10">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-clock-o fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Time:
+        </span>
+    </div>
+    <div class="col-md-8">
+        {{(request.date && request.when.objectid === 1)  ? (request.date | amDateFormat:'D MMMM YYYY HH:mm') : whenOptions[request.when.objectid-1].name}}
+    </div>
+</div>
+<div class="row padbottom10">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-map fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Place:
+        </span>
+    </div>
+    <div class="col-md-8">
+        <span>
+            {{request | placeFilter:languageKey}}
+        </span>
+    </div>
+</div>
+<div class="row padbottom10">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-money fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Budget:
+        </span>
+    </div>
+    <div class="col-md-8">
+        <span>
+            {{request.budget}} грн.
+        </span>
+    </div>
+</div>
+<div class="row padbottom10">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-check fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Security Checks:
+        </span>
+    </div>
+    <div class="col-md-8">
+        <div class="row" ng-repeat="option in request.user.stats.securitychecks">
+            <div class="col-md-12">
+                <span ng-show="option.objectid==1">
+                    {{securityTypes[0].name}}
+                </span>
+                <span ng-show="option.objectid==2">
+                    {{securityTypes[1].name}}
+                </span>
+                <span ng-show="option.objectid==4">
+                    {{option.value}} {{securityTypes[3].name}}
+                </span>
+                <span ng-show="option.objectid==5">
+                    {{option.value}} {{securityTypes[4].name}}
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row padbottom10">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-phone fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Contact:
+        </span>
+    </div>
+    <div class="col-md-8">
+        <span>
+            {{phoneOptions[request.phonenotify.objectid-1].name}}
+        </span>
+    </div>
+</div>
+<div class="row padbottom10" ng-show="request.files.length>0">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-picture-o fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Pictures:
+        </span>
+    </div>
+    <div class="col-md-8">
+        <div class="photodiv" ng-repeat="f in request.files">
+            <div class="img-wrap">
+                <a href="{{ f.location }}" target="_blank">
+                    <img ez-plus="" ezp-model="{thumb:IMGPATH, small:IMGPATH, large:IMGPATH}" ezp-options="{scrollZoom: true, easing: true, responsive:true, zoomWindowWidth: 500, zoomWindowHeight: 500}" height="64" id="zoom_01" src="{{ f.location }}" width="64"/>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row padbottom5 marginright10">
+    <a class="tiny button float--right--large flush--bottom marginxends--small" id="cancel_request_modal" ng-click="openCancelModal()" translate="">
+        Cancel Request
+    </a>
+    <a class="tiny button float--right--large flush--bottom marginxends--small marginxsides" id="edit_request" translate="" ui-sref="request({requestid: request._id, type:'dashboard', serviceid: request.service._id, searchtext: request.searchtext})">
+        Edit Request
+    </a>
+</div>
+<script id="cancelModalContent.html" type="text/ng-template">
+    <div class="modal-header" >
+        <h3 translate>Your request will be cancelled, can we learn why you want to cancel it?</h3>
+    </div>
+    <div class="modal-body"> 
+        <form role="form" ng-submit='cancelRequest()'>  
+            <div class="row" ng-repeat="option in cancelOptions">
+                <div class="large-12 wrapper20 fontweight200 padbottom5">
+                    <label>
+                        <input type="radio" ng-model="request.cancelreason" name="name" ng-value='{{option}}'>
+                       {{option.name}}
+                    </label> 
+                </div>
+            </div>
+            <div>
+                <input class='form-control' ng-model="request.cancelreason.reason" id="othereason" maxlength='300' type='text'>
+            </div> 
+            <hr class="flush--top">
+            <div class="soft hard--top fittocenter">
+                <button type="submit" id="cancel_request" class="button margin2xtop flush--ends expand--small ladda-button js-ladda-button" data-style="expand-right" id="login_button" type="submit">
+                    <span class="ladda-label" translate="">
+                        Cancel Request
+                    </span>
+                </button>
+            </div> 
+        </form> 
+    </div>
+</script>

@@ -1,0 +1,97 @@
+<section class="pageboxlayout">
+    <section class="row">
+        <div class="large-3 columns">
+            <div ng-include="'app/finances/_menu.html'">
+            </div>
+        </div>
+        <div class="large-9 columns">
+            <div class="pageboxpart">
+                <h1 class="pageboxpart__heading white24 helq pageboxredoverall pageboxtitletext" translate="">
+                    Balance
+                </h1>
+                <div class="pageboxpart__inner-border">
+                    <div class="soft">
+                        <div class="row">
+                            <div class="row wrapper18">
+                                <div class="large-5 columns padbottonfixedsmaller">
+                                    <span translate="">
+                                        Commissions
+                                    </span>
+                                </div>
+                                <div class="large-4 columns text--left marginxtop--small settobolder">
+                                    <span>
+                                        {{commissions}} грн.
+                                    </span>
+                                </div>
+                                <div class="large-3 columns padbottonfixedsmaller">
+                                    <button class="alignleft tiny button flush--ends expand--small ladda-button js-ladda-button" type="submit" ui-sref="transactions">
+                                        <span class="ladda-label" translate="">
+                                            View Transactions
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row wrapper18">
+                                <div class="large-5 columns padbottonfixedsmaller">
+                                    <span translate="">
+                                        Payments
+                                    </span>
+                                </div>
+                                <div class="large-7 columns text--left marginxtop--small settobolder">
+                                    <span>
+                                        {{payments }} грн.
+                                    </span>
+                                </div>
+                            </div>
+                            <hr>
+                                <div class="row wrapper20">
+                                    <div class="large-5 columns padbottonfixedsmaller">
+                                        <span translate="">
+                                            Balance
+                                        </span>
+                                    </div>
+                                    <div class="large-7 columns text--left marginxtop--small settobolder">
+                                        <span>
+                                            {{finalbalance}} грн.
+                                        </span>
+                                    </div>
+                                </div>
+                            </hr>
+                            <hr>
+                                <div class="row wrapper24">
+                                    <div class="large-5 columns padbottonfixedsmaller">
+                                        <span translate="">
+                                            Commissions to Pay
+                                        </span>
+                                    </div>
+                                    <div class="large-7 columns text--left marginxtop--small settobolder">
+                                        <span>
+                                            {{commtopay}} грн.
+                                        </span>
+                                    </div>
+                                </div>
+                            </hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<hr class="flush--top">
+    <div class="soft hard--top">
+        <div ng-class="hasError === 'true' ? 'alert alert-danger' : 'alert alert-success'" ng-show="message" role="alert">
+            <h4>
+                {{message}}
+            </h4>
+        </div>
+        <!--  <button ui-sref="addmoneycard" type="submit" class="button margin2xtop flush--ends expand--small ladda-button js-ladda-button" >
+                                <span class="ladda-label">Add Money By Credit Card</span>
+                            </button> -->
+        <button class="button margin2xtop flush--ends expand--small ladda-button js-ladda-button" type="submit" ui-sref="addmoneybank">
+            <span class="ladda-label" translate="">
+                Add Money By Bank Transfer
+            </span>
+        </button>
+    </div>
+</hr>

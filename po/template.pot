@@ -1,0 +1,4024 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+
+#: client/app/finances/transactions.html:40
+msgid "(request"
+msgstr ""
+
+#: client/app/main/main.html:51
+#: client/app/places/_howitworks.html:13
+msgid "1 - Tell Us What You Need"
+msgstr ""
+
+#: client/app/main/howitworks.html:43
+msgid "1. Post your job and relax"
+msgstr ""
+
+#: client/app/main/main.html:61
+#: client/app/places/_howitworks.html:20
+msgid "2 - Get Price Quotes"
+msgstr ""
+
+#: client/app/main/howitworks.html:56
+msgid "2. Receive price quotes from providers"
+msgstr ""
+
+#: client/app/main/main.html:71
+#: client/app/places/_howitworks.html:26
+msgid "3 - Hire The Right Business"
+msgstr ""
+
+#: client/app/main/howitworks.html:69
+msgid "3. Select the best match"
+msgstr ""
+
+#: client/components/modal/_viewprofileModalContent.html:28
+msgid "4 others"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:2030
+msgid "A client in {{body.distict}} is looking for {{body.servicetext}} service. Give quote at:"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1932
+msgid "A request has been made to reset your password. You can change your password by clicking this button:"
+msgstr ""
+
+#: client/app/services/services.controller.js:26
+msgid "A truly successful event starts way before the linens, flowers and lighting. We help you organise that."
+msgstr ""
+
+#: client/app/admin/preprovider.html:15
+msgid "APPROVED"
+msgstr ""
+
+#: client/app/main/about.html:12
+#: client/app/main/about.html:21
+#: client/app/main/main.controller.js:225
+#: client/components/footer/footer.html:24
+msgid "About Us"
+msgstr ""
+
+#: client/app/finances/addmoneybank.html:43
+msgid "Account No:"
+msgstr ""
+
+#: client/app/admin/servicegroup.html:31
+#: client/app/admin/servicelist.html:62
+msgid "Action"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:171
+#: client/app/admin/adminrequest.html:37
+msgid "Actions"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:311
+msgid "Activate Request"
+msgstr ""
+
+#: client/app/admin/requestlist.html:40
+#: client/app/request/myrequests.html:18
+#: client/app/request/myrequests.html:76
+msgid "Active Requests"
+msgstr ""
+
+#: client/app/quote/myquotes.html:20
+#: client/app/quote/myquotes.html:84
+msgid "Active works I can quote"
+msgstr ""
+
+#: client/app/quote/myquotes.html:23
+#: client/app/quote/myquotes.html:87
+msgid "Active works I have quoted"
+msgstr ""
+
+#: client/app/admin/preprovider.html:327
+msgid "Add Address"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:317
+#: client/app/admin/admin.controller.js:256
+msgid "Add Comment"
+msgstr ""
+
+#: client/app/provider/provider.controller.js:61
+#: client/app/quote/quote.controller.js:117
+#: client/app/quote/quote.controller.js:315
+msgid "Add Established Date"
+msgstr ""
+
+#: client/app/admin/addfunds.html:5
+#: client/app/admin/providerlist.html:186
+#: client/app/admin/userlist.html:99
+msgid "Add Funds"
+msgstr ""
+
+#: client/app/admin/preprovider.html:426
+#: client/app/provider/profile.html:248
+msgid "Add Image"
+msgstr ""
+
+#: client/app/provider/_profilebox.html:112
+msgid "Add Link"
+msgstr ""
+
+#: client/app/finances/addmoneybank.html:9
+#: client/app/finances/finances.html:92
+msgid "Add Money By Bank Transfer"
+msgstr ""
+
+#: client/app/finances/newcard.html:5
+msgid "Add Money By Credit Card"
+msgstr ""
+
+#: client/app/finances/_menu.html:14
+msgid "Add Money by Bank Transfer"
+msgstr ""
+
+#: client/app/admin/articlelist.html:18
+#: client/app/admin/preproviderlist.html:24
+#: client/app/admin/requestlist.html:27
+#: client/app/admin/servicegroup.html:18
+msgid "Add New"
+msgstr ""
+
+#: client/app/provider/providers.html:9
+msgid "Add New Profile"
+msgstr ""
+
+#: client/app/provider/provider.controller.js:60
+#: client/app/quote/quote.controller.js:116
+#: client/app/quote/quote.controller.js:314
+msgid "Add Official Documents"
+msgstr ""
+
+#: client/app/request/request_form.html:83
+msgid "Add Photo"
+msgstr ""
+
+#: client/app/provider/provider.controller.js:58
+#: client/app/quote/quote.controller.js:114
+#: client/app/quote/quote.controller.js:312
+msgid "Add Profile Images"
+msgstr ""
+
+#: client/app/provider/provider.controller.js:59
+#: client/app/quote/quote.controller.js:115
+#: client/app/quote/quote.controller.js:313
+msgid "Add Profile Link to Your Website"
+msgstr ""
+
+#: client/app/provider/profile.html:170
+msgid "Add Profile Photo"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:248
+msgid "Add Review"
+msgstr ""
+
+#: client/app/admin/adminservicegroup.html:46
+#: client/app/admin/preprovider.html:439
+msgid "Add Service"
+msgstr ""
+
+#: client/app/admin/preprovider.html:365
+msgid "Add Service Groups"
+msgstr ""
+
+#: client/app/provider/profile.html:195
+msgid "Add Service Photos"
+msgstr ""
+
+#: client/app/quote/_commentbox.html:46
+msgid "Add photos of the finished work"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:261
+#: client/app/admin/adminrequest.html:238
+msgid "Add review as client"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1944
+msgid "Add your profile link to your webpage"
+msgstr ""
+
+#: client/app/provider/addlink.html:5
+#: client/app/provider/provider.controller.js:100
+msgid "Add your profile link to your website"
+msgstr ""
+
+#: client/app/quote/givequote.html:82
+msgid "Add your profile link to your website to pay %9 commission."
+msgstr ""
+
+#: client/app/admin/preprovider.html:135
+#: client/app/admin/preprovider.html:246
+#: client/app/main/contact.html:36
+#: client/app/provider/profile.html:119
+#: client/app/quote/_wrapper.html:251
+#: client/app/quote/viewquotes.html:67
+#: client/app/request/request_form.html:217
+msgid "Address"
+msgstr ""
+
+#: client/app/admin/preprovider.html:82
+msgid "Address Details"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:203
+msgid "Address:"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:286
+msgid "Admin Comments:"
+msgstr ""
+
+#: client/app/admin/providerlist.html:69
+msgid "Admin Created"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:252
+msgid "Admin Created:"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1960
+msgid "After you select a quote, we recommend you to"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1832
+msgid "After you take your service,"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1824
+msgid "All Quotes Received"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:2017
+msgid "All Quotes Received for request"
+msgstr ""
+
+#: client/app/admin/requestlist.html:37
+#: client/app/request/myrequests.html:15
+#: client/app/request/myrequests.html:73
+msgid "All Requests"
+msgstr ""
+
+#: client/app/services/allservices.html:8
+#: client/app/services/services.controller.js:39
+#: client/components/footer/footer.html:68
+msgid "All Services"
+msgstr ""
+
+#: client/app/quote/myquotes.html:17
+#: client/app/quote/myquotes.html:81
+msgid "All active works"
+msgstr ""
+
+#: client/app/quote/myquotes.html:29
+msgid "All works"
+msgstr ""
+
+#: client/app/main/faq.html:292
+msgid "Allowing you to post a review yourself would render the rating illegitimate, so we do not allow this. Please invite these clients to posluga.ua to get quotes from you so they can write about their past experiences."
+msgstr ""
+
+#: client/app/main/article.html:90
+msgid "Also on Blog Posluga.ua"
+msgstr ""
+
+#: client/app/admin/addfunds.html:19
+#: client/app/finances/transactions.html:23
+msgid "Amount"
+msgstr ""
+
+#: client/app/finances/addmoneybank.html:18
+msgid "Amount To Send:"
+msgstr ""
+
+#: client/app/main/faq.html:280
+msgid "Any changes that need to be made to reviews must be done by the person who posted the review. Just ask the reviewer to log in and edit their review."
+msgstr ""
+
+#: client/app/services/services.controller.js:30
+msgid "Anything related with transport? We are here find you best people to do it!"
+msgstr ""
+
+#: client/app/admin/preprovider.html:389
+msgid "Apply Service Groups"
+msgstr ""
+
+#: client/app/admin/preproviderlist.html:207
+msgid "Approve"
+msgstr ""
+
+#: client/app/request/phoneverify.html:42
+msgid "Approve Code"
+msgstr ""
+
+#: client/app/main/faq.html:233
+msgid "Are there commissions or finder’s fees to pay when I am booked through Posluga.ua?"
+msgstr ""
+
+#: client/app/main/howitworks.html:85
+msgid "Are you a service provider?"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:220
+msgid "Are you sure you want to accept this quote as client?"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:311
+msgid "Are you sure you want to activate the request?"
+msgstr ""
+
+#: client/app/admin/preproviderlist.html:207
+msgid "Are you sure you want to approve?"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:308
+msgid "Are you sure you want to cancel the request?"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:232
+msgid "Are you sure you want to complete this quote as provider?"
+msgstr ""
+
+#: client/app/quote/_wrapper.html:272
+msgid "Are you sure you want to complete this service?"
+msgstr ""
+
+#: client/app/provider/profile.html:157
+msgid "Are you sure you want to delete a promotion photo?"
+msgstr ""
+
+#: client/app/provider/profile.html:229
+msgid "Are you sure you want to delete document?"
+msgstr ""
+
+#: client/app/provider/_profilebox.html:118
+msgid "Are you sure you want to delete this profile?"
+msgstr ""
+
+#: client/app/provider/profile.html:182
+msgid "Are you sure you want to delete your profile photo?"
+msgstr ""
+
+#: client/app/admin/articlelist.html:74
+#: client/app/admin/preproviderlist.html:201
+#: client/app/admin/providerlist.html:169
+#: client/app/admin/servicegroup.html:56
+#: client/app/quote/_commentbox.html:51
+#: client/app/request/request_form.html:88
+msgid "Are you sure you want to delete?"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:226
+msgid "Are you sure you want to deselect this quote?"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:305
+msgid "Are you sure you want to mark this request as paid?"
+msgstr ""
+
+#: client/app/admin/preprovider.html:316
+#: client/app/admin/preprovider.html:432
+#: client/app/admin/preprovider.html:467
+#: client/app/admin/preprovider.html:8
+msgid "Are you sure you want to remove?"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:77
+#: client/app/admin/userlist.html:104
+msgid "Are you sure you want to send login details to this user?"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:83
+msgid "Are you sure you want to send opportunity email to this user?"
+msgstr ""
+
+#: client/app/admin/adminarticle.html:5
+msgid "Article"
+msgstr ""
+
+#: client/app/admin/articlelist.html:13
+msgid "Article List"
+msgstr ""
+
+#: client/components/navbar/navbar.html:114
+msgid "Articles"
+msgstr ""
+
+#: client/app/request/request.html:66
+msgid "Attach if you have photos about the subject."
+msgstr ""
+
+#: client/app/request/request.html:38
+msgid "Available and interested professionals will send you their price quotes in 24 hours."
+msgstr ""
+
+#: client/app/finances/finances.html:49
+#: client/app/finances/finances.html:9
+#: client/app/finances/invoices.html:43
+#: client/app/finances/transactions.html:26
+msgid "Balance"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:412
+#: client/app/admin/admin.controller.js:436
+#: client/app/finances/finances.controller.js:20
+msgid "Bank Payment"
+msgstr ""
+
+#: client/app/finances/addmoneybank.html:27
+msgid "Bank:"
+msgstr ""
+
+#: client/app/account/signup/_form.html:82
+msgid "Become a Member for Free"
+msgstr ""
+
+#: client/app/account/signup/giveservice.html:7
+msgid "Become a member for free, start giving price quotes"
+msgstr ""
+
+#: client/app/request/myrequests.html:82
+msgid "Below are all requests you have created. Click on a request to view its details."
+msgstr ""
+
+#: client/app/quote/myquotes.html:105
+msgid "Below are all works you are related to."
+msgstr ""
+
+#: client/app/quote/myquotes.html:96
+msgid "Below are the active requests you can send price quotes."
+msgstr ""
+
+#: client/app/quote/myquotes.html:93
+msgid "Below are the active requests you have quoted and the requests you can send price quotes."
+msgstr ""
+
+#: client/app/quote/myquotes.html:99
+msgid "Below are the active requests you have sent a quote."
+msgstr ""
+
+#: client/app/quote/myquotes.html:109
+msgid "Below are the requests with the status"
+msgstr ""
+
+#: client/app/quote/myquotes.html:102
+msgid "Below are the requests you have finished providing service, cancelled or someone else won."
+msgstr ""
+
+#: client/app/request/myrequests.html:85
+msgid "Below are your active requests such as the ones that are waiting for quotes, received quotes and and reserved."
+msgstr ""
+
+#: client/app/request/myrequests.html:88
+msgid "Below are your ended requests such as the ones that are completed or cancelled."
+msgstr ""
+
+#: client/app/request/myrequests.html:92
+msgid "Below are your requests with the status"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1837
+#: client/app/admin/admin.controller.js:1863
+#: client/app/admin/admin.controller.js:1885
+#: client/app/admin/admin.controller.js:1889
+#: client/app/admin/admin.controller.js:1922
+#: client/app/admin/admin.controller.js:1950
+#: client/app/admin/admin.controller.js:1970
+#: client/app/admin/admin.controller.js:2012
+msgid "Best Regards"
+msgstr ""
+
+#: client/app/places/_whyposluga.html:15
+msgid "Best prices you can find because companies compete to give you the best price."
+msgstr ""
+
+#: client/app/main/article.html:14
+#: client/app/main/blog.html:12
+#: client/app/main/main.controller.js:177
+#: client/components/footer/footer.html:39
+msgid "Blog"
+msgstr ""
+
+#: client/app/main/faq.html:215
+msgid "Booking"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1880
+#: client/app/admin/admin.controller.js:1914
+#: client/app/admin/requestlist.html:96
+msgid "Budget"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:125
+#: client/app/request/_admindetailbox.html:96
+#: client/app/request/_detailbox.html:112
+msgid "Budget:"
+msgstr ""
+
+#: client/app/quote/viewquotes.html:38
+msgid "By accepting this price quote, you are agreeing to"
+msgstr ""
+
+#: client/app/quote/givequote.html:163
+msgid "By sending this quote you are accepting the"
+msgstr ""
+
+#: client/app/main/faq.html:310
+msgid "Can I dispute a review if I am unhappy with it?"
+msgstr ""
+
+#: client/app/main/faq.html:42
+msgid "Can I negotiate the price that is provided to me in a quote?"
+msgstr ""
+
+#: client/app/main/faq.html:286
+msgid "Can I post reviews myself if I have received them from my clients in the past?"
+msgstr ""
+
+#: client/app/main/faq.html:245
+msgid "Can I update or cancel my quote after I’ve sent it?"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:308
+#: client/app/request/_admindetailbox.html:166
+#: client/app/request/_admindetailbox.html:193
+#: client/app/request/_detailbox.html:207
+#: client/app/request/_detailbox.html:242
+msgid "Cancel Request"
+msgstr ""
+
+#: client/app/provider/provider.controller.js:610
+msgid "Cannot find the service you have written. Please select a service by typing or from the list."
+msgstr ""
+
+#: client/app/admin/adminservice.html:38
+#: client/app/admin/servicelist.html:41
+#: client/components/modal/_categoryModalContent.html:18
+msgid "Category"
+msgstr ""
+
+#: client/app/admin/servicelist.html:38
+msgid "Category ID"
+msgstr ""
+
+#: client/app/provider/provider.controller.js:15
+msgid "Certificate"
+msgstr ""
+
+#: client/app/account/pwdreset/pwdreset.html:90
+#: client/app/account/settings/settings.html:6
+msgid "Change Password"
+msgstr ""
+
+#: client/app/account/settings/settings.html:84
+msgid "Change Photo"
+msgstr ""
+
+#: client/app/account/settings/settings.html:53
+msgid "Change User Profile Details"
+msgstr ""
+
+#: client/app/account/pwdreset/pwdreset.html:84
+msgid "Check the address and send it again."
+msgstr ""
+
+#: client/app/account/pwdreset/pwdreset.html:27
+msgid "Check your inbox."
+msgstr ""
+
+#: client/app/places/_directorytop.html:8
+#: client/app/places/katalog.html:10
+#: client/app/places/places.controller.js:271
+msgid "Click on a place or a service to view it's details"
+msgstr ""
+
+#: client/components/modal/_categoryModalContent.html:2
+msgid "Click on subject and category to select a Service"
+msgstr ""
+
+#: client/app/account/signup/giveservice.html:10
+msgid "Clients looking for services are in Posluga.ua"
+msgstr ""
+
+#: client/app/quote/quotedetail.html:55
+msgid "Close"
+msgstr ""
+
+#: client/app/request/phoneverify.html:32
+msgid "Code"
+msgstr ""
+
+#: client/app/main/article.html:115
+msgid "Comments"
+msgstr ""
+
+#: client/app/quote/_detailbox.html:23
+msgid "Commission"
+msgstr ""
+
+#: client/app/finances/finances.html:17
+msgid "Commissions"
+msgstr ""
+
+#: client/app/finances/finances.html:63
+msgid "Commissions to Pay"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1743
+#: client/app/admin/admin.controller.js:353
+#: client/app/admin/preproviderlist.html:66
+#: client/app/admin/providerlist.html:33
+#: client/app/provider/provider.controller.js:11
+#: client/app/quote/_wrapper.html:62
+msgid "Company"
+msgstr ""
+
+#: client/app/provider/profile.html:19
+msgid "Company / Person"
+msgstr ""
+
+#: client/app/admin/preprovider.html:33
+msgid "Company Details"
+msgstr ""
+
+#: client/app/places/_directorytop.html:5
+#: client/app/places/_katalogbread.html:10
+#: client/app/places/_katalogbread.html:102
+#: client/app/places/_katalogbread.html:24
+#: client/app/places/_katalogbread.html:43
+#: client/app/places/_katalogbread.html:69
+#: client/app/places/katalog.html:22
+#: client/app/places/katalog.html:7
+#: client/app/places/places.controller.js:269
+msgid "Company Directory"
+msgstr ""
+
+#: client/app/admin/preprovider.html:61
+#: client/app/provider/profile.html:35
+msgid "Company Name"
+msgstr ""
+
+#: client/app/services/services.controller.js:18
+msgid "Compare constructors to renovate your home with the right professionals."
+msgstr ""
+
+#: client/app/provider/_ranking.html:31
+msgid "Complete"
+msgstr ""
+
+#: client/app/quote/quote.controller.js:259
+msgid "Complete below issues in your profile to get better results."
+msgstr ""
+
+#: client/app/admin/adminrequest.html:232
+msgid "Complete quote as provider"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1993
+msgid "Complete the service and mark that you have given the service."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1941
+msgid "Congrats! You have created your"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1859
+msgid "Congratulations! You have received a quote for your"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1957
+msgid "Congratulations! you have selected a quote for your"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1984
+msgid "Congratulations! you have won the"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1897
+msgid "Connect with us"
+msgstr ""
+
+#: client/app/main/faq.html:33
+msgid "Consumer Questions"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1840
+#: client/app/admin/admin.controller.js:1875
+#: client/app/admin/admin.controller.js:1909
+#: client/app/admin/admin.controller.js:1973
+msgid "Contact"
+msgstr ""
+
+#: client/app/main/contact.html:12
+#: client/app/main/contact.html:21
+msgid "Contact Us"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1898
+msgid "Contact info"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1986
+#: client/app/admin/admin.controller.js:1992
+msgid "Contact the customer and decide about the details of the work to be done."
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:166
+#: client/app/request/_admindetailbox.html:137
+#: client/app/request/_detailbox.html:153
+msgid "Contact:"
+msgstr ""
+
+#: client/app/admin/adminarticle.html:40
+msgid "Content"
+msgstr ""
+
+#: client/app/provider/addlink.html:64
+#: client/app/provider/pronounce.html:55
+msgid "Continue"
+msgstr ""
+
+#: client/app/provider/addlink.html:41
+msgid "Copy"
+msgstr ""
+
+#: client/app/dashboard/dashboard.html:36
+msgid "Create Service Profile"
+msgstr ""
+
+#: client/app/admin/providerlist.html:175
+#: client/app/admin/servicelist.html:123
+msgid "Create Similar"
+msgstr ""
+
+#: client/app/dashboard/dashboard.html:33
+msgid "Create a profile page, let clients find you through search engines, get free leads, give quotes and earn."
+msgstr ""
+
+#: client/app/provider/profile.html:5
+#: client/app/provider/provider.controller.js:225
+msgid "Create your profile page"
+msgstr ""
+
+#: client/app/admin/preproviderlist.html:40
+#: client/app/admin/requestlist.html:84
+msgid "Created"
+msgstr ""
+
+#: client/app/main/about.html:87
+msgid "Creating exceptional customer experiences, every time."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:400
+#: client/app/admin/admin.controller.js:424
+#: client/app/finances/finances.controller.js:8
+msgid "Credit Card Payment"
+msgstr ""
+
+#: client/app/account/settings/settings.html:12
+msgid "Current Password"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1926
+#: client/app/admin/admin.controller.js:441
+#: client/app/quote/quote.controller.js:67
+#: client/app/request/request.controller.js:67
+msgid "Customer does not want to be called"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1990
+msgid "Customer review is critical for your future business in Posluga.ua so we strongly recommend you to provide your best service and ask the customer to write you a good review."
+msgstr ""
+
+#: client/app/request/_listitem.html:106
+msgid "Customer selected another quote"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:2022
+msgid "Customer wrote a review for your service"
+msgstr ""
+
+#: client/app/admin/preprovider.html:21
+msgid "DELETED"
+msgstr ""
+
+#: client/components/navbar/navbar.html:121
+msgid "Dashboard"
+msgstr ""
+
+#: client/app/admin/addfunds.html:27
+#: client/app/admin/adminrequest.html:156
+#: client/app/admin/requestlist.html:87
+#: client/app/finances/transactions.html:17
+msgid "Date"
+msgstr ""
+
+#: client/app/request/request_form.html:171
+msgid "Date and time?"
+msgstr ""
+
+#: client/app/quote/givequote.html:116
+msgid "Day and Time"
+msgstr ""
+
+#: client/app/admin/articlelist.html:74
+#: client/app/admin/preprovider.html:467
+#: client/app/admin/preprovider.html:8
+#: client/app/admin/preproviderlist.html:201
+#: client/app/admin/providerlist.html:169
+#: client/app/admin/servicegroup.html:56
+#: client/app/provider/_profilebox.html:118
+msgid "Delete"
+msgstr ""
+
+#: client/app/admin/preproviderlist.html:43
+msgid "Deleted"
+msgstr ""
+
+#: client/app/admin/preprovider.html:444
+msgid "Deleted?"
+msgstr ""
+
+#: client/app/admin/adminarticle.html:24
+#: client/app/admin/articlelist.html:33
+#: client/app/admin/preprovider.html:334
+#: client/app/admin/preprovider.html:339
+#: client/app/admin/preproviderlist.html:75
+#: client/app/admin/providerlist.html:45
+#: client/app/admin/requestlist.html:93
+#: client/app/provider/provider.html:140
+msgid "Description"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:51
+#: client/app/request/_admindetailbox.html:22
+#: client/app/request/_detailbox.html:38
+msgid "Description:"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:226
+msgid "Deselect quote"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1842
+#: client/app/admin/admin.controller.js:1877
+#: client/app/admin/admin.controller.js:1911
+#: client/app/admin/admin.controller.js:1975
+#: client/app/quote/_detailbox.html:42
+#: client/app/request/_listitem.html:122
+#: client/app/request/_listitem.html:134
+msgid "Details"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:63
+#: client/app/request/_admindetailbox.html:34
+#: client/app/request/_detailbox.html:50
+msgid "Details:"
+msgstr ""
+
+#: client/app/quote/quotedetail.html:35
+msgid "Did you win this work?"
+msgstr ""
+
+#: client/app/provider/provider.controller.js:21
+msgid "Diploma"
+msgstr ""
+
+#: client/app/main/faq.html:107
+msgid "Do I have to complete the booking through Posluga.ua?"
+msgstr ""
+
+#: client/app/main/faq.html:66
+msgid "Do I pay for the service you provide?"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1968
+msgid "Do not forget that the quoter has to ensure your satisfaction; because after you take the service, you can write a review on Posluga.ua and this will affect his future business."
+msgstr ""
+
+#: client/app/request/success.html:80
+msgid "Do you need another service?"
+msgstr ""
+
+#: client/app/main/faq.html:78
+msgid "Do you perform background checks for those providers listed on Posluga.ua?"
+msgstr ""
+
+#: client/app/main/faq.html:298
+msgid "Do you verify reviews?"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1919
+msgid "Do you want more business opportunities?"
+msgstr ""
+
+#: client/app/provider/profile.html:291
+#: client/app/provider/profile.html:295
+msgid "Document Date"
+msgstr ""
+
+#: client/app/provider/profile.html:244
+msgid "Document Image"
+msgstr ""
+
+#: client/app/provider/profile.html:273
+msgid "Document Name"
+msgstr ""
+
+#: client/app/provider/profile.html:282
+msgid "Document Number"
+msgstr ""
+
+#: client/app/provider/profile.html:257
+msgid "Document Type"
+msgstr ""
+
+#: client/app/provider/profile.html:286
+msgid "Document or certificate number"
+msgstr ""
+
+#: client/app/provider/provider.html:294
+msgid "Documents"
+msgstr ""
+
+#: client/app/main/faq.html:204
+msgid "Does Posluga.ua charge for receiving or responding leads?"
+msgstr ""
+
+#: client/app/main/faq.html:151
+msgid "Does this site really work?"
+msgstr ""
+
+#: client/app/account/pwdreset/pwdreset.html:70
+#: client/app/account/settings/settings.html:74
+#: client/app/account/signup/_form.html:36
+msgid "Doesn't look like a valid email."
+msgstr ""
+
+#: client/app/main/about.html:93
+msgid "Doing it the right way, not the easiest way."
+msgstr ""
+
+#: client/app/main/contact.html:48
+msgid "E-Mail"
+msgstr ""
+
+#: client/app/main/about.html:80
+msgid "Each of us interacts with multiple businesses every day, from well known brands to the store on the corner. More often than not, it seems that the service we receive is less than remarkable. Once in a while, a company really stands out. It’s different. It’s better. You just can’t help but to tell your friends about it. We want to be that company for you."
+msgstr ""
+
+#: client/app/admin/articlelist.html:62
+#: client/app/admin/preproviderlist.html:195
+#: client/app/admin/providerlist.html:157
+#: client/app/admin/requestlist.html:184
+#: client/app/admin/servicelist.html:116
+#: client/app/admin/userlist.html:88
+msgid "Edit"
+msgstr ""
+
+#: client/app/provider/_profilebox.html:109
+msgid "Edit Profile"
+msgstr ""
+
+#: client/app/quote/_detailbox.html:61
+#: client/app/quote/_detailbox.html:64
+msgid "Edit Quote"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:314
+#: client/app/request/_admindetailbox.html:169
+#: client/app/request/_detailbox.html:210
+#: client/app/request/_detailbox.html:213
+#: client/app/request/_detailbox.html:216
+msgid "Edit Request"
+msgstr ""
+
+#: client/app/quote/_wrapper.html:269
+msgid "Edit Review"
+msgstr ""
+
+#: client/app/provider/provider.html:128
+msgid "Edit my profile"
+msgstr ""
+
+#: client/app/provider/profile.html:8
+msgid "Edit your profile page"
+msgstr ""
+
+#: client/app/account/login/_login.html:18
+#: client/app/account/login/login.html:21
+#: client/app/account/settings/settings.html:67
+#: client/app/account/signup/_form.html:32
+#: client/app/admin/admin.controller.js:1899
+#: client/app/admin/adminrequest.html:28
+#: client/app/admin/preprovider.html:116
+#: client/app/admin/preprovider.html:235
+#: client/app/admin/preproviderlist.html:72
+#: client/app/admin/providerlist.html:39
+#: client/app/admin/userlist.html:25
+#: client/app/request/request.html:104
+msgid "Email"
+msgstr ""
+
+#: client/app/account/settings/settings.html:118
+msgid "Email Notifications"
+msgstr ""
+
+#: client/app/account/pwdreset/pwdreset.html:49
+msgid "Email address"
+msgstr ""
+
+#: client/app/admin/requestlist.html:43
+#: client/app/request/myrequests.html:21
+#: client/app/request/myrequests.html:79
+msgid "Ended Requests"
+msgstr ""
+
+#: client/app/quote/myquotes.html:26
+#: client/app/quote/myquotes.html:90
+msgid "Ended works"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1994
+msgid "Ensure the satisfaction of the customer and ask to write a good review."
+msgstr ""
+
+#: client/app/request/phoneverify.html:5
+msgid "Enter the code we sent your mobile phone to complete your request"
+msgstr ""
+
+#: client/app/request/phoneverify.html:27
+msgid "Enter the code you've received to the below textbox and press Approve Code button."
+msgstr ""
+
+#: client/app/quote/viewquotes.html:27
+msgid "Enter your details for the reservation"
+msgstr ""
+
+#: client/app/account/settings/settings.controller.js:27
+msgid "Error in changing password. Please check your current password."
+msgstr ""
+
+#: client/app/account/settings/settings.controller.js:37
+msgid "Error in saving notification settings"
+msgstr ""
+
+#: client/app/account/settings/settings.controller.js:55
+msgid "Error in saving user profile settings"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1962
+#: client/app/admin/admin.controller.js:1987
+msgid "Especially for the tasks that are more than 10000 грн., we strongly recommend you to make a written and signed agreement about the details of the work to make it official."
+msgstr ""
+
+#: client/app/provider/profile.html:205
+#: client/app/provider/provider.html:95
+msgid "Established on"
+msgstr ""
+
+#: client/app/request/request.html:45
+msgid "Explain in detail to get a right price."
+msgstr ""
+
+#: client/app/provider/profile.html:145
+msgid "Explain your difference and experience. Write some of the important works you have done."
+msgstr ""
+
+#: client/app/admin/preprovider.html:208
+msgid "Extra Address"
+msgstr ""
+
+#: client/components/footer/footer.html:34
+msgid "FAQ"
+msgstr ""
+
+#: client/app/dashboard/dashboard.html:19
+msgid "Fill a simple request form, get quotes, compare price and quality to select the best one."
+msgstr ""
+
+#: client/app/request/request.controller.js:302
+msgid "Fill this form to Get Free Price Quotes"
+msgstr ""
+
+#: client/app/finances/transactions.html:61
+msgid "Final Balance:"
+msgstr ""
+
+#: client/app/finances/_menu.html:4
+#: client/components/navbar/navbar.html:141
+msgid "Finances"
+msgstr ""
+
+#: client/app/provider/addlink.html:13
+#: client/app/provider/provider.controller.js:100
+msgid "First, copy and paste the gray colored link into the HTML of your website. Then, paste the web page address you placed the link in blue colored textbox. Finally, press Save button."
+msgstr ""
+
+#: client/app/finances/invoices.html:16
+#: client/app/finances/invoices.html:37
+#: client/app/quote/viewquotes.html:49
+msgid "Firstname"
+msgstr ""
+
+#: client/app/request/request_form.html:204
+msgid "Firstname and Lastname"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1995
+msgid "For any comments or questions please contact us on support@posluga.ua or phone 0850 333 22 00"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1967
+msgid "For any comments or questions please contact us with the email support@posluga.ua or phone 0850 333 22 00"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1835
+msgid "For your security and satisfaction, we recommend you to make a written aggreement with the service provider and not to pay any amount before the work done."
+msgstr ""
+
+#: client/app/account/pwdreset/pwdreset.html:5
+msgid "Forgotten Password?"
+msgstr ""
+
+#: client/app/places/_whyposluga.html:42
+msgid "Free to use. Free to Ask. No obligation to hire."
+msgstr ""
+
+#: client/app/main/faq.html:12
+#: client/app/main/faq.html:21
+#: client/app/main/main.controller.js:149
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:343
+#: client/app/provider/provider.controller.js:37
+#: client/app/quote/quote.controller.js:30
+#: client/app/request/request.controller.js:30
+msgid "Friends in Facebook"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:346
+#: client/app/provider/provider.controller.js:40
+#: client/app/quote/quote.controller.js:33
+#: client/app/request/request.controller.js:33
+msgid "Friends in Vkontakte"
+msgstr ""
+
+#: client/app/services/services.controller.js:28
+msgid "From finding the perfect teacher to managing scheduling, we take care the details so you can focus on learning."
+msgstr ""
+
+#: client/app/services/allservices.html:18
+#: client/app/services/services.controller.js:40
+msgid "From house painting to yoga training, we bring you the right service providers for all your needs."
+msgstr ""
+
+#: client/app/admin/preprovider.html:69
+#: client/app/provider/profile.html:43
+msgid "Full Name"
+msgstr ""
+
+#: client/app/main/faq.html:145
+msgid "General"
+msgstr ""
+
+#: client/components/modal/_viewprofileModalContent.html:16
+msgid "Get 1 Price Quote"
+msgstr ""
+
+#: client/app/places/places.controller.js:279
+msgid "Get 5"
+msgstr ""
+
+#: client/components/modal/_viewprofileModalContent.html:11
+msgid "Get 5 Price Quotes"
+msgstr ""
+
+#: client/app/places/_toptenjumbo.html:26
+msgid "Get Free Price Quotes"
+msgstr ""
+
+#: client/app/main/main.controller.js:144
+#: client/app/main/main.html:13
+#: client/app/main/main.html:16
+#: client/app/places/places.controller.js:276
+msgid "Get Free Price Quotes For Services."
+msgstr ""
+
+#: client/app/main/_getquotes.html:1
+msgid "Get Price Quotes For Services"
+msgstr ""
+
+#: client/app/main/_getquotes.html:13
+#: client/app/services/subject.html:37
+#: client/app/services/subject.html:70
+#: client/components/footer/footer.html:92
+#: client/components/navbar/navbar.html:65
+msgid "Get Quote"
+msgstr ""
+
+#: client/app/main/howitworks.html:80
+msgid "Get Started Here!"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:2014
+#: client/app/dashboard/dashboard.html:22
+msgid "Get a Free Quote"
+msgstr ""
+
+#: client/app/provider/provider.html:123
+msgid "Get a free quote from me"
+msgstr ""
+
+#: client/app/provider/provider.html:202
+#: client/app/provider/provider.html:54
+msgid "Get a free quote to view reviews"
+msgstr ""
+
+#: client/app/request/request.controller.js:458
+msgid "Get a price quote from"
+msgstr ""
+
+#: client/app/request/request.controller.js:326
+#: client/app/request/request.controller.js:338
+msgid "Get order details from client"
+msgstr ""
+
+#: client/app/request/request.controller.js:460
+msgid "Get price quotes from"
+msgstr ""
+
+#: client/components/modal/_viewprofileModalContent.html:23
+msgid "Get quote from"
+msgstr ""
+
+#: client/app/places/_whyposluga.html:24
+msgid "Get quotes from trusted businesses we check according to our strict criteria."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:252
+msgid "Give Price"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1925
+#: client/app/request/_listitem.html:131
+msgid "Give Quote"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:89
+msgid "Give Quote as Provider"
+msgstr ""
+
+#: client/components/navbar/navbar.html:23
+#: client/components/navbar/navbar.html:62
+msgid "Give Service"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1917
+msgid "Give a quote for this job now and have a better service profile."
+msgstr ""
+
+#: client/app/quote/quote.controller.js:616
+msgid "Give the best price offer you can with the information user provided."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1918
+msgid "Give your quote fast. Customers tend to select the quotes that come in 24 hours. Make sure you have added your profile link to your webpage. Make sure you have nice photos and explanations about your services. A better profile leads to more earnings."
+msgstr ""
+
+#: client/app/main/main.html:29
+msgid "Go"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1915
+msgid "Go To Quote Page"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1888
+#: client/app/admin/admin.controller.js:1972
+#: client/app/admin/admin.controller.js:2018
+msgid "Go To Request Page"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1854
+msgid "Go To Settings Page"
+msgstr ""
+
+#: client/app/admin/preprovider.html:464
+#: client/app/admin/preprovider.html:5
+#: client/app/provider/addlink.html:67
+#: client/app/provider/pronounce.html:58
+msgid "Go back"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1916
+msgid "Go to quote page and click the button to confirm that you have completed the service."
+msgstr ""
+
+#: client/app/main/main.html:41
+msgid "Gone are the days of ringing people for quotes!"
+msgstr ""
+
+#: client/app/admin/preproviderlist.html:90
+#: client/app/admin/providerlist.html:60
+#: client/app/admin/requestlist.html:108
+msgid "Gorad"
+msgstr ""
+
+#: client/app/main/about.html:99
+msgid "Having zero tolerance for mediocre work."
+msgstr ""
+
+#: client/app/main/main.controller.js:103
+#: client/app/main/testimonials.html:24
+msgid "Here’s what some of the happy consumers who have taken services through Posluga.ua are saying."
+msgstr ""
+
+#: client/app/main/main.controller.js:218
+#: client/app/main/terms.html:24
+msgid "Here’s what you agree to by using this website."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1825
+#: client/app/admin/admin.controller.js:1848
+#: client/app/admin/admin.controller.js:1858
+#: client/app/admin/admin.controller.js:1872
+#: client/app/admin/admin.controller.js:1906
+#: client/app/admin/admin.controller.js:1931
+#: client/app/admin/admin.controller.js:1956
+#: client/app/admin/admin.controller.js:2009
+msgid "Hi"
+msgstr ""
+
+#: client/app/places/_howitworks.html:1
+msgid "How Posluga.ua works"
+msgstr ""
+
+#: client/app/main/faq.html:274
+msgid "How can I change a mistake that a client made in a review on my profile?"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1921
+#: client/app/admin/admin.controller.js:1949
+msgid "How can we give you a better service? Please send your comments to: support@posluga.ua"
+msgstr ""
+
+#: client/app/main/faq.html:192
+msgid "How do I respond to a service lead?"
+msgstr ""
+
+#: client/app/main/faq.html:221
+#: client/app/main/faq.html:95
+msgid "How does booking on Posluga.ua work?"
+msgstr ""
+
+#: client/app/main/howitworks.html:12
+#: client/app/main/howitworks.html:21
+#: client/app/main/main.controller.js:213
+#: client/components/footer/footer.html:29
+msgid "How it Works?"
+msgstr ""
+
+#: client/app/quote/_commentbox.html:31
+msgid "How many stars would you give?"
+msgstr ""
+
+#: client/app/quote/_commentbox.html:66
+msgid "How much did you pay?"
+msgstr ""
+
+#: client/app/admin/requestlist.html:99
+#: client/app/request/request_form.html:188
+msgid "How to notify you?"
+msgstr ""
+
+#: client/app/account/signup/_form.html:64
+#: client/app/provider/profile.html:314
+#: client/app/request/request_form.html:236
+msgid "I accept"
+msgstr ""
+
+#: client/app/quote/givequote.html:139
+msgid "I can provide this service better than others because..."
+msgstr ""
+
+#: client/app/quote/_wrapper.html:272
+msgid "I completed service, customer can write review"
+msgstr ""
+
+#: client/app/quote/quote.controller.js:106
+#: client/app/request/request.controller.js:106
+msgid "I could not get answers to my questions"
+msgstr ""
+
+#: client/app/quote/quote.controller.js:94
+#: client/app/request/request.controller.js:94
+msgid "I have agreed with one of the posluga.ua requests"
+msgstr ""
+
+#: client/app/quote/quote.controller.js:97
+#: client/app/request/request.controller.js:97
+msgid "I have agreed with someone out of posluga.ua"
+msgstr ""
+
+#: client/app/main/faq.html:54
+msgid "I haven’t heard anything back from my request. What do I do?"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:376
+#: client/app/quote/quote.controller.js:46
+#: client/app/request/request.controller.js:46
+msgid "I just look for prices"
+msgstr ""
+
+#: client/app/main/faq.html:180
+msgid "I just received a request from a consumer. How do I know if it’s legit?"
+msgstr ""
+
+#: client/app/quote/quote.controller.js:109
+#: client/app/request/request.controller.js:109
+msgid "I just renonunced"
+msgstr ""
+
+#: client/app/request/success.html:103
+msgid "I need a different service than the services above"
+msgstr ""
+
+#: client/app/quote/givequote.html:169
+msgid "If the customer accepts your quote, the information in this form will be a binding contract between you and the customer."
+msgstr ""
+
+#: client/app/quote/quote.controller.js:620
+msgid "If the user accepts your quote, you will pay %10 commission to us."
+msgstr ""
+
+#: client/app/quote/quote.controller.js:618
+msgid "If the user accepts your quote, you will pay %9 commission to us."
+msgstr ""
+
+#: client/app/quote/quote.controller.js:633
+msgid "If the user accepts your quote, you will pay us"
+msgstr ""
+
+#: client/app/main/about.html:40
+msgid "If you are a consumer;"
+msgstr ""
+
+#: client/app/main/about.html:48
+msgid "If you are a service provider;"
+msgstr ""
+
+#: client/app/main/article.html:68
+#: client/app/quote/commentsuccess.html:17
+#: client/app/quote/servicesuccess.html:17
+msgid "If you are satisfied with Posluga.ua,"
+msgstr ""
+
+#: client/app/main/faq.html:263
+msgid "If you cancel a booking prior to the event date, you will be responsible for covering the Posluga.ua service fee. If you fail to appear at the event for which you have been booked, you will be responsible for covering the Posluga.ua service fee and your membership may be terminated."
+msgstr ""
+
+#: client/app/request/success.html:57
+msgid "If you decide to choose a price quote, press 'Select Quote' button."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1933
+msgid "If you did not request us to reset and email you your password, please email contact@posluga.ua and let us know."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1945
+msgid "If you have a website, add the link of your profile to your webpage. When you do it, not only you will get more business oppurtunities but you will also increase your rating in google and yandex searches."
+msgstr ""
+
+#: client/app/quote/quotedetail.html:41
+msgid "If you have agreed with the customer, the commission amount of"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:2011
+msgid "If you have any questions, please email contact@posluga.ua and let us know."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1836
+msgid "If you have any questions, you can reach us from support@posluga.ua."
+msgstr ""
+
+#: client/app/dashboard/dashboard.html:16
+msgid "If you need Service"
+msgstr ""
+
+#: client/app/main/about.html:67
+msgid "If you need a service, take your tea and relax. Posluga.ua is here to do the work for you."
+msgstr ""
+
+#: client/app/main/about.html:24
+msgid "If you need a service, why should you have to chase service providers? Instead, they should be chasing you! Posluga.ua is about capturing consumer's service request, sending this request to related local service providers, and competing them to send price quotes to the consumer to select the best one."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1829
+msgid "If you need more information to decide, send message to quoters. You can click the button below to go quote selection page."
+msgstr ""
+
+#: client/components/footer/footer.html:88
+msgid "If you need service:"
+msgstr ""
+
+#: client/app/dashboard/dashboard.html:30
+msgid "If you want to give service"
+msgstr ""
+
+#: client/app/admin/adminarticle.html:32
+#: client/app/admin/adminservice.html:99
+#: client/app/admin/articlelist.html:36
+#: client/app/admin/servicelist.html:53
+msgid "Image"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:360
+#: client/app/admin/admin.controller.js:370
+#: client/app/quote/quote.controller.js:40
+#: client/app/quote/quote.controller.js:53
+#: client/app/request/request.controller.js:40
+#: client/app/request/request.controller.js:53
+msgid "In 2 months"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:363
+#: client/app/admin/admin.controller.js:373
+#: client/app/quote/quote.controller.js:43
+#: client/app/quote/quote.controller.js:56
+#: client/app/request/request.controller.js:43
+#: client/app/request/request.controller.js:56
+msgid "In 4 months"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1963
+msgid "In addition to that, we recommend you not to pay for the work beforehand. In cases where materials have to be bought or task has been completed partly, we recommend you only to pay for those materials or that part. Especially, if you have selected a service provider with less or no customer reviews, we recommend you to be more careful."
+msgstr ""
+
+#: client/components/footer/footer.html:19
+msgid "Info"
+msgstr ""
+
+#: client/app/main/about.html:102
+msgid "Innovating, creating, and improving."
+msgstr ""
+
+#: client/app/provider/profile.html:141
+msgid "Introduction"
+msgstr ""
+
+#: client/app/finances/invoices.html:9
+msgid "Invoices"
+msgstr ""
+
+#: client/app/request/request.html:59
+msgid "Is there anything else we should know?"
+msgstr ""
+
+#: client/app/request/request.html:52
+msgid "Is there something you want closer attention?"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1920
+msgid "It is important to win at least 1 of the first 15 quotes you give. The number of job opportunities we send to you will increase as you win. There are many ways to win a business opportunity. Create a complete profile page, reply to business opurtunities on time and give reasonable price quotes."
+msgstr ""
+
+#: client/app/quote/myquotes.html:65
+msgid "It looks like you don’t have any leads yet."
+msgstr ""
+
+#: client/app/request/myrequests.html:57
+msgid "It looks like you don’t have any requests yet."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:2004
+msgid "It takes just 20 seconds to help people. Click the button below to use your power now."
+msgstr ""
+
+#: client/app/main/_getquotes.html:17
+msgid "It's Free!"
+msgstr ""
+
+#: client/app/main/faq.html:227
+msgid "It’s pretty simple actually. When you receive a lead you’re interested in, just respond by sending a quote back. We’ll send that over to the client and if they like what they see, they’ll accept your quote. Then it’s booked! All that’s left is for you to show up and do your thing."
+msgstr ""
+
+#: client/app/main/faq.html:163
+msgid "I’m not receiving emails from Posluga.ua. What’s the deal?"
+msgstr ""
+
+#: client/components/modal/_viewprofileModalContent.html:33
+msgid "Just get a single price quote from"
+msgstr ""
+
+#: client/app/main/main.controller.js:214
+msgid "Just tell us what service you need, and qualified local service providers will send you their price quotes. Then, compare and hire the provider that's right for you."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:420
+#: client/app/quote/quote.controller.js:63
+#: client/app/request/request.controller.js:63
+msgid "Keep my number secret"
+msgstr ""
+
+#: client/app/admin/adminservice.html:107
+msgid "Keywords"
+msgstr ""
+
+#: client/app/admin/preproviderlist.html:152
+#: client/app/admin/providerlist.html:115
+msgid "Landline:"
+msgstr ""
+
+#: client/app/quote/_wrapper.html:11
+msgid "Last Update:"
+msgstr ""
+
+#: client/app/finances/invoices.html:25
+#: client/app/finances/invoices.html:40
+#: client/app/quote/viewquotes.html:58
+msgid "Lastname"
+msgstr ""
+
+#: client/app/places/_customerreviews.html:1
+msgid "Latest Customer Reviews"
+msgstr ""
+
+#: client/app/main/faq.html:174
+msgid "Leads"
+msgstr ""
+
+#: client/app/main/main.html:82
+msgid "Learn More On How It Works"
+msgstr ""
+
+#: client/app/provider/provider.controller.js:18
+msgid "Licence"
+msgstr ""
+
+#: client/app/services/services.controller.js:20
+msgid "Life is too short to clean your own house! Contact us and we find best people to do it for you."
+msgstr ""
+
+#: client/app/main/about.html:90
+msgid "Listening intently when given input, criticism, or praise."
+msgstr ""
+
+#: client/app/admin/preprovider.html:156
+#: client/app/admin/preprovider.html:267
+#: client/app/provider/profile.html:70
+msgid "Location"
+msgstr ""
+
+#: client/app/account/login/_login.html:50
+#: client/app/account/login/login.html:5
+#: client/app/account/login/login.html:54
+#: client/app/admin/admin.controller.js:1850
+#: client/app/request/request.html:143
+#: client/app/request/request.html:88
+#: client/components/navbar/navbar.html:42
+msgid "Login"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:186
+msgid "Login Details:"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:117
+msgid "Login email sent"
+msgstr ""
+
+#: client/components/oauth-buttons/oauth-buttons.controller.js:23
+msgid "Login with Facebook"
+msgstr ""
+
+#: client/components/oauth-buttons/oauth-buttons.controller.js:25
+msgid "Login with Odnoklassniki"
+msgstr ""
+
+#: client/components/oauth-buttons/oauth-buttons.controller.js:24
+msgid "Login with Vkontakte"
+msgstr ""
+
+#: client/components/navbar/navbar.html:28
+msgid "Logout"
+msgstr ""
+
+#: client/app/account/login/_login.html:43
+#: client/app/account/login/login.html:47
+#: client/app/request/request.html:136
+msgid "Lost or forgotten your password?"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1947
+msgid "Make your customers happy"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:305
+msgid "Mark as Paid"
+msgstr ""
+
+#: client/app/provider/_profilebox.html:36
+#: client/app/quote/_wrapper.html:180
+msgid "Member for"
+msgstr ""
+
+#: client/app/quote/givequote.html:135
+msgid "Message"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1868
+msgid "Message to you"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:159
+msgid "Messages"
+msgstr ""
+
+#: client/app/admin/preproviderlist.html:132
+#: client/app/admin/providerlist.html:105
+msgid "Mobile 1:"
+msgstr ""
+
+#: client/app/admin/preproviderlist.html:142
+msgid "Mobile 2:"
+msgstr ""
+
+#: client/app/admin/preprovider.html:219
+#: client/app/admin/preprovider.html:92
+#: client/app/provider/profile.html:54
+msgid "Mobile Phone"
+msgstr ""
+
+#: client/app/admin/preprovider.html:108
+#: client/app/admin/preprovider.html:227
+msgid "Mobile Phone 2"
+msgstr ""
+
+#: client/app/account/settings/settings.html:58
+#: client/app/account/signup/_form.html:18
+#: client/app/admin/adminservicegroup.html:16
+#: client/app/admin/servicegroup.html:25
+#: client/app/admin/userlist.html:28
+msgid "Name"
+msgstr ""
+
+#: client/app/account/signup/_form.html:22
+msgid "Name must be at least 3 characters."
+msgstr ""
+
+#: client/app/finances/addmoneybank.html:35
+msgid "Name:"
+msgstr ""
+
+#: client/app/main/main.html:54
+msgid "Need something painted, designed, cleaned, photographed, installed, repaired, removed or replaced? Just tell us. It's free."
+msgstr ""
+
+#: client/app/account/login/login.controller.js:37
+#: client/app/admin/admin.controller.js:380
+#: client/app/admin/preproviderlist.html:34
+#: client/app/quote/quote.controller.js:74
+#: client/app/request/request.controller.js:74
+msgid "New"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1905
+msgid "New Business Opportunity"
+msgstr ""
+
+#: client/app/account/settings/settings.html:21
+msgid "New Password"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1939
+msgid "New Service Profile"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:2029
+msgid "New business opportunity!"
+msgstr ""
+
+#: client/app/account/pwdreset/pwdreset.html:57
+msgid "New password"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:260
+#: client/app/admin/_admindetailbox.html:277
+msgid "No"
+msgstr ""
+
+#: client/app/quote/_otherquotes.html:6
+msgid "No other provider sent a quote for this request yet."
+msgstr ""
+
+#: client/app/main/faq.html:72
+msgid "No you don't. It's free and will be free."
+msgstr ""
+
+#: client/app/provider/provider.html:311
+msgid "No:"
+msgstr ""
+
+#: client/app/quote/myquotes.html:69
+#: client/app/request/myrequests.html:61
+msgid "Not to worry — this likely means you signed up recently. Before long you should receive your first lead and it will show up right here."
+msgstr ""
+
+#: client/app/account/settings/settings.controller.js:34
+msgid "Notifacation settings successfully changed."
+msgstr ""
+
+#: client/app/account/settings/settings.html:111
+msgid "Notifications"
+msgstr ""
+
+#: client/app/account/login/_login.html:13
+#: client/app/account/login/login.html:16
+#: client/app/account/signup/_form.html:13
+#: client/app/request/request.html:99
+msgid "OR"
+msgstr ""
+
+#: client/app/admin/preproviderlist.html:84
+#: client/app/admin/providerlist.html:54
+#: client/app/admin/requestlist.html:102
+msgid "Oblast"
+msgstr ""
+
+#: client/app/main/faq.html:48
+msgid "Of course you can. Everything is negotiable. But be respectful and understanding that everyone has a business to run and livelihood to make. Most vendors are quoting well thought prices that correctly match the quality and quantity of service you desire for your job."
+msgstr ""
+
+#: client/app/provider/profile.html:221
+msgid "Official Documents"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1884
+msgid "Once you choose a quote, we recommend you to make a written aggreement with the firm about the work to be done."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1830
+msgid "Once you decide,"
+msgstr ""
+
+#: client/app/main/howitworks.html:72
+msgid "Once you have compared the price quotes of the providers it is up to you to decide who is right for your job. You can view profiles of each of our providers on the website as well as consumer feedback and star ratings to help you make the right decision."
+msgstr ""
+
+#: client/app/main/faq.html:101
+msgid "Once you’ve submitted a form about the service you are looking for, related local service providers will send you a quotes in 24 hours. After that all you have to do is to select the best offer!"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:122
+msgid "Opportunity email sent"
+msgstr ""
+
+#: client/app/admin/adminservice.html:201
+msgid "Option"
+msgstr ""
+
+#: client/app/admin/adminservice.html:144
+#: client/app/admin/adminservice.html:193
+msgid "Order"
+msgstr ""
+
+#: client/app/provider/provider.controller.js:24
+msgid "Other"
+msgstr ""
+
+#: client/app/quote/_otherquotes.html:1
+msgid "Other Quotes"
+msgstr ""
+
+#: client/app/request/request_form.html:78
+msgid "Other details"
+msgstr ""
+
+#: client/app/quote/quote.controller.js:112
+#: client/app/request/request.controller.js:112
+msgid "Other reason"
+msgstr ""
+
+#: client/app/main/about.html:77
+msgid "Our Manifesto"
+msgstr ""
+
+#: client/app/request/phoneverify.html:56
+msgid "Our mobile phone verification service is free."
+msgstr ""
+
+#: client/app/quote/_detailbox.html:33
+msgid "Ours:"
+msgstr ""
+
+#: client/app/main/main.html:267
+msgid "Over 950 Services Available"
+msgstr ""
+
+#: client/app/account/login/_login.html:26
+#: client/app/account/login/login.html:30
+#: client/app/account/signup/_form.html:49
+#: client/app/admin/admin.controller.js:1852
+#: client/app/admin/providerlist.html:42
+#: client/app/request/request.html:113
+msgid "Password"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1930
+msgid "Password Reset"
+msgstr ""
+
+#: client/app/account/pwdreset/pwdreset.html:61
+#: client/app/account/settings/settings.html:25
+#: client/app/account/signup/_form.html:53
+msgid "Password must be at least 3 characters."
+msgstr ""
+
+#: client/app/account/settings/settings.controller.js:24
+msgid "Password successfully changed."
+msgstr ""
+
+#: client/app/finances/finances.html:36
+msgid "Payments"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1740
+#: client/app/admin/admin.controller.js:350
+#: client/app/provider/provider.controller.js:8
+msgid "Personal"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1900
+#: client/app/admin/adminrequest.html:34
+#: client/app/quote/_wrapper.html:142
+#: client/app/quote/_wrapper.html:240
+msgid "Phone"
+msgstr ""
+
+#: client/app/admin/providerlist.html:125
+msgid "Phonelist"
+msgstr ""
+
+#: client/app/admin/preproviderlist.html:78
+#: client/app/admin/providerlist.html:48
+msgid "Phones"
+msgstr ""
+
+#: client/app/admin/preproviderlist.html:81
+#: client/app/admin/providerlist.html:51
+msgid "Photo"
+msgstr ""
+
+#: client/app/provider/profile.html:166
+msgid "Photo or logo that will appear in your profile"
+msgstr ""
+
+#: client/app/provider/provider.html:162
+msgid "Photos"
+msgstr ""
+
+#: client/app/account/settings/settings.html:79
+msgid "Picture"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:217
+#: client/app/request/_admindetailbox.html:151
+#: client/app/request/_detailbox.html:192
+msgid "Pictures:"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1844
+#: client/app/admin/admin.controller.js:1879
+#: client/app/admin/admin.controller.js:1913
+#: client/app/admin/admin.controller.js:1977
+msgid "Place"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:111
+#: client/app/request/_admindetailbox.html:82
+#: client/app/request/_detailbox.html:98
+msgid "Place:"
+msgstr ""
+
+#: client/app/places/katalog.html:28
+#: client/app/places/places.controller.js:277
+msgid "Places we operate"
+msgstr ""
+
+#: client/app/admin/preprovider.html:161
+#: client/app/admin/preprovider.html:172
+#: client/app/admin/preprovider.html:183
+#: client/app/admin/preprovider.html:194
+#: client/app/admin/preprovider.html:272
+#: client/app/admin/preprovider.html:283
+#: client/app/admin/preprovider.html:294
+#: client/app/admin/preprovider.html:305
+#: client/app/provider/profile.html:108
+#: client/app/provider/profile.html:75
+#: client/app/provider/profile.html:86
+#: client/app/provider/profile.html:97
+#: client/app/request/request_form.html:120
+#: client/app/request/request_form.html:131
+#: client/app/request/request_form.html:142
+#: client/app/request/request_form.html:49
+#: client/app/request/request_form.html:60
+msgid "Please Select"
+msgstr ""
+
+#: client/app/account/login/_login.html:36
+#: client/app/account/login/login.html:40
+msgid "Please enter a valid email."
+msgstr ""
+
+#: client/app/request/request.html:121
+msgid "Please enter correct login details."
+msgstr ""
+
+#: client/app/account/login/_login.html:33
+#: client/app/account/login/login.html:37
+msgid "Please enter your email and password."
+msgstr ""
+
+#: client/app/account/pwdreset/pwdreset.html:73
+msgid "Please enter your email."
+msgstr ""
+
+#: client/app/quote/quote.controller.js:609
+msgid "Please give a star rating for this service."
+msgstr ""
+
+#: client/app/request/request.html:79
+msgid "Please login using the social providers or with the credentials we sent to your email."
+msgstr ""
+
+#: client/app/main/article.html:77
+#: client/app/quote/commentsuccess.html:26
+#: client/app/quote/servicesuccess.html:26
+msgid "Please share us with your friends."
+msgstr ""
+
+#: client/app/quote/viewquotes.html:71
+msgid "Please write your address."
+msgstr ""
+
+#: client/app/main/article.html:83
+#: client/app/quote/commentsuccess.html:32
+#: client/app/quote/servicesuccess.html:32
+msgid "Please..."
+msgstr ""
+
+#: client/app/services/subject.html:28
+msgid "Popular"
+msgstr ""
+
+#: client/app/admin/adminservice.html:81
+#: client/app/admin/servicelist.html:50
+msgid "Popular?"
+msgstr ""
+
+#: client/app/places/_toptenbread.html:5
+msgid "Posluga.ua"
+msgstr ""
+
+#: client/app/main/blog.html:21
+msgid "Posluga.ua Blog"
+msgstr ""
+
+#: client/app/main/about.html:7
+#: client/app/main/article.html:7
+#: client/app/main/blog.html:7
+#: client/app/main/contact.html:7
+#: client/app/main/faq.html:7
+#: client/app/main/howitworks.html:7
+#: client/app/main/privacy.html:7
+#: client/app/main/terms.html:7
+#: client/app/main/testimonials.html:7
+#: client/app/places/_katalogbread.html:17
+#: client/app/places/_katalogbread.html:36
+#: client/app/places/_katalogbread.html:5
+#: client/app/places/_katalogbread.html:62
+#: client/app/places/_katalogbread.html:95
+msgid "Posluga.ua Home"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1838
+#: client/app/admin/admin.controller.js:1864
+#: client/app/admin/admin.controller.js:1886
+#: client/app/admin/admin.controller.js:1893
+#: client/app/admin/admin.controller.js:1923
+#: client/app/admin/admin.controller.js:1951
+#: client/app/admin/admin.controller.js:1971
+#: client/app/admin/admin.controller.js:2013
+msgid "Posluga.ua Team"
+msgstr ""
+
+#: client/app/main/main.controller.js:222
+#: client/app/main/privacy.html:24
+msgid "Posluga.ua has created this privacy statement in order to demonstrate our firm commitment to your privacy. The following discloses the information gathering and dissemination practices for this website."
+msgstr ""
+
+#: client/app/main/about.html:51
+msgid "Posluga.ua is a business that use smart technology and superb marketing to generate and deliver jobs for you to win. We're the first in Ukraine, and the market leaders!"
+msgstr ""
+
+#: client/app/main/article.html:74
+#: client/app/quote/commentsuccess.html:23
+#: client/app/quote/servicesuccess.html:23
+msgid "Posluga.ua is a little company that lives by the recommendations of satisified users."
+msgstr ""
+
+#: client/app/main/howitworks.html:33
+msgid "Posluga.ua is a simple. Here’s how it works"
+msgstr ""
+
+#: client/app/main/main.controller.js:226
+msgid "Posluga.ua is about capturing consumer's service request, sending this request to related local service providers, and competing them to send price quotes to the consumer to select the best one."
+msgstr ""
+
+#: client/app/main/about.html:36
+msgid "Posluga.ua is the easy way to get price quotes for trades and services."
+msgstr ""
+
+#: client/app/main/about.html:43
+msgid "Posluga.ua is website that your can list a job request and our intelligent profile matching system will notify local service providers of your request and arrange for them to give price quotes to you."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1966
+msgid "Posluga.ua is with you in every step."
+msgstr ""
+
+#: client/app/admin/adminrequest.html:18
+#: client/app/admin/requestlist.html:120
+msgid "Potential Providers"
+msgstr ""
+
+#: client/app/admin/preproviderlist.html:19
+msgid "Pre-registered Providers List"
+msgstr ""
+
+#: client/components/navbar/navbar.html:84
+msgid "Preregister"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1865
+#: client/app/admin/adminrequest.html:153
+#: client/app/quote/_detailbox.html:15
+#: client/app/quote/_wrapper.html:126
+#: client/app/quote/_wrapper.html:224
+#: client/app/quote/givequote.html:31
+msgid "Price"
+msgstr ""
+
+#: client/app/quote/givequote.html:22
+msgid "Price quote and introduction message"
+msgstr ""
+
+#: client/app/request/success.html:33
+msgid "Price quotes for your request will come in 24 hours."
+msgstr ""
+
+#: client/app/admin/preprovider.html:87
+msgid "Primary Address"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1895
+msgid "Privacy"
+msgstr ""
+
+#: client/app/main/main.controller.js:221
+#: client/app/main/privacy.html:12
+#: client/app/main/privacy.html:21
+#: client/components/footer/footer.html:49
+msgid "Privacy Policy"
+msgstr ""
+
+#: client/app/provider/_ranking.html:24
+msgid "Profile"
+msgstr ""
+
+#: client/app/admin/preprovider.html:347
+msgid "Profile Photo"
+msgstr ""
+
+#: client/app/provider/provider.controller.js:148
+#: client/app/provider/providers.html:5
+#: client/components/navbar/navbar.html:136
+msgid "Profiles"
+msgstr ""
+
+#: client/app/provider/_profilebox.html:115
+msgid "Promote"
+msgstr ""
+
+#: client/app/provider/pronounce.html:12
+#: client/app/provider/provider.controller.js:106
+msgid "Promote Your Profile"
+msgstr ""
+
+#: client/app/provider/profile.html:150
+msgid "Promotion Photos:"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:150
+#: client/app/admin/adminrequest.html:25
+msgid "Provider"
+msgstr ""
+
+#: client/app/admin/providerlist.html:30
+msgid "Provider No"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:269
+msgid "Provider Paid:"
+msgstr ""
+
+#: client/app/admin/preprovider.html:12
+msgid "Provider Pre-registration Form"
+msgstr ""
+
+#: client/app/main/faq.html:142
+msgid "Provider Questions"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:2019
+msgid "Provider completed giving service. Make sure we get the payment and customer writes a review."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:2016
+msgid "Provider sent a quote to a customer for request"
+msgstr ""
+
+#: client/app/admin/userlist.html:34
+#: client/components/navbar/navbar.html:89
+msgid "Providers"
+msgstr ""
+
+#: client/app/admin/providerlist.html:13
+msgid "Providers List"
+msgstr ""
+
+#: client/app/admin/adminservice.html:168
+msgid "Question"
+msgstr ""
+
+#: client/app/admin/servicelist.html:56
+msgid "Questions"
+msgstr ""
+
+#: client/app/quote/_wrapper.html:3
+msgid "Quote"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:404
+#: client/app/admin/admin.controller.js:428
+#: client/app/finances/finances.controller.js:12
+msgid "Quote Commission to Pay"
+msgstr ""
+
+#: client/app/quote/_wrapper.html:32
+msgid "Quote No"
+msgstr ""
+
+#: client/app/quote/_chat.html:13
+msgid "Quote Owner"
+msgstr ""
+
+#: client/app/quote/_detailbox.html:1
+msgid "Quote details"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:127
+msgid "Quote sent"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:417
+#: client/app/quote/quote.controller.js:60
+#: client/app/request/request.controller.js:60
+msgid "Quoter can call me"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:140
+#: client/app/admin/requestlist.html:123
+#: client/app/main/faq.html:89
+#: client/app/quote/myquotes.html:8
+#: client/components/navbar/navbar.html:131
+msgid "Quotes"
+msgstr ""
+
+#: client/app/provider/_profilebox.html:88
+msgid "Quotes Sent"
+msgstr ""
+
+#: client/app/provider/_profilebox.html:96
+msgid "Quotes Won"
+msgstr ""
+
+#: client/app/main/faq.html:251
+msgid "Quotes can be updated or cancelled until the lead closes for bidding or until client accepts your quote. If the client has selected your quote and the service is booked then you cannot update or cancel."
+msgstr ""
+
+#: client/app/request/request.controller.js:208
+msgid "Quotes received"
+msgstr ""
+
+#: client/app/admin/preproviderlist.html:87
+#: client/app/admin/providerlist.html:57
+#: client/app/admin/requestlist.html:105
+msgid "Rayon"
+msgstr ""
+
+#: client/app/admin/preproviderlist.html:93
+#: client/app/admin/providerlist.html:63
+#: client/app/admin/requestlist.html:111
+msgid "Rayongorad"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:2026
+#: client/app/quote/_wrapper.html:275
+msgid "Read Review"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1862
+msgid "Read customer reviews of the quoter, check his profile. If there are other quotes, compare this quote with them. If not, wait for them to come until the quoting closes. If you think this quote is the best, select this quote."
+msgstr ""
+
+#: client/app/account/settings/settings.html:151
+msgid "Receive Posluga.ua News"
+msgstr ""
+
+#: client/app/account/settings/settings.html:133
+msgid "Receive email alerts for active quotes(required)"
+msgstr ""
+
+#: client/app/account/settings/settings.html:142
+msgid "Receive email alerts for active requests (required)"
+msgstr ""
+
+#: client/app/account/settings/settings.html:124
+msgid "Receive email alerts for payment and account (required)"
+msgstr ""
+
+#: client/app/account/settings/settings.html:160
+msgid "Receive notifications for new client reviews"
+msgstr ""
+
+#: client/app/account/settings/settings.html:172
+msgid "Receive sms alerts for active quotes"
+msgstr ""
+
+#: client/app/account/settings/settings.html:181
+msgid "Receive sms alerts for active requests"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:387
+#: client/app/admin/requestlist.html:52
+#: client/app/quote/myquotes.html:38
+#: client/app/quote/quote.controller.js:81
+#: client/app/request/myrequests.html:30
+#: client/app/request/request.controller.js:81
+msgid "Received Quotes"
+msgstr ""
+
+#: client/app/services/services.controller.js:24
+msgid "Regain control of your life with our services to help with all your personal needs."
+msgstr ""
+
+#: client/app/main/howitworks.html:24
+msgid "Remodel your house. Find a office cleaner. Book a photographer for your birthday. Meet the perfect dog-sitter. You can do it all and much more with Posluga.ua. Just tell us what service you need, and qualified local service providers will send you their price quotes. Then, compare and hire the provider that's right for you."
+msgstr ""
+
+#: client/app/admin/preprovider.html:418
+msgid "Remove"
+msgstr ""
+
+#: client/app/admin/preprovider.html:316
+msgid "Remove Address"
+msgstr ""
+
+#: client/app/admin/adminservicegroup.html:39
+#: client/app/admin/preprovider.html:432
+msgid "Remove Service"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1938
+msgid "Reply to Message"
+msgstr ""
+
+#: client/app/main/contact.html:60
+msgid "Reponsible Person"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:7
+msgid "Request Details"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1841
+#: client/app/admin/admin.controller.js:1876
+#: client/app/admin/admin.controller.js:1910
+#: client/app/admin/admin.controller.js:1974
+#: client/app/admin/requestlist.html:78
+msgid "Request No"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:5
+msgid "Request No:"
+msgstr ""
+
+#: client/app/quote/_chat.html:16
+msgid "Request Owner"
+msgstr ""
+
+#: client/app/request/_detailbox.html:2
+msgid "Request details"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:240
+msgid "Request expired"
+msgstr ""
+
+#: client/app/admin/userlist.html:37
+#: client/app/main/faq.html:36
+#: client/app/request/myrequests.html:6
+#: client/components/navbar/navbar.html:126
+#: client/components/navbar/navbar.html:94
+msgid "Requests"
+msgstr ""
+
+#: client/app/admin/requestlist.html:22
+msgid "Requests List"
+msgstr ""
+
+#: client/app/request/phoneverify.html:47
+msgid "Resend Code"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:390
+#: client/app/admin/requestlist.html:55
+#: client/app/quote/myquotes.html:41
+#: client/app/quote/quote.controller.js:84
+#: client/app/request/myrequests.html:33
+#: client/app/request/request.controller.js:84
+msgid "Reservation Made"
+msgstr ""
+
+#: client/app/quote/quotesuccess.html:5
+msgid "Reservation for your"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1934
+msgid "Reset my Password"
+msgstr ""
+
+#: client/app/admin/preprovider.html:142
+#: client/app/admin/preprovider.html:253
+msgid "Resolve Address"
+msgstr ""
+
+#: client/app/admin/preprovider.html:148
+#: client/app/admin/preprovider.html:259
+msgid "Resolved Address"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:168
+msgid "Review"
+msgstr ""
+
+#: client/app/places/_whyposluga.html:33
+msgid "Review and compare businesses to find the best quality with the lowest price."
+msgstr ""
+
+#: client/app/main/faq.html:268
+#: client/app/provider/provider.html:197
+msgid "Reviews"
+msgstr ""
+
+#: client/app/admin/userlist.html:31
+msgid "Role"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:323
+#: client/app/admin/addfunds.html:37
+#: client/app/admin/adminarticle.html:50
+#: client/app/admin/adminservice.html:226
+#: client/app/admin/adminservicegroup.html:54
+#: client/app/admin/preprovider.html:454
+#: client/app/provider/addlink.html:58
+msgid "Save"
+msgstr ""
+
+#: client/app/quote/_commentbox.html:73
+msgid "Save Comment"
+msgstr ""
+
+#: client/app/provider/profile.html:300
+msgid "Save Document"
+msgstr ""
+
+#: client/app/provider/addlink.html:61
+msgid "Save Successful"
+msgstr ""
+
+#: client/app/admin/articlelist.html:23
+#: client/app/admin/preproviderlist.html:57
+#: client/app/admin/providerlist.html:23
+#: client/app/admin/requestlist.html:69
+#: client/app/admin/servicelist.html:24
+#: client/app/admin/userlist.html:18
+#: client/app/quote/myquotes.html:55
+#: client/app/request/myrequests.html:47
+msgid "Search"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:139
+#: client/app/request/_admindetailbox.html:110
+#: client/app/request/_detailbox.html:126
+msgid "Security Checks:"
+msgstr ""
+
+#: client/app/main/main.html:422
+msgid "See All Cities"
+msgstr ""
+
+#: client/app/main/main.html:376
+msgid "See All Services"
+msgstr ""
+
+#: client/app/main/main.html:257
+msgid "See More Testimonials"
+msgstr ""
+
+#: client/app/main/main.html:91
+msgid "See what happy consumers saying"
+msgstr ""
+
+#: client/app/provider/addlink.html:23
+#: client/app/provider/profile.html:24
+msgid "Select"
+msgstr ""
+
+#: client/components/modal/_categoryModalContent.html:32
+msgid "Select Service"
+msgstr ""
+
+#: client/app/quote/_wrapper.html:280
+msgid "Select This Quote"
+msgstr ""
+
+#: client/app/quote/givequote.html:96
+msgid "Select Time"
+msgstr ""
+
+#: client/app/request/request_form.html:27
+#: client/app/request/request_form.html:36
+msgid "Select an option"
+msgstr ""
+
+#: client/app/request/request_form.html:176
+msgid "Select date and time"
+msgstr ""
+
+#: client/app/provider/profile.html:135
+#: client/app/request/request_form.html:14
+msgid "Select from list"
+msgstr ""
+
+#: client/components/modal/_viewprofileModalContent.html:2
+msgid "Select how many price quotes you want"
+msgstr ""
+
+#: client/app/request/request_form.html:192
+msgid "Select option"
+msgstr ""
+
+#: client/app/provider/profile.html:191
+msgid "Select pictures about the services you provide."
+msgstr ""
+
+#: client/app/admin/adminrequest.html:220
+msgid "Select quote as client"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:98
+#: client/app/request/request_form.html:160
+msgid "Select time"
+msgstr ""
+
+#: client/app/provider/profile.html:262
+msgid "Select type"
+msgstr ""
+
+#: client/app/provider/profile.html:210
+msgid "Select year"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:162
+msgid "Selected?"
+msgstr ""
+
+#: client/app/quote/viewquotes.html:76
+msgid "Send"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:77
+msgid "Send Login Email"
+msgstr ""
+
+#: client/app/quote/_chat.html:48
+msgid "Send Message"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:83
+msgid "Send Opportunity Email"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:109
+#: client/app/quote/givequote.html:152
+msgid "Send Quote"
+msgstr ""
+
+#: client/app/admin/adminservicegroup.html:31
+#: client/app/admin/preprovider.html:399
+#: client/app/admin/providerlist.html:66
+#: client/app/admin/requestlist.html:81
+#: client/components/modal/_categoryModalContent.html:25
+msgid "Service"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:165
+msgid "Service Complete?"
+msgstr ""
+
+#: client/app/admin/adminservicegroup.html:5
+msgid "Service Group"
+msgstr ""
+
+#: client/app/admin/preprovider.html:369
+#: client/app/admin/servicegroup.html:13
+#: client/components/navbar/navbar.html:109
+msgid "Service Groups"
+msgstr ""
+
+#: client/app/admin/servicelist.html:13
+msgid "Service List"
+msgstr ""
+
+#: client/app/admin/preprovider.html:408
+msgid "Service Photo {{$index +1}}"
+msgstr ""
+
+#: client/app/admin/adminservice.html:5
+msgid "Service Registration Form"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:408
+#: client/app/admin/admin.controller.js:432
+#: client/app/finances/finances.controller.js:16
+msgid "Service Taken"
+msgstr ""
+
+#: client/app/provider/profile.html:127
+msgid "Service you will provide"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:31
+#: client/app/request/_admindetailbox.html:5
+#: client/app/request/_detailbox.html:21
+msgid "Service:"
+msgstr ""
+
+#: client/app/admin/adminservicegroup.html:24
+#: client/app/admin/preprovider.html:361
+#: client/app/admin/preproviderlist.html:96
+#: client/app/admin/servicegroup.html:28
+#: client/components/navbar/navbar.html:104
+msgid "Services"
+msgstr ""
+
+#: client/app/places/katalog.html:109
+#: client/app/places/places.controller.js:274
+#: client/app/places/places.controller.js:277
+msgid "Services we provide"
+msgstr ""
+
+#: client/app/quote/givequote.html:108
+msgid "Set a specific time that fits to your and client's schedule."
+msgstr ""
+
+#: client/components/navbar/navbar.html:18
+msgid "Settings"
+msgstr ""
+
+#: client/app/provider/pronounce.html:22
+msgid "Share your profile or invite your friends to see your profile by clicking on social network buttons below. You can also send email to your friends by clicking on envelope button."
+msgstr ""
+
+#: client/app/provider/pronounce.html:19
+#: client/app/provider/provider.controller.js:106
+msgid "Share your profile with your friends!"
+msgstr ""
+
+#: client/app/quote/givequote.html:145
+msgid "Show that you understand customer's request. Give a price quote for his needs. Explain why you are trustable and different."
+msgstr ""
+
+#: client/app/account/signup/_form.html:2
+msgid "Sign Up"
+msgstr ""
+
+#: client/components/navbar/navbar.html:45
+msgid "Signup"
+msgstr ""
+
+#: client/components/oauth-buttons/oauth-buttons.controller.js:19
+msgid "Signup with Facebook"
+msgstr ""
+
+#: client/components/oauth-buttons/oauth-buttons.controller.js:21
+msgid "Signup with Odnoklassniki"
+msgstr ""
+
+#: client/components/oauth-buttons/oauth-buttons.controller.js:20
+msgid "Signup with Vkontakte"
+msgstr ""
+
+#: client/app/account/pwdreset/pwdreset.html:18
+msgid "Something went wrong. Your attend to reset your password has failed."
+msgstr ""
+
+#: client/app/provider/provider.html:75
+#: client/app/quote/_wrapper.html:71
+msgid "Specialises in"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:357
+#: client/app/admin/admin.controller.js:367
+#: client/app/quote/quote.controller.js:37
+#: client/app/quote/quote.controller.js:50
+#: client/app/request/request.controller.js:37
+#: client/app/request/request.controller.js:50
+msgid "Specific time"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1952
+msgid "Start by Adding your profile link"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:40
+#: client/app/admin/requestlist.html:90
+msgid "Status"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:17
+#: client/app/request/_detailbox.html:11
+msgid "Status:"
+msgstr ""
+
+#: client/app/admin/adminservice.html:59
+#: client/app/admin/servicelist.html:47
+msgid "Subcategory"
+msgstr ""
+
+#: client/app/admin/servicelist.html:44
+msgid "Subcategory ID"
+msgstr ""
+
+#: client/app/admin/adminservice.html:17
+#: client/app/admin/servicelist.html:35
+#: client/components/modal/_categoryModalContent.html:11
+msgid "Subject"
+msgstr ""
+
+#: client/app/admin/servicelist.html:32
+msgid "Subject ID"
+msgstr ""
+
+#: client/app/provider/profile.html:330
+#: client/app/request/request_form.html:252
+#: client/components/modal/_categoryModalContent.html:51
+msgid "Submit"
+msgstr ""
+
+#: client/app/admin/articlelist.html:4
+msgid "Successfully added article"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:552
+msgid "Successfully added comment"
+msgstr ""
+
+#: client/app/admin/userlist.html:4
+msgid "Successfully added funds"
+msgstr ""
+
+#: client/app/admin/requestlist.html:4
+msgid "Successfully added request"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:151
+msgid "Successfully added review as client"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:126
+msgid "Successfully completed quote as provider"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1358
+#: client/app/admin/preproviderlist.html:13
+msgid "Successfully created provider"
+msgstr ""
+
+#: client/app/admin/preproviderlist.html:4
+msgid "Successfully created provider pre-registration"
+msgstr ""
+
+#: client/app/admin/servicelist.html:4
+msgid "Successfully created service"
+msgstr ""
+
+#: client/app/admin/servicegroup.html:4
+msgid "Successfully created service group"
+msgstr ""
+
+#: client/app/admin/preproviderlist.html:10
+msgid "Successfully deleted provider pre-registration"
+msgstr ""
+
+#: client/app/admin/providerlist.html:4
+#: client/app/admin/requestlist.html:10
+msgid "Successfully deleted provider registration"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:110
+msgid "Successfully deselected quote as client"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:138
+msgid "Successfully marked as paid"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:93
+msgid "Successfully selected quote as client"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:623
+msgid "Successfully sent login email to provider"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:633
+msgid "Successfully sent opportunity email to provider"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:236
+msgid "Successfully sent quote as this provider."
+msgstr ""
+
+#: client/app/admin/articlelist.html:7
+msgid "Successfully updated article"
+msgstr ""
+
+#: client/app/admin/userlist.html:7
+msgid "Successfully updated funds info"
+msgstr ""
+
+#: client/app/admin/requestlist.html:13
+msgid "Successfully updated provider"
+msgstr ""
+
+#: client/app/admin/preproviderlist.html:7
+msgid "Successfully updated provider pre-registration"
+msgstr ""
+
+#: client/app/admin/providerlist.html:7
+msgid "Successfully updated provider registration"
+msgstr ""
+
+#: client/app/admin/requestlist.html:7
+msgid "Successfully updated request"
+msgstr ""
+
+#: client/app/admin/servicelist.html:7
+msgid "Successfully updated service"
+msgstr ""
+
+#: client/app/admin/servicegroup.html:7
+msgid "Successfully updated service group"
+msgstr ""
+
+#: client/app/admin/requestlist.html:16
+msgid "Successfully updated user"
+msgstr ""
+
+#: client/components/footer/footer.html:80
+msgid "Support"
+msgstr ""
+
+#: client/app/main/contact.html:72
+msgid "Support Center"
+msgstr ""
+
+#: client/app/quote/_commentbox.html:24
+msgid "Tell about your experience to help others!"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1894
+msgid "Terms"
+msgstr ""
+
+#: client/app/main/main.controller.js:217
+#: client/app/main/terms.html:12
+#: client/app/main/terms.html:21
+#: client/app/request/request.html:161
+#: client/components/footer/footer.html:44
+msgid "Terms of Use"
+msgstr ""
+
+#: client/app/main/main.controller.js:102
+#: client/app/main/testimonials.html:12
+#: client/app/main/testimonials.html:21
+msgid "Testimonials"
+msgstr ""
+
+#: client/app/account/settings/settings.html:166
+msgid "Text Notifications"
+msgstr ""
+
+#: client/app/quote/servicesuccess.html:11
+msgid "Thank You For Working With Us. We will notify your customer to write you a great review!"
+msgstr ""
+
+#: client/app/quote/commentsuccess.html:11
+msgid "Thank You For Your Review"
+msgstr ""
+
+#: client/app/main/faq.html:60
+msgid "That's very rare but if that's the case you might try sending a follow-up message. If you still don’t hear anything you can do another request to see the multitude of other talent Posluga.ua has to offer!"
+msgstr ""
+
+#: client/app/request/phoneverify.html:52
+msgid "The code you have entered is wrong. Enter it correct or wait until timer ends to resend."
+msgstr ""
+
+#: client/app/account/pwdreset/pwdreset.html:81
+msgid "The email address you entered is not known."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1969
+msgid "The power is in you, write a review!"
+msgstr ""
+
+#: client/app/quote/quote.controller.js:100
+#: client/app/request/request.controller.js:100
+msgid "The prices were too high"
+msgstr ""
+
+#: client/app/quote/_realcomments.html:4
+msgid "The reviews and stars in this page are written by customers that have taken the services performed via posluga.ua. We check and guarantee that this work is really done and interpretation of the facts."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:2005
+msgid "The specified email address is already in use."
+msgstr ""
+
+#: client/app/main/faq.html:186
+msgid "The vast majority of requests on Posluga.ua are from honest people because we use mobile phone verification. However, as it is with most websites, bad apples can attempt from time to time. Use extra caution when dealing with requests which contain any of the following. A simple test is to call the phone number. If it’s a generic answering system, a disconnected number, or a wrong number be cautious. Please contact us if you are unsure about the validity of a request."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1965
+msgid "The winning quoter will contact you as soon as possible about the details. You can also contact the quoter."
+msgstr ""
+
+#: client/app/quote/viewquotes.html:6
+msgid "There are"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1924
+msgid "There is a new business opportunity, give quote now"
+msgstr ""
+
+#: client/app/main/faq.html:239
+msgid "There is a service fee of 10% that is charged when a service is booked. This fee covers our costs associated with development and maintenance of the system."
+msgstr ""
+
+#: client/app/quote/quote.controller.js:103
+#: client/app/request/request.controller.js:103
+msgid "There was not enough quotes"
+msgstr ""
+
+#: client/app/request/request.controller.js:161
+#: client/app/request/request_form.html:81
+msgid "Things I want done"
+msgstr ""
+
+#: client/app/main/faq.html:125
+msgid "This is very uncommon but unforeseen issues can arise. This is one reason we encourage that all bookings happen on Posluga.ua. If you book the service through our site and the provider does not show up, we can ensure that we will find another provider to cover the service as soon as possible."
+msgstr ""
+
+#: client/app/provider/profile.html:371
+msgid "This page will represent you in front of customers. Use nice photos and write a nice introduction to create a profile that will earn you new customers."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1843
+#: client/app/admin/admin.controller.js:1867
+#: client/app/admin/admin.controller.js:1878
+#: client/app/admin/admin.controller.js:1912
+#: client/app/admin/admin.controller.js:1976
+#: client/app/quote/_detailbox.html:7
+#: client/app/quote/_wrapper.html:134
+#: client/app/quote/_wrapper.html:232
+#: client/app/quote/givequote.html:91
+msgid "Time"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:235
+msgid "Time Left to Expiration:"
+msgstr ""
+
+#: client/app/request/_listitem.html:52
+#: client/app/request/_listitem.html:88
+msgid "Time Left to select quote"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:99
+#: client/app/request/_admindetailbox.html:70
+#: client/app/request/_detailbox.html:86
+msgid "Time:"
+msgstr ""
+
+#: client/app/admin/adminarticle.html:16
+#: client/app/admin/articlelist.html:30
+msgid "Title"
+msgstr ""
+
+#: client/app/places/places.controller.js:278
+msgid "Top 10 companies"
+msgstr ""
+
+#: client/app/admin/adminservice.html:90
+#: client/app/admin/servicelist.html:59
+msgid "Top Service"
+msgstr ""
+
+#: client/components/footer/footer.html:56
+msgid "Top Services"
+msgstr ""
+
+#: client/app/finances/transactions.html:20
+msgid "Transaction Type"
+msgstr ""
+
+#: client/app/admin/userlist.html:40
+#: client/app/finances/_menu.html:9
+#: client/app/finances/transactions.html:9
+msgid "Transactions"
+msgstr ""
+
+#: client/app/account/pwdreset/pwdreset.html:21
+msgid "Try again to change your password"
+msgstr ""
+
+#: client/app/provider/_profilebox.html:80
+msgid "Turnover"
+msgstr ""
+
+#: client/app/admin/adminservice.html:152
+msgid "Type"
+msgstr ""
+
+#: client/app/admin/preprovider.html:18
+msgid "UPDATED"
+msgstr ""
+
+#: client/app/quote/givequote.html:4
+msgid "Unfortunately this business opportunity is closed for new quotes. Business opportunities get closed when customer selects a quote, request receives enough quotes or request expires."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1896
+msgid "Unsubscribe"
+msgstr ""
+
+#: client/app/account/settings/settings.html:198
+#: client/app/account/settings/settings.html:97
+#: client/app/admin/addfunds.html:40
+#: client/app/admin/adminarticle.html:53
+#: client/app/admin/adminservice.html:229
+#: client/app/admin/adminservicegroup.html:57
+#: client/app/admin/preprovider.html:457
+#: client/app/provider/profile.html:333
+#: client/app/request/request_form.html:255
+msgid "Update"
+msgstr ""
+
+#: client/app/account/settings/settings.html:38
+msgid "Update Password"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:71
+msgid "Update Provider Profile"
+msgstr ""
+
+#: client/app/quote/givequote.html:155
+msgid "Update Quote"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:65
+msgid "Update User Profile"
+msgstr ""
+
+#: client/app/admin/preproviderlist.html:37
+#: client/app/admin/preproviderlist.html:99
+msgid "Updated"
+msgstr ""
+
+#: client/app/admin/preproviderlist.html:102
+msgid "Updated By"
+msgstr ""
+
+#: client/app/admin/articlelist.html:39
+msgid "User"
+msgstr ""
+
+#: client/app/provider/profile.html:309
+msgid "User Aggreement"
+msgstr ""
+
+#: client/app/account/settings/settings.controller.js:52
+msgid "User Profile successfully changed."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1982
+msgid "User sent a message for the request"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:2021
+msgid "User updated a request, login your account to check it."
+msgstr ""
+
+#: client/app/admin/userlist.html:13
+#: client/components/navbar/navbar.html:99
+msgid "Users List"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:340
+#: client/app/provider/provider.controller.js:34
+#: client/app/quote/quote.controller.js:27
+#: client/app/request/request.controller.js:27
+msgid "Valid Credit Card"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:334
+#: client/app/provider/provider.controller.js:28
+#: client/app/quote/quote.controller.js:21
+#: client/app/request/request.controller.js:21
+msgid "Valid Email"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:337
+#: client/app/provider/provider.controller.js:31
+#: client/app/quote/quote.controller.js:24
+#: client/app/request/request.controller.js:24
+msgid "Valid Mobile Phone"
+msgstr ""
+
+#: client/app/admin/providerlist.html:163
+#: client/app/provider/_profilebox.html:10
+#: client/app/quote/_wrapper.html:45
+msgid "View Profile"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1866
+msgid "View Quote"
+msgstr ""
+
+#: client/app/request/_listitem.html:143
+msgid "View Quote You Lost"
+msgstr ""
+
+#: client/app/request/_listitem.html:140
+msgid "View Quote You Won"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1839
+#: client/app/request/_listitem.html:125
+msgid "View Quotes"
+msgstr ""
+
+#: client/app/finances/finances.html:28
+msgid "View Transactions"
+msgstr ""
+
+#: client/app/request/_listitem.html:128
+msgid "View Work"
+msgstr ""
+
+#: client/app/request/_listitem.html:137
+msgid "View Your Quote"
+msgstr ""
+
+#: client/app/admin/preprovider.html:45
+msgid "Visit Link"
+msgstr ""
+
+#: client/app/main/faq.html:198
+msgid "Visit your Inbox and click on the request you want to respond to. Then you’ll be given three options: you can go ahead and give a quote, you can decline the request if you are unavaible or not interested, or you can send a message to request more information."
+msgstr ""
+
+#: client/app/account/login/login.controller.js:19
+#: client/app/admin/admin.controller.js:384
+#: client/app/admin/requestlist.html:49
+#: client/app/quote/myquotes.html:35
+#: client/app/quote/quote.controller.js:78
+#: client/app/request/myrequests.html:27
+#: client/app/request/request.controller.js:78
+msgid "Waiting for Quotes"
+msgstr ""
+
+#: client/app/main/main.html:388
+msgid "We are all over Ukraine"
+msgstr ""
+
+#: client/app/main/about.html:83
+msgid "We are committed to:"
+msgstr ""
+
+#: client/app/services/services.controller.js:22
+msgid "We are here to help you outsource the services that will save time (and your sanity)."
+msgstr ""
+
+#: client/app/provider/profile.html:364
+msgid "We email and SMS you the business opportunities tailored to your profession (for free)"
+msgstr ""
+
+#: client/app/provider/profile.html:357
+msgid "We ensure that your profile to appears on search engines (for free)"
+msgstr ""
+
+#: client/app/account/signup/giveservice.html:4
+msgid "We generate and deliver jobs for you to win!"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1873
+msgid "We have received your"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1871
+msgid "We have received your request"
+msgstr ""
+
+#: client/app/request/success.html:5
+msgid "We have received your {{request.searchtext}} request."
+msgstr ""
+
+#: client/app/request/requestdetail.html:5
+#: client/app/request/success.html:8
+msgid "We have updated your {{request.searchtext}} request."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1853
+msgid "We recommend you to change your password from the settings page. If you do not want to remember it everytime, use Facebook or Vkontakte Login."
+msgstr ""
+
+#: client/app/account/pwdreset/pwdreset.html:31
+msgid "We sent a confirmation link to"
+msgstr ""
+
+#: client/app/request/phoneverify.html:20
+msgid "We sent a text message to"
+msgstr ""
+
+#: client/app/main/faq.html:113
+msgid "We strongly recommend that you do. If you are contacted directly outside our system, we encourage you to have them go back to Posluga.ua to send you an official quote or you can get a quote from provider's profile. Bookings that are not done on Posluga.ua are not eligible for dispute resolution, secure payments, verified reviews, or booking protection."
+msgstr ""
+
+#: client/app/main/faq.html:210
+msgid "We sure don’t. it is absolutely free to receive and respond to leads. We only charge %10 commisssion from the total amount if you win the lead. If you add your profile link to your website we will be charging %9 commisssion."
+msgstr ""
+
+#: client/app/main/faq.html:304
+msgid "We verify reviews whether they are not obscene, abusive, or fraudulent. I that's the case we don't show them up on your profile."
+msgstr ""
+
+#: client/app/main/article.html:71
+#: client/app/quote/commentsuccess.html:20
+#: client/app/quote/servicesuccess.html:20
+msgid "We will be real thankful if you share it with your friends."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1882
+msgid "We will first review your request. If we have any questions we will ask you by phone or email."
+msgstr ""
+
+#: client/app/request/success.html:45
+msgid "We will notify you by system notifications, email and SMS."
+msgstr ""
+
+#: client/app/request/request.html:31
+msgid "We will send your request to the closest and the most outstanding service providers."
+msgstr ""
+
+#: client/app/main/main.html:64
+msgid "We'll connect you with available businesses in your neighborhood and they'll email and text you their best prices."
+msgstr ""
+
+#: client/app/provider/addlink.html:47
+msgid "Web page address you pasted the link above"
+msgstr ""
+
+#: client/app/admin/adminrequest.html:31
+#: client/app/admin/preprovider.html:38
+#: client/app/admin/preproviderlist.html:69
+#: client/app/admin/providerlist.html:36
+#: client/app/provider/profile.html:62
+msgid "Website"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:2008
+msgid "Welcome"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:2010
+msgid "Welcome to Posluga.ua. Our goal is to make hiring a local service providers simple and efficient. If you want to get some work done around the house, learn something new, stage a great event or need any other of the 100s of services that we offer, then get started here."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1849
+msgid "Welcome to Posluga.ua. We have created an account for you to check the status of your service requests. Your login details are as follows."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1851
+msgid "Welcome to Posluga.ua. We have created an account for you to give price quotes to the business opportunities we send to you. When you receive a business opportunity email from us, use the below login details to enter the system and give price quotes."
+msgstr ""
+
+#: client/app/main/blog.html:24
+#: client/app/main/main.controller.js:178
+msgid "Welcome to our blog where we share articles and advice about services"
+msgstr ""
+
+#: client/app/dashboard/dashboard.html:5
+msgid "Welcome! Wondering what to do next?"
+msgstr ""
+
+#: client/app/main/faq.html:157
+msgid "Well, of course it does! By creating a profile, you are instantly closer to getting high-paying jobs and tremendous opportunities. We are constantly refining Posluga.ua to ensure we’re presenting the cleanest and easiest website for search engines to crawl and index. Not only do we benefit from search engine traffic, but we also do a lot of online and print advertising, trade shows/conferences, sponsorships of events, and have exceptional ongoing relationships with corporate companies."
+msgstr ""
+
+#: client/app/main/faq.html:24
+#: client/app/main/main.controller.js:150
+msgid "We’ve tried our very best to make Posluga.ua easy to use. But sometimes things aren’t quite as clear as they need to be. If you don’t find the answer you need here, you can also contact us."
+msgstr ""
+
+#: client/app/quote/_commentbox.html:3
+msgid "What do you think of the"
+msgstr ""
+
+#: client/app/request/request.controller.js:162
+#: client/app/request/request_form.html:75
+msgid "What do you want done?"
+msgstr ""
+
+#: client/app/main/faq.html:257
+msgid "What happens if I do not honor a confirmed booking?"
+msgstr ""
+
+#: client/app/main/faq.html:131
+msgid "What happens if I need to cancel a service after I’ve booked someone?"
+msgstr ""
+
+#: client/app/request/request.html:24
+msgid "What happens when I fill the form?"
+msgstr ""
+
+#: client/app/main/about.html:33
+msgid "What is Posluga.ua?"
+msgstr ""
+
+#: client/app/main/faq.html:119
+msgid "What should I do if the service provider does not show up for my event?"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1991
+msgid "What should I do now?"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1861
+msgid "What should I do?"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1881
+#: client/app/admin/admin.controller.js:1964
+#: client/app/request/success.html:22
+msgid "What will happen now?"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1943
+msgid "When we determine your eligibility for new business opportunities, we look at various success and trust criteria. If you want more business oppurtunities, you can do these things:"
+msgstr ""
+
+#: client/app/quote/viewquotes.html:44
+msgid "When you accept this quote, service provider will reserve his own time for you and he will pay us a small commission for our service. The price you accept and information in this form will be a binding legal contract between you and the provider. If you are unsure to get this service or you may change your mind later on, do not accept this quote."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1988
+msgid "When you complete your service, go to the quote page and"
+msgstr ""
+
+#: client/app/account/pwdreset/pwdreset.html:37
+msgid "When you confirm, your password will be changed."
+msgstr ""
+
+#: client/app/main/howitworks.html:46
+msgid "When you post a job, we will guide you through the following steps; what needs to be done, where the job is located, when the job should start and your approximate budget. Remember you only provide your job details once and we do the rest for you."
+msgstr ""
+
+#: client/app/request/success.html:66
+msgid "When you select a quote, Posluga.ua will get notified that your task is being done so we will start to control every step for your satisfaction."
+msgstr ""
+
+#: client/app/main/main.html:74
+msgid "When you're ready, choose the best business for you. We check every business according to our strict criteria."
+msgstr ""
+
+#: client/app/request/request_form.html:155
+msgid "When?"
+msgstr ""
+
+#: client/app/request/request_form.html:115
+msgid "Where?"
+msgstr ""
+
+#: client/app/main/main.html:20
+msgid "Which service do you need? Who do you look for?"
+msgstr ""
+
+#: client/app/request/request_form.html:5
+msgid "Which service do you want?"
+msgstr ""
+
+#: client/app/main/faq.html:84
+msgid "While we do our best to address any issues that are brought to our attention; we do not endorse, sanction, or verify those providers listed on Posluga.ua."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1946
+msgid "Win business oppurtunities"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:396
+#: client/app/admin/requestlist.html:61
+#: client/app/quote/myquotes.html:47
+#: client/app/quote/quote.controller.js:90
+#: client/app/request/myrequests.html:39
+#: client/app/request/request.controller.js:90
+msgid "Work Cancelled"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:393
+#: client/app/admin/requestlist.html:58
+#: client/app/quote/myquotes.html:44
+#: client/app/quote/quote.controller.js:87
+#: client/app/request/myrequests.html:36
+#: client/app/request/request.controller.js:87
+msgid "Work Done"
+msgstr ""
+
+#: client/app/main/about.html:96
+msgid "Working hard, taking risks, and enjoying the resulting profit."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:2002
+msgid "Write Review Now"
+msgstr ""
+
+#: client/app/quote/_wrapper.html:266
+msgid "Write a review"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:2003
+msgid "Write a review for the service you have received, because it will help immensely to other users, to your service provider and to us."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1833
+msgid "Write a review for the service you have taken because the world needs your review!"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1998
+msgid "Write a review to help others"
+msgstr ""
+
+#: client/app/provider/provider.html:256
+msgid "Written by:"
+msgstr ""
+
+#: client/app/admin/_admindetailbox.html:257
+#: client/app/admin/_admindetailbox.html:274
+msgid "Yes"
+msgstr ""
+
+#: client/app/quote/quotedetail.html:58
+msgid "Yes, I won this work"
+msgstr ""
+
+#: client/app/quote/_wrapper.html:22
+msgid "You Won"
+msgstr ""
+
+#: client/app/provider/provider.controller.js:615
+msgid "You already provide this service. You can only create it again if you provide it in another oblast."
+msgstr ""
+
+#: client/app/request/request.controller.js:299
+msgid "You are sending request to"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1927
+#: client/app/admin/admin.controller.js:444
+#: client/app/quote/quote.controller.js:70
+#: client/app/request/request.controller.js:70
+msgid "You can call the customer"
+msgstr ""
+
+#: client/app/main/faq.html:137
+msgid "You can cancel the booking before the event date. But if you want to cancel the booking after the event date then the provider still has to pay us commission from the total price as if the service has been given. So in order to not make the provider mistreated; you must talk with the provider to decide on another date, another service or any other form of dispute resolution."
+msgstr ""
+
+#: client/app/quote/quote.controller.js:261
+msgid "You can get to  just by completing below issues in your profile. Giving quotes will increase your priority too."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:2025
+msgid "You can read your review by clicking on button below"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1940
+msgid "You created a service profile"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1907
+msgid "You have a new"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1937
+msgid "You have a new message"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1892
+msgid "You have a new message from"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1826
+msgid "You have received"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1857
+msgid "You have received a quote"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:2031
+msgid "You have received a quote for your {{servicetext}} service. Look at:"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1978
+msgid "You have received a quote of {{body.price}} for your {{body.service}} service. Look at:"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1955
+msgid "You have selected a quote"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1958
+msgid "You have selected a quote for your"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1983
+msgid "You have won a new business"
+msgstr ""
+
+#: client/app/request/request.controller.js:198
+msgid "You lost"
+msgstr ""
+
+#: client/app/main/faq.html:316
+msgid "You may dispute reviews only if they are obscene, abusive, or fraudulent - even so after our verification."
+msgstr ""
+
+#: client/app/request/request.controller.js:196
+msgid "You selected a quote"
+msgstr ""
+
+#: client/app/request/request.controller.js:206
+msgid "You sent a quote"
+msgstr ""
+
+#: client/app/account/pwdreset/pwdreset.html:11
+msgid "You succesfully changed your password."
+msgstr ""
+
+#: client/app/quote/quotedetail.html:4
+msgid "You successfully sent your quote. Now, persuade customer to choose you."
+msgstr ""
+
+#: client/app/main/howitworks.html:59
+msgid "You will be contacted by Posluga.ua via SMS or email within 24 hours if a service provider that matches your criteria gives you a price quote. If you want, they can also call you to arrange a time to visit and review the work that needs doing. Our providers commit to contacting consumers within 24 hours of accepting a job."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1883
+msgid "You will be receiving notifications about price quotes with email and SMS in 24 hours. You can review these quotes in your account page and you can choose the one you prefer."
+msgstr ""
+
+#: client/app/quote/quote.controller.js:633
+msgid "You will earn"
+msgstr ""
+
+#: client/app/request/request.controller.js:193
+msgid "You won"
+msgstr ""
+
+#: client/app/quote/_commentbox.html:18
+msgid "You've got service from"
+msgstr ""
+
+#: client/app/places/_whyposluga.html:1
+msgid "Your Benefits"
+msgstr ""
+
+#: client/app/request/request_form.html:107
+msgid "Your Budget?"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1847
+msgid "Your Login Details"
+msgstr ""
+
+#: client/app/quote/_commentbox.html:40
+msgid "Your comments about the service you got"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:2023
+msgid "Your customer"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1948
+msgid "Your customers and the number of job opportunities we send to you will increase as you get 5 star customer reviews. To get more business, do your job best and ask your customers to give you 5 star reviews."
+msgstr ""
+
+#: client/app/request/request_form.html:227
+msgid "Your email?"
+msgstr ""
+
+#: client/app/quote/viewquotes.html:53
+msgid "Your firstname"
+msgstr ""
+
+#: client/app/quote/viewquotes.html:62
+msgid "Your lastname"
+msgstr ""
+
+#: client/app/request/request_form.html:182
+msgid "Your mobile phone?"
+msgstr ""
+
+#: client/app/quote/quote.controller.js:263
+msgid "Your profile is complete. Give quotes and win them to increase your priority."
+msgstr ""
+
+#: client/app/request/_admindetailbox.html:175
+#: client/app/request/_detailbox.html:224
+msgid "Your request will be cancelled, can we learn why you want to cancel it?"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1834
+msgid "Your review helps other consumers and rewards the service providers who has done a good work."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1999
+msgid "Your service provider"
+msgstr ""
+
+#: client/app/quote/_detailbox.html:27
+msgid "Yours:"
+msgstr ""
+
+#: client/app/main/faq.html:169
+msgid "You’re probably missing out on our emails because your email service has blocked our emails as spam.  Try adding noreply@posluga.ua to your contact list of your email provider/software."
+msgstr ""
+
+#: client/app/request/request.controller.js:761
+msgid "a user with this email exists but his phone is not the provided one. Ask client to provide you correct phone. The phone should be:"
+msgstr ""
+
+#: client/app/request/request.controller.js:758
+msgid "a user with this phone exists but his email is not the provided one. Ask client to provide you correct email. The email should be:"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1890
+msgid "about"
+msgstr ""
+
+#: client/app/account/signup/_form.html:70
+#: client/app/provider/profile.html:320
+#: client/app/request/request_form.html:242
+msgid "and"
+msgstr ""
+
+#: client/app/request/request.controller.js:460
+msgid "and 4 similar service providers"
+msgstr ""
+
+#: client/app/main/main.html:406
+msgid "cities and rayons"
+msgstr ""
+
+#: client/app/provider/_profilebox.html:70
+#: client/app/quote/_wrapper.html:116
+msgid "clients were happy"
+msgstr ""
+
+#: client/app/provider/profile.html:39
+msgid "company name or brand"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1989
+msgid "confirm that you have completed the service - so we will send a notification to customer to write a review."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1901
+msgid "created a request. Please login to your admin account to review it."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1902
+msgid "customer created a request"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:2020
+msgid "customer created a request, login your account to check it."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1887
+msgid "customer selected a quote for request"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1961
+msgid "decide with the quote owner about the details of the work to be done."
+msgstr ""
+
+#: client/app/provider/provider.html:302
+msgid "doesn't have documents yet"
+msgstr ""
+
+#: client/app/provider/provider.html:170
+msgid "doesn't have photos yet"
+msgstr ""
+
+#: client/app/provider/provider.html:210
+msgid "doesn't have reviews yet"
+msgstr ""
+
+#: client/app/provider/profile.html:277
+msgid "e.g. Licence of authorization"
+msgstr ""
+
+#: client/app/admin/preprovider.html:125
+#: client/app/admin/preprovider.html:241
+msgid "email exists for another preprovider"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:81
+msgid "enter address"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:83
+msgid "enter firstname"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:85
+msgid "enter lastname"
+msgstr ""
+
+#: client/app/main/_getquotes.html:10
+#: client/app/main/main.html:25
+#: client/app/request/request_form.html:9
+msgid "ex: house cleaning, carpenter, electrician"
+msgstr ""
+
+#: client/app/provider/profile.html:47
+msgid "firstname"
+msgstr ""
+
+#: client/app/provider/provider.controller.js:99
+msgid "for example:"
+msgstr ""
+
+#: client/app/provider/profile.html:131
+msgid "house cleaning"
+msgstr ""
+
+#: client/app/main/main.html:399
+msgid "in"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:2032
+msgid "is the code to complete your verification on Posluga.ua"
+msgstr ""
+
+#: client/app/provider/profile.html:50
+msgid "lastname"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:2000
+msgid "notified us that they have completed providing your"
+msgstr ""
+
+#: client/app/request/_listitem.html:36
+msgid "on"
+msgstr ""
+
+#: client/app/admin/preprovider.html:98
+msgid "phone exists for another preprovider"
+msgstr ""
+
+#: client/app/places/katalog.html:49
+#: client/app/places/katalog.html:70
+#: client/app/places/katalog.html:91
+msgid "places we operate"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:698
+msgid "please enter at least website,company,phone1 and address"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1327
+msgid "please fill company name"
+msgstr ""
+
+#: client/app/places/places.controller.js:280
+msgid "price quotes and compare."
+msgstr ""
+
+#: client/app/account/signup/_form.html:73
+#: client/app/provider/profile.html:323
+#: client/app/request/request_form.html:245
+msgid "privacy policy"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1942
+msgid "profile. As we find eligible customers and business opportunities, we will send you SMS and emails. New customers will come to your feet."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1827
+msgid "quotes for your"
+msgstr ""
+
+#: client/app/quote/viewquotes.html:12
+msgid "quotes for your request and they are valid until"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1981
+msgid "request"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1985
+msgid "request you have quoted."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1828
+#: client/app/admin/admin.controller.js:1959
+msgid "request."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1860
+msgid "request. If you have any questions, send message to the quoter."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1908
+msgid "request. When this request reaches maximum quote count it will be closed for new quotes. If you are interested, give a quote now."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1874
+msgid "request. You will be receiving price quotes as soon as possible."
+msgstr ""
+
+#: client/app/main/main.html:417
+msgid "requests"
+msgstr ""
+
+#: client/app/quote/_wrapper.html:208
+msgid "requests,"
+msgstr ""
+
+#: client/app/provider/_profilebox.html:51
+#: client/app/provider/provider.html:22
+#: client/app/quote/_wrapper.html:195
+#: client/app/quote/_wrapper.html:97
+msgid "reviews"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1831
+msgid "select that quote and make an appointment."
+msgstr ""
+
+#: client/app/admin/admin.controller.js:2015
+msgid "sent a quote for request"
+msgstr ""
+
+#: client/app/quote/quotesuccess.html:11
+msgid "service has been made."
+msgstr ""
+
+#: client/app/main/main.html:395
+msgid "service providers are ready for you"
+msgstr ""
+
+#: client/app/quote/_commentbox.html:9
+msgid "service you've got?"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:2001
+#: client/app/quote/_wrapper.html:26
+msgid "service."
+msgstr ""
+
+#: client/app/places/katalog.html:126
+#: client/app/places/katalog.html:144
+#: client/app/places/katalog.html:161
+#: client/app/places/katalog.html:178
+msgid "services we provide"
+msgstr ""
+
+#: client/app/provider/provider.html:277
+msgid "stars"
+msgstr ""
+
+#: client/app/provider/_profilebox.html:64
+#: client/app/quote/_wrapper.html:110
+msgid "tasks completed,"
+msgstr ""
+
+#: client/app/account/signup/_form.html:67
+#: client/app/provider/profile.html:317
+#: client/app/request/request_form.html:239
+msgid "terms of use"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1891
+msgid "the customer"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:1123
+#: client/app/admin/admin.controller.js:574
+#: client/app/admin/admin.controller.js:591
+#: client/app/admin/admin.controller.js:987
+msgid "there are duplicate services, plese check the information you entered"
+msgstr ""
+
+#: client/app/quote/_wrapper.html:214
+msgid "times were happy"
+msgstr ""
+
+#: client/app/quote/givequote.html:167
+#: client/app/quote/viewquotes.html:42
+msgid "user agreement."
+msgstr ""
+
+#: client/app/admin/preprovider.html:122
+msgid "user exists in the system, you cannot save with this email"
+msgstr ""
+
+#: client/app/main/main.html:410
+msgid "we received"
+msgstr ""
+
+#: client/app/admin/preprovider.html:50
+msgid "website exists for another preprovider"
+msgstr ""
+
+#: client/app/quote/quotedetail.html:49
+msgid "will be added to your account balance and we will update this request and your winning ratio."
+msgstr ""
+
+#: client/app/quote/_wrapper.html:19
+msgid "will provide your"
+msgstr ""
+
+#: client/app/admin/admin.controller.js:2024
+msgid "wrote a review for your"
+msgstr ""
+
+#: client/app/provider/profile.html:123
+msgid "your address"
+msgstr ""
+
+#: client/app/provider/_ranking.html:11
+msgid "your priority among other providers"
+msgstr ""
+
+#: client/components/footer/footer.html:11
+#: client/components/navbar/navbar.html:56
+msgid "отримай кращу цiну"
+msgstr ""

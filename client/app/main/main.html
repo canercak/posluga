@@ -1,0 +1,428 @@
+<main class="main bg--white" id="js-slideout-panel" ng-controller="MainCtrl">
+    <section class="pageboxpicture pageboxdesktop bgserviceimage relative pageboxmovie pageboxmovie--home" style="height: 500px;">
+        <div class="pageboxpr bg--opacity-25" id="js-pageboxpr">
+        </div>
+        <video autoplay="" id="js-video--desktop" loop="loop">
+            <source ng-src="/assets/images/landingvideo.mp4" type="video/mp4">
+            </source>
+        </video>
+        <div class="row">
+            <div class="home-header fittocenter" id="headertext">
+                <div class="large-12 columns">
+                    <h1 class="bigertext colorwhite navdesktopl">
+                        <span class="viewondesktop" translate="">
+                            Get Free Price Quotes For Services.
+                        </span>
+                        <span class="viewonmobile padbottomfixed" translate="">
+                            Get Free Price Quotes For Services.
+                        </span>
+                    </h1>
+                    <h2 class="loosetext colorwhite navdesktops helq mobiledisplaynone" translate="">
+                        Which service do you need? Who do you look for?
+                    </h2>
+                    <div class="navbarheadbox">
+                        <div class="large-10 columns hard--right hard--left--small" id="scrollable-dropdown-menu">
+                            <input class="forcemaintextbox navbarheadx whitebordering avenir" ng-model="searchtext" placeholder="{{'ex: house cleaning, carpenter, electrician' | translate}}" type="text" typeahead-min-length="1" typeahead-on-select="gotoRequest($item._id,$label)" typeahead-select-on-blur="false" typeahead-select-on-exact="false" uib-typeahead="s.subcategory | translateFilter:languageKey  for s in getSearchtext($viewValue)">
+                            </input>
+                        </div>
+                        <div class="large-2 columns hard--sides">
+                            <button class="navdesktopbutton button prefix" ng-click="gotoRequest('',searchtext)" translate="">
+                                Go
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fixpartbox pageboxtitletext padtopfixedbigger padbottomfixedsmaller">
+        <div class="row">
+            <div class="large-12 columns fittocenter padbottomfixed">
+                <h1 class="middletext" translate="">
+                    Gone are the days of ringing people for quotes!
+                </h1>
+            </div>
+        </div>
+        <div class="row" style="max-width: 70em">
+            <div class="large-12 columns">
+                <ul class="large-block-grid-3 fittocenter flush--sides">
+                    <li class="how-it-works__list-item">
+                        <img ng-src="/assets/images/how1.png" width="250">
+                            <h3 class="loosetext font--22 settobolder line-height--2em" style="margin-bottom: 4px;" translate="">
+                                1 - Tell Us What You Need
+                            </h3>
+                            <p class="flush--bottom" translate="">
+                                Need something painted, designed, cleaned, photographed, installed, repaired, removed or replaced? Just tell us. It's free.
+                            </p>
+                        </img>
+                    </li>
+                    <li class="how-it-works__list-item">
+                        <img ng-src="/assets/images/how2.png" width="250">
+                            <h3 class="loosetext font--22 settobolder line-height--2em" style="margin-bottom: 4px;" translate="">
+                                2 - Get Price Quotes
+                            </h3>
+                            <p class="flush--bottom" translate="">
+                                We'll connect you with available businesses in your neighborhood and they'll email and text you their best prices.
+                            </p>
+                        </img>
+                    </li>
+                    <li class="how-it-works__list-item">
+                        <img ng-src="/assets/images/how3.png" width="250">
+                            <h3 class="loosetext font--22 settobolder line-height--2em" style="margin-bottom: 4px;" translate="">
+                                3 - Hire The Right Business
+                            </h3>
+                            <p class="flush--bottom" translate="">
+                                When you're ready, choose the best business for you. We check every business according to our strict criteria.
+                            </p>
+                        </img>
+                    </li>
+                </ul>
+            </div>
+            <div class="large-12 columns fittocenter">
+                <a class="small transparent button" translate="" ui-sref="howitworks">
+                    Learn More On How It Works
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="bg--normalorange pageboxtitletext padtopfixedbigger padbottomfixedsmaller fittocenter">
+        <div class="row">
+            <div class="small-10 small-centered large-12 columns">
+                <h2 class="middletext colorwhite padbottomfixed" translate="">
+                    See what happy consumers saying
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="bubble mt40">
+                        <div back-img="{{comments[0].picture}}" class="thumb img-thumbnail img-circle">
+                        </div>
+                        <h4 class="bold mb8">
+                            <span>
+                                {{comments[0].firstname}}, {{comments[0].place}}
+                            </span>
+                        </h4>
+                        <div class="fs16">
+                            <div class="pageboxstarsold pageboxstarsnew">
+                                <span class="png_bg full_star star">
+                                </span>
+                                <span class="png_bg full_star star">
+                                </span>
+                                <span class="png_bg full_star star">
+                                </span>
+                                <span class="png_bg full_star star">
+                                </span>
+                                <span class="png_bg full_star star">
+                                </span>
+                            </div>
+                            <span class="bold">
+                                {{comments[0].service}} -
+                            </span>
+                            <span>
+                                {{comments[0].price}} грн. -
+                            </span>
+                            <span>
+                                {{comments[0].leftAt | amDateFormat:'DD.MM.YYYY'}}
+                            </span>
+                        </div>
+                        <hr>
+                            <p class="comments">
+                                {{comments[0].message}}
+                            </p>
+                        </hr>
+                    </div>
+                </div>
+                <div class="col-sm-6 mb10">
+                    <div class="bubble mt40">
+                        <div back-img="{{comments[1].picture}}" class="thumb img-thumbnail img-circle">
+                        </div>
+                        <h4 class="bold mb8">
+                            <span>
+                                {{comments[1].firstname}}, {{comments[1].place}}
+                            </span>
+                        </h4>
+                        <div class="fs16">
+                            <div class="pageboxstarsold pageboxstarsnew">
+                                <span class="png_bg full_star star">
+                                </span>
+                                <span class="png_bg full_star star">
+                                </span>
+                                <span class="png_bg full_star star">
+                                </span>
+                                <span class="png_bg full_star star">
+                                </span>
+                                <span class="png_bg full_star star">
+                                </span>
+                            </div>
+                            <span class="bold">
+                                {{comments[1].service}} -
+                            </span>
+                            <span>
+                                {{comments[1].price}} грн. -
+                            </span>
+                            <span>
+                                {{comments[1].leftAt | amDateFormat:'DD.MM.YYYY'}}
+                            </span>
+                        </div>
+                        <hr>
+                            <p class="comments">
+                                {{comments[1].message}}
+                            </p>
+                        </hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 mb20">
+                    <div class="bubble mt40">
+                        <div back-img="{{comments[2].picture}}" class="thumb img-thumbnail img-circle">
+                        </div>
+                        <h4 class="bold mb8">
+                            <span>
+                                {{comments[2].firstname}}, {{comments[2].place}}
+                            </span>
+                        </h4>
+                        <div class="fs16">
+                            <div class="pageboxstarsold pageboxstarsnew">
+                                <span class="png_bg full_star star">
+                                </span>
+                                <span class="png_bg full_star star">
+                                </span>
+                                <span class="png_bg full_star star">
+                                </span>
+                                <span class="png_bg full_star star">
+                                </span>
+                                <span class="png_bg full_star star">
+                                </span>
+                            </div>
+                            <span class="bold">
+                                {{comments[2].service}} -
+                            </span>
+                            <span>
+                                {{comments[2].price}} грн. -
+                            </span>
+                            <span>
+                                {{comments[2].leftAt | amDateFormat:'DD.MM.YYYY'}}
+                            </span>
+                        </div>
+                        <hr>
+                            <p class="comments">
+                                {{comments[2].message}}
+                            </p>
+                        </hr>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="bubble mt40">
+                        <div back-img="{{comments[3].picture}}" class="thumb img-thumbnail img-circle">
+                        </div>
+                        <h4 class="bold mb8">
+                            <span>
+                                {{comments[3].firstname}}, {{comments[3].place}}
+                            </span>
+                        </h4>
+                        <div class="fs16">
+                            <div class="pageboxstarsold pageboxstarsnew">
+                                <span class="png_bg full_star star">
+                                </span>
+                                <span class="png_bg full_star star">
+                                </span>
+                                <span class="png_bg full_star star">
+                                </span>
+                                <span class="png_bg full_star star">
+                                </span>
+                                <span class="png_bg full_star star">
+                                </span>
+                            </div>
+                            <span class="bold">
+                                {{comments[3].service}} -
+                            </span>
+                            <span>
+                                {{comments[3].price}} грн. -
+                            </span>
+                            <span>
+                                {{comments[3].leftAt | amDateFormat:'DD.MM.YYYY'}}
+                            </span>
+                        </div>
+                        <hr>
+                            <p class="comments">
+                                {{comments[3].message}}
+                            </p>
+                        </hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-12 columns">
+                    <a class="small transparent button" translate="" ui-sref="testimonials">
+                        See More Testimonials
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg--babyblue pageboxtitletext padtopfixedbigger padbottomfixedsmaller fittocenter">
+        <div class="row">
+            <div class="large-12 columns fittocenter padbottomfixed">
+                <h2 class="middletext colorwhite padbottomfixed" translate="">
+                    Over 950 Services Available
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-12 columns category-listing__row">
+                <div class="list">
+                    <div class="container-fluid">
+                        <div class="row text-center hidden-xs">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="row">
+                                    <div class="col-sm-4 mb30" ng-repeat="i in [0,1,2]">
+                                        <img alt="calendar and heart icon" height="100" id="imagelogo3" ng-src="{{serviceswithicons[i].iconpath}}" ng-srcset="{{serviceswithicons[i].iconpath}}" width="100">
+                                        </img>
+                                        <a class="mainpagelink" rel="nofollow" ui-sref="request({type: 'new', serviceid: serviceswithicons[i]._id})">
+                                            {{serviceswithicons[i].subcategory | translateFilter:languageKey }}
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="row">
+                                    <div class="col-sm-4 mb30" ng-repeat="i in [3,4,5]">
+                                        <img alt="calendar and heart icon" height="100" id="imagelogo3" ng-src="{{serviceswithicons[i].iconpath}}" ng-srcset="{{serviceswithicons[i].iconpath}}" width="100">
+                                        </img>
+                                        <a class="mainpagelink" rel="nofollow" ui-sref="request({type: 'new', serviceid: serviceswithicons[i]._id})">
+                                            {{serviceswithicons[i].subcategory | translateFilter:languageKey }}
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row text-center hidden-xs">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="row">
+                                    <div class="col-sm-4 mb30" ng-repeat="i in [6,7,8]">
+                                        <img alt="calendar and heart icon" height="100" id="imagelogo3" ng-src="{{serviceswithicons[i].iconpath}}" ng-srcset="{{serviceswithicons[i].iconpath}}" width="100">
+                                        </img>
+                                        <a class="mainpagelink" rel="nofollow" ui-sref="request({type: 'new', serviceid: serviceswithicons[i]._id})">
+                                            {{serviceswithicons[i].subcategory | translateFilter:languageKey }}
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="row">
+                                    <div class="col-sm-4 mb30" ng-repeat="i in [9,10,11]">
+                                        <img alt="calendar and heart icon" height="100" id="imagelogo3" ng-src="{{serviceswithicons[i].iconpath}}" ng-srcset="{{serviceswithicons[i].iconpath}}" width="100">
+                                        </img>
+                                        <a class="mainpagelink" rel="nofollow" ui-sref="request({type: 'new', serviceid: serviceswithicons[i]._id})">
+                                            {{serviceswithicons[i].subcategory | translateFilter:languageKey }}
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row text-center hidden-xs">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="row">
+                                    <div class="col-sm-4 mb30" ng-repeat="i in [12,13,14]">
+                                        <img alt="calendar and heart icon" height="100" id="imagelogo3" ng-src="{{serviceswithicons[i].iconpath}}" ng-srcset="{{serviceswithicons[i].iconpath}}" width="100">
+                                        </img>
+                                        <a class="mainpagelink" rel="nofollow" ui-sref="request({type: 'new', serviceid: serviceswithicons[i]._id})">
+                                            {{serviceswithicons[i].subcategory | translateFilter:languageKey }}
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="row">
+                                    <div class="col-sm-4 mb30" ng-repeat="i in [15,16,17]">
+                                        <img alt="calendar and heart icon" height="100" id="imagelogo3" ng-src="{{serviceswithicons[i].iconpath}}" ng-srcset="{{serviceswithicons[i].iconpath}}" width="100">
+                                        </img>
+                                        <a class="mainpagelink" rel="nofollow" ui-sref="request({type: 'new', serviceid: serviceswithicons[i]._id})">
+                                            {{serviceswithicons[i].subcategory | translateFilter:languageKey }}
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row text-center hidden-xs">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="row">
+                                    <div class="col-sm-4 mb30" ng-repeat="i in [18,19,20]">
+                                        <img alt="calendar and heart icon" height="100" id="imagelogo3" ng-src="{{serviceswithicons[i].iconpath}}" ng-srcset="{{serviceswithicons[i].iconpath}}" width="100">
+                                        </img>
+                                        <a class="mainpagelink" rel="nofollow" ui-sref="request({type: 'new', serviceid: serviceswithicons[i]._id})">
+                                            {{serviceswithicons[i].subcategory | translateFilter:languageKey }}
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="row">
+                                    <div class="col-sm-4 mb30" ng-repeat="i in [21,22,23]">
+                                        <img alt="calendar and heart icon" height="100" id="imagelogo3" ng-src="{{serviceswithicons[i].iconpath}}" ng-srcset="{{serviceswithicons[i].iconpath}}" width="100">
+                                        </img>
+                                        <a class="mainpagelink" rel="nofollow" ui-sref="request({type: 'new', serviceid: serviceswithicons[i]._id})">
+                                            {{serviceswithicons[i].subcategory | translateFilter:languageKey }}
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-12 columns">
+                        <a class="small transparent button" translate="" ui-sref="allservices">
+                            See All Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<section class="bg--blue pageboxtitletext fittocenter">
+    <div class="row padtopfixedbigger padbottomfixedsmaller">
+        <div class="large-12 columns">
+            <h2 class="middletext padbottonfixedsmaller colorwhite" translate="">
+                We are all over Ukraine
+            </h2>
+            <h2 class="bigertext helq font--36 padbottonfixedsmaller" style="line-height: 34px;">
+                <span>
+                    23861
+                </span>
+                <span translate="">
+                    service providers are ready for you
+                </span>
+            </h2>
+            <div class="font--18 avenir weight--bold letter-spacing--1 text--uppercase padbottonfixedsmaller" style="color: rgba(0, 0, 0, 0.3);" translate="">
+                in
+            </div>
+            <h2 class="bigertext helq font--36 padbottonfixedsmaller" style="line-height: 34px;">
+                <span>
+                    14480
+                </span>
+                <span translate="">
+                    cities and rayons
+                </span>
+            </h2>
+            <div class="font--18 avenir weight--bold letter-spacing--1 text--uppercase padbottonfixedsmaller" style="color: rgba(0, 0, 0, 0.3);" translate="">
+                we received
+            </div>
+            <h2 class="bigertext helq font--36 padbottomfixed" style="line-height: 34px;">
+                <span>
+                    3738
+                </span>
+                <span translate="">
+                    requests
+                </span>
+            </h2>
+            <div class="large-12 columns">
+                <a class="small transparent button" translate="" ui-sref="katalog">
+                    See All Cities
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

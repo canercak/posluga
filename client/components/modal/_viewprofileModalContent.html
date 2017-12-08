@@ -1,0 +1,43 @@
+<script id="viewprofileModalContent.html" type="text/ng-template">
+    <h3 class="pageboxpart__heading compressed white22 pageboxredoverall pageboxtitletext fittocenter" translate="">
+    Select how many price quotes you want
+</h3>
+<div class="pageboxpart__inner-border">
+    <div class="soft">
+        <div class="row">
+            <div class="modal-body">
+                <div class="row fittocenter">
+                    <div class="col-md-6">
+                        <a class="bttn button orange" style="width: 220px; padding: 12px; margin: 0;" translate="" ui-sref="request({type:'newmultiple', providername: providername, serviceid: provider.service._id, providerid: provider._id})">
+                            Get 5 Price Quotes
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="bttn button" style="width: 220px; padding: 12px; margin: 0;" translate="" ui-sref="request({type:'newone', providername: providername,  serviceid: provider.service._id, providerid: provider._id})">
+                            Get 1 Price Quote
+                        </a>
+                    </div>
+                </div>
+                <div class="row fittocenter">
+                    <div class="col-md-6 wrapper16 padtop5">
+                        <span  translate="">
+                            Get quote from
+                        </span> 
+                        <span class="settobolder"> {{providername}}</span>
+                         <span>and</span>
+                        <span class="settobolder" translate="">4 others</span>
+                       
+                        
+                    </div>
+                    <div class="col-md-6 wrapper16 padtop5">
+                        <span   translate="">
+                            Just get a single price quote from
+                        </span> 
+                        <span class="settobolder"> {{providername}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</script>

@@ -1,0 +1,385 @@
+<section class="pageboxlayout">
+    <section class="row">
+        <div class="large-10 columns">
+            <div class="pageboxpart padbottomfixed margin2xtop--small">
+                <h1 class="pageboxpart__heading white24 helq pageboxredoverall pageboxtitletext" ng-hide="switchupdateprovider" translate="">
+                    Create your profile page
+                </h1>
+                <h1 class="pageboxpart__heading white24 helq pageboxredoverall pageboxtitletext" ng-show="switchupdateprovider" translate="">
+                    Edit your profile page
+                </h1>
+                <div class="pageboxpart__inner-border">
+                    <div class="soft">
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <form autocomplete="off" class="form-horizontal" ng-controller="ProviderCtrl" ng-submit="switchupdateprovider === false ? addProvider() : updateProvider()" novalidate="novalidate" role="form">
+                                            <div class="form-group">
+                                                <label class="col-lg-3 control-label" translate="">
+                                                    Company / Person
+                                                </label>
+                                                <div class="col-lg-9 padbottom20">
+                                                    <ui-select ng-model="provider.businesstype" on-select="setCompany($item)" register-custom-form-control="" required="" theme="bootstrap">
+                                                        <ui-select-match class="ui-select-match" placeholder="{{'Select' | translate}}">
+                                                            {{$select.selected.name}}
+                                                        </ui-select-match>
+                                                        <ui-select-choices class="ui-select-choices" repeat="t in businessTypes | filter: $select.search">
+                                                            <span ng-bind-html="t.name | highlight: $select.search">
+                                                            </span>
+                                                        </ui-select-choices>
+                                                    </ui-select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group" ng-show="showCompany">
+                                                <label class="col-lg-3 control-label" translate="">
+                                                    Company Name
+                                                </label>
+                                                <div class="col-lg-9">
+                                                    <input class="forcetext form-control" ng-model="provider.company" ng-required="showCompany" placeholder="{{'company name or brand' | translate}}" type="text"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group" ng-show="!showCompany">
+                                                <label class="col-lg-3 control-label" translate="">
+                                                    Full Name
+                                                </label>
+                                                <div class="col-lg-4">
+                                                    <input class="forcetext form-control" ng-model="provider.firstname" ng-required="!showCompany" placeholder="{{'firstname' | translate}}" type="text"/>
+                                                </div>
+                                                <div class="col-lg-5">
+                                                    <input class="forcetext form-control" ng-model="provider.lastname" ng-required="!showCompany" placeholder="{{'lastname' | translate}}" type="text"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-lg-3 control-label" translate="">
+                                                    Mobile Phone
+                                                </label>
+                                                <div class="col-lg-9">
+                                                    <input class="forcetext form-control" mask="(999) 999-9999" mask-clean="true" mask-restrict="reject" mask-validate="false" ng-model="provider.phone" ng-model-options="{updateOn: 'blur'}" placeholder="(5__) ___-____" required="" type="text"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-lg-3 control-label" translate="">
+                                                    Website
+                                                </label>
+                                                <div class="col-lg-9">
+                                                    <input class="forcetext form-control" ng-model="provider.website" type="text"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-lg-3 control-label" translate="">
+                                                    Location
+                                                </label>
+                                                <div class="col-sm-3" style="padding-right:1px !important; padding-bottom:1px !important; padding-left:15px !important">
+                                                    <ui-select ng-model="provider.oblast" on-select="getOblastRayons($item)" register-custom-form-control="" required="" theme="bootstrap">
+                                                        <ui-select-match class="ab ui-select-match" placeholder="{{'Please Select' | translate}}">
+                                                            {{$select.selected | itemlangFilter:languageKey}}
+                                                        </ui-select-match>
+                                                        <ui-select-choices class="ab ui-select-choices" repeat="p in oblastOptions | filter: $select.search">
+                                                            <span ng-bind-html="p  | itemlangFilter:languageKey | highlight: $select.search ">
+                                                            </span>
+                                                        </ui-select-choices>
+                                                    </ui-select>
+                                                </div>
+                                                <div class="col-sm-3" style="padding-right:1px !important; padding-bottom:1px !important; padding-left:15px !important">
+                                                    <ui-select ng-disabled="enableRayon===false" ng-model="provider.rayon" on-select="getRayonGorads($item)" register-custom-form-control="" required="" theme="bootstrap">
+                                                        <ui-select-match class="ab ui-select-match" placeholder="{{'Please Select' | translate}}">
+                                                            {{$select.selected  | itemlangFilter:languageKey}}
+                                                        </ui-select-match>
+                                                        <ui-select-choices class="ab ui-select-choices" repeat="d in rayonOptions | filter: $select.search">
+                                                            <span ng-bind-html="d | itemlangFilter:languageKey | highlight: $select.search">
+                                                            </span>
+                                                        </ui-select-choices>
+                                                    </ui-select>
+                                                </div>
+                                                <div class="col-sm-3" ng-show="showGorad" style="padding-right:1px !important; padding-bottom:1px !important; padding-left:15px !important">
+                                                    <ui-select ng-disabled="enableGorad===false" ng-model="provider.gorad" on-select="getRayongoradGorads($item)" register-custom-form-control="" theme="bootstrap">
+                                                        <ui-select-match class="ab ui-select-match" placeholder="{{'Please Select' | translate}}">
+                                                            {{$select.selected  | itemlangFilter:languageKey}}
+                                                        </ui-select-match>
+                                                        <ui-select-choices class="ab ui-select-choices" repeat="n in goradOptions | filter: $select.search">
+                                                            <span ng-bind-html="n   | itemlangFilter:languageKey | highlight: $select.search">
+                                                            </span>
+                                                        </ui-select-choices>
+                                                    </ui-select>
+                                                </div>
+                                                <div class="col-sm-3" ng-show="showRayonGorad" style="float:right;padding-right:1px !important; padding-bottom:1px !important; padding-left:15px !important">
+                                                    <ui-select ng-disabled="enableRayonGorad===false" ng-model="provider.rayongorad" register-custom-form-control="" theme="bootstrap">
+                                                        <ui-select-match class="ab ui-select-match" placeholder="{{'Please Select' | translate}}">
+                                                            {{$select.selected | itemlangFilter:languageKey}}
+                                                        </ui-select-match>
+                                                        <ui-select-choices class="ab ui-select-choices" repeat="rg in rayongoradOptions | filter: $select.search">
+                                                            <span ng-bind-html="rg | itemlangFilter:languageKey  | highlight: $select.search ">
+                                                            </span>
+                                                        </ui-select-choices>
+                                                    </ui-select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-lg-3 control-label" translate="">
+                                                    Address
+                                                </label>
+                                                <div class="col-lg-9">
+                                                    <input class="forcetext form-control" ng-model="provider.address" placeholder="{{'your address' | translate}}" required="" type="text"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-lg-3 col-md-12 control-label" for="type" translate="">
+                                                    Service you will provide
+                                                </label>
+                                                <div class="col-lg-7 col-md-8">
+                                                    <input class="forcetext form-control" id="searchtext" ng-hide="switchupdateprovider" ng-model="provider.searchtext" placeholder="{{'house cleaning' | translate}}" required="" type="text" typeahead-on-select="onTypeSelect($item)" typeahead-select-on-blur="false" typeahead-select-on-exact="false" uib-typeahead="s.subcat  for s in getSearchtext($viewValue)"/>
+                                                    <input class="forcetext form-control" id="searchtext32" ng-model="provider.searchtext" ng-readonly="true" ng-show="switchupdateprovider" type="text"/>
+                                                </div>
+                                                <div class="col-lg-2 col-md-4">
+                                                    <button class="btn btn-primary btn-xs" id="selectFromListButton" ng-click="openSelectListModal()" ng-hide="switchupdateprovider" translate="" type="button">
+                                                        Select from list
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="form-group" id="profile-description">
+                                                <label class="col-lg-3 control-label" translate="">
+                                                    Introduction
+                                                </label>
+                                                <div class="col-lg-9">
+                                                    <textarea class="heightauto marginbottom5" id="description" ng-maxlength="500" ng-model="provider.description" placeholder="{{'Explain your difference and experience. Write some of the important works you have done.'  | translate}}" required="" rows="6">
+                                                    </textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group" id="profile-photos">
+                                                <label class="col-lg-3 control-label" translate="">
+                                                    Promotion Photos:
+                                                </label>
+                                                <div class="col-sm-6 col-md-4 photo_column">
+                                                    <div class="thumbnail fittocenter">
+                                                        <div ng-show="provider.logo.location" style="display:inline-block;padding-right: 5px;color:blue">
+                                                            <div class="img-wrap">
+                                                                <span class="close" ng-really-click="deleteFile($index, 'logo')" ng-really-message="{{'Are you sure you want to delete a promotion photo?' | translate}}">
+                                                                    ×
+                                                                </span>
+                                                                <img height="64" rel="nofollow" src="{{provider.logo.location}}" width="64">
+                                                                </img>
+                                                            </div>
+                                                        </div>
+                                                        <img ng-hide="provider.logo" src="https://cdn4.iconfinder.com/data/icons/twitter-ui-set/128/Persone-128.png" width="64px">
+                                                            <div class="caption">
+                                                                <p translate="">
+                                                                    Photo or logo that will appear in your profile
+                                                                </p>
+                                                                <p>
+                                                                    <button accept="image/*" class="btn btn-primary" ngf-keep="false" ngf-max-size="5MB" ngf-multiple="false" ngf-select="onFileSelect($files, 'logo')" translate="">
+                                                                        Add Profile Photo
+                                                                    </button>
+                                                                </p>
+                                                            </div>
+                                                        </img>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-7 col-md-5 photo_column">
+                                                    <div class="thumbnail fittocenter">
+                                                        <div ng-repeat="f in provider.files" ng-show="provider.files.length > 0" style="display:inline-block;padding-right: 5px;color:blue">
+                                                            <div class="img-wrap">
+                                                                <span class="close" ng-really-click="deleteFile($index, 'file')" ng-really-message="{{'Are you sure you want to delete your profile photo?' | translate}}">
+                                                                    ×
+                                                                </span>
+                                                                <img height="64" src="{{f.location}}" width="64">
+                                                                </img>
+                                                            </div>
+                                                        </div>
+                                                        <img ng-hide="provider.files.length > 0" src="https://cdn4.iconfinder.com/data/icons/twitter-ui-set/128/Camera-128.png" width="64px">
+                                                            <div class="caption">
+                                                                <p translate="">
+                                                                    Select pictures about the services you provide.
+                                                                </p>
+                                                                <p>
+                                                                    <button accept="image/*" class="btn btn-primary" multiple="" ngf-keep="false" ngf-max-size="5MB" ngf-multiple="true" ngf-select="onFileSelect($files, 'pics')" translate="">
+                                                                        Add Service Photos
+                                                                    </button>
+                                                                </p>
+                                                            </div>
+                                                        </img>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group" id="ContentPlaceHolder1_divEstablished" ng-show="switchupdateprovider">
+                                                <label class="col-lg-3 control-label" translate="">
+                                                    Established on
+                                                </label>
+                                                <div class="col-lg-8">
+                                                    <ui-select ng-model="provider.established" theme="bootstrap">
+                                                        <ui-select-match class="ui-select-match" placeholder="{{'Select year' | translate}}">
+                                                            {{$select.selected.name}}
+                                                        </ui-select-match>
+                                                        <ui-select-choices class="ui-select-choices" repeat="y in years | filter: $select.search">
+                                                            <span ng-bind-html="y.name | highlight: $select.search">
+                                                            </span>
+                                                        </ui-select-choices>
+                                                    </ui-select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group" ng-show="switchupdateprovider">
+                                                <label class="col-lg-3 control-label" translate="">
+                                                    Official Documents
+                                                </label>
+                                                <div class="col-lg-8">
+                                                    <div class="soft--sides--large padtop10 font16set padleft10">
+                                                        <div class="row">
+                                                            <div ng-repeat="doc in provider.documents" ng-show="provider.documents.length > 0" style="display:inline-block;padding-right: 5px;color:blue">
+                                                                <div class="img-wrap">
+                                                                    <span class="close" ng-really-click="deleteDoc($index, 'file')" ng-really-message="{{'Are you sure you want to delete document?' | translate}}">
+                                                                        ×
+                                                                    </span>
+                                                                    <img height="64" src="{{doc.docfile}}" width="64">
+                                                                    </img>
+                                                                </div>
+                                                                <div style="width:64px">
+                                                                    <span>
+                                                                        {{doc.doctype.name}}
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                            <div class="row padbottom10">
+                                                                <div class="col-md-5" translate="">
+                                                                    Document Image
+                                                                </div>
+                                                                <div class="col-md-7">
+                                                                    <button accept="image/*" class="btn btn-primary btn-sm" ngf-keep="false" ngf-max-size="10MB" ngf-multiple="false" ngf-select="onDocFileSelect($files)" translate="">
+                                                                        Add Image
+                                                                    </button>
+                                                                    <span ng-if="selectedfile.length > 0">
+                                                                        {{selectedfile[0].name}}
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-5" translate="">
+                                                                    Document Type
+                                                                </div>
+                                                                <div class="col-md-7 padbottom10">
+                                                                    <ui-select ng-model="tmpdocument.doctype" theme="bootstrap">
+                                                                        <ui-select-match class="ui-select-match" placeholder="{{'Select type' | translate}}">
+                                                                            {{$select.selected.name}}
+                                                                        </ui-select-match>
+                                                                        <ui-select-choices class="ui-select-choices" repeat="d in documentTypes | filter: $select.search">
+                                                                            <span ng-bind-html="d.name | highlight: $select.search">
+                                                                            </span>
+                                                                        </ui-select-choices>
+                                                                    </ui-select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-5" translate="">
+                                                                    Document Name
+                                                                </div>
+                                                                <div class="col-md-7">
+                                                                    <input class="forcetext form-control marginbottom10" ng-model="tmpdocument.docname" placeholder="{{'e.g. Licence of authorization' | translate}}" type="text">
+                                                                    </input>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-5" translate="">
+                                                                    Document Number
+                                                                </div>
+                                                                <div class="col-md-7">
+                                                                    <input class="forcetext form-control marginbottom10" ng-model="tmpdocument.docnumber" placeholder="{{'Document or certificate number' | translate}}" type="text">
+                                                                    </input>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-5" translate="">
+                                                                    Document Date
+                                                                </div>
+                                                                <div class="col-md-7">
+                                                                    <input class="forcetext form-control marginbottom10" id="datetimepicker" ng-model="tmpdocument.docdate" placeholder="{{'Document Date' | translate}}" type="text">
+                                                                    </input>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row padleft10 fittocenter">
+                                                                <a class="btn btn-primary" ng-click="addDocument()" translate="">
+                                                                    Save Document
+                                                                </a>
+                                                            </div>
+                                                        </hr>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-lg-3 control-label" translate="">
+                                                    User Aggreement
+                                                </label>
+                                                <div class="col-lg-9 wrapper18 padtop5">
+                                                    <input class="termscheck" id="termsaccept" ng-model="provider.termsaccepted" required="" type="checkbox"/>
+                                                    <span translate="">
+                                                        I accept
+                                                    </span>
+                                                    <a target="_blank" translate="" ui-sref="terms">
+                                                        terms of use
+                                                    </a>
+                                                    <span translate="">
+                                                        and
+                                                    </span>
+                                                    <a target="_blank" translate="" ui-sref="privacy">
+                                                        privacy policy
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-lg-12" style="text-align: center">
+                                                    <button class="button blue marginxtop expand--small flush--bottom js-send-quote btn-block ladda-button" data-style="expand-right" ladda-button="laddaLoading" ng-hide="switchupdateprovider" translate="" type="submit">
+                                                        Submit
+                                                    </button>
+                                                    <button class="button blue marginxtop expand--small flush--bottom js-send-quote btn-block ladda-button" data-style="expand-right" ladda-button="laddaLoading" ng-show="switchupdateprovider" translate="" type="submit">
+                                                        Update
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="large-2 columns">
+            <div class="pageboxpart">
+                <div class="pageboxreviewbox">
+                    <div class="media padbottonfixedsmaller">
+                        <div class="pageboxmodalbox padbottomfixed padtop10" style="font-size:14px !important">
+                            <img alt="Google" class="img-responsive" src="https://res.cloudinary.com/demo/image/fetch/fl_png8/https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+                                <img alt="Yandex" class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Yandex_logo_ru.svg/2000px-Yandex_logo_ru.svg.png">
+                                    <div class="fittocenter--small helptextwithcheck2 padtop10 padbottom10">
+                                        <i class="fa fa-check colorcheckgreen">
+                                        </i>
+                                        <span translate="">
+                                            We ensure that your profile to appears on search engines (for free)
+                                        </span>
+                                    </div>
+                                    <div class="fittocenter--small helptextwithcheck2 padbottom10">
+                                        <i class="fa fa-check colorcheckgreen">
+                                        </i>
+                                        <span translate="">
+                                            We email and SMS you the business opportunities tailored to your profession (for free)
+                                        </span>
+                                    </div>
+                                    <div class="fittocenter--small helptextwithcheck2">
+                                        <i class="fa fa-check colorcheckgreen">
+                                        </i>
+                                        <span translate="">
+                                            This page will represent you in front of customers. Use nice photos and write a nice introduction to create a profile that will earn you new customers.
+                                        </span>
+                                    </div>
+                                </img>
+                            </img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<div ng-include="'components/modal/_categoryModalContent.html'">
+</div>

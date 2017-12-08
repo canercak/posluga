@@ -1,0 +1,68 @@
+<head>
+    <meta content="Я создал профиль на Posluga.ua" property="og:title"/>
+    <meta content="{{'https://posluga.ua/provider/' + provider.slug.latin.ru}}" property="og:url"/>
+    <meta content="https://posluga.ua/assets/images/poslugalogo.9fb38215.png" property="og:image"/>
+    <meta content="Я создал профиль на Posluga.ua" property="og:description"/>
+    <meta content="Posluga.ua" property="og:site_name"/>
+</head>
+<section class="pageboxlayout" ng-controller="ProviderCtrl">
+    <section class="row">
+        <div class="large-12 columns">
+            <div class="pageboxpart">
+                <h1 class="pageboxpart__heading white24 helq pageboxredoverall pageboxtitletext" translate="">
+                    Promote Your Profile
+                </h1>
+                <div class="pageboxpart__inner-border">
+                    <div class="soft">
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <h2 class="schematextfer helq padbottonfixedsmaller wrapper24" translate="">
+                                    Share your profile with your friends!
+                                </h2>
+                                <p class="wrapper18" translate="">
+                                    Share your profile or invite your friends to see your profile by clicking on social network buttons below. You can also send email to your friends by clicking on envelope button.
+                                </p>
+                                <div>
+                                    <share-buttons>
+                                        <div class="padtop10">
+                                            <span class="st_facebook_large" displaytext="Facebook" id="aaa">
+                                            </span>
+                                            <span class="st_googleplus_large" displaytext="Google +">
+                                            </span>
+                                            <span class="st_odnoklassniki_large" displaytext="Odnoklassniki">
+                                            </span>
+                                            <span class="st_mail_ru_large" displaytext="mail.ru">
+                                            </span>
+                                            <span class="st_whatsapp_large" displaytext="WhatsApp">
+                                            </span>
+                                            <span class="st_vkontakte_large" displaytext="Vkontakte">
+                                            </span>
+                                            <span class="st_twitter_large" displaytext="Tweet">
+                                            </span>
+                                            <span class="st_linkedin_large" displaytext="LinkedIn">
+                                            </span>
+                                            <span class="st_pinterest_large" displaytext="Pinterest">
+                                            </span>
+                                            <span class="st_email_large" displaytext="Email">
+                                            </span>
+                                        </div>
+                                    </share-buttons>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row padtop20">
+                            <div class="large-12 columns">
+                                <a class="button" ng-show="statetype==='new'" translate="" ui-sref="providers">
+                                    Continue
+                                </a>
+                                <a class="button" ng-show="statetype==='edit'" translate="" ui-sref="providers">
+                                    Go back
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

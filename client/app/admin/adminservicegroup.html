@@ -1,0 +1,72 @@
+<section class="pageboxlayout">
+    <section class="row">
+        <div class="large-12 columns">
+            <div class="pageboxpart padbottomfixed margin2xtop--small">
+                <h1 class="pageboxpart__heading white24 helq pageboxredoverall pageboxtitletext" translate="">
+                    Service Group
+                </h1>
+                <div class="pageboxpart__inner-border">
+                    <div class="soft">
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <form autocomplete="off" class="form-horizontal" ng-controller="AdminController" ng-submit="switchupdateservicegroup === false ? addAdminServiceGroup() : updateAdminServiceGroup()" novalidate="novalidate" role="form">
+                                            <div class="form-group">
+                                                <label class="col-lg-4" translate="">
+                                                    Name
+                                                </label>
+                                                <div class="col-lg-12">
+                                                    <input class="form-control" ng-model="servicegroup.name" required="" type="text"/>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading" translate="">
+                                                    Services
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div ng-repeat="service in servicegroup.services">
+                                                        <hr>
+                                                            <div class="form-group">
+                                                                <label class="col-lg-3 control-label" for="type" translate="">
+                                                                    Service
+                                                                </label>
+                                                                <div class="col-lg-6 col-md-8 drop">
+                                                                    <input class="forcetext form-control" id="service{{$index}}" name="serviceselect" ng-model="service.name" required="" type="text" typeahead-on-select="onTypeSelectGroup($item, $index)" typeahead-select-on-blur="false" typeahead-select-on-exact="false" uib-typeahead="s.subcat  for s in getSearchtext($viewValue)"/>
+                                                                </div>
+                                                            </div>
+                                                            <div style="float:right;padding-bottom:20px">
+                                                                <a class="btn btn-warning btn-danger" ng-click="removeServiceGroupService(service)" translate="">
+                                                                    Remove Service
+                                                                </a>
+                                                            </div>
+                                                        </hr>
+                                                    </div>
+                                                    <div style="padding-top:20px;padding-bottom:20px">
+                                                        <a class="btn btn-success" ng-click="addServiceGroupService()" translate="">
+                                                            Add Service
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-lg-12" style="text-align: center">
+                                                    <button class="button blue marginxtop expand--small flush--bottom js-send-quote btn-block" ng-hide="switchupdateservicegroup" translate="" type="submit">
+                                                        Save
+                                                    </button>
+                                                    <button class="button blue marginxtop expand--small flush--bottom js-send-quote btn-block" ng-show="switchupdateservicegroup" translate="" type="submit">
+                                                        Update
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

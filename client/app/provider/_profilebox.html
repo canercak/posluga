@@ -1,0 +1,128 @@
+<div class="pageboxpart__inner-border">
+    <div class="soft">
+        <div class="row">
+            <div class="large-12 columns">
+                <div class="media">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="profile-logo-container user-image-container xlarge fittocenter">
+                                <img class="padbottom5" height="150" ng-src="{{provider.logo.location}}" rel="nofollow" width="150">
+                                    <a class="tiny button" translate="" ui-sref="provider({slug:(provider.slug | providerSlugFilter:languageKey) })">
+                                        View Profile
+                                    </a>
+                                </img>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="pageboxmodalbox">
+                                <div class="fittocenter--small clearfix padbottom10">
+                                    <a target="_blank" ui-sref="provider({slug:(provider.slug | providerSlugFilter:languageKey) })">
+                                        <h2 class="font24set helq redpagebox float--left--large">
+                                            {{provider.businesstype.objectid=== 2 ? provider.company : (provider.firstname + ' ' + provider.lastname)}}
+                                        </h2>
+                                        <span class="font24set helq redpagebox float--left--large">
+                                            {{provider | placeFilterShort:languageKey}}
+                                        </span>
+                                    </a>
+                                </div>
+                                <p class="padbottomfixed twentyforpixelrgihtlarge">
+                                    <span class="tags">
+                                        {{provider.service.subcategory | translateFilter:languageKey}}
+                                    </span>
+                                    <span class="tags">
+                                        {{provider.stats.prices | statPriceFilter}}
+                                    </span>
+                                    <span class="tags">
+                                        <span translate="">
+                                            Member for
+                                        </span>
+                                        <span>
+                                            {{provider.createdAt | durationFilter:languageKey}}
+                                        </span>
+                                    </span>
+                                </p>
+                                <p class="padbottonfixedsmaller soft-right--right--large">
+                                    <a class="text--light-gray" target="_blank" ui-sref="provider({slug:(provider.slug | providerSlugFilter:languageKey) })">
+                                        <ng-rating based-on="5" editable="false" iconclass="fa fa-star" ng-model="provider.stats.scorefive" show-grade="false" stars-count="5">
+                                        </ng-rating>
+                                        <span>
+                                            ({{provider.stats.reviewcount}}
+                                        </span>
+                                        <span translate="">
+                                            reviews
+                                        </span>
+                                        <span>
+                                            )
+                                        </span>
+                                    </a>
+                                </p>
+                                <p class="padbottonfixedsmaller twentyforpixelrgihtlarge">
+                                    <a href="#">
+                                        <span class="left settobolder wrapper18">
+                                            {{provider.stats | statTextFilter}}
+                                        </span>
+                                        <span translate="">
+                                            tasks completed,
+                                        </span>
+                                        <span class="left settobolder wrapper18">
+                                            {{provider.stats | statTextFilter2}}
+                                        </span>
+                                        <span translate="">
+                                            clients were happy
+                                        </span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="soft--sides--large padtop20 font16set padleft10">
+                                <div class="row padbottom10 padtop10">
+                                    <div class="col-md-5" translate="">
+                                        Turnover
+                                    </div>
+                                    <div class="col-md-7 settobolder">
+                                        {{provider.stats.turnover | MonetaryUnitShort}}
+                                    </div>
+                                </div>
+                                <div class="row padbottom10 padtop10">
+                                    <div class="col-md-5" translate="">
+                                        Quotes Sent
+                                    </div>
+                                    <div class="col-md-7 settobolder">
+                                        {{provider.stats.quotecount}}
+                                    </div>
+                                </div>
+                                <div class="row padbottom10 padtop10">
+                                    <div class="col-md-5" translate="">
+                                        Quotes Won
+                                    </div>
+                                    <div class="col-md-7 settobolder">
+                                        {{provider.stats.quotewincount}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="profileright">
+                                <a class="tiny button marginbottom0" id="edit_provider" translate="" ui-sref="profile({providerid:provider._id, type: 'editfromproviders'})">
+                                    Edit Profile
+                                </a>
+                                <a class="tiny button marginbottom0" id="addlink_provider" translate="" ui-sref="addlink({providerid: provider._id, type: 'addlinkfromproviders'})">
+                                    Add Link
+                                </a>
+                                <a class="tiny button marginbottom0" id="promote_provider" translate="" ui-sref="pronounce({providerid: provider._id, type: 'edit'})">
+                                    Promote
+                                </a>
+                                <button class="tiny button marginbottom0" confirm="{{'Are you sure you want to delete this profile?' | translate}}" id="delete_provider" ng-click="deleteProvider(provider._id, $index)" translate="" type="button">
+                                    Delete
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

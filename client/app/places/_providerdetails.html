@@ -1,0 +1,40 @@
+<div class="pageboxpart padbottomfixed margin2xtop--small">
+    <table cellpadding="0" cellspacing="0" class="provider-list" style="width:100%;border-collapse:collapse;">
+        <tbody>
+            <tr ng-repeat="provider in providerlist">
+                <td>
+                    <div class="provider-company-list">
+                        <div class="provider-image-square">
+                            <div id="container1">
+                                <div class="image-container1">
+                                    <img ng-src="{{provider.logo.location}}" rel="nofollow"/>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="provider-title">
+                            <a target="_blank" ui-sref="provider({slug:(provider.slug | providerSlugFilter:languageKey) })">
+                                <span>
+                                    {{provider.company}}
+                                </span>
+                            </a>
+                        </h3>
+                        <div class="provider-service-and-location">
+                            {{service.subcategory| translateFilter:languageKey}} - {{provider | placeFilter:languageKey}}
+                        </div>
+                        <blockquote cite="{{provider.website}}" class="provider-description">
+                            <span>
+                                “{{ provider.description | characters:500  }}”
+                            </span>
+                            <p>
+                                —
+                                <a ng-href="{{provider.website}}" rel="nofollow" target="_blank">
+                                    {{provider.website}}
+                                </a>
+                            </p>
+                        </blockquote>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

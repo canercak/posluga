@@ -1,0 +1,185 @@
+ .pageboxpr {
+     position: absolute;
+     left: 0;
+     display: block;
+     width: 100%;
+     height: 100%;
+     background-image: url(/assets/images/video-overlay.png);
+     background-color: rgba(0, 0, 0, 0.30)!important;
+ }
+ /* .parentx {
+     width: 100px;
+ }
+ 
+ .imgx {
+     display: block;
+     width: 100% !important;
+     height: auto !important;
+ }*/
+ 
+ #container1 {
+     width: 120px;
+     height: 120px;
+     display: table;
+     background-color: #EBF4FA
+ }
+ /* #EBF4FA*/
+ 
+ #container1 .image-container1 {
+     text-align: center;
+     vertical-align: middle;
+     display: table-cell;
+ }
+ 
+ #container1 .image-container1 img {
+     max-width: 110px;
+     max-height: 110px;
+ }
+ 
+ .columns3x {
+     columns: 3;
+ }
+ 
+ .columns4x {
+     columns: 4;
+ }
+ 
+ .font20 {
+     font-size: 20px !important;
+ }
+ 
+ .column-15 {
+     display: inline;
+     float: left;
+     width: 590px;
+     margin: 0 5px;
+ }
+ 
+ .column-9 {
+     display: inline;
+     float: left;
+     width: 350px;
+     margin: 0 5px;
+ }
+ 
+ .wrapper.content {
+     margin: 20px auto;
+ }
+ 
+ .wrapperitalic {
+     font-size: 14px;
+     font-style: italic;
+ }
+ 
+ .provider-title {
+     color: #39c;
+ }
+ 
+ .wrapperbold {
+     color: #39c;
+     font-weight: 600;
+ }
+ 
+ .wrapper {
+     max-width: 960px;
+     margin: 0 auto;
+     position: relative;
+ }
+ 
+ .fa .nulleight {
+     font-size: 0.8em !important;
+ }
+ 
+ .toptentable {
+     width: 100%;
+     border-collapse: collapse;
+ }
+ 
+ .toptencomment {
+     background-color: #fff;
+     margin: 15px 0 0 0;
+     border: #ddd 1px solid !important;
+     border-color: #ccd6dd;
+     -webkit-border-radius: 5px !important;
+     -moz-border-radius: 5px !important;
+     border-radius: 5px !important;
+     padding: 12px;
+     text-align: left;
+ }
+ 
+ .provider-service-and-location {
+     padding-bottom: 5px !important;
+ }
+ 
+ .provider-company-list {
+     display: block;
+     padding-bottom: 30px;
+     min-height: 120px;
+ }
+ 
+ .provider-image-square {
+     float: left;
+     padding-right: 20px;
+     height: 120px;
+ }
+ 
+ .provider-image-details {
+     color: #fff !important;
+     background-image: url(/assets/images/imageback.png);
+     font-size: 14px;
+     width: 20px;
+     height: 20px;
+     z-index: 90;
+     text-align: center;
+     white-space: nowrap;
+     font-weight: bold;
+     text-decoration: none;
+     position: relative;
+     top: -120px
+ }
+ 
+ .user-image-container.xlarge {
+     height: 100px;
+     width: 100%;
+ }
+ /* 
+ .user-image-container {
+     overflow: hidden;
+ }*/
+ 
+ .flat-box {
+     padding: 12px 12px;
+     border: 1px solid #dcdcdc;
+     width: 100%;
+     display: block;
+     float: left;
+     font-weight: 600;
+     border-radius: 2px
+ }
+ 
+ .checkstyle {
+     font-size: 1.5em !important;
+     color: #87ba60;
+ }
+ 
+ .howstyle {
+     font-size: 1.2em !important;
+     color: orange;
+ }
+ 
+ .bw0 {
+     border-width: 0px;
+ }
+ 
+ .listcolor {
+     color: rgb(51, 51, 51);
+ }
+ 
+ .servicepagetable {
+     padding: 20px 0 0 0;
+     text-align: center;
+ }
+ 
+ div#vk_groups {
+     width: 100% !important;
+ }

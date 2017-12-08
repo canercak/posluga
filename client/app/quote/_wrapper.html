@@ -1,0 +1,291 @@
+<div class="pageboxpart padbottomfixed">
+    <h1 class="pageboxpart__heading helq white22 pageboxredoverall pageboxtitletext" ng-hide="state==='quotesuccess'">
+        <span translate="">
+            Quote
+        </span>
+        {{$index+1}}
+        <!-- -  {{quote.provider.businesstype.objectid=== 2 ? quote.provider.company : (quote.provider.firstname + ' ' + quote.provider.lastname)}} -->
+        <span class="float--right white14 weight-demi padtop10">
+            {{quote.updatedAt | amDateFormat:'D MMMM YYYY HH:mm'}}
+        </span>
+        <span class="float--right white14 fontweight200 padtop10" translate="">
+            Last Update:
+        </span>
+    </h1>
+    <h1 class="pageboxpart__heading helq white22 pageboxredoverall pageboxtitletext" ng-show="state==='quotesuccess'">
+        <span ng-show="!providersquote && customersrequest && state !== 'viewquotes'">
+            {{quote.provider.businesstype.objectid=== 2 ? quote.provider.company : (quote.provider.firstname + ' ' + quote.provider.lastname)}}
+        </span>
+        <span ng-show="!providersquote && customersrequest" translate="">
+            will provide your
+        </span>
+        <span ng-show="providersquote && !customersrequest" translate="">
+            You Won
+        </span>
+        {{ quote.request.service.subcategory | translateFilter:languageKey }}
+        <span translate="">
+            service.
+        </span>
+        <span class="float--right white14 fontweight200 padtop10">
+            : {{quote.sequence}}
+        </span>
+        <span class="float--right white14 fontweight200 padtop10" translate="">
+            Quote No
+        </span>
+    </h1>
+    <div class="pageboxpart__inner-border">
+        <div class="soft">
+            <div class="row">
+                <div class="large-12 columns">
+                    <div class="media">
+                        <div class="row" ng-show="!providersquote && customersrequest">
+                            <div class="col-md-2">
+                                <div class="profile-logo-container user-image-container xlarge fittocenter">
+                                    <img class="padbottom5" height="120" ng-src="{{quote.provider.logo.location}}" rel="nofollow" width="120">
+                                        <a class="tiny button padtop10" ng-show="quote.provider.stats.finishedcount > 0 && state !== 'viewquotes'" target="_blank" translate="" ui-sref="provider({slug:(quote.provider.slug | providerSlugFilter:languageKey) })">
+                                            View Profile
+                                        </a>
+                                    </img>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pageboxmodalbox">
+                                    <div class="fittocenter--small clearfix padbottom10">
+                                        <a target="_blank" ui-sref="provider({slug:(quote.provider.slug | providerSlugFilter:languageKey) })" ng-show="state !== 'viewquotes'">
+                                            <h2 class="font24set helq redpagebox float--left--large" >
+                                                <span>
+                                                    {{quote.provider.businesstype.objectid=== 2 ? quote.provider.company : (quote.provider.firstname + ' ' + quote.provider.lastname)}}
+                                                </span>
+                                            </h2>
+                                        </a>
+                                            <h2 class="font24set helq redpagebox float--left--large" ng-show="state === 'viewquotes'">
+                                                <span translate="">
+                                                    Company
+                                                </span>
+                                                {{$index+1}}
+                                            </h2>
+                                        
+                                    </div>
+                                    <p class="padbottomfixed twentyforpixelrgihtlarge" >
+                                        <span class="tags">
+                                            <span translate="">
+                                                Specialises in
+                                            </span>
+                                            <span>
+                                                {{quote.provider.service.subcategory | translateFilter:languageKey}}
+                                            </span>
+                                        </span>
+                                     <!--   <span class="tags" ng-show="quote.provider.stats.finishedcount > 0">
+                                            {{quote.provider.stats.prices | statPriceFilter}}
+                                        </span>  -->
+                                      <!--  <span class="tags" ng-show="quote.provider.stats.finishedcount > 0">
+                                            <span translate="">
+                                                Member for
+                                            </span>
+                                            <span>
+                                                {{quote.provider.createdAt | durationFilter:languageKey}}
+                                            </span>
+                                        </span>  -->
+                                    </p>
+                                    <p class="padbottonfixedsmaller seventytwopixelright--large" ng-show="quote.provider.stats.finishedcount > 0">
+                                        <a class="text--light-gray"  target="_blank">
+                                            <ng-rating based-on="5" editable="false" iconclass="fa fa-star" ng-model="quote.provider.stats.scorefive" show-grade="false" stars-count="5">
+                                            </ng-rating>
+                                            <span>
+                                                ({{quote.provider.stats.reviewcount}}
+                                            </span>
+                                            <span translate="">
+                                                reviews
+                                            </span>
+                                            <span>
+                                                )
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="padbottonfixedsmaller twentyforpixelrgihtlarge" ng-show="quote.provider.stats.finishedcount > 0">
+                                        <a  >
+                                            <span class="left settobolder wrapper18">
+                                                {{quote.provider.stats | statTextFilter}}
+                                            </span>
+                                            <span translate="">
+                                                tasks completed,
+                                            </span>
+                                            <span class="left settobolder wrapper18">
+                                                {{quote.provider.stats | statTextFilter2}}
+                                            </span>
+                                            <span translate="">
+                                                clients were happy
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="soft--sides--large padtop20 font16set padleft10">
+                                    <div class="row padbottom10">
+                                        <div class="col-md-3 padtop10" translate="">
+                                            Price
+                                        </div>
+                                        <div class="col-md-9 settobolder wrapper32 ">
+                                            {{quote.price | MonetaryUnit}}
+                                        </div>
+                                    </div>
+                                    <div class="row padbottom10">
+                                        <div class="col-md-3" translate="">
+                                            Time
+                                        </div>
+                                        <div class="col-md-9 settobolder wrapper18">
+                                            {{(quote.date && quote.when.objectid ===1) ? (quote.date | amDateFormat:'D MMMM YYYY HH:mm') : whenOptionsProvider[quote.when.objectid-1].name}}
+                                        </div>
+                                    </div>
+                                    <div class="row padbottom10" ng-show="state !== 'viewquotes'">
+                                        <div class="col-md-3" translate="">
+                                            Phone
+                                        </div>
+                                        <div class="col-md-9 settobolder wrapper18" ng-show="!providersquote && customersrequest ">
+                                            {{quote.provider.phone | tel}}
+                                        </div>
+                                        <div class="col-md-9 settobolder wrapper18" ng-show="providersquote && !customersrequest ">
+                                            {{quote.request.phone | tel}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" ng-show="providersquote && !customersrequest">
+                            <div class="col-md-2">
+                                <div class="profile-logo-container user-image-container xlarge fittocenter">
+                                    <img class="padbottom5" height="120" ng-src="{{quote.request.user.picture}}" width="120">
+                                        <!--        <a class="tiny button padtop10" target="_blank" translate="" ui-sref="provider({slug:(quote.provider.slug | providerSlugFilter:languageKey) })">
+                                            View Profile
+                                        </a>
+ -->
+                                    </img>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pageboxmodalbox">
+                                    <div class="fittocenter--small clearfix padbottom10">
+                                        <a target="_blank" ui-sref="provider({slug:(quote.provider.slug | providerSlugFilter:languageKey) })">
+                                            <h2 class="font24set helq redpagebox float--left--large">
+                                                {{quote.request.firstname}} {{quote.request.lastname}}
+                                            </h2>
+                                        </a>
+                                    </div>
+                                    <p class="padbottomfixed seventytwopixelright--large">
+                                        <span class="tags">
+                                            {{quote.request.service.subcategory| translateFilter:languageKey}}
+                                        </span>
+                                        <span class="tags">
+                                            <span translate="">
+                                                Member for
+                                            </span>
+                                            <span>
+                                                {{quote.request.user.created_at | durationFilter:languageKey}}
+                                            </span>
+                                        </span>
+                                    </p>
+                                    <p class="padbottonfixedsmaller seventytwopixelright--large">
+                                        <a class="text--light-gray" href="#">
+                                            <ng-rating based-on="5" editable="false" iconclass="fa fa-star" ng-model="quote.request.user.stats.scorefive" show-grade="false" stars-count="5">
+                                            </ng-rating>
+                                            <span>
+                                                ({{quote.request.user.stats.reviewcount}}
+                                            </span>
+                                            <span translate="">
+                                                reviews
+                                            </span>
+                                            <span>
+                                                )
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="padbottonfixedsmaller twentyforpixelrgihtlarge">
+                                        <a href="#">
+                                            <span class="left settobolder wrapper18">
+                                                {{quote.request.user.stats | statTextFilterUser}}
+                                            </span>
+                                            <span translate="">
+                                                requests,
+                                            </span>
+                                            <span class="left settobolder wrapper18">
+                                                {{quote.request.user.stats| statTextFilter2}}
+                                            </span>
+                                            <span translate="">
+                                                times were happy
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="soft--sides--large padtop20 font16set padleft10">
+                                    <div class="row padbottom10">
+                                        <div class="col-md-3 padtop10" translate="">
+                                            Price
+                                        </div>
+                                        <div class="col-md-9 settobolder wrapper32 ">
+                                            {{quote.price | MonetaryUnit}}
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-md-3" translate="">
+                                            Time
+                                        </div>
+                                        <div class="col-md-9 settobolder wrapper18" ng-hide="state==='quotedetail'">
+                                            {{(quote.date && quote.when.objectid ===1) ? (quote.date | amDateFormat:'D MMMM YYYY HH:mm') : whenOptionsProvider[quote.when.objectid-1].name}}
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-md-3" translate="">
+                                            Phone
+                                        </div>
+                                        <div class="col-md-9 settobolder wrapper18" ng-show="!providersquote && customersrequest">
+                                            {{quote.provider.phone | tel}}
+                                        </div>
+                                        <div class="col-md-9 settobolder wrapper18" ng-show="providersquote && !customersrequest">
+                                            {{quote.request.phone | tel}}
+                                        </div>
+                                    </div>
+                                    <div class="row " ng-show="providersquote && !customersrequest">
+                                        <div class="col-md-3" translate="">
+                                            Address
+                                        </div>
+                                        <div class="col-md-9 settobolder wrapper18">
+                                            {{quote.request.address}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8" ng-include="'app/quote/_chat.html'">
+                            </div>
+                            <div class="col-md-4 fittocenter">
+                                <div ng-show="state ==='quotesuccess'">
+                                    <a class="button margin2xtop flush--ends expand--small ladda-button js-ladda-button" id="add_comment" ng-show="quote.provider.user._id !==  currentUser._id && !quote.comment.message && showreview" translate="" ui-sref="comment({id: quote._id, type: 'new'})">
+                                        Write a review
+                                    </a>
+                                    <a class="button margin2xtop flush--ends expand--small ladda-button js-ladda-button" id="add_comment" ng-show="quote.provider.user._id !==  currentUser._id && quote.comment.message" translate="" ui-sref="comment({id: quote._id, type:'edit'})">
+                                        Edit Review
+                                    </a>
+                                    <a class="button margin2xtop flush--ends expand--small ladda-button js-ladda-button" confirm="{{'Are you sure you want to complete this service?' | translate}}" id="add_comment" ng-click="updateQuote('providercompletequote', quote._id)" ng-show="quote.provider.user._id ===  currentUser._id && !quote.servicecomplete" translate="">
+                                        I completed service, customer can write review
+                                    </a>
+                                    <a class="button margin2xtop flush--ends expand--small ladda-button js-ladda-button" id="add_comment" ng-show="quote.provider.user._id ===  currentUser._id && quote.servicecomplete && quote.comment.message" translate="" ui-sref="comment({id: quote._id, type:'read'})">
+                                        Read Review
+                                    </a>
+                                </div>
+                                <div ng-show="state ==='viewquotes'">
+                                    <a class="button margin2xtop flush--ends expand--small ladda-button js-ladda-button" data-toggle="modal" ng-click="openQuoteSelectModal(quote._id)" translate="">
+                                        Select This Quote
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

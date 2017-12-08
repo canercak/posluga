@@ -1,0 +1,178 @@
+<section class="pageboxlayout" ng-controller="RequestCtrl">
+    <section class="row">
+        <div class="large-9 columns">
+            <div class="pageboxpart padbottomfixed margin2xtop--small">
+                <h1 class="pageboxpart__heading white24 helq pageboxredoverall pageboxtitletext">
+                    {{requesttitle}}
+                </h1>
+                <div class="pageboxpart__inner-border">
+                    <div class="soft">
+                        <div class="row">
+                            <div class="large-12 columns" ng-include="'app/request/request_form.html'">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="large-3 columns">
+            <div class="pageboxpart">
+                <div class="pageboxreviewbox">
+                    <div class="media padbottonfixedsmaller">
+                        <div class="pageboxmodalbox padbottomfixed padtop10">
+                            <div class="fittocenter--small clearfix">
+                                <h2 class="helptextheader helq redpagebox" translate="">
+                                    What happens when I fill the form?
+                                </h2>
+                            </div>
+                            <div class="fittocenter--small helptextwithcheck">
+                                <i class="fa fa-check colorcheckgreen">
+                                </i>
+                                <span translate="">
+                                    We will send your request to the closest and the most outstanding service providers.
+                                </span>
+                            </div>
+                            <div class="fittocenter--small helptextwithcheck">
+                                <i class="fa fa-check colorcheckgreen">
+                                </i>
+                                <span translate="">
+                                    Available and interested professionals will send you their price quotes in 24 hours.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="pageboxmodalbox">
+                            <div class="fittocenter--small clearfix">
+                                <h2 class="helptextheader helq redpagebox" translate="">
+                                    Explain in detail to get a right price.
+                                </h2>
+                            </div>
+                            <div class="fittocenter--small helptextwithcheck">
+                                <i class="fa fa-check colorcheckgreen">
+                                </i>
+                                <span translate="">
+                                    Is there something you want closer attention?
+                                </span>
+                            </div>
+                            <div class="fittocenter--small helptextwithcheck">
+                                <i class="fa fa-check colorcheckgreen">
+                                </i>
+                                <span translate="">
+                                    Is there anything else we should know?
+                                </span>
+                            </div>
+                            <div class="fittocenter--small helptextwithcheck">
+                                <i class="fa fa-check colorcheckgreen">
+                                </i>
+                                <span translate="">
+                                    Attach if you have photos about the subject.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<script id="passwordModalContent.html" type="text/ng-template">
+    <div class="modal-header">
+    <h3 class="modal-title fittocenter" translate="">
+        Please login using the social providers or with the credentials we sent to your email.
+    </h3>
+</div>
+<div class="modal-body">
+    <section class="fittocenter">
+        <div class="large-12 columns large-centered">
+            <div class="pageboxpart">
+                <form class="form" id="login-nav" name="form" ng-submit="ok()" novalidate="">
+                    <h2 class="pageboxpart__heading white24 helq pageboxredoverall pageboxtitletext" translate="">
+                        Login
+                    </h2>
+                    <div class="pageboxpart__inner-border">
+                        <div class="soft">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <oauth-buttons classes="btn-block">
+                                    </oauth-buttons>
+                                </div>
+                            </div>
+                            <div class="text--line-behind" style="margin-top:20px;margin-bottom: 10px" translate>
+                                OR
+                            </div>
+                            <div class="row">
+                                <div class="large-12 columns form-group">
+                                    <label class="textleftbold" for="email" translate="">
+                                        Email
+                                    </label>
+                                    <input class="forcetext form-control input-lg" id="foundemail" ng-model="foundemail" placeholder="Email address" required="" type="email">
+                                    </input>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-12 columns form-group">
+                                    <label class="textleftbold" for="password" translate="">
+                                        Password
+                                    </label>
+                                    <input class="forcetext form-control input-lg" id="password" ng-model="password" placeholder="Password" required="" type="password">
+                                    </input>
+                                </div>
+                            </div>
+                            <div class="form-group has-error">
+                                <p class="help-block" ng-show="showPasswordNotCorrect" translate="">
+                                    Please enter correct login details.
+                                </p>
+
+                            
+                              <!--   <p class="help-block" ng-show="form.email.$error.required && form.password.$error.required && vm.submitted" translate="">
+                                    Please enter your email and password.
+                                </p>
+                                <p class="help-block" ng-show="form.email.$error.email && vm.submitted" translate="">
+                                    Please enter a valid email.
+                                </p>
+                                <p class="help-block">
+                                    {{ vm.errors.other }}
+                                </p> -->
+                            </div>
+                            <a class="text-right" href="/pwdreset" translate="">
+                                Lost or forgotten your password?
+                            </a>
+                        </div>
+                        <hr class="flush--top">
+                            <div class="soft hard--top">
+                                <button class="button margin2xtop flush--ends expand--small ladda-button js-ladda-button" data-style="expand-right" id="login_button" type="submit">
+                                    <span class="ladda-label" translate="">
+                                        Login
+                                    </span>
+                                </button>
+                            </div>
+                        </hr>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+<!--     <div class="modal-footer">
+    </div> -->
+</script>
+<div ng-include="'components/modal/_categoryModalContent.html'">
+</div>
+<script id="termsModalContent.html" type="text/ng-template">
+    <h3 class="pageboxpart__heading helq white22 pageboxredoverall pageboxtitletext fittocenter" translate>
+        Terms of Use
+    </h3>
+    <div class="pageboxpart__inner-border">
+        <div class="soft">
+            <div class="row">
+                <div class="modal-body">
+                    <div ng-include="'app/main/_terms.html'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+<!-- <div ng-include="'components/modal/_termsModalContent.html'">
+</div>
+ <div ng-include="'components/modal/_privacyModalContent.html'">
+</div>  -->

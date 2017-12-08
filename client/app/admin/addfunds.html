@@ -1,0 +1,55 @@
+<section class="pageboxlayout">
+    <section class="row">
+        <div class="large-12 columns">
+            <div class="pageboxpart padbottomfixed margin2xtop--small">
+                <h1 class="pageboxpart__heading white24 helq pageboxredoverall pageboxtitletext" translate="">
+                    Add Funds
+                </h1>
+                <span>
+                    {{user.name}}
+                </span>
+                <div class="pageboxpart__inner-border">
+                    <div class="soft">
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <form autocomplete="off" class="form-horizontal" ng-controller="AdminController" ng-submit="switchupdatetransaction === false ? addFunds(): updateFunds()" novalidate="novalidate" role="form">
+                                            <div class="form-group">
+                                                <label class="col-lg-3 control-label" translate="">
+                                                    Amount
+                                                </label>
+                                                <div class="col-lg-9">
+                                                    <input class="form-control" clean="true" mask="999999" mask-clean="true" mask-restrict="reject" mask-validate="false" ng-model="transaction.amount.value" placeholder="_____ грн." required="" type="text"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-lg-3 control-label" translate="">
+                                                    Date
+                                                </label>
+                                                <div class="col-lg-4">
+                                                    <span data-ng-model="transaction.date" data-xdan-datetimepicker="{timepicker:false}" id="datetimepicker">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-lg-12" style="text-align: center">
+                                                    <button class="button blue marginxtop expand--small flush--bottom js-send-quote btn-block" ng-hide="switchupdatetransaction" translate="" type="submit">
+                                                        Save
+                                                    </button>
+                                                    <button class="button blue marginxtop expand--small flush--bottom js-send-quote btn-block" ng-show="switchupdatetransaction" translate="" type="submit">
+                                                        Update
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

@@ -1,0 +1,70 @@
+<section class="pageboxredall" ng-controller="PlacesCtrl">
+    <nav class="breadcrumbs__background mobiledisplaynone bg--opacity-10 wrapper16" ng-include="'app/places/_toptenbread.html'">
+    </nav>
+    <section class="pageboxpicture bg--black" ng-include="'app/places/_toptenjumbo.html'" ng-style="{'background-image': 'url(' + service.categoryimage + ')'}">
+    </section>
+    <section class="pageboxlayout pageboxredall" ng-controller="PlacesCtrl">
+        <section class="row">
+            <section class="colorwhite avenir font16set">
+                <div class="large-8 columns" ng-include="'app/places/_providerdetails.html'">
+                </div>
+                <div class="large-4 columns">
+                    <div class="pageboxpart">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="servicepagetable">
+                                        <div ng-include="'app/places/_sharebar.html'">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- <tr>
+                                    <td class="servicepagetable">
+                                        <div ng-include="'app/places/_vkbar.html'">
+                                        </div>
+                                    </td>
+                                </tr> -->
+                                <tr>
+                                    <td class="servicepagetable">
+                                        <div ng-include="'app/places/_fbbar.html'">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="servicepagetable">
+                                        <div ng-include="'app/places/_howitworks.html'">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="servicepagetable">
+                                        <div ng-include="'app/places/_whyposluga.html'">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="servicepagetable">
+                                        <div ng-include="'app/places/_customerreviews.html'">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="servicepagetable">
+                                        <div ng-include="'app/places/_twitbox.html'">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!--   <tr> patom
+                                    <td class="servicepagetable">
+                                        <div ng-include="'app/places/_otherproviders.html'">
+                                        </div>
+                                    </td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+</section>

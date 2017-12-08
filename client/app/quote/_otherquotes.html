@@ -1,0 +1,28 @@
+<h1 class="pageboxpart__heading white24 helq pageboxredoverall pageboxtitletext" translate="">
+    Other Quotes
+</h1>
+<div class="pageboxpart__inner-border">
+    <div class="soft--sides--large padbottonfixedsmaller padtop20" ng-hide="otherquotes.length > 0">
+        <p class="padbottonfixedsmaller" translate="">
+            No other provider sent a quote for this request yet.
+        </p>
+    </div>
+    <div class="soft--sides--large padbottonfixedsmaller padtop20" ng-show="otherquotes.length > 0">
+        <table class="full-width">
+            <tr ng-repeat="otherquote in otherquotes">
+                <td style="width: 10%; padding-right: 10px; text-align: center;">
+                    {{$index + 1}}.
+                </td>
+                <td style="width: 45%; text-align: center;">
+                    <ng-rating based-on="5" editable="false" iconclass="fa fa-star" ng-model="otherquote.provider.stats.scorefive" show-grade="false" stars-count="5">
+                    </ng-rating>
+                </td>
+                <td style="width: 45%; text-align: center;">
+                    <span>
+                        {{otherquote.price.value}} грн.
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

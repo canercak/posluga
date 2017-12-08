@@ -1,0 +1,119 @@
+<section class="pageboxlayout" ng-controller="RequestCtrl">
+    <div class="row">
+        <div class="alert alert-success" focus-if="" role="alert">
+            <h3 class="body-title">
+                <span id="success_message" ng-show="switchupdaterequest===false" translate="">
+                    We have received your {{request.searchtext}} request.
+                </span>
+                <span id="update_message" ng-show="switchupdaterequest===true" translate="">
+                    We have updated your {{request.searchtext}} request.
+                </span>
+            </h3>
+        </div>
+        <div class="row padbottom10" focus-if="">
+            <div class="large-7 columns">
+                <section class="pageboxpart padbottomfixed ">
+                    <div ng-include="'app/request/_detailbox.html'">
+                    </div>
+                </section>
+            </div>
+            <div class="large-5 columns">
+                <section class="pageboxpart padbottomfixed">
+                    <h3 class="pageboxpart__heading white24 helq pageboxredoverall pageboxtitletext" translate="">
+                        What will happen now?
+                    </h3>
+                    <div class="pageboxpart__inner-border">
+                        <div class="soft--sides--large padbottonfixedsmaller wrapper18 padtop20 padleft10">
+                            <div class="row padbottom5 padright5">
+                                <div class="col-md-1 settobolder">
+                                    1-
+                                </div>
+                                <div class="col-md-11">
+                                    <div class="row padbottom5 padright10">
+                                        <span translate="">
+                                            Price quotes for your request will come in 24 hours.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row padbottom5 padright10">
+                                <div class="col-md-1 settobolder">
+                                    2-
+                                </div>
+                                <div class="col-md-11">
+                                    <div class="row padbottom5 padright10">
+                                        <span translate="">
+                                            We will notify you by system notifications, email and SMS.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row padbottom5 padright10">
+                                <div class="col-md-1 settobolder">
+                                    3-
+                                </div>
+                                <div class="col-md-11">
+                                    <div class="row padright10">
+                                        <span translate="">
+                                            If you decide to choose a price quote, press 'Select Quote' button.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row padbottom5 padleft10">
+                                <div class="col-md-12">
+                                    <div class="row padbottom5 padright10 padleft5">
+                                        <span translate="">
+                                            When you select a quote, Posluga.ua will get notified that your task is being done so we will start to control every step for your satisfaction.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="row padbottom10">
+            <div class="large-12 columns">
+                <section class="pageboxpart padbottomfixed">
+                    <h3 class="pageboxpart__heading white24 helq pageboxredoverall pageboxtitletext" translate="">
+                        Do you need another service?
+                    </h3>
+                    <div class="pageboxpart__inner-border fittocenter">
+                        <div class="soft--sides--large padbottonfixedsmaller font16set padtop20 padleft10">
+                            <div class="row padbottom5">
+                                <div class="large-12 columns category-listing__row">
+                                    <div class="large-block-grid-3 category-listing">
+                                        <div class="block" ng-repeat="i in [5,16,17]">
+                                            <ul class="category-listing__list">
+                                                <li class="wrapper20" ng-repeat="s in getCategories(i) | limitTo:8">
+                                                    <a ui-sref="request({serviceid:s._id})">
+                                                        {{s.subcategory | translateFilter:languageKey}}
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                        <div class="large-block-grid-1 category-listing">
+                                            <div class="block">
+                                                <ul class="category-listing__list">
+                                                    <li class="wrapper20">
+                                                        <a translate="" ui-sref="request({})">
+                                                            I need a different service than the services above
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </hr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,328 @@
+<div class="row padbottom10">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-star fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Request No:
+        </span>
+    </div>
+    <div class="col-md-8">
+        {{request.sequence}}
+    </div>
+</div>
+<div class="row padbottom10">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-asterisk fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Status:
+        </span>
+    </div>
+    <div class="col-md-8" style="color:blue">
+        <span>
+            {{ statusOptions[request.status.objectid-1].name}}
+        </span>
+    </div>
+</div>
+<div class="row padbottom10">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-dot-circle-o fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Service:
+        </span>
+    </div>
+    <div class="col-md-8">
+        <span ng-show="request.service === null">
+            {{request.searchtext}}
+        </span>
+        <span ng-show="request.service === null" style="color:red">
+            (Service Does Not Exist In System. Change It)
+        </span>
+        <span ng-show="request.service !== null">
+            {{request.service.subcategory | translateFilter:languageKey}}
+        </span>
+    </div>
+</div>
+<div class="row padbottom10">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-hand-o-right fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Description:
+        </span>
+    </div>
+    <div class="col-md-8">
+        {{request.description}}
+    </div>
+</div>
+<div class="row padbottom5 padtop10" ng-show="request.service.questions.length > 0">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-file-text-o fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Details:
+        </span>
+    </div>
+    <div class="col-md-8">
+        <div class="row padbottom5 padrightnone" ng-repeat="q in request.service.questions">
+            <div class="col-md-6 padrightnone">
+                {{q.question | translateFilterSimple:languageKey}}
+            </div>
+            <div class="col-md-6 italic">
+                <span ng-if="q.qtype==='Multiselect'" ng-repeat="answer in request.answers[q.order-1] track by $index">
+                    {{answer.option | translateFilterSimple:languageKey}}{{$last ? '' : ', '}}
+                </span>
+                <span ng-if="q.qtype==='Singleselect'">
+                    {{request.answers[q.order-1].option | translateFilterSimple:languageKey}}
+                </span>
+                <span ng-if="q.qtype==='Textinput'">
+                    {{request.answers[q.order-1]}}
+                </span>
+                <span ng-if="q.qtype==='Numberinput'">
+                    {{request.answers[q.order-1]}}
+                </span>
+                <span ng-if="q.qtype==='Priceinput'">
+                    {{request.answers[q.order-1]}}
+                </span>
+                <span ng-if="q.qtype==='Placeselect'" ng-repeat="answer in request.answers[q.order-1] track by $index">
+                    {{answer  | translateFilterSimple:languageKey}}{{$last ? '' : ', '}}
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row padbottom10">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-clock-o fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Time:
+        </span>
+    </div>
+    <div class="col-md-8">
+        {{(request.date && request.when.objectid === 1)  ? (request.date | amDateFormat:'D MMMM YYYY HH:mm') : whenOptions[request.when.objectid-1].name}}
+    </div>
+</div>
+<div class="row padbottom10">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-map fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Place:
+        </span>
+    </div>
+    <div class="col-md-8">
+        <span>
+            {{request | placeFilter:languageKey}}
+        </span>
+    </div>
+</div>
+<div class="row padbottom10">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-money fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Budget:
+        </span>
+    </div>
+    <div class="col-md-8">
+        <span>
+            {{request.budget}} грн.
+        </span>
+    </div>
+</div>
+<div class="row padbottom10">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-check fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Security Checks:
+        </span>
+    </div>
+    <div class="col-md-8">
+        <div class="row" ng-repeat="option in request.user.stats.securitychecks">
+            <div class="col-md-12">
+                <span ng-show="option.objectid==1">
+                    {{securityTypes[0].name}}
+                </span>
+                <span ng-show="option.objectid==2">
+                    {{securityTypes[1].name}}
+                </span>
+                <span ng-show="option.objectid==4">
+                    {{option.value}} {{securityTypes[3].name}}
+                </span>
+                <span ng-show="option.objectid==5">
+                    {{option.value}} {{securityTypes[4].name}}
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row padbottom10">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-phone fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Contact:
+        </span>
+    </div>
+    <div class="col-md-8">
+        <span>
+            {{phoneOptionsProvider[request.phonenotify.objectid-1].name}} /
+        </span>
+        <span>
+            {{request.firstname}} {{request.lastname}} /
+        </span>
+        <span style="color:green">
+            {{request.phone| tel}}
+        </span>
+    </div>
+</div>
+<div class="row padbottom10">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-user fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Login Details:
+        </span>
+    </div>
+    <div class="col-md-8">
+        <span>
+            {{request.user.email}}
+        </span>
+        <span ng-show="request.user.xp">
+            / {{request.user.xp}}
+        </span>
+    </div>
+</div>
+<div class="row padbottom10">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-home fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Address:
+        </span>
+    </div>
+    <div class="col-md-8">
+        <span>
+            {{request.address}}
+        </span>
+    </div>
+</div>
+<div class="row padbottom10" ng-show="request.files.length>0">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-picture-o fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Pictures:
+        </span>
+    </div>
+    <div class="col-md-8">
+        <div class="photodiv" ng-repeat="f in request.files">
+            <div class="img-wrap">
+                <a href="{{ f.location }}" target="_blank">
+                    <img ez-plus="" ezp-model="{thumb:IMGPATH, small:IMGPATH, large:IMGPATH}" ezp-options="{scrollZoom: true, easing: true, responsive:true, zoomWindowWidth: 500, zoomWindowHeight: 500}" height="64" id="zoom_01" src="{{ f.location }}" width="64"/>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row padbottom10">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-clock-o fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Time Left to Expiration:
+        </span>
+    </div>
+    <div class="col-md-8">
+        <span class="listingtextbigbold" ng-show="request.requestclosed" translate="">
+            Request expired
+        </span>
+        <span ng-show="!request.requestclosed">
+            {{request.validUntil | validityFilter:languageKey}}
+        </span>
+    </div>
+</div>
+<div class="row padbottom10">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-address-card fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Admin Created:
+        </span>
+    </div>
+    <div class="col-md-8">
+        <span ng-show="request.requesttype==='admin'" translate="">
+            Yes
+        </span>
+        <span ng-show="request.requesttype!=='admin'" translate="">
+            No
+        </span>
+    </div>
+</div>
+<div class="row padbottom10">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-money fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Provider Paid:
+        </span>
+    </div>
+    <div class="col-md-8">
+        <span ng-show="request.providerpaid === true" style="color:blue" translate="">
+            Yes
+        </span>
+        <span ng-show="request.providerpaid === false" translate="">
+            No
+        </span>
+    </div>
+</div>
+<div class="row padbottom10">
+    <div class="col-md-4 settobolder">
+        <i class="fa fa-comments-o fa-lg">
+        </i>
+        <span class="padleft5" translate="">
+            Admin Comments:
+        </span>
+    </div>
+    <div class="col-md-8">
+        <div ng-repeat="comment in request.admincomments">
+            <td style="font-size:11px;font-weight: 900">
+                {{ comment.sender.name}}: 
+            </td>
+           <td style="font-size:11px; padding-left: 5px;font-style: italic;">
+                 {{ comment.message}} - 
+            </td>
+            <td style="font-size:11px; padding-left: 5px">
+                w {{ comment.sentAt | amDateFormat:'DD.MM.YYYY HH:mm'}}
+            </td>
+        </div>
+    </div>
+</div>
+<div class="row padbottom5 marginright10">
+    <a class="tiny button orange float--right--large flush--bottom marginleft10" confirm="{{'Are you sure you want to mark this request as paid?' | translate}}" ng-click="markAsPaid()" ng-show="request.status.objectid === 5 && request.providerpaid ===false" translate="">
+        Mark as Paid
+    </a>
+    <a class="tiny button pink float--right--large flush--bottom marginxends--small" confirm="{{'Are you sure you want to cancel the request?' | translate}}" ng-click="cancelRequest()" ng-show="request.status.objectid < 6" translate="">
+        Cancel Request
+    </a>
+    <a class="tiny button pink float--right--large flush--bottom marginxends--small" confirm="{{'Are you sure you want to activate the request?' | translate}}" ng-click="activateRequest()" ng-show="request.status.objectid === 6" translate="">
+        Activate Request
+    </a>
+    <a class="tiny button float--right--large flush--bottom marginxends--small marginxsides" id="edit_request" ng-show="request.status.objectid < 6" translate="" ui-sref="request({requestid: request._id, type:'admin', serviceid: request.service._id, searchtext: request.searchtext})">
+        Edit Request
+    </a>
+    <a class="tiny button success float--right--large flush--bottom marginxends--small" id="add_comment" popover-title="{{commentPopover.title}}" translate="" uib-popover-template="commentPopover.templateUrl">
+        Add Comment
+    </a>
+    <script id="addCommentTemplate.html" type="text/ng-template">
+        <div class="form-group" >  
+        <textarea    ng-model="commentPopover.message" required="" style="width: 200px;height: 200px"> </textarea>
+         <button class="tiny button success" translate="" ng-click="addComment()">
+                Save
+            </button>
+        </div>
+    </script>
+</div>

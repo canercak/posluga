@@ -1,0 +1,504 @@
+<section class="pageboxlayout" style="padding-top: 10px !important">
+    <section class="row">
+        <div class="large-12 columns">
+            <div class="pageboxpart padbottomfixed">
+                <a class="btn btn-primary" style="margin-bottom: 5px" translate="" ui-sref="preproviderlist">
+                    Go back
+                </a>
+                <a class="btn btn-danger" confirm="{{'Are you sure you want to remove?' | translate}}" ng-click="deletePreprovider(preprovider._id)" style="margin-bottom: 5px;" translate="">
+                    Delete
+                </a>
+                <h1 class="pageboxpart__heading white24 helq pageboxredoverall pageboxtitletext">
+                    <span translate="">
+                        Provider Pre-registration Form
+                    </span>
+                    <span class="label label-primary pull-right" ng-show="preprovider.created" translate="">
+                        APPROVED
+                    </span>
+                    <span class="label label-success pull-right" ng-show="preprovider.updated && !preprovider.deleted && !preprovider.created" translate="">
+                        UPDATED
+                    </span>
+                    <span class="label label-danger pull-right" ng-show="preprovider.deleted" translate="">
+                        DELETED
+                    </span>
+                </h1>
+                <div class="pageboxpart__inner-border">
+                    <div class="soft">
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <form autocomplete="off" class="form-horizontal" name="preProviderForm" ng-controller="AdminController" ng-submit="switchupdatepreprovider === false ? addPreprovider() : updatePreprovider()" novalidate="novalidate" role="form">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading" translate="">
+                                                    Company Details
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="form-group">
+                                                        <label class="col-lg-3 control-label" translate="">
+                                                            Website
+                                                        </label>
+                                                        <div class="col-lg-6">
+                                                            <input class="forcetext form-control" ng-change="checkWebsite()" ng-model="preprovider.website" required="" type="text"/>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <a class="btn btn-primary btn-small" ng-href="{{preprovider.website}}" target="_blank" translate="">
+                                                                Visit Link
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-lg-9" ng-show="foundpreproviders.length> 0" style="color:red;text-align: center">
+                                                            <span translate="">
+                                                                website exists for another preprovider
+                                                            </span>
+                                                            <div ng-repeat="pre in foundpreproviders">
+                                                                <a target="_blank" ui-sref="preprovider({preproviderid: pre._id})">
+                                                                    {{pre._id}}
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group" ng-show="showCompany">
+                                                        <label class="col-lg-3 control-label" translate="">
+                                                            Company Name
+                                                        </label>
+                                                        <div class="col-lg-9">
+                                                            <input class="forcetext form-control" ng-model="preprovider.company" required="" type="text"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group" ng-show="showCompany===false">
+                                                        <label class="col-lg-3 control-label" translate="">
+                                                            Full Name
+                                                        </label>
+                                                        <div class="col-lg-4">
+                                                            <input class="forcetext form-control" ng-model="preprovider.firstname" type="text"/>
+                                                        </div>
+                                                        <div class="col-lg-5">
+                                                            <input class="forcetext form-control" ng-model="preprovider.lastname" type="text"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading" translate="">
+                                                    Address Details
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading" translate="">
+                                                            Primary Address
+                                                        </div>
+                                                        <div class="panel-body">
+                                                            <div class="form-group">
+                                                                <label class="col-lg-3 control-label" translate="">
+                                                                    Mobile Phone
+                                                                </label>
+                                                                <div class="col-lg-9">
+                                                                    <input class="forcetext form-control" mask="(999) 999-9999" mask-clean="true" mask-restrict="reject" mask-validate="false" ng-change="phoneChange()" ng-model="preprovider.phone" ng-model-options="{updateOn: 'blur'}" placeholder="(___) ___-____" required="" type="text"/>
+                                                                </div>
+                                                                <div class="col-lg-9" ng-show="foundpreprovidersphone.length > 0" style="color:red;text-align: center" translate="">
+                                                                    phone exists for another preprovider
+                                                                </div>
+                                                                <div ng-repeat="pre in foundpreprovidersphone">
+                                                                    <a target="_blank" ui-sref="preprovider({preproviderid: pre._id})">
+                                                                        {{pre._id}}
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-lg-3 control-label" translate="">
+                                                                    Mobile Phone 2
+                                                                </label>
+                                                                <div class="col-lg-9">
+                                                                    <input class="forcetext form-control" mask="(999) 999-9999" mask-clean="true" mask-restrict="reject" mask-validate="false" ng-model="preprovider.phone2" ng-model-options="{updateOn: 'blur'}" placeholder="(___) ___-____" type="text"/>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-lg-3 control-label" translate="">
+                                                                    Email
+                                                                </label>
+                                                                <div class="col-lg-9">
+                                                                    <input class="forcetext form-control" ng-change="emailChange()" ng-model="preprovider.email" type="email"/>
+                                                                </div>
+                                                                <div class="col-lg-9" ng-show="useremailexists" style="color:red;text-align: center" translate="">
+                                                                    user exists in the system, you cannot save with this email
+                                                                </div>
+                                                                <div class="col-lg-9" ng-show="foundpreprovidersemail.length > 0" style="color:red;text-align: center" translate="">
+                                                                    email exists for another preprovider
+                                                                </div>
+                                                                <div ng-repeat="pre in foundpreprovidersemail">
+                                                                    <a target="_blank" ui-sref="preprovider({preproviderid: pre._id})">
+                                                                        {{pre._id}}
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-lg-3 control-label" translate="">
+                                                                    Address
+                                                                </label>
+                                                                <div class="col-lg-7">
+                                                                    <input class="forcetext form-control" ng-model="preprovider.address" required="" type="text"/>
+                                                                </div>
+                                                                <div class="col-lg-2">
+                                                                    <a class="btn btn-primary" ng-click="getAddress(preprovider.address, null)" translate="">
+                                                                        Resolve Address
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-lg-3 control-label" translate="">
+                                                                    Resolved Address
+                                                                </label>
+                                                                <div class="col-lg-9">
+                                                                    <pre><code><p>{{preprovider.resolvedaddress | prettyJSON}}</p></code></pre>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-lg-3 control-label" translate="">
+                                                                    Location
+                                                                </label>
+                                                                <div class="col-sm-3" style="padding-right:1px !important; padding-bottom:1px !important; padding-left:15px !important">
+                                                                    <ui-select ng-model="preprovider.oblast" on-select="getOblastRayons($item, null)" register-custom-form-control="" required="" theme="bootstrap">
+                                                                        <ui-select-match class="ab ui-select-match" placeholder="{{'Please Select' | translate}}">
+                                                                            {{$select.selected | itemlangFilter:languageKey}}
+                                                                        </ui-select-match>
+                                                                        <ui-select-choices class="ab ui-select-choices" repeat="p in oblastOptions | filter: $select.search">
+                                                                            <span ng-bind-html="p  | itemlangFilter:languageKey | highlight: $select.search ">
+                                                                            </span>
+                                                                        </ui-select-choices>
+                                                                    </ui-select>
+                                                                </div>
+                                                                <div class="col-sm-3" style="padding-right:1px !important; padding-bottom:1px !important; padding-left:15px !important">
+                                                                    <ui-select ng-disabled="enableRayon===false" ng-model="preprovider.rayon" on-select="getRayonGorads($item, null)" register-custom-form-control="" required="" theme="bootstrap">
+                                                                        <ui-select-match class="ab ui-select-match" placeholder="{{'Please Select' | translate}}">
+                                                                            {{$select.selected  | itemlangFilter:languageKey}}
+                                                                        </ui-select-match>
+                                                                        <ui-select-choices class="ab ui-select-choices" repeat="d in rayonOptions | filter: $select.search">
+                                                                            <span ng-bind-html="d | itemlangFilter:languageKey | highlight: $select.search">
+                                                                            </span>
+                                                                        </ui-select-choices>
+                                                                    </ui-select>
+                                                                </div>
+                                                                <div class="col-sm-3" ng-show="showGorad" style="padding-right:1px !important; padding-bottom:1px !important; padding-left:15px !important">
+                                                                    <ui-select ng-disabled="enableGorad===false" ng-model="preprovider.gorad" on-select="getRayongoradGorads($item, null)" register-custom-form-control="" theme="bootstrap">
+                                                                        <ui-select-match class="ab ui-select-match" placeholder="{{'Please Select' | translate}}">
+                                                                            {{$select.selected  | itemlangFilter:languageKey}}
+                                                                        </ui-select-match>
+                                                                        <ui-select-choices class="ab ui-select-choices" repeat="n in goradOptions | filter: $select.search">
+                                                                            <span ng-bind-html="n   | itemlangFilter:languageKey | highlight: $select.search">
+                                                                            </span>
+                                                                        </ui-select-choices>
+                                                                    </ui-select>
+                                                                </div>
+                                                                <div class="col-sm-3" ng-show="showRayonGorad" style="float:right;padding-right:1px !important; padding-bottom:1px !important; padding-left:15px !important">
+                                                                    <ui-select ng-disabled="enableRayonGorad===false" ng-model="preprovider.rayongorad" register-custom-form-control="" theme="bootstrap">
+                                                                        <ui-select-match class="ab ui-select-match" placeholder="{{'Please Select' | translate}}">
+                                                                            {{$select.selected | itemlangFilter:languageKey}}
+                                                                        </ui-select-match>
+                                                                        <ui-select-choices class="ab ui-select-choices" repeat="rg in rayongoradOptions | filter: $select.search">
+                                                                            <span ng-bind-html="rg | itemlangFilter:languageKey  | highlight: $select.search ">
+                                                                            </span>
+                                                                        </ui-select-choices>
+                                                                    </ui-select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel panel-default" ng-repeat="extraaddress in preprovider.extraaddresses" ng-show="preprovider.extraaddresses.length > 0 ">
+                                                        <div class="panel-heading" id="extraaddress{{index}}">
+                                                            <span translate="">
+                                                                Extra Address
+                                                            </span>
+                                                            <span>
+                                                                {{$index + 1}}
+                                                            </span>
+                                                        </div>
+                                                        <div class="panel-body">
+                                                            <div>
+                                                                <hr>
+                                                                    <div class="form-group">
+                                                                        <label class="col-lg-3 control-label" translate="">
+                                                                            Mobile Phone
+                                                                        </label>
+                                                                        <div class="col-lg-9">
+                                                                            <input class="forcetext form-control" id="phone{{$index}}" mask="(999) 999-9999" mask-clean="true" mask-restrict="reject" mask-validate="false" ng-model="extraaddress.phone" ng-model-options="{updateOn: 'blur'}" placeholder="(___) ___-____" required="" type="text"/>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="col-lg-3 control-label" translate="">
+                                                                            Mobile Phone 2
+                                                                        </label>
+                                                                        <div class="col-lg-9">
+                                                                            <input class="forcetext form-control" id="phone2{{$index}}" mask="(999) 999-9999" mask-clean="true" mask-restrict="reject" mask-validate="false" ng-model="extraaddress.phone2" ng-model-options="{updateOn: 'blur'}" placeholder="(___) ___-____" type="text"/>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="col-lg-3 control-label" translate="">
+                                                                            Email
+                                                                        </label>
+                                                                        <div class="col-lg-9">
+                                                                            <input class="forcetext form-control" id="email{{$index}}" ng-change="emailChange()" ng-model="extraaddress.email" type="email"/>
+                                                                        </div>
+                                                                        <div class="col-lg-9" ng-show="emailinvalid" style="color:red;text-align: center" translate="">
+                                                                            email exists for another preprovider
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="col-lg-3 control-label" translate="">
+                                                                            Address
+                                                                        </label>
+                                                                        <div class="col-lg-7">
+                                                                            <input class="forcetext form-control" id="address{{$index}}" ng-model="extraaddress.address" required="" type="text"/>
+                                                                        </div>
+                                                                        <div class="col-lg-2">
+                                                                            <a class="btn btn-primary" ng-click="getAddress(extraaddress.address, $index)" translate="">
+                                                                                Resolve Address
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="col-lg-3 control-label" translate="">
+                                                                            Resolved Address
+                                                                        </label>
+                                                                        <div class="col-lg-9">
+                                                                            <pre id="resolvedaddress{{$index}}"><code><p>{{extraaddress.resolvedaddress | prettyJSON}}</p></code></pre>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="col-lg-3 control-label" translate="">
+                                                                            Location
+                                                                        </label>
+                                                                        <div class="col-sm-3" style="padding-right:1px !important; padding-bottom:1px !important; padding-left:15px !important">
+                                                                            <ui-select id="oblast{{$index}}" ng-model="extraaddress.oblast" on-select="getOblastRayons($item, $index)" register-custom-form-control="" required="" theme="bootstrap">
+                                                                                <ui-select-match class="ab ui-select-match" placeholder="{{'Please Select' | translate}}">
+                                                                                    {{$select.selected | itemlangFilter:languageKey}}
+                                                                                </ui-select-match>
+                                                                                <ui-select-choices class="ab ui-select-choices" repeat="p in extraaddress.oblastOptions | filter: $select.search">
+                                                                                    <span ng-bind-html="p  | itemlangFilter:languageKey | highlight: $select.search ">
+                                                                                    </span>
+                                                                                </ui-select-choices>
+                                                                            </ui-select>
+                                                                        </div>
+                                                                        <div class="col-sm-3" style="padding-right:1px !important; padding-bottom:1px !important; padding-left:15px !important">
+                                                                            <ui-select id="rayon{{$index}}" ng-disabled="extraaddress.enableRayon===false" ng-model="extraaddress.rayon" on-select="getRayonGorads($item, $index)" register-custom-form-control="" required="" theme="bootstrap">
+                                                                                <ui-select-match class="ab ui-select-match" placeholder="{{'Please Select' | translate}}">
+                                                                                    {{$select.selected  | itemlangFilter:languageKey}}
+                                                                                </ui-select-match>
+                                                                                <ui-select-choices class="ab ui-select-choices" repeat="d in extraaddress.rayonOptions | filter: $select.search">
+                                                                                    <span ng-bind-html="d | itemlangFilter:languageKey | highlight: $select.search">
+                                                                                    </span>
+                                                                                </ui-select-choices>
+                                                                            </ui-select>
+                                                                        </div>
+                                                                        <div class="col-sm-3" id="gorad{{$index}}" ng-show="extraaddress.showGorad" style="padding-right:1px !important; padding-bottom:1px !important; padding-left:15px !important">
+                                                                            <ui-select ng-disabled="extraaddress.enableGorad===false" ng-model="extraaddress.gorad" on-select="getRayongoradGorads($item, $index)" register-custom-form-control="" theme="bootstrap">
+                                                                                <ui-select-match class="ab ui-select-match" placeholder="{{'Please Select' | translate}}">
+                                                                                    {{$select.selected  | itemlangFilter:languageKey}}
+                                                                                </ui-select-match>
+                                                                                <ui-select-choices class="ab ui-select-choices" repeat="n in extraaddress.goradOptions | filter: $select.search">
+                                                                                    <span ng-bind-html="n   | itemlangFilter:languageKey | highlight: $select.search">
+                                                                                    </span>
+                                                                                </ui-select-choices>
+                                                                            </ui-select>
+                                                                        </div>
+                                                                        <div class="col-sm-3" ng-show="extraaddress.showRayonGorad" style="float:right;padding-right:1px !important; padding-bottom:1px !important; padding-left:15px !important">
+                                                                            <ui-select id="rayongorad{{$index}}" ng-disabled="extraaddress.enableRayonGorad===false" ng-model="extraaddress.rayongorad" register-custom-form-control="" theme="bootstrap">
+                                                                                <ui-select-match class="ab ui-select-match" placeholder="{{'Please Select' | translate}}">
+                                                                                    {{$select.selected | itemlangFilter:languageKey}}
+                                                                                </ui-select-match>
+                                                                                <ui-select-choices class="ab ui-select-choices" repeat="rg in extraaddress.rayongoradOptions | filter: $select.search">
+                                                                                    <span ng-bind-html="rg | itemlangFilter:languageKey  | highlight: $select.search ">
+                                                                                    </span>
+                                                                                </ui-select-choices>
+                                                                            </ui-select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div style="float:right;padding-bottom:20px">
+                                                                        <a class="btn btn-warning btn-danger" confirm="{{'Are you sure you want to remove?' | translate}}" ng-click="removeAddress(extraaddress)" translate="">
+                                                                            Remove Address
+                                                                        </a>
+                                                                    </div>
+                                                                </hr>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel-footer clearfix">
+                                                    <div class="pull-right">
+                                                        <a class="btn btn-primary" ng-click="addAddress()" translate="">
+                                                            Add Address
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading" translate="">
+                                                    Description
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="form-group" id="profile-description">
+                                                        <label class="col-lg-3 control-label" translate="">
+                                                            Description
+                                                        </label>
+                                                        <div class="col-lg-9">
+                                                            <textarea char-count="" class="heightauto marginbottom5" danger-count="5" id="description" ng-maxlength="500" ng-model="preprovider.description" required="" rows="8" warning-count="10">
+                                                            </textarea>
+                                                        </div>
+                                                        <div class="form-group" id="profile-photos">
+                                                            <label class="col-lg-3 control-label" translate="">
+                                                                Profile Photo
+                                                            </label>
+                                                            <div class="col-lg-7">
+                                                                <input class="forcetext form-control" ng-model="preprovider.photo" required="" type="text"/>
+                                                            </div>
+                                                            <div class="col-lg-2">
+                                                                <img ez-plus="" ezp-model="{thumb:IMGPATH, small:IMGPATH, large:IMGPATH}" ezp-options="{scrollZoom: true, easing: true, responsive:true, zoomWindowWidth: 500, zoomWindowHeight: 500,zoomWindowPosition: 9}" height="120" id="zoom_01" ng-src="{{preprovider.photo}}" width="120"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" style="padding-bottom: 20px;">
+                                                        <span style="font-size: 16px;" translate="">
+                                                            Services
+                                                        </span>
+                                                        <div class="pull-right">
+                                                            <a class="button success tiny pull-right" ng-click="visibleServiceGroups()" translate="">
+                                                                Add Service Groups
+                                                            </a>
+                                                            <div class="col-md-12" ng-show="showServiceGroups">
+                                                                <span style="font-size: 16px;" translate="">
+                                                                    Service Groups
+                                                                </span>
+                                                                <div class="well" style="max-height: 300px;overflow: auto;">
+                                                                    <label ng-repeat="servicegroup in servicegroups">
+                                                                        <input checklist-comparator="._id" checklist-model="selectedservicegroups" checklist-value="servicegroup" class="checklista" type="checkbox">
+                                                                            {{servicegroup.name}}
+                                                                        </input>
+                                                                    </label>
+                                                                </div>
+                                                                <label class="radio-inline">
+                                                                    <input name="option" ng-checked="!useImagesFromFirstService" ng-model="useImagesFromFirstService" ng-value="false" type="radio">
+                                                                        Use images from profile picture
+                                                                    </input>
+                                                                </label>
+                                                                <label class="radio-inline">
+                                                                    <input name="option" ng-model="useImagesFromFirstService" ng-value="true" type="radio">
+                                                                        Use images from first service
+                                                                    </input>
+                                                                </label>
+                                                                <a class="btn btn-primary col-xs-12" ng-click="applyServiceGroups()" style="margin-top:10px;margin-bottom:10px" translate="">
+                                                                    Apply Service Groups
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        <div ng-repeat="service in preprovider.services">
+                                                            <hr>
+                                                                <div class="form-group">
+                                                                    <label class="col-lg-3 control-label" for="type" translate="">
+                                                                        Service
+                                                                    </label>
+                                                                    <div class="col-lg-6 col-md-8 drop">
+                                                                        <input class="forcetext form-control" id="service{{$index}}" name="serviceselect" ng-model="service.name" required="" type="text" typeahead-on-select="onTypeSelect($item, $index)" typeahead-select-on-blur="false" typeahead-select-on-exact="false" uib-typeahead="s.subcat  for s in getSearchtext($viewValue)"/>
+                                                                    </div>
+                                                                </div>
+                                                                <div ng-repeat="image in service.images">
+                                                                    <div class="form-group" id="profile-photos">
+                                                                        <label class="col-lg-3 control-label" translate="">
+                                                                            Service Photo {{$index +1}}
+                                                                        </label>
+                                                                        <div class="col-lg-7">
+                                                                            <input class="forcetext form-control" ng-model="image.url" type="text"/>
+                                                                        </div>
+                                                                        <div class="col-lg-1">
+                                                                            <img ez-plus="" ezp-model="{thumb:IMGPATH, small:IMGPATH, large:IMGPATH}" ezp-options="{scrollZoom: true, easing: true, responsive:true, zoomWindowWidth: 500, zoomWindowHeight: 500,zoomWindowPosition: 9}" height="40" id="zoom_01" src="{{image.url}}" width="40"/>
+                                                                        </div>
+                                                                        <div class="col-lg-1">
+                                                                            <a class="btn btn-warning btn-small" ng-click="removeText(service,$index)" translate="">
+                                                                                Remove
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <div style="float:right;padding-bottom:20px">
+                                                                        <a class="btn btn-info btn-small" ng-click="addImage(service)" translate="">
+                                                                            Add Image
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div style="float:right;padding-bottom:20px">
+                                                                    <a class="btn btn-warning btn-danger" confirm="{{'Are you sure you want to remove?' | translate}}" ng-click="removeService(service)" translate="">
+                                                                        Remove Service
+                                                                    </a>
+                                                                </div>
+                                                            </hr>
+                                                        </div>
+                                                        <div style="padding-top:20px;padding-bottom:20px">
+                                                            <a class="btn btn-success" ng-click="addService()" translate="">
+                                                                Add Service
+                                                            </a>
+                                                        </div>
+                                                        <div class="form-group" ng-show="preprovider.deleted">
+                                                            <label class="col-lg-4 control-label" translate="">
+                                                                Deleted?
+                                                            </label>
+                                                            <div class="col-lg-8">
+                                                                <input ng-model="preprovider.deleted" type="checkbox">
+                                                                </input>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col-lg-12" style="text-align: center">
+                                                                <button class="button orange marginxtop expand--small flush--bottom js-send-quote btn-block" ng-disabled="preprovider.created || locksave === true" ng-hide="switchupdatepreprovider" translate="" type="submit">
+                                                                    Save
+                                                                </button>
+                                                                <button class="button orange marginxtop expand--small flush--bottom js-send-quote btn-block" ng-disabled="preprovider.created|| locksave === true" ng-show="switchupdatepreprovider" translate="" type="submit">
+                                                                    Update
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a class="btn btn-primary" style="margin-bottom: 5px" translate="" ui-sref="preproviderlist">
+                                                    Go back
+                                                </a>
+                                                <a class="btn btn-danger" confirm="{{'Are you sure you want to remove?' | translate}}" ng-click="deletePreprovider(preprovider._id)" style="margin-bottom: 5px;" translate="">
+                                                    Delete
+                                                </a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<!--   <div class="form-group" style="float:right !important">
+                                                <div class="col-lg-12">
+                                                    <a class="btn btn-primary" ng-click="getDataAutomatically()" translate="">
+                                                        Get Data Below Automatically
+                                                    </a>
+                                                </div>
+                                            </div> -->
+<!--                             <div class="form-group">
+                                                <label class="col-lg-3 control-label" translate="">
+                                                    Company / Person
+                                                </label>
+                                                <div class="col-lg-9 padbottom20">
+                                                    <ui-select ng-model="preprovider.businesstype" on-select="setCompany($item)" register-custom-form-control="" required="" theme="bootstrap">
+                                                        <ui-select-match class="ui-select-match">
+                                                            {{$select.selected.name}}
+                                                        </ui-select-match>
+                                                        <ui-select-choices class="ui-select-choices" repeat="t in businessTypes | filter: $select.search">
+                                                            <span ng-bind-html="t.name | highlight: $select.search">
+                                                            </span>
+                                                        </ui-select-choices>
+                                                    </ui-select>
+                                                </div>
+                                            </div> -->

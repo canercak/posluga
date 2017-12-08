@@ -1,0 +1,102 @@
+<section class="pageboxlayout">
+    <section class="row">
+        <div class="large-12 columns">
+            <div class="pageboxpart padbottomfixed margin2xtop--small pageboxpart__inner-border">
+                <h1 class="pageboxpart__heading white24 helq pageboxredoverall pageboxtitletext" translate="">
+                    Forgotten Password?
+                </h1>
+                <div class="pageboxpart__inner-border">
+                    <div class="container padtop20" ng-show="resetStateIs('valid_token')">
+                        <div class="bs-callout bs-callout-info">
+                            <p translate="">
+                                You succesfully changed your password.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container padbottomfixed" ng-show="resetStateIs('invalid_token')">
+                        <br/>
+                        <p translate="">
+                            Something went wrong. Your attend to reset your password has failed.
+                        </p>
+                        <a class="text-right" href="/pwdreset" translate="">
+                            Try again to change your password
+                        </a>
+                    </div>
+                    <div class="container padbottomfixed" ng-show="resetStateIs('mailsent')">
+                        <br/>
+                        <h4 translate="">
+                            Check your inbox.
+                        </h4>
+                        <p>
+                            <span translate="">
+                                We sent a confirmation link to
+                            </span>
+                            <b>
+                                {{ reset.email }}.
+                            </b>
+                            <span translate="">
+                                When you confirm, your password will be changed.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="container" ng-show="resetStateIs('mailform')">
+                    <div class="row padbottomfixed">
+                        <div class="large-6 columns">
+                            <form class="form" name="resetform" ng-submit="sendPwdResetMail(resetform)" novalidate="">
+                                <div class="form-group">
+                                    <div class="large-12 columns margin2xtop" ng-class="{ 'has-success':resetform.email.$valid && submitted, 'has-error':resetform.email.$invalid && submitted }">
+                                        <label translate="">
+                                            Email address
+                                        </label>
+                                        <input class="form-control input-lg" mongoose-error="" name="email" ng-model="reset.email" required="" type="email"/>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="large-12 columns" ng-class="{ 'has-success': resetform.password.$valid && submitted, 'has-error': resetform.password.$invalid && submitted }">
+                                        <label translate="">
+                                            New password
+                                        </label>
+                                        <input class="form-control input-lg" mongoose-error="" name="password" ng-minlength="3" ng-model="reset.newPassword" required="" type="password"/>
+                                        <p class="help-block" ng-show="(resetform.password.$error.minlength || resetform.password.$error.required) && submitted" translate="">
+                                            Password must be at least 3 characters.
+                                        </p>
+                                        <p class="help-block" ng-show="resetform.password.$error.mongoose">
+                                            {{ errors.password }}
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-group has-error">
+                                    <p class="help-block" ng-show="resetform.email.$error.email && submitted" translate="">
+                                        Doesn't look like a valid email.
+                                    </p>
+                                    <p class="help-block" ng-show="resetform.email.$error.required && submitted" translate="">
+                                        Please enter your email.
+                                    </p>
+                                    <p class="help-block">
+                                        {{ errors.other }}
+                                    </p>
+                                </div>
+                                <div class="form-group has-error" ng-show="addressnotknown">
+                                    <p class="help-block" translate="">
+                                        The email address you entered is not known.
+                                    </p>
+                                    <p class="help-block" translate="">
+                                        Check the address and send it again.
+                                    </p>
+                                </div>
+                                <div class="form-group">
+                                    <div class="large-6 columns">
+                                        <button class="button" ng-disabled="pwdResetMailSend" translate="" type="submit">
+                                            Change Password
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

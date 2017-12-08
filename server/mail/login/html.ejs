@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <!-- If you delete this meta tag, Half Life 3 will never be released. -->
+        <meta content="width=device-width" name="viewport"/>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+        <title>
+            <%= TITLE %>
+        </title>
+        <link href="stylesheets/email.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body bgcolor="#FFFFFF">
+        <!-- HEADER -->
+        <table bgcolor="#39c" class="head-wrap">
+            <tr>
+                <td>
+                </td>
+                <td class="header container">
+                    <div class="content">
+                        <table bgcolor="#39c">
+                            <tr>
+                                <td>
+                                    <img src="https://poslugaua.s3.amazonaws.com/emailfiles/poslugawhitelogo.png" width="200"/>
+                                </td>
+                                <td align="right">
+                                    <h6 class="collapse" style="font-size: 16px;color:white !important">
+                                        <%= TITLE %>
+                                    </h6>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td>
+                </td>
+            </tr>
+        </table>
+        <!-- /HEADER -->
+        <!-- BODY -->
+        <table class="body-wrap">
+            <tr>
+                <td>
+                </td>
+                <td bgcolor="#FFFFFF" class="container">
+                    <div class="content">
+                        <table>
+                            <tr>
+                                <td>
+                                    <h3>
+                                        <%= HINAME %>
+                                    </h3>
+                                    <p class="lead">
+                                        <%= TEXT1 %>
+                                    </p>
+                                    <div style="width:450px;background-color:#ECF8FF;padding:30px 40px;margin:0 auto 20px;border: 1px solid #b9e5ff;">
+                                        <p style="padding-left:60px;font-size:19px;color:#000;margin:0 0 5px 0;text-align:left">
+                                            <%= LOGIN %>
+                                        </p>
+                                        <p style="padding-left:60px;font-size:19px;color:#000;margin:0 0 20px 0;text-align:left">
+                                            <%= PASSWORD %>
+                                        </p>
+                                    </div>
+                                    <p class="lead">
+                                        <%= TEXT2 %>
+                                    </p>
+                                    <p class="centered">
+                                        <a class="button orange" href="<%=LOGINBUTTON_URL%>">
+                                            <%=LOGINBUTTON %>
+                                        </a>
+                                    </p>
+                                    <p class="lead">
+                                        <%= TEXT3 %>
+                                    </p>
+                                    <p class="lead">
+                                        <%= TEXTBESTREGARDS %>
+                                    </p>
+                                    <p class="lead">
+                                        <%= TEXTPOSLUGATEAM%>
+                                    </p>
+                                    <!-- social & contact -->
+                                    <table class="social" width="100%">
+                                        <tr>
+                                            <td>
+                                                <!-- column 1 -->
+                                                <table align="left" class="column">
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="">
+                                                                <%=CONNECTWITHUS %>:
+                                                            </h5>
+                                                            <p class="">
+                                                                <a class="soc-btn fb" href="https://www.facebook.com/poslugaua">
+                                                                    Facebook
+                                                                </a>
+                                                                <a class="soc-btn tw" href="https://vk.com/public132891888">
+                                                                    Vkontakte
+                                                                </a>
+                                                                <a class="soc-btn gp" href="https://plus.google.com/106506773586563739901">
+                                                                    Google+
+                                                                </a>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- /column 1 -->
+                                                <!-- column 2 -->
+                                                <table align="left" class="column">
+                                                    <tr>
+                                                        <td>
+                                                            <h5 class="">
+                                                                <%=CONTACTINFO %>:
+                                                            </h5>
+                                                            <p>
+                                                                <%=PHONE %>:
+                                                                <strong>
+                                                                    (063) 796-01-88
+                                                                </strong>
+                                                                <br/>
+                                                                <%=EMAIL%>:
+                                                                <strong>
+                                                                    <a href="emailto:support@posluga.ua">
+                                                                        support@posluga.ua
+                                                                    </a>
+                                                                </strong>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- /column 2 -->
+                                                <span class="clear">
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- /social & contact -->
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- /content -->
+                </td>
+                <td>
+                </td>
+            </tr>
+        </table>
+        <!-- /BODY -->
+        <!-- FOOTER -->
+        <table class="footer-wrap">
+            <tr>
+                <td>
+                </td>
+                <td class="container">
+                    <!-- content -->
+                    <div class="content">
+                        <table>
+                            <tr>
+                                <td align="center">
+                                    <p>
+                                        <a href="<%=TERMS%>">
+                                            <%=TERMSTEXT%>
+                                        </a>
+                                        |
+                                        <a href="<%=PRIVACY%>">
+                                            <%=PRIVACYTEXT%>
+                                        </a>
+                                        |
+                                        <a href="<%=UNSUBSCRIBE%>">
+                                            <unsubscribe>
+                                                <%=UNSUBSCRIBETEXT%>
+                                            </unsubscribe>
+                                        </a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- /content -->
+                </td>
+                <td>
+                </td>
+            </tr>
+        </table>
+        <!-- /FOOTER -->
+    </body>
+</html>

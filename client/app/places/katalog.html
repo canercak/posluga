@@ -1,0 +1,194 @@
+<div class="pageboxredall" ng-controller="PlacesCtrl">
+    <nav class="breadcrumbs__background mobiledisplaynone bg--opacity-10 wrapper16" ng-include="'app/places/_katalogbread.html'" role="">
+    </nav>
+    <section class="header jumbotron-static pageboxhighq relative">
+        <div class="row height225 padtopfixedbigger padbottomfixedsmaller">
+            <div class="small-12 large-12 columns fittocenter--small marginxtop">
+                <h1 class="bigertext colorwhite padbottonfixedsmaller" translate="">
+                    Company Directory
+                </h1>
+                <p class="hightext helq padbottomfixed" translate="">
+                    Click on a place or a service to view it's details
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="colorwhite avenir font16set">
+        <div class="row soft--ends">
+            <div class="large-12 columns fittocenter--small" ng-show="switchview==='strana'">
+                <div class="all-services wrapper">
+                    <div class="dynamic-row">
+                        <h3 class="loosetext helq settobolder padbottonfixedsmaller underline " id="event-planner">
+                            <span translate="">
+                                Company Directory
+                            </span>
+                            <span>
+                                -
+                            </span>
+                            <span class="ng-scope" translate="">
+                                Places we operate
+                            </span>
+                        </h3>
+                        <div class="columns3x font20">
+                            <div ng-repeat="oblast in oblasts">
+                                <a ui-sref="katalog({oblast: oblast.slug})">
+                                    {{oblast  | translatePlaceFilter:languageKey }}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="large-12 columns fittocenter--small" ng-show="switchview==='oblast'">
+                <div class="all-services wrapper">
+                    <div class="dynamic-row">
+                        <h3 class="loosetext helq settobolder padbottonfixedsmaller underline " id="event-planner">
+                            <span>
+                                {{oblast  | translatePlaceFilter:languageKey }} -
+                            </span>
+                            <span translate="">
+                                places we operate
+                            </span>
+                        </h3>
+                        <div class="columns3x font20">
+                            <div ng-repeat="r in rayons">
+                                <a ui-sref="katalog({oblast: r.oblast.slug, rayon: r.slug})">
+                                    {{r  | translatePlaceFilter:languageKey }}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="large-12 columns fittocenter--small" ng-show="switchview==='rayon' &&  gorads.length > 0">
+                <div class="all-services wrapper">
+                    <div class="dynamic-row">
+                        <h3 class="loosetext helq settobolder padbottonfixedsmaller underline " id="event-planner">
+                            <span>
+                                {{rayon  | translatePlaceFilter:languageKey }} -
+                            </span>
+                            <span translate="">
+                                places we operate
+                            </span>
+                        </h3>
+                        <div class="columns3x font20">
+                            <div ng-repeat="g in gorads">
+                                <a ui-sref="katalog({oblast: g.oblast.slug, rayon: g.rayon.slug, gorad: g.slug})">
+                                    {{g | translatePlaceFilter:languageKey }}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="large-12 columns fittocenter--small" ng-show="switchview==='gorad'  &&  rayongorads.length > 0">
+                <div class="all-services wrapper">
+                    <div class="dynamic-row">
+                        <h3 class="loosetext helq settobolder padbottonfixedsmaller underline" id="event-planner">
+                            <span>
+                                {{gorad | translatePlaceFilter:languageKey }} -
+                            </span>
+                            <span translate="">
+                                places we operate
+                            </span>
+                        </h3>
+                        <div class="columns3x font20">
+                            <div ng-repeat="g in rayongorads">
+                                <a ui-sref="katalog({oblast: g.oblast.slug, rayon: g.rayon.slug, gorad: g.gorad.slug, rayongorad: g.slug})">
+                                    {{g | translatePlaceFilter:languageKey }}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="large-12 columns fittocenter--small">
+                <div class="all-services wrapper">
+                    <div class="dynamic-row" ng-show="switchview==='strana'">
+                        <h3 class="loosetext helq settobolder padbottonfixedsmaller underline " id="event-planner">
+                            <span class="ng-scope" translate="">
+                                Services we provide
+                            </span>
+                        </h3>
+                        <div class="columns3x font16">
+                            <div ng-repeat="service in servicelist">
+                                <a ui-sref="top10({service: service.subcategory.ru.slug})">
+                                    {{service.subcategory | translateFilter:languageKey}}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dynamic-row" ng-show="switchview==='oblast'">
+                        <h3 class="loosetext helq settobolder padbottonfixedsmaller underline " id="event-planner">
+                            <span class="ng-scope">
+                                {{oblast  | translatePlaceFilter:languageKey }} -
+                            </span>
+                            <span class="ng-scope" translate="">
+                                services we provide
+                            </span>
+                        </h3>
+                        <div class="columns3x font16">
+                            <div ng-repeat="service in servicelist">
+                                <a ui-sref="top10({service: service.subcategory.ru.slug, oblast: oblast.slug })">
+                                    {{service.subcategory | translateFilter:languageKey}}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dynamic-row" ng-show="switchview==='rayon'">
+                        <h3 class="loosetext helq settobolder padbottonfixedsmaller underline " id="event-planner">
+                            <span class="ng-scope">
+                                {{oblast  | translatePlaceFilter:languageKey }}, {{rayon | translatePlaceFilter:languageKey }}
+                            </span>
+                            -
+                            <span translate="">
+                                services we provide
+                            </span>
+                        </h3>
+                        <div class="columns3x font16">
+                            <div ng-repeat="service in servicelist">
+                                <a ui-sref="top10({service: service.subcategory.ru.slug, oblast: oblast.slug, rayon: rayon.slug  })">
+                                    {{service.subcategory | translateFilter:languageKey }}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dynamic-row" ng-show="switchview==='gorad'">
+                        <h3 class="loosetext helq settobolder padbottonfixedsmaller underline " id="event-planner">
+                            <span class="ng-scope">
+                                {{rayon | translatePlaceFilter:languageKey }}, {{gorad  | translatePlaceFilter:languageKey }} -
+                            </span>
+                            <span class="ng-scope" translate="">
+                                services we provide
+                            </span>
+                        </h3>
+                        <div class="columns3x font16">
+                            <div ng-repeat="service in servicelist">
+                                <a ui-sref="top10({service: service.subcategory.ru.slug, oblast: oblast.slug, rayon: rayon.slug, gorad: gorad.slug  })">
+                                    {{service.subcategory  | translateFilter:languageKey}}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dynamic-row" ng-show="switchview==='rayongorad'">
+                        <h3 class="loosetext helq settobolder padbottonfixedsmaller underline " id="event-planner">
+                            <span class="ng-scope">
+                                {{gorad | translatePlaceFilter:languageKey }}, {{rayongorad  | translatePlaceFilter:languageKey }} -
+                            </span>
+                            <span class="ng-scope" translate="">
+                                services we provide
+                            </span>
+                        </h3>
+                        <div class="columns3x font16">
+                            <div ng-repeat="service in servicelist">
+                                <a ui-sref="top10({service: service.subcategory.ru.slug, oblast: oblast.slug, rayon: rayon.slug, gorad: gorad.slug, rayongorad: rayongorad.slug  })">
+                                    {{service.subcategory  | translateFilter:languageKey}}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

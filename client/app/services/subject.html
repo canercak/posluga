@@ -1,0 +1,78 @@
+<div class="pageboxredall">
+    <section class="pageboxpicture bg--black relative" ng-style="{'background-image': 'url(' + subjectimage + ')'}">
+        <div class="pageboxpr" id="js-pageboxpr">
+        </div>
+        <div class="row">
+            <div class="header-content--bottom fittocenter--small">
+                <div class="large-12 columns padtop20">
+                    <h1 class="bigertext colorwhite">
+                        {{subject}}
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pageboxhighq pageboxtitletext colorwhite">
+        <div class="row soft--ends">
+            <div class="large-12 columns fittocenter--small">
+                <p class="hightext helq avenir colorwhite flush--bottom">
+                    {{desc}}
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="colorwhite avenir font16set">
+        <div class="row soft--ends">
+            <div class="large-12 columns fittocenter--small">
+                <div class="subjectselection wrapper">
+                    <h2 class="bigertext text--black padbottom10" translate="">
+                        Popular
+                    </h2>
+                    <div class="subjectclass" ng-repeat="s in popularSubcategories">
+                        <div class="name">
+                            {{s.subcategory | translateFilter:languageKey }}
+                        </div>
+                        <div class="image" ng-style="{'background-image':'url({{s.image}})'}">
+                        </div>
+                        <a class="bttn button orange" rel="nofollow" style="margin-top:1px; margin-bottom:1px" translate="" ui-sref="request({type:'new', serviceid: s._id})">
+                            Get Quote
+                        </a>
+                        <!--  <a class="bttn button" style="margin-top:1px; margin-bottom:1px" translate="" ui-sref="subcategory({slug: (s.subcategory | slugFilter:languageKey)})">
+                            Explore
+                        </a> -->
+                    </div>
+                </div>
+                <div class="all-services wrapper" ng-repeat="category in allSubcategories">
+                    <h2 class="bigertext text--black padbottom10">
+                        {{category.categories[0].category | translateFilter:languageKey }}
+                    </h2>
+                    <div class="dynamic-row">
+                        <ul class="column dynamiclist">
+                            <li ng-repeat="s in category.categories">
+                                <!--       <a ng-mouseenter="changePop(s._id)" popover-is-open="popoverIsOpen{{s._id}}" uib-popover-html="htmlPopover">
+                                    {{s.subcategory | translateFilter:languageKey }}
+                                </a> -->
+                                <!--                                 <a ui-sref="subcategory({slug: (s.subcategory | slugFilter:languageKey)})">
+                                    {{s.subcategory | translateFilter:languageKey }}
+                                </a> -->
+                                <a ui-sref="request({type:'new', serviceid: s._id})">
+                                    {{s.subcategory | translateFilter:languageKey }}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script id="myPopoverTemplate.html" type="text/ng-template">
+        <div>
+         <a class="bttn button orange" ui-sref="request({ type:'new', serviceid:  serviceid  })" translate="">
+            Get Quote
+        </a>
+      <!--   <a class="bttn button" ui-sref="subcategory({serviceid: serviceid })" translate="">
+            Explore
+        </a> -->
+    </div>
+    </script>
+</div>

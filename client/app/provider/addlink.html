@@ -1,0 +1,79 @@
+<section class="pageboxlayout">
+    <section class="row">
+        <div class="large-12 columns">
+            <div class="pageboxpart">
+                <h4 class="pageboxpart__heading white20 helq pageboxredoverall pageboxtitletext" translate="">
+                    Add your profile link to your website
+                </h4>
+                <div class="pageboxpart__inner-border">
+                    <div class="soft">
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <p class="wrapper18">
+                                    <span class="fontweight600" translate="">
+                                        First, copy and paste the gray colored link into the HTML of your website. Then, paste the web page address you placed the link in blue colored textbox. Finally, press Save button.
+                                    </span>
+                                    <!--  <span translate="">
+                                        Doing this will link your webpage to your Posluga.ua Profile and it will positively affect your ranking on search engines. It will also show your customers that you offer your services in Posluga.ua's trustable environment and when you win a quote, you will be paying us %5 commission rather than %6.
+                                    </span> -->
+                                </p>
+                                <div class="row">
+                                    <div class="large-5 columns padbottom5">
+                                        <ui-select class="xclass" ng-model="selectedlink" on-select="showInlineLink($item)" register-custom-form-control="" theme="bootstrap">
+                                            <ui-select-match class="ui-select-match xclass" placeholder="{{'Select' | translate}}">
+                                                <img class="imageselectboxsmall" ng-show="$select.selected.image" ng-src="{{$select.selected.image }}" style="height: 30px"/>
+                                                <span>
+                                                    {{$select.selected.name}}
+                                                </span>
+                                            </ui-select-match>
+                                            <ui-select-choices class="ui-select-choices " repeat="t in linkTypes | filter: $select.search">
+                                                <img class="imageselectboxbig" ng-src="{{t.image}}" style="height:100px"/>
+                                                <span ng-bind-html="t.name | highlight: $select.search">
+                                                </span>
+                                            </ui-select-choices>
+                                        </ui-select>
+                                    </div>
+                                    <div class="large-12 columns">
+                                        <div class="large-11 columns padleft0">
+                                            <input class="forcetext form-control backgroundgray" focus-if="" id="outgoinglink1" ng-model="outgoinglink" ng-readonly="true" type="text"/>
+                                        </div>
+                                        <div class="large-1 columns">
+                                            <button class="tiny button padbottonfixedsmaller" data-clipboard-target="#outgoinglink1" ngclipboard="" translate="">
+                                                Copy
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="large-6 columns padtop20">
+                                        <label class="wrapper18 fontweight200" for="incominglink" translate="">
+                                            Web page address you pasted the link above
+                                        </label>
+                                    </div>
+                                    <div class="large-12 columns">
+                                        <input class="forcetext form-control backgroundlightblue" name="incominglink" ng-model="incominglink" placeholder="{{incomingplaceholder}}" type="text">
+                                        </input>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <button class="button ladda-button" data-style="expand-right" ladda-button="laddaLoading" ng-click="addLink()" translate="" type="button">
+                                            Save
+                                        </button>
+                                        <span class="label label-success pull-right fontsize100p" ng-show="providerupdated" translate="">
+                                            Save Successful
+                                        </span>
+                                        <a class="marginleft10 wrapper16" ng-show="statetype==='new'" translate="" ui-sref="pronounce({providerid: provider._id, type: 'new'})">
+                                            Continue
+                                        </a>
+                                        <a class="marginbottom0 wrapper16" ng-show="statetype==='edit'" translate="" ui-sref="providers">
+                                            Go back
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

@@ -1,0 +1,127 @@
+<section class="pageboxlayout" ng-controller="QuoteCtrl">
+    <div class="row">
+        <div class="large-3 columns mobiledisplaynone" ng-include="'app/provider/_ranking.html'">
+        </div>
+        <div class="large-9 columns">
+            <section class="pageboxpart padbottomfixed">
+                <h1 class="pageboxpart__heading white24 helq pageboxredoverall pageboxtitletext">
+                    <span translate="">
+                        Quotes
+                    </span>
+                    <div class="small selectsearch transparent--light button flush--bottom float--right mobiledisplaynone">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <div class="input-group" style="width: 180px;">
+                                        <select class="form-control input" disable-invalid-styling="true" disable-valid-styling="true" id="pref-list" ng-change="changeListing()" ng-init="changeListing()" ng-model="status">
+                                            <option translate="" value="activequoted">
+                                                All active works
+                                            </option>
+                                            <option translate="" value="potentialquote">
+                                                Active works I can quote
+                                            </option>
+                                            <option translate="" value="quoted">
+                                                Active works I have quoted
+                                            </option>
+                                            <option translate="" value="oldquoted">
+                                                Ended works
+                                            </option>
+                                            <option selected="" translate="" value="allworks">
+                                                All works
+                                            </option>
+                                            <option disabled="disabled">
+                                                ──────────
+                                            </option>
+                                            <option translate="" value="2">
+                                                Waiting for Quotes
+                                            </option>
+                                            <option translate="" value="3">
+                                                Received Quotes
+                                            </option>
+                                            <option translate="" value="4">
+                                                Reservation Made
+                                            </option>
+                                            <option translate="" value="5">
+                                                Work Done
+                                            </option>
+                                            <option translate="" value="6">
+                                                Work Cancelled
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group searchbarstyle">
+                                        <input class="form-control input height32" disable-invalid-styling="true" disable-valid-styling="true" ng-model="query.filter" ng-model-options="filter.options" placeholder="{{'Search' | translate}}" type="text"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </h1>
+                <div class="pageboxpart__inner-border">
+                    <div class="soft fittocenter" ng-hide="requeststoquote.length > 0">
+                        <p class="padbottonfixedsmaller">
+                            <strong class="settobolder" translate="">
+                                It looks like you don’t have any leads yet.
+                            </strong>
+                        </p>
+                        <p class="flush--bottom" translate="">
+                            Not to worry — this likely means you signed up recently. Before long you should receive your first lead and it will show up right here.
+                        </p>
+                        <div class="margin2xtop pull--bottom">
+                        </div>
+                        <p>
+                        </p>
+                    </div>
+                    <div class="soft--sides--large padbottonfixedsmaller marginxtop padleft10" ng-show="requeststoquote.length > 0">
+                        <h3 class="middletext redpagebox" ng-show="status=== '2' ||  status=== '3' || status=== '4' || status=== '5' || status=== '6'">
+                            {{statusOptions[status-1].name }}
+                        </h3>
+                        <h3 class="middletext redpagebox" ng-show="status==='activequoted'" translate="">
+                            All active works
+                        </h3>
+                        <h3 class="middletext redpagebox" ng-show="status==='potentialquote'" translate="">
+                            Active works I can quote
+                        </h3>
+                        <h3 class="middletext redpagebox" ng-show="status==='quoted'" translate="">
+                            Active works I have quoted
+                        </h3>
+                        <h3 class="middletext redpagebox" ng-show="status==='oldquoted'" translate="">
+                            Ended works
+                        </h3>
+                        <p class="settobolder hightext helq padbottonfixedsmaller" ng-show="status==='activequoted'" translate="">
+                            Below are the active requests you have quoted and the requests you can send price quotes.
+                        </p>
+                        <p class="settobolder hightext helq padbottonfixedsmaller" ng-show="status==='potentialquote'" translate="">
+                            Below are the active requests you can send price quotes.
+                        </p>
+                        <p class="settobolder hightext helq padbottonfixedsmaller" ng-show="status==='quoted'" translate="">
+                            Below are the active requests you have sent a quote.
+                        </p>
+                        <p class="settobolder hightext helq padbottonfixedsmaller" ng-show="status==='oldquoted'" translate="">
+                            Below are the requests you have finished providing service, cancelled or someone else won.
+                        </p>
+                        <p class="settobolder hightext helq padbottonfixedsmaller" ng-show="status==='allworks'" translate="">
+                            Below are all works you are related to.
+                        </p>
+                        <p class="settobolder hightext helq padbottonfixedsmaller" ng-show="status=== '2' ||  status=== '3' || status=== '4' || status=== '5' || status=== '6'">
+                            <span style="padding-right:2px" translate="">
+                                Below are the requests with the status
+                            </span>
+                            <span>
+                                {{statusOptions[status-1].name }}
+                            </span>
+                        </p>
+                        <div class="pageboxreviewbox" ng-repeat="request in requeststoquote">
+                            <hr>
+                                <div ng-include="'app/request/_listitem.html'">
+                                </div>
+                            </hr>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>

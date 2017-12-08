@@ -1,0 +1,127 @@
+ #login-dp {
+     min-width: 250px;
+     padding: 14px 14px 0;
+     overflow: hidden;
+     background-color: rgba(255, 255, 255, .8);
+ }
+ 
+ #login-dp .help-block {
+     font-size: 12px
+ }
+ 
+ #login-dp .bottom {
+     background-color: rgba(255, 255, 255, .8);
+     border-top: 1px solid #ddd;
+     clear: both;
+     padding: 14px;
+ }
+ 
+ #login-dp .social-buttons {
+     margin: 12px 0
+ }
+ 
+ #login-dp .social-buttons a {
+     width: 49%;
+ }
+ 
+ #login-dp .form-group {
+     margin-bottom: 10px;
+ }
+ 
+ .btn-fb {
+     color: #fff !important;
+     background-color: #3b5998;
+ }
+ 
+ .btn-fb:hover {
+     color: #fff;
+     background-color: #496ebc
+ }
+ 
+ .btn-tw {
+     color: #fff !important;
+     background-color: #55acee;
+ }
+ 
+ .btn-tw:hover {
+     color: #fff;
+     background-color: #59b5fa;
+ }
+ 
+ @media(max-width:768px) {
+     #login-dp {
+         background-color: inherit;
+         color: #fff;
+     }
+     #login-dp .bottom {
+         background-color: inherit;
+         border-top: 0 none;
+     }
+ }
+ 
+ .has-feedback {
+     position: initial;
+ }
+ 
+ .red {
+     color: red;
+ }
+ 
+ .img-wrap {
+     position: relative;
+ }
+ 
+ .img-wrap .close {
+     position: absolute;
+     top: 0px;
+     right: 0px;
+     z-index: 100;
+     opacity: 1;
+     color: #2286AB;
+     line-height: 0.5;
+ }
+ 
+ .leftselect {
+     padding-left: 0px;
+ }
+ 
+ .rightselect {
+     padding-left: 0px;
+     padding-right: 0px;
+ }
+ 
+ .whenselect {
+     padding-top: 10px;
+     width: 200px
+ }
+ 
+ .thumb {
+     width: 24px;
+     height: 24px;
+     float: none;
+     position: relative;
+     top: 7px;
+ }
+ 
+ form .progress {
+     line-height: 15px;
+ }
+ 
+ .progress {
+     display: inline-block;
+     width: 100%;
+     margin-bottom: 5px;
+     /*    width: 100px;*/
+     /*   border: 3px groove #CCC;*/
+ }
+ 
+ .progress div {
+     font-size: smaller;
+     background: orange;
+     width: 0;
+ }
+ 
+ .upload_preview {
+     width: 32px;
+     height: 32px;
+ }

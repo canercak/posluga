@@ -1,0 +1,132 @@
+<div class="row fittocenter">
+    <div class="small-12 small-centered columns breadcrumbs padtop5" ng-show="switchview==='strana'">
+        <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a itemprop="url" ng-href="{{'/'}}">
+                <span itemprop="title" translate="">
+                    Posluga.ua Home
+                </span>
+            </a>
+        </div>
+        <div class="current" translate="">
+            Company Directory
+        </div>
+    </div>
+    <div class="small-12 small-centered columns breadcrumbs padtop5" ng-show="switchview==='oblast'">
+        <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a itemprop="url" ng-href="{{'/'}}">
+                <span itemprop="title" translate="">
+                    Posluga.ua Home
+                </span>
+            </a>
+        </div>
+        <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a itemprop="url" ng-href="{{'/katalog'}}">
+                <span itemprop="title" translate="">
+                    Company Directory
+                </span>
+            </a>
+        </div>
+        <div class="current">
+            {{oblast  | translatePlaceFilter:languageKey }}
+        </div>
+    </div>
+    <div class="small-12 small-centered columns breadcrumbs padtop5" ng-show="switchview==='rayon'">
+        <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a itemprop="url" ng-href="{{'/'}}">
+                <span itemprop="title" translate="">
+                    Posluga.ua Home
+                </span>
+            </a>
+        </div>
+        <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a itemprop="url" ng-href="{{'/katalog'}}">
+                <span itemprop="title" translate="">
+                    Company Directory
+                </span>
+            </a>
+        </div>
+        <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a itemprop="url" ng-href="{{'/katalog/' + oblast.slug}}">
+                <span itemprop="title">
+                    {{oblast | translatePlaceFilter:languageKey }}
+                </span>
+            </a>
+        </div>
+        <div class="current">
+            {{rayon  | translatePlaceFilter:languageKey }}
+        </div>
+    </div>
+    <div class="small-12 small-centered columns breadcrumbs padtop5" ng-show="switchview==='gorad'">
+        <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a itemprop="url" ng-href="{{'/'}}">
+                <span itemprop="title" translate="">
+                    Posluga.ua Home
+                </span>
+            </a>
+        </div>
+        <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a itemprop="url" ng-href="{{'/katalog'}}">
+                <span itemprop="title" translate="">
+                    Company Directory
+                </span>
+            </a>
+        </div>
+        <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a itemprop="url" ng-href="{{'/katalog/' + oblast.slug}}">
+                <span itemprop="title">
+                    {{oblast  | translatePlaceFilter:languageKey }}
+                </span>
+            </a>
+        </div>
+        <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a itemprop="url" ng-href="{{'/katalog/' + oblast.slug + '/' + rayon.slug}}">
+                <span itemprop="title">
+                    {{rayon  | translatePlaceFilter:languageKey }}
+                </span>
+            </a>
+        </div>
+        <div class="current">
+            {{gorad  | translatePlaceFilter:languageKey }}
+        </div>
+    </div>
+    <div class="small-12 small-centered columns breadcrumbs padtop5" ng-show="switchview==='rayongorad'">
+        <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a itemprop="url" ng-href="{{'/'}}">
+                <span itemprop="title" translate="">
+                    Posluga.ua Home
+                </span>
+            </a>
+        </div>
+        <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a itemprop="url" ng-href="{{'/katalog'}}">
+                <span itemprop="title" translate="">
+                    Company Directory
+                </span>
+            </a>
+        </div>
+        <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a itemprop="url" ng-href="{{'/katalog/' + oblast.slug}}">
+                <span itemprop="title">
+                    {{oblast  | translatePlaceFilter:languageKey }}
+                </span>
+            </a>
+        </div>
+        <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a itemprop="url" ng-href="{{'/katalog/' + oblast.slug + '/' + rayon.slug}}">
+                <span itemprop="title">
+                    {{rayon  | translatePlaceFilter:languageKey }}
+                </span>
+            </a>
+        </div>
+        <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a itemprop="url" ng-href="{{'/katalog/' + oblast.slug + '/' + rayon.slug + '/' + gorad.slug}}">
+                <span itemprop="title">
+                    {{gorad  | translatePlaceFilter:languageKey }}
+                </span>
+            </a>
+        </div>
+        <div class="current">
+            {{rayongorad  | translatePlaceFilter:languageKey }}
+        </div>
+    </div>
+</div>

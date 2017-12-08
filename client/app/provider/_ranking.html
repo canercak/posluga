@@ -1,0 +1,50 @@
+<div>
+    <ul class="control-panel-sidebar control-panel-sidebar--edit control-panel-sidebar__list bullet--none" ng-repeat="provider in userproviders">
+        <div class="pageboxrankingtop pageboxredoverall pageboxtitletext padbottomfixedx padbottonfixedsmaller text-center">
+            <div class="media padbottonfixedsmaller">
+                <div class="stat-cell__small wrapper16">
+                    {{provider.servicegiven}}
+                </div>
+                <div class="stat-cell__large">
+                    #{{provider.stats.priority.initial}}
+                </div>
+                <div class="stat-cell__small" translate="">
+                    your priority among other providers
+                </div>
+            </div>
+            <p class="padbottonfixedsmaller ng-scope">
+                {{provider.rankingtext}}
+            </p>
+        </div>
+        <ul class="marginxtop fade-in-down" style="">
+            <div>
+                <span>
+                    {{provider.service.subcategory | translateFilter:languageKey}}
+                </span>
+                <span translate="">
+                    Profile
+                </span>
+                <uib-progressbar animate="true" style="height: 25px;" type="success" value="provider.stats.profile.completeness">
+                    <span>
+                        {{provider.stats.profile.completeness}}%
+                    </span>
+                    <b translate="">
+                        Complete
+                    </b>
+                </uib-progressbar>
+            </div>
+            <li class="control-panel-sidebar__list-item--submenu ng-isolate-scope padbottom5" ng-repeat="issue in provider.stats.profile.issues">
+                <a ng-if="issue.objectid !== 2" ui-sref="profile({providerid: provider._id, element: issue.element, type: 'editfromquotes'})">
+                    <i class="fa fa-warning" style="color:#e95c41">
+                    </i>
+                    {{profileIssues[issue.objectid-1]}}
+                </a>
+                <a ng-if="issue.objectid === 2" ui-sref="addlink({providerid: provider._id,  type: 'addlinkfromquotes'})">
+                    <i class="fa fa-warning" style="color:#e95c41">
+                    </i>
+                    {{profileIssues[issue.objectid-1]}}
+                </a>
+            </li>
+        </ul>
+    </ul>
+</div>

@@ -1,0 +1,67 @@
+<section class="pageboxlayout">
+    <section class="row">
+        <div class="large-3 columns">
+            <div ng-include="'app/finances/_menu.html'">
+            </div>
+        </div>
+        <div class="large-9 columns">
+            <div class="pageboxpart">
+                <h1 class="pageboxpart__heading white24 helq pageboxredoverall pageboxtitletext" translate="">
+                    Invoices
+                </h1>
+                <div class="pageboxpart__inner-border">
+                    <div class="soft">
+                        <div class="large-6 columns">
+                            <div>
+                                <label class="settobolder" for="name" translate="">
+                                    Firstname
+                                </label>
+                                <input class="forcetext form-control" mongoose-error="" name="name" ng-model="vm.user.name" type="text"/>
+                                <p class="help-block" ng-show="form.name.$error.mongoose">
+                                    {{ vm.errors.other }}
+                                </p>
+                            </div>
+                            <div>
+                                <label class="settobolder" for="lastname" translate="">
+                                    Lastname
+                                </label>
+                                <input class="forcetext form-control" mongoose-error="" name="lastname" ng-model="vm.user.lastname" type="text"/>
+                                <p class="help-block" ng-show="form.lastname.$error.mongoose">
+                                    {{ vm.errors.other }}
+                                </p>
+                            </div>
+                        </div>
+                        <table class="table table-striped" st-table="rowCollection">
+                            <thead>
+                                <tr>
+                                    <th translate="">
+                                        Firstname
+                                    </th>
+                                    <th translate="">
+                                        Lastname
+                                    </th>
+                                    <th translate="">
+                                        Balance
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="row in rowCollection">
+                                    <td>
+                                        {{row.firstName | uppercase}}
+                                    </td>
+                                    <td>
+                                        {{row.lastName}}
+                                    </td>
+                                    <td>
+                                        {{row.balance | currency}}
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

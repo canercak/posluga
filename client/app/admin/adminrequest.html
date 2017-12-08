@@ -1,0 +1,267 @@
+<section class="pageboxlayout" ng-controller="AdminController">
+    <div class="large-12 columns">
+        <div class="pageboxpart__inner-border">
+            <div class="soft">
+                <div class="row">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" translate="">
+                            Request Details
+                        </div>
+                        <div class="panel-body">
+                            <div ng-include="'app/admin/_admindetailbox.html'">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" translate="">
+                            Potential Providers
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-bordered" style="font-size:13px">
+                                <thead>
+                                    <tr>
+                                        <th translate="">
+                                            Provider
+                                        </th>
+                                        <th translate="">
+                                            Email
+                                        </th>
+                                        <th translate="">
+                                            Website
+                                        </th>
+                                        <th translate="">
+                                            Phone
+                                        </th>
+                                        <th translate="">
+                                            Actions
+                                        </th>
+                                        <th translate="">
+                                            Status
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="provider in request.potentialproviders" style="border-bottom-color: black; border-bottom-width: 1px;  border-bottom-style: solid; ">
+                                        <div style="width: 150px;">
+                                            <td>
+                                                {{provider.businesstype.objectid=== 2 ? provider.company : (provider.firstname + ' ' + provider.lastname)}}
+                                            </td>
+                                            <td>
+                                                {{provider.user.email}} / порол: {{provider.user.xp || ""}}
+                                            </td>
+                                            <td>
+                                                <a ng-href="{{provider.website}}" target="_blank">
+                                                    {{provider.website}}
+                                                </a>
+                                            </td>
+                                            <td>
+                                                {{provider.phone}}
+                                            </td>
+                                            <td>
+                                                <div class="btn-group btn-group-justified" ng-show="request.status.objectid < 6" style="width: 200px;">
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-default" id="1ss" type="button" ui-sref="settings({adminuser: provider.user._id, type: 'editfromadminrequests', requestid: request._id})" uib-tooltip="{{'Update User Profile' | translate}}">
+                                                            <span class="glyphicon glyphicon-user">
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-default" id="12ss" type="button" ui-sref="profile({providerid:provider._id, type: 'editfromadminrequests', requestid: request._id})" uib-tooltip="{{'Update Provider Profile' | translate}}">
+                                                            <span class="glyphicon glyphicon-list-alt">
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-default" confirm="{{'Are you sure you want to send login details to this user?' | translate}}" id="1s22s" ng-click="sendLoginInfo(provider.user)" ng-show="provider.adminCreated" type="button" uib-tooltip="{{'Send Login Email' | translate}}">
+                                                            <span class="glyphicon glyphicon-lock">
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-default" confirm="{{'Are you sure you want to send opportunity email to this user?' | translate}}" id="231ss" ng-click="sendOpportunityEmail(provider.user._id, provider._id, request._id)" type="button" uib-tooltip="{{'Send Opportunity Email' | translate}}">
+                                                            <span class="glyphicon glyphicon-flag">
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-default" id="{{provider._id}}" ng-disabled="checkquotesent(provider._id)" popover-title="{{dynamicPopover.title}}" type="button" uib-popover-template="dynamicPopover.templateUrl" uib-tooltip="{{'Give Quote as Provider' | translate}}">
+                                                            <span class="glyphicon glyphicon-star">
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <script id="myPopoverTemplate.html" type="text/ng-template">
+                                                        <div class="form-group" > 
+                                                          <input type="text" ng-model="dynamicPopover.price" style="width: 100px">  
+                                                        <ui-select  id="when" ng-model="dynamicPopover.when" on-select="applyWhenOptions($item)" register-custom-form-control="" required="" theme="bootstrap">
+                                                            <ui-select-match class="ui-select-match" placeholder="{{ 'Select time' | translate }}">
+                                                                {{ $select.selected.name }}
+                                                            </ui-select-match>
+                                                            <ui-select-choices class="ui-select-choices" repeat="w in whenOptionsProvider | filter: $select.search">
+                                                                <span style="font-size:14px !important" ng-bind-html="w.name | highlight: $select.search">
+                                                                </span>
+                                                            </ui-select-choices>
+                                                        </ui-select>
+                                                        <span ng-show="showWhenPanel" data-ng-model="dynamicPopover.date" data-xdan-datetimepicker="{timepicker:true, defaultTime:'09:00', minDate:'0',validateOnBlur:true, maxDate:'+1970/01/22'}" id="datetimepicker" ng-disabled="switchupdaterequestlock">
+                                                        </span> 
+                                                        <textarea    ng-model="dynamicPopover.description" required="" style="width: 200px;height: 200px"> </textarea>
+                                                         <button class="tiny button ladda-button" data-style="expand-right" ladda-button="laddaLoading" translate="" ng-click="sendQuoteFromAdmin(provider.user._id, provider._id, request._id)">
+                                                                Send Quote
+                                                            </button>
+                                                        </div>
+                                                    </script>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span ng-show="provider.user.loginemailsent && provider.adminCreated" style="color:green" translate="">
+                                                    Login email sent
+                                                </span>
+                                                <p>
+                                                </p>
+                                                <span ng-show="{{request.opportunityemailsent.indexOf(provider._id) > -1}}" style="color:blue" translate="">
+                                                    Opportunity email sent
+                                                </span>
+                                                <p>
+                                                </p>
+                                                <span ng-show="checkquotesent(provider._id)" style="color:red" translate="">
+                                                    Quote sent
+                                                </span>
+                                            </td>
+                                        </div>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" translate="">
+                            Quotes
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-bordered" style="font-size:13px">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            #
+                                        </th>
+                                        <th translate="">
+                                            Provider
+                                        </th>
+                                        <th translate="">
+                                            Price
+                                        </th>
+                                        <th translate="">
+                                            Date
+                                        </th>
+                                        <th translate="">
+                                            Messages
+                                        </th>
+                                        <th translate="">
+                                            Selected?
+                                        </th>
+                                        <th translate="">
+                                            Service Complete?
+                                        </th>
+                                        <th translate="">
+                                            Review
+                                        </th>
+                                        <th translate="">
+                                            Actions
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="q in request.quotes" style="border-bottom-color: black; border-bottom-width: 1px;  border-bottom-style: solid; ">
+                                        <div style="width: 150px;">
+                                            <td>
+                                                {{ q.sequence}}
+                                            </td>
+                                            <td>
+                                                {{q.provider.businesstype.objectid=== 2 ? q.provider.company : (q.provider.firstname + ' ' + q.provider.lastname)}}
+                                            </td>
+                                            <td>
+                                                {{q.price | MonetaryUnit}}
+                                            </td>
+                                            <td>
+                                                {{(q.date && q.when.objectid ===1) ? (q.date | amDateFormat:'D MMMM YYYY HH:mm') : whenOptionsProvider[q.when.objectid-1].name}}
+                                            </td>
+                                            <td>
+                                                <table>
+                                                    <tr ng-repeat="chat in q.chat" style="border-bottom-color: black; border-bottom-width: 1px;  border-bottom-style: solid; ">
+                                                        <div>
+                                                            <td style="font-size:11px;">
+                                                                {{ chat.sendertype === 'provider' ? 'Поставщик' : 'Клиент'}}=>
+                                                            </td>
+                                                            <td style="font-size:11px;">
+                                                                {{ chat.message}} -
+                                                            </td>
+                                                            <td style="font-size:11px;">
+                                                                {{ chat.sentAt | amDateFormat:'DD.MM.YYYY HH:mm'}}
+                                                            </td>
+                                                        </div>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                {{q.selected ? "ДА" :  "НЕТ" }}
+                                            </td>
+                                            <td>
+                                                {{q.servicecomplete ? "ДА" : "НЕТ" }}
+                                            </td>
+                                            <td>
+                                                {{q.comment.message }}
+                                            </td>
+                                            <td>
+                                                <div class="btn-group btn-group-justified" style="width: 120px;">
+                                                    <div class="btn-group" ng-show="q.selected === false">
+                                                        <button class="btn btn-default" confirm="{{'Are you sure you want to accept this quote as client?' | translate}}" ng-click="selectQuoteAsClient(q)" ng-disabled="request.status.objectid!==3" type="button" uib-tooltip="{{'Select quote as client' | translate}}">
+                                                            <span class="glyphicon glyphicon-ok">
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="btn-group" ng-show="q.selected === true">
+                                                        <button class="btn btn-default" confirm="{{'Are you sure you want to deselect this quote?' | translate}}" ng-click="deselectQuoteAsClient(q)" ng-disabled="request.status.objectid!==4" type="button" uib-tooltip="{{'Deselect quote' | translate}}">
+                                                            <span class="glyphicon glyphicon-remove">
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-default" confirm="{{'Are you sure you want to complete this quote as provider?' | translate}}" ng-click="completeQuoteAsProvider(q)" ng-disabled="request.status.objectid!==4 || q.selected ===false" type="button" uib-tooltip="{{'Complete quote as provider' | translate}}">
+                                                            <span class="glyphicon glyphicon-lock">
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-default" id="{{provider._id}}" ng-disabled="q.servicecomplete === false " popover-title="{{reviewPopover.title}}" type="button" uib-popover-template="reviewPopover.templateUrl" uib-tooltip="{{'Add review as client' | translate}}">
+                                                            <span class="glyphicon glyphicon-comment">
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <script id="reviewPopoverTemplate.html" type="text/ng-template">
+                                                        <div class="form-group" > 
+                                                        <ng-rating editable="false" iconclass="fa fa-star" ng-model="5"  show-grade="false" stars-count="5">
+                                                        </ng-rating>
+                                                        <textarea  ng-model="reviewPopover.message" required="" style="width: 200px;height: 200px"> </textarea>
+                                                         <button class="tiny button" translate="" ng-click="addReviewAsClient(q)">
+                                                                Add Review
+                                                            </button>
+                                                        </div>
+                                                    </script>
+                                                </div>
+                                            </td>
+                                        </div>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div ng-include="'components/modal/_categoryModalContent.html'">
+</div>

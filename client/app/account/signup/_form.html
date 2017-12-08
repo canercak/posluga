@@ -1,0 +1,89 @@
+<form class="form" name="form" ng-submit="register(form)" novalidate="">
+    <h2 class="pageboxpart__heading white24 helq pageboxredoverall pageboxtitletext" translate="">
+        Sign Up
+    </h2>
+    <div class="pageboxpart__inner-border">
+        <div class="soft">
+            <div class="row">
+                <div class="col-sm-12">
+                    <oauth-buttons classes="btn-block">
+                    </oauth-buttons>
+                </div>
+            </div>
+            <div class="text--line-behind" style="margin-top:20px;margin-bottom: 10px" translate="">
+                OR
+            </div>
+            <div class="form-group">
+                <div class="large-12 columns form-group" ng-class="{ 'has-success': form.name.$valid && submitted, 'has-error': form.name.$invalid && submitted }">
+                    <label class="textleftbold" for="name" translate="">
+                        Name
+                    </label>
+                    <input class="forcetext form-control input-lg" mongoose-error="" name="name" ng-minlength="3" ng-model="user.name" required="" type="input"/>
+                    <p class="help-block" ng-show="(form.name.$error.minlength || form.name.$error.required) && submitted" translate="">
+                        Name must be at least 3 characters.
+                    </p>
+                    <p class="help-block" ng-show="form.name.$error.mongoose">
+                        {{ errors.name }}
+                    </p>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="large-12 columns " ng-class="{ 'has-success': form.email.$valid && submitted, 'has-error': form.email.$invalid && submitted }">
+                    <label class="textleftbold" for="email" translate="">
+                        Email
+                    </label>
+                    <input class="forcetext form-control input-lg" mongoose-error="" name="email" ng-model="user.email" ng-pattern='/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i' required="" type="email"/>
+                    <p class="help-block" ng-show="form.email.$error.email && submitted" translate="">
+                        Doesn't look like a valid email.
+                    </p>
+                    <!--                    <p class="help-block" ng-show="form.email.$error.required && submitted" translate="">
+                        What's your email address?
+                    </p> -->
+                    <p class="help-block" ng-show="form.email.$error.mongoose">
+                        {{ errors.email }}
+                    </p>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="large-12 columns " ng-class="{ 'has-success': form.password.$valid && submitted,'has-error': form.password.$invalid && submitted }">
+                    <label class="textleftbold" for="password" translate="">
+                        Password
+                    </label>
+                    <input class="forcetext form-control input-lg" mongoose-error="" name="password" ng-minlength="3" ng-model="user.password" required="" type="password"/>
+                    <p class="help-block" ng-show="(form.password.$error.minlength || form.password.$error.required) && submitted" translate="">
+                        Password must be at least 3 characters.
+                    </p>
+                    <p class="help-block" ng-show="form.password.$error.mongoose">
+                        {{ errors.password }}
+                    </p>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="large-12 columns form-group">
+                    <input class="termscheck" id="termsaccept" ng-model="user.termsaccepted" required="" type="checkbox"/>
+                    <span class="agreement" translate="">
+                        I accept
+                    </span>
+                    <a class="agreement" target="_blank" translate="" ui-sref="terms">
+                        terms of use
+                    </a>
+                    <span class="agreement" translate="">
+                        and
+                    </span>
+                    <a class="agreement" target="_blank" translate="" ui-sref="privacy">
+                        privacy policy
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="flush--top">
+            <div class="form-group soft hard--top">
+                <button class="button margin2xtop flush--ends expand--small ladda-button js-ladda-button" data-style="expand-right" id="signup_button" type="submit">
+                    <span class="ladda-label" translate="">
+                        Become a Member for Free
+                    </span>
+                </button>
+            </div>
+        </hr>
+    </div>
+</form>

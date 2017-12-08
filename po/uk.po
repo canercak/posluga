@@ -1,0 +1,4808 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: client/app/finances/transactions.html:40
+msgid "(request"
+msgstr "(Запит"
+
+#: client/app/main/main.html:51 client/app/places/_howitworks.html:13
+msgid "1 - Tell Us What You Need"
+msgstr "1 - Опишіть необхідну послугу"
+
+#: client/app/main/howitworks.html:43
+msgid "1. Post your job and relax"
+msgstr "1. Розмістіть заявку і відпочивайте "
+
+#: client/app/main/main.html:61 client/app/places/_howitworks.html:20
+msgid "2 - Get Price Quotes"
+msgstr "2 - Отримаєте 5 цін на послугу"
+
+#: client/app/main/howitworks.html:56
+msgid "2. Receive price quotes from providers"
+msgstr "2. Отримувати ціни від постачальників послуг"
+
+#: client/app/main/main.html:71 client/app/places/_howitworks.html:26
+msgid "3 - Hire The Right Business"
+msgstr "3 - Порівняйте та виберіть найкращу"
+
+#: client/app/main/howitworks.html:69
+msgid "3. Select the best match"
+msgstr "3. Виберіть кращу пропозицію "
+
+#: client/components/modal/_viewprofileModalContent.html:28
+msgid "4 others"
+msgstr "4 інші"
+
+#: client/app/admin/admin.controller.js:2032
+msgid ""
+"A client in {{body.distict}} is looking for {{body.servicetext}} service. "
+"Give quote at:"
+msgstr ""
+"Клієнт {{тіла.районі}} шукає {{тіла.servicetext}} сервіс. Дайте ціну на:"
+
+#: client/app/admin/admin.controller.js:1934
+msgid ""
+"A request has been made to reset your password. You can change your password "
+"by clicking this button:"
+msgstr ""
+"Був зроблений запит на скидання пароля. Ви можете змінити свій пароль, "
+"натиснувши на цю кнопку:"
+
+#: client/app/services/services.controller.js:26
+msgid ""
+"A truly successful event starts way before the linens, flowers and lighting. "
+"We help you organise that."
+msgstr ""
+"По-справжньому успішний захід починається з постільної білизни, квітів та "
+"освітлення. Ми допоможемо Вам організувати це."
+
+#: client/app/admin/preprovider.html:15
+msgid "APPROVED"
+msgstr "Затверджений"
+
+#: client/app/main/about.html:12 client/app/main/about.html:21
+#: client/app/main/main.controller.js:225
+#: client/components/footer/footer.html:24
+msgid "About Us"
+msgstr "Про Нас"
+
+#: client/app/finances/addmoneybank.html:43
+msgid "Account No:"
+msgstr "Номер рахунку"
+
+#: client/app/admin/servicegroup.html:31 client/app/admin/servicelist.html:62
+msgid "Action"
+msgstr "Дія"
+
+#: client/app/admin/adminrequest.html:160 client/app/admin/adminrequest.html:37
+msgid "Actions"
+msgstr "дії"
+
+#: client/app/admin/_admindetailbox.html:311
+msgid "Activate Request"
+msgstr "активувати запит"
+
+#: client/app/admin/requestlist.html:40 client/app/request/myrequests.html:18
+#: client/app/request/myrequests.html:76
+msgid "Active Requests"
+msgstr "Активні Запити"
+
+#: client/app/quote/myquotes.html:20 client/app/quote/myquotes.html:84
+msgid "Active works I can quote"
+msgstr "Активні роботи,на які я можу дати ціну"
+
+#: client/app/quote/myquotes.html:23 client/app/quote/myquotes.html:87
+msgid "Active works I have quoted"
+msgstr "Активні роботи,на які я дав ціни"
+
+#: client/app/admin/preprovider.html:327
+msgid "Add Address"
+msgstr "Додати адресу"
+
+#: client/app/admin/_admindetailbox.html:317
+#: client/app/admin/admin.controller.js:258
+msgid "Add Comment"
+msgstr "Зберегти коментар"
+
+#: client/app/provider/provider.controller.js:61
+#: client/app/quote/quote.controller.js:117
+#: client/app/quote/quote.controller.js:315
+msgid "Add Established Date"
+msgstr "Додати Дату Реєстрації"
+
+#: client/app/admin/addfunds.html:5 client/app/admin/providerlist.html:186
+#: client/app/admin/userlist.html:99
+msgid "Add Funds"
+msgstr "Поповнити Рахунок"
+
+#: client/app/admin/preprovider.html:426 client/app/provider/profile.html:248
+msgid "Add Image"
+msgstr "Додати Зображення"
+
+#: client/app/provider/_profilebox.html:112
+msgid "Add Link"
+msgstr "Додати Посилання"
+
+#: client/app/finances/addmoneybank.html:9 client/app/finances/finances.html:92
+msgid "Add Money By Bank Transfer"
+msgstr "Додати Гроші Банківським Переказом"
+
+#: client/app/finances/newcard.html:5
+msgid "Add Money By Credit Card"
+msgstr "Додати Грошей За Допомогою Кредитної Карти"
+
+#: client/app/finances/_menu.html:14
+msgid "Add Money by Bank Transfer"
+msgstr "Додати гроші банківським переказом"
+
+#: client/app/admin/articlelist.html:18
+#: client/app/admin/preproviderlist.html:24
+#: client/app/admin/requestlist.html:27 client/app/admin/servicegroup.html:18
+msgid "Add New"
+msgstr "Додати Новий"
+
+#: client/app/provider/providers.html:9
+msgid "Add New Profile"
+msgstr "Додати Новий Профіль"
+
+#: client/app/provider/provider.controller.js:60
+#: client/app/quote/quote.controller.js:116
+#: client/app/quote/quote.controller.js:314
+msgid "Add Official Documents"
+msgstr "Додати Реєстраційні Документи"
+
+#: client/app/request/request_form.html:83
+msgid "Add Photo"
+msgstr "Додати Фото"
+
+#: client/app/provider/provider.controller.js:58
+#: client/app/quote/quote.controller.js:114
+#: client/app/quote/quote.controller.js:312
+msgid "Add Profile Images"
+msgstr "Додати зображення для профілю"
+
+#: client/app/provider/provider.controller.js:59
+#: client/app/quote/quote.controller.js:115
+#: client/app/quote/quote.controller.js:313
+msgid "Add Profile Link to Your Website"
+msgstr "Додати в профіль посилання на Ваш сайт"
+
+#: client/app/provider/profile.html:170
+msgid "Add Profile Photo"
+msgstr "Додати Фотографію Профілю"
+
+#: client/app/admin/adminrequest.html:237
+msgid "Add Review"
+msgstr "Додати відгук"
+
+#: client/app/admin/adminservicegroup.html:46
+#: client/app/admin/preprovider.html:439
+msgid "Add Service"
+msgstr "Додати Послуги"
+
+#: client/app/admin/preprovider.html:365
+msgid "Add Service Groups"
+msgstr "Додати Фото Сервісу"
+
+#: client/app/provider/profile.html:195
+msgid "Add Service Photos"
+msgstr "Додати Фото Сервісу"
+
+#: client/app/quote/_commentbox.html:46
+msgid "Add photos of the finished work"
+msgstr "Додати фото готової роботи"
+
+#: client/app/admin/admin.controller.js:263
+#: client/app/admin/adminrequest.html:227
+msgid "Add review as client"
+msgstr "Додати відгук як клієнт"
+
+#: client/app/admin/admin.controller.js:1946
+msgid "Add your profile link to your webpage"
+msgstr "Додайте посилання свого профілю на свій сайт"
+
+#: client/app/provider/addlink.html:5
+#: client/app/provider/provider.controller.js:100
+msgid "Add your profile link to your website"
+msgstr "Додайте в свій профіль посилання на ваш сайт"
+
+#: client/app/quote/givequote.html:82
+msgid "Add your profile link to your website to pay %9 commission."
+msgstr "Додайте посилання на свій профіль на ваш сайт, щоб платити %9 комісії."
+
+#: client/app/admin/preprovider.html:135 client/app/admin/preprovider.html:246
+#: client/app/main/contact.html:36 client/app/provider/profile.html:119
+#: client/app/quote/_wrapper.html:251 client/app/quote/viewquotes.html:67
+#: client/app/request/request_form.html:217
+msgid "Address"
+msgstr "Адреса"
+
+#: client/app/admin/preprovider.html:82
+msgid "Address Details"
+msgstr "Адреса"
+
+#: client/app/admin/_admindetailbox.html:203
+msgid "Address:"
+msgstr "Адреса:"
+
+#: client/app/admin/_admindetailbox.html:286
+msgid "Admin Comments:"
+msgstr "Коментарі Адмiна"
+
+#: client/app/admin/providerlist.html:69
+msgid "Admin Created"
+msgstr "Адмін Створив"
+
+#: client/app/admin/_admindetailbox.html:252
+msgid "Admin Created:"
+msgstr "Адмін Створив:"
+
+#: client/app/admin/admin.controller.js:1962
+msgid "After you select a quote, we recommend you to"
+msgstr "Після того, як ви виберете ціну, ми рекомендуємо"
+
+#: client/app/admin/admin.controller.js:1834
+msgid "After you take your service,"
+msgstr "Після того, як ви приняли вашу послугу,"
+
+#: client/app/admin/admin.controller.js:1826
+msgid "All Quotes Received"
+msgstr "Всі Отримані Ціни"
+
+#: client/app/admin/admin.controller.js:2019
+msgid "All Quotes Received for request"
+msgstr "Всі пропозиції, отримані за запитом"
+
+#: client/app/admin/requestlist.html:37 client/app/request/myrequests.html:15
+#: client/app/request/myrequests.html:73
+msgid "All Requests"
+msgstr "Усі Запити"
+
+#: client/app/services/allservices.html:8
+#: client/app/services/services.controller.js:39
+#: client/components/footer/footer.html:73
+msgid "All Services"
+msgstr "Всі Послуги"
+
+#: client/app/quote/myquotes.html:17 client/app/quote/myquotes.html:81
+msgid "All active works"
+msgstr "Всі активні роботи"
+
+#: client/app/quote/myquotes.html:29
+msgid "All works"
+msgstr "Всі роботи"
+
+#: client/app/main/faq.html:292
+msgid ""
+"Allowing you to post a review yourself would render the rating illegitimate, "
+"so we do not allow this. Please invite these clients to posluga.ua to get "
+"quotes from you so they can write about their past experiences."
+msgstr ""
+"Дозволяючи Вам самим залишати відгуки ми зробимо наш рейтинг нелегітимним, "
+"ми не хочемо допустити цього. Будь ласка, запропонуйте клієнтам пройти за "
+"посиланням posluga.ua для отримання дозволу від вас, щоб вони змогли "
+"написати про свій досвід."
+
+#: client/app/main/article.html:90
+msgid "Also on Blog Posluga.ua"
+msgstr "Також на блозі Posluga.ua"
+
+#: client/app/admin/addfunds.html:19 client/app/finances/transactions.html:23
+msgid "Amount"
+msgstr "Сума"
+
+#: client/app/finances/addmoneybank.html:18
+msgid "Amount To Send:"
+msgstr "Сума Для Відправки:"
+
+#: client/app/main/faq.html:280
+msgid ""
+"Any changes that need to be made to reviews must be done by the person who "
+"posted the review. Just ask the reviewer to log in and edit their review."
+msgstr ""
+"Будь-які зміни, які необхідно внести в відгук повинні бути зроблені людиною, "
+"що розмістила відгук. Просто попросіть її увійти в систему і змінити відгук."
+
+#: client/app/services/services.controller.js:30
+msgid ""
+"Anything related with transport? We are here find you best people to do it!"
+msgstr ""
+"Щось пов'язане з транспортом? Ми знайдемо Вам найкращих людей, щоб зробити "
+"це!"
+
+#: client/app/admin/preprovider.html:389
+msgid "Apply Service Groups"
+msgstr "Додати Послуги"
+
+#: client/app/admin/preproviderlist.html:207
+msgid "Approve"
+msgstr "Затвердити"
+
+#: client/app/request/phoneverify.html:42
+msgid "Approve Code"
+msgstr "Затвердити Код"
+
+#: client/app/main/faq.html:233
+msgid ""
+"Are there commissions or finder’s fees to pay when I am booked through "
+"Posluga.ua?"
+msgstr ""
+"Є комісійні або гонорари посереднику, які треба сплатити, коли я замовляю "
+"через Posluga.ua?"
+
+#: client/app/main/howitworks.html:85
+msgid "Are you a service provider?"
+msgstr "Чи ви є постачальником послуг?"
+
+#: client/app/admin/adminrequest.html:209
+msgid "Are you sure you want to accept this quote as client?"
+msgstr "Ви впевнений що ви хочете вибрати ціну як клієнт?"
+
+#: client/app/admin/_admindetailbox.html:311
+msgid "Are you sure you want to activate the request?"
+msgstr "Ви впевнені, що хочете скасувати запит?"
+
+#: client/app/admin/preproviderlist.html:207
+msgid "Are you sure you want to approve?"
+msgstr "Ви впевнені, що хочете Затвердити?"
+
+#: client/app/admin/_admindetailbox.html:308
+msgid "Are you sure you want to cancel the request?"
+msgstr "Ви впевнені, що хочете скасувати запит?"
+
+#: client/app/admin/adminrequest.html:221
+msgid "Are you sure you want to complete this quote as provider?"
+msgstr "Ви впевнений що ви хочете виконати цю послугу як постачальник?"
+
+#: client/app/quote/_wrapper.html:272
+msgid "Are you sure you want to complete this service?"
+msgstr "Ви впевнені, що хочете виконати цю послугу?"
+
+#: client/app/provider/profile.html:157
+msgid "Are you sure you want to delete a promotion photo?"
+msgstr "Ви впевнені, що хочете видалити фото?"
+
+#: client/app/provider/profile.html:229
+msgid "Are you sure you want to delete document?"
+msgstr "Ви впевнені, що хочете видалити документ?"
+
+#: client/app/provider/_profilebox.html:118
+msgid "Are you sure you want to delete this profile?"
+msgstr "Ви впевнені, що хочете видалити цей профіль?"
+
+#: client/app/provider/profile.html:182
+msgid "Are you sure you want to delete your profile photo?"
+msgstr "Ви впевнені, що хочете видалити ваше фото профілю?"
+
+#: client/app/admin/articlelist.html:74
+#: client/app/admin/preproviderlist.html:201
+#: client/app/admin/providerlist.html:169 client/app/admin/servicegroup.html:56
+#: client/app/quote/_commentbox.html:51 client/app/request/request_form.html:88
+msgid "Are you sure you want to delete?"
+msgstr "Ви впевнені, що хочете видалити?"
+
+#: client/app/admin/adminrequest.html:215
+msgid "Are you sure you want to deselect this quote?"
+msgstr "Ви впевнений скасувати вибір пропозиції?"
+
+#: client/app/admin/_admindetailbox.html:305
+msgid "Are you sure you want to mark this request as paid?"
+msgstr "Ви впевнений що ви хочете відзначити як оплачений?"
+
+#: client/app/admin/preprovider.html:316 client/app/admin/preprovider.html:432
+#: client/app/admin/preprovider.html:467 client/app/admin/preprovider.html:8
+msgid "Are you sure you want to remove?"
+msgstr "Ви впевнені, що хочете видалити?"
+
+#: client/app/admin/adminrequest.html:77 client/app/admin/userlist.html:104
+msgid "Are you sure you want to send login details to this user?"
+msgstr "Ви впевнені, що хочете відправити?"
+
+#: client/app/admin/adminrequest.html:83
+msgid "Are you sure you want to send opportunity email to this user?"
+msgstr "Ви впевнені, що хочете відправити?"
+
+#: client/app/admin/adminarticle.html:5
+msgid "Article"
+msgstr "Стаття"
+
+#: client/app/admin/articlelist.html:13
+msgid "Article List"
+msgstr "Список Статей"
+
+#: client/components/navbar/navbar.html:114
+msgid "Articles"
+msgstr "Статті"
+
+#: client/app/request/request.html:66
+msgid "Attach if you have photos about the subject."
+msgstr "Прикріпіть фото предмета, якщо у вас є."
+
+#: client/app/request/request.html:38
+msgid ""
+"Available and interested professionals will send you their price quotes in "
+"24 hours."
+msgstr "Зацікавлені фахівці вишлють вам свої ціни протягом 24 годин."
+
+#: client/app/finances/finances.html:49 client/app/finances/finances.html:9
+#: client/app/finances/invoices.html:43
+#: client/app/finances/transactions.html:26
+msgid "Balance"
+msgstr "Баланс"
+
+#: client/app/admin/admin.controller.js:414
+#: client/app/admin/admin.controller.js:438
+#: client/app/finances/finances.controller.js:20
+msgid "Bank Payment"
+msgstr "Банківські Платежі"
+
+#: client/app/finances/addmoneybank.html:27
+msgid "Bank:"
+msgstr "Банк:"
+
+#: client/app/account/signup/_form.html:82
+msgid "Become a Member for Free"
+msgstr "Зареєструватися безкоштовно"
+
+#: client/app/account/signup/giveservice.html:7
+msgid "Become a member for free, start giving price quotes"
+msgstr "Зареєструватися безкоштовно і почати пропонувати ціни"
+
+#: client/app/request/myrequests.html:82
+msgid ""
+"Below are all requests you have created. Click on a request to view its "
+"details."
+msgstr ""
+"Нижче представлені всі запити, які ви створили. Натисніть на запит, щоб "
+"переглянути його деталі."
+
+#: client/app/quote/myquotes.html:105
+msgid "Below are all works you are related to."
+msgstr "Нижче наведено всі роботи, з якими ви пов'язані."
+
+#: client/app/quote/myquotes.html:96
+msgid "Below are the active requests you can send price quotes."
+msgstr ""
+"Перелічені нижче активні запити, ви можете надіслати пропозицію по ціні."
+
+#: client/app/quote/myquotes.html:93
+msgid ""
+"Below are the active requests you have quoted and the requests you can send "
+"price quotes."
+msgstr ""
+"Перелічені нижче активні запити, для яких Ви вже запропонували ціни і запити,"
+"на які ви можете надіслати пропозиції цін."
+
+#: client/app/quote/myquotes.html:99
+msgid "Below are the active requests you have sent a quote."
+msgstr "Перелічені нижче активні запити, відправте вашу пропозицію по ціні."
+
+#: client/app/quote/myquotes.html:109
+msgid "Below are the requests with the status"
+msgstr "Нижче подані запити зі статусом"
+
+#: client/app/quote/myquotes.html:102
+msgid ""
+"Below are the requests you have finished providing service, cancelled or "
+"someone else won."
+msgstr ""
+"Нижче подані запити,за якими ви вже зробили послугу, скасовані або хтось "
+"інший виграв."
+
+#: client/app/request/myrequests.html:85
+msgid ""
+"Below are your active requests such as the ones that are waiting for quotes, "
+"received quotes and and reserved."
+msgstr ""
+"Перелічені нижче ваші активні запити, які чекають цін,які вже отримали ціни "
+"і зарезервовані."
+
+#: client/app/request/myrequests.html:88
+msgid ""
+"Below are your ended requests such as the ones that are completed or "
+"cancelled."
+msgstr "Перелічені нижче ваші запити, які вже оброблені або скасовані."
+
+#: client/app/request/myrequests.html:92
+msgid "Below are your requests with the status"
+msgstr "Нижче подані запити зі статусом"
+
+#: client/app/admin/admin.controller.js:1839
+#: client/app/admin/admin.controller.js:1865
+#: client/app/admin/admin.controller.js:1887
+#: client/app/admin/admin.controller.js:1891
+#: client/app/admin/admin.controller.js:1924
+#: client/app/admin/admin.controller.js:1952
+#: client/app/admin/admin.controller.js:1972
+#: client/app/admin/admin.controller.js:2014
+msgid "Best Regards"
+msgstr "З Найкращими Побажаннями"
+
+#: client/app/places/_whyposluga.html:15
+msgid ""
+"Best prices you can find because companies compete to give you the best "
+"price."
+msgstr ""
+"Кращі ціни, які ви можете знайти, тому що компанії конкурують між собою, щоб "
+"дати вам найкращу."
+
+#: client/app/main/article.html:14 client/app/main/blog.html:12
+#: client/app/main/main.controller.js:177
+#: client/components/footer/footer.html:44
+msgid "Blog"
+msgstr "Блог"
+
+#: client/app/main/faq.html:215
+msgid "Booking"
+msgstr "Бронювання"
+
+#: client/app/admin/admin.controller.js:1882
+#: client/app/admin/admin.controller.js:1916
+#: client/app/admin/requestlist.html:96
+msgid "Budget"
+msgstr "Бюджет"
+
+#: client/app/admin/_admindetailbox.html:125
+#: client/app/request/_admindetailbox.html:96
+#: client/app/request/_detailbox.html:112
+msgid "Budget:"
+msgstr "Бюджет:"
+
+#: client/app/quote/viewquotes.html:38
+msgid "By accepting this price quote, you are agreeing to"
+msgstr "Вибираючи дану пропозицію за ціною, ви приймаєте"
+
+#: client/app/quote/givequote.html:163
+msgid "By sending this quote you are accepting the"
+msgstr "Відправляючи цю Ціну ви приймаєте"
+
+#: client/app/main/faq.html:310
+msgid "Can I dispute a review if I am unhappy with it?"
+msgstr "Я можу виправити відгук, якщо я незадоволений?"
+
+#: client/app/main/faq.html:42
+msgid "Can I negotiate the price that is provided to me in a quote?"
+msgstr "Я можу домовитися про ціну, яку мені запропонували?"
+
+#: client/app/main/faq.html:286
+msgid ""
+"Can I post reviews myself if I have received them from my clients in the "
+"past?"
+msgstr ""
+"Я можу написати собі відгуки, якщо я отримав їх від моїх клієнтів в минулому?"
+
+#: client/app/main/faq.html:245
+msgid "Can I update or cancel my quote after I’ve sent it?"
+msgstr ""
+"Я можу змінити або скасувати мою пропозицію по ціні після того як я її "
+"відправив?"
+
+#: client/app/admin/_admindetailbox.html:308
+#: client/app/request/_admindetailbox.html:166
+#: client/app/request/_admindetailbox.html:193
+#: client/app/request/_detailbox.html:207
+#: client/app/request/_detailbox.html:242
+msgid "Cancel Request"
+msgstr "Скасувати Запит"
+
+#: client/app/provider/provider.controller.js:610
+msgid ""
+"Cannot find the service you have written. Please select a service by typing "
+"or from the list."
+msgstr ""
+"Не вдається знайти написану вами послугу. Будь ласка, виберіть послугу, "
+"ввівши або виберете із списку."
+
+#: client/app/admin/adminservice.html:38 client/app/admin/servicelist.html:41
+#: client/components/modal/_categoryModalContent.html:18
+msgid "Category"
+msgstr "Категорія"
+
+#: client/app/admin/servicelist.html:38
+msgid "Category ID"
+msgstr "ID категорії"
+
+#: client/app/provider/provider.controller.js:15
+msgid "Certificate"
+msgstr "Сертифікат"
+
+#: client/app/account/pwdreset/pwdreset.html:90
+#: client/app/account/settings/settings.html:6
+msgid "Change Password"
+msgstr "Зміна Пароля"
+
+#: client/app/account/settings/settings.html:84
+msgid "Change Photo"
+msgstr "Змінити фотографію"
+
+#: client/app/account/settings/settings.html:53
+msgid "Change User Profile Details"
+msgstr "Зміна Профілю Деталі"
+
+#: client/app/account/pwdreset/pwdreset.html:84
+msgid "Check the address and send it again."
+msgstr "Перевірте адресу і відправити його знову."
+
+#: client/app/account/pwdreset/pwdreset.html:27
+msgid "Check your inbox."
+msgstr "Перевірте свою поштову скриньку."
+
+#: client/app/places/_directorytop.html:8 client/app/places/katalog.html:10
+#: client/app/places/places.controller.js:271
+msgid "Click on a place or a service to view it's details"
+msgstr "Натисніть на місцерозташування або послугу, щоб подивитися подробиці"
+
+#: client/components/modal/_categoryModalContent.html:2
+msgid "Click on subject and category to select a Service"
+msgstr "Натисніть на теми і категорії Для вибору послуги"
+
+#: client/app/account/signup/giveservice.html:10
+msgid "Clients looking for services are in Posluga.ua"
+msgstr "Клієнти, які шукають послуги на Posluga.ua"
+
+#: client/app/quote/quotedetail.html:55
+msgid "Close"
+msgstr "Поруч"
+
+#: client/app/request/phoneverify.html:32
+msgid "Code"
+msgstr "Код"
+
+#: client/app/main/article.html:115
+msgid "Comments"
+msgstr "Коментарі"
+
+#: client/app/quote/_detailbox.html:23
+msgid "Commission"
+msgstr "Комісія"
+
+#: client/app/finances/finances.html:17
+msgid "Commissions"
+msgstr "Комісійні"
+
+#: client/app/finances/finances.html:63
+msgid "Commissions to Pay"
+msgstr "Комісія на оплату"
+
+#: client/app/admin/admin.controller.js:1745
+#: client/app/admin/admin.controller.js:355
+#: client/app/admin/preproviderlist.html:66
+#: client/app/admin/providerlist.html:33
+#: client/app/provider/provider.controller.js:11
+#: client/app/quote/_wrapper.html:62
+msgid "Company"
+msgstr "Бізнес"
+
+#: client/app/provider/profile.html:19
+msgid "Company / Person"
+msgstr "Бізнес / Приватна особа"
+
+#: client/app/admin/preprovider.html:33
+msgid "Company Details"
+msgstr "Інформація Про Компанію"
+
+#: client/app/places/_directorytop.html:5
+#: client/app/places/_katalogbread.html:10
+#: client/app/places/_katalogbread.html:102
+#: client/app/places/_katalogbread.html:24
+#: client/app/places/_katalogbread.html:43
+#: client/app/places/_katalogbread.html:69 client/app/places/katalog.html:22
+#: client/app/places/katalog.html:7 client/app/places/places.controller.js:269
+msgid "Company Directory"
+msgstr "Каталог Компанії"
+
+#: client/app/admin/preprovider.html:61 client/app/provider/profile.html:35
+msgid "Company Name"
+msgstr "Назва Компанії"
+
+#: client/app/services/services.controller.js:18
+msgid ""
+"Compare constructors to renovate your home with the right professionals."
+msgstr ""
+"Порівняйте та виберіть кращих будівельників для ремонту вашого будинку."
+
+#: client/app/provider/_ranking.html:31
+msgid "Complete"
+msgstr "Заповнити"
+
+#: client/app/quote/quote.controller.js:259
+msgid "Complete below issues in your profile to get better results."
+msgstr "Заповніть нижче дані свого профілю, щоб отримати кращі результати."
+
+#: client/app/admin/adminrequest.html:221
+msgid "Complete quote as provider"
+msgstr "Виконати цю послугу як постачальник"
+
+#: client/app/admin/admin.controller.js:1995
+msgid "Complete the service and mark that you have given the service."
+msgstr "Заповніть сервіси та вкажіть, що ви надавали послуги."
+
+#: client/app/admin/admin.controller.js:1943
+msgid "Congrats! You have created your"
+msgstr "Вітаю, Ви створили свій"
+
+#: client/app/admin/admin.controller.js:1861
+msgid "Congratulations! You have received a quote for your"
+msgstr "Вітаємо, Ви отримали ціну для вашого"
+
+#: client/app/admin/admin.controller.js:1959
+msgid "Congratulations! you have selected a quote for your"
+msgstr "Вітаємо, Ви вибрали ціну для вашого"
+
+#: client/app/admin/admin.controller.js:1986
+msgid "Congratulations! you have won the"
+msgstr "Вітаємо, Ви виграли запит"
+
+#: client/app/admin/admin.controller.js:1899
+msgid "Connect with us"
+msgstr "Зв'язатися з нами"
+
+#: client/app/main/faq.html:33
+msgid "Consumer Questions"
+msgstr "Питання Споживачів"
+
+#: client/app/admin/admin.controller.js:1842
+#: client/app/admin/admin.controller.js:1877
+#: client/app/admin/admin.controller.js:1911
+#: client/app/admin/admin.controller.js:1975
+#: client/components/footer/footer.html:39
+msgid "Contact"
+msgstr "Контакти"
+
+#: client/app/main/contact.html:12 client/app/main/contact.html:21
+msgid "Contact Us"
+msgstr "Зв'яжіться з нами"
+
+#: client/app/admin/admin.controller.js:1900
+msgid "Contact info"
+msgstr "Контактна інформація"
+
+#: client/app/admin/admin.controller.js:1988
+#: client/app/admin/admin.controller.js:1994
+msgid ""
+"Contact the customer and decide about the details of the work to be done."
+msgstr "Зв'яжіться з клієнтом і уточніть деталі роботи."
+
+#: client/app/admin/_admindetailbox.html:166
+#: client/app/request/_admindetailbox.html:137
+#: client/app/request/_detailbox.html:153
+msgid "Contact:"
+msgstr "Зв'язатися з клієнтом і прийняти рішення про деталі роботи."
+
+#: client/app/admin/adminarticle.html:40
+msgid "Content"
+msgstr "Зміст"
+
+#: client/app/provider/addlink.html:64 client/app/provider/pronounce.html:55
+msgid "Continue"
+msgstr "Далі"
+
+#: client/app/provider/addlink.html:41
+msgid "Copy"
+msgstr "Копія"
+
+#: client/app/dashboard/dashboard.html:36
+msgid "Create Service Profile"
+msgstr "Створити Профіль Послуги"
+
+#: client/app/admin/providerlist.html:175 client/app/admin/servicelist.html:123
+msgid "Create Similar"
+msgstr "Створювати Подібні"
+
+#: client/app/dashboard/dashboard.html:33
+msgid ""
+"Create a profile page, let clients find you through search engines, get free "
+"leads, give quotes and earn."
+msgstr ""
+"Створіть сторінку профілю, нехай клієнти знаходять вас через пошукові "
+"системи, дайте ціни і заробляйте."
+
+#: client/app/provider/profile.html:5
+#: client/app/provider/provider.controller.js:225
+msgid "Create your profile page"
+msgstr "Створити сторінку вашого профілю"
+
+#: client/app/admin/preproviderlist.html:40
+#: client/app/admin/requestlist.html:84
+msgid "Created"
+msgstr "Створені"
+
+#: client/app/main/about.html:87
+msgid "Creating exceptional customer experiences, every time."
+msgstr "Створювати винятковий досвід для клієнта, кожен раз."
+
+#: client/app/admin/admin.controller.js:402
+#: client/app/admin/admin.controller.js:426
+#: client/app/finances/finances.controller.js:8
+msgid "Credit Card Payment"
+msgstr "Оплата Кредитною Карткою"
+
+#: client/app/account/settings/settings.html:12
+msgid "Current Password"
+msgstr "Поточний Пароль"
+
+#: client/app/admin/admin.controller.js:1928
+#: client/app/admin/admin.controller.js:443
+#: client/app/quote/quote.controller.js:67
+#: client/app/request/request.controller.js:67
+msgid "Customer does not want to be called"
+msgstr "Клієнт не хоче, щоб йому дзвонили"
+
+#: client/app/admin/admin.controller.js:1992
+msgid ""
+"Customer review is critical for your future business in Posluga.ua so we "
+"strongly recommend you to provide your best service and ask the customer to "
+"write you a good review."
+msgstr ""
+"Відгук замовника має вирішальне значення для вашого майбутнього прибутку на "
+"Posluga.ua тому ми настійно рекомендуємо Вам, щоб забезпечити Вам найкращий "
+"сервіс, а потім попросити клієнта написати позитивний відгук."
+
+#: client/app/request/_listitem.html:106
+msgid "Customer selected another quote"
+msgstr "Клієнт вибрав іншу пропозицію"
+
+#: client/app/admin/admin.controller.js:2024
+msgid "Customer wrote a review for your service"
+msgstr "Клієнт написав відгук до ваших послуг"
+
+#: client/app/admin/preprovider.html:21
+msgid "DELETED"
+msgstr "Видаленні "
+
+#: client/components/navbar/navbar.html:121
+msgid "Dashboard"
+msgstr "Панель приладів"
+
+#: client/app/admin/addfunds.html:27 client/app/admin/adminrequest.html:145
+#: client/app/admin/requestlist.html:87
+#: client/app/finances/transactions.html:17
+msgid "Date"
+msgstr "Дата"
+
+#: client/app/request/request_form.html:171
+msgid "Date and time?"
+msgstr "Дата і час?"
+
+#: client/app/quote/givequote.html:116
+msgid "Day and Time"
+msgstr "День та час"
+
+#: client/app/admin/articlelist.html:74 client/app/admin/preprovider.html:467
+#: client/app/admin/preprovider.html:8
+#: client/app/admin/preproviderlist.html:201
+#: client/app/admin/providerlist.html:169 client/app/admin/servicegroup.html:56
+#: client/app/provider/_profilebox.html:118
+msgid "Delete"
+msgstr "Видалити"
+
+#: client/app/admin/preproviderlist.html:43
+msgid "Deleted"
+msgstr "Видаленні "
+
+#: client/app/admin/preprovider.html:444
+msgid "Deleted?"
+msgstr "Видалити?"
+
+#: client/app/admin/adminarticle.html:24 client/app/admin/articlelist.html:33
+#: client/app/admin/preprovider.html:334 client/app/admin/preprovider.html:339
+#: client/app/admin/preproviderlist.html:75
+#: client/app/admin/providerlist.html:45 client/app/admin/requestlist.html:93
+#: client/app/provider/provider.html:140
+msgid "Description"
+msgstr "Опис"
+
+#: client/app/admin/_admindetailbox.html:51
+#: client/app/request/_admindetailbox.html:22
+#: client/app/request/_detailbox.html:38
+msgid "Description:"
+msgstr "Опис:"
+
+#: client/app/admin/adminrequest.html:215
+msgid "Deselect quote"
+msgstr "Скасувати вибір пропозиції"
+
+#: client/app/admin/admin.controller.js:1844
+#: client/app/admin/admin.controller.js:1879
+#: client/app/admin/admin.controller.js:1913
+#: client/app/admin/admin.controller.js:1977
+#: client/app/quote/_detailbox.html:42 client/app/request/_listitem.html:122
+#: client/app/request/_listitem.html:134
+msgid "Details"
+msgstr "Деталі"
+
+#: client/app/admin/_admindetailbox.html:63
+#: client/app/request/_admindetailbox.html:34
+#: client/app/request/_detailbox.html:50
+msgid "Details:"
+msgstr "Деталі:"
+
+#: client/app/quote/quotedetail.html:35
+msgid "Did you win this work?"
+msgstr "Ви виграли цю роботу?"
+
+#: client/app/provider/provider.controller.js:21
+msgid "Diploma"
+msgstr "Диплом"
+
+#: client/app/main/faq.html:107
+msgid "Do I have to complete the booking through Posluga.ua?"
+msgstr "Я повинен завершити бронювання через Posluga.ua?"
+
+#: client/app/main/faq.html:66
+msgid "Do I pay for the service you provide?"
+msgstr "Я оплачую послуги, які ви надаєте?"
+
+#: client/app/admin/admin.controller.js:1970
+msgid ""
+"Do not forget that the quoter has to ensure your satisfaction; because after "
+"you take the service, you can write a review on Posluga.ua and this will "
+"affect his future business."
+msgstr ""
+"Не варто забувати, що ви повинні бути задоволені запропонованою ціною; тому "
+"що після того, як вам нададуть послугу, ви можете написати свій відгук на "
+"Posluga.ua і це вплине на майбутнє постачальника."
+
+#: client/app/request/success.html:80
+msgid "Do you need another service?"
+msgstr "Вам потрібен інший сервіс?"
+
+#: client/app/main/faq.html:78
+msgid ""
+"Do you perform background checks for those providers listed on Posluga.ua?"
+msgstr ""
+"Чи Проводите ви перевірки даних для постачальників, перерахованих на Posluga."
+"ua?"
+
+#: client/app/main/faq.html:298
+msgid "Do you verify reviews?"
+msgstr "Ви перевіряєте відгуки?"
+
+#: client/app/admin/admin.controller.js:1921
+msgid "Do you want more business opportunities?"
+msgstr "Ви хочете більше замовлень для компанії?"
+
+#: client/app/provider/profile.html:291 client/app/provider/profile.html:295
+msgid "Document Date"
+msgstr "Дата Документу"
+
+#: client/app/provider/profile.html:244
+msgid "Document Image"
+msgstr "Зображення Документа"
+
+#: client/app/provider/profile.html:273
+msgid "Document Name"
+msgstr "Назва Документа"
+
+#: client/app/provider/profile.html:282
+msgid "Document Number"
+msgstr "Номер Документа"
+
+#: client/app/provider/profile.html:257
+msgid "Document Type"
+msgstr "Тип Документа"
+
+#: client/app/provider/profile.html:286
+msgid "Document or certificate number"
+msgstr "Документ або номер сертифіката"
+
+#: client/app/provider/provider.html:294
+msgid "Documents"
+msgstr "Документи"
+
+#: client/app/main/faq.html:204
+msgid "Does Posluga.ua charge for receiving or responding leads?"
+msgstr ""
+"Є плата на Posluga.ua за отримання запитів або відповіді на запити клієнтів?"
+
+#: client/app/main/faq.html:151
+msgid "Does this site really work?"
+msgstr "Цей сайт дійсно працює?"
+
+#: client/app/account/pwdreset/pwdreset.html:70
+#: client/app/account/settings/settings.html:74
+#: client/app/account/signup/_form.html:36
+msgid "Doesn't look like a valid email."
+msgstr "Не схоже на дійсну адресу email."
+
+#: client/app/main/about.html:93
+msgid "Doing it the right way, not the easiest way."
+msgstr "Робити це правильно, не самий легкий шлях."
+
+#: client/app/main/contact.html:48
+msgid "E-Mail"
+msgstr "Ел. пошта"
+
+#: client/app/main/about.html:80
+msgid ""
+"Each of us interacts with multiple businesses every day, from well known "
+"brands to the store on the corner. More often than not, it seems that the "
+"service we receive is less than remarkable. Once in a while, a company "
+"really stands out. It’s different. It’s better. You just can’t help but to "
+"tell your friends about it. We want to be that company for you."
+msgstr ""
+"Кожен з нас взаємодіє з декількома компаніями щодня, від відомих брендів до "
+"магазинчиків на розі. Найчастіше, здається, що сервіс який ми отримуємо "
+"менше, ніж заявлений. Іноді, компанія дійсно може виділятися. Ця "
+"відмінність. І це перевага. Все чим ви можете допомогти це розповісти про це "
+"друзям. Ми хочемо стати цією компанією для вас."
+
+#: client/app/admin/articlelist.html:62
+#: client/app/admin/preproviderlist.html:195
+#: client/app/admin/providerlist.html:157 client/app/admin/requestlist.html:184
+#: client/app/admin/servicelist.html:116 client/app/admin/userlist.html:88
+msgid "Edit"
+msgstr "Редагувати"
+
+#: client/app/provider/_profilebox.html:109
+msgid "Edit Profile"
+msgstr "Редагувати"
+
+#: client/app/quote/_detailbox.html:61 client/app/quote/_detailbox.html:64
+msgid "Edit Quote"
+msgstr "Редагувати Пропозицію ціни"
+
+#: client/app/admin/_admindetailbox.html:314
+#: client/app/request/_admindetailbox.html:169
+#: client/app/request/_detailbox.html:210
+#: client/app/request/_detailbox.html:213
+#: client/app/request/_detailbox.html:216
+msgid "Edit Request"
+msgstr "Редагувати Запит"
+
+#: client/app/quote/_wrapper.html:269
+msgid "Edit Review"
+msgstr "Редагувати Відгук"
+
+#: client/app/provider/provider.html:128
+msgid "Edit my profile"
+msgstr "Редагувати Профіль"
+
+#: client/app/provider/profile.html:8
+msgid "Edit your profile page"
+msgstr "Редагувати свій профіль"
+
+#: client/app/account/login/_login.html:18
+#: client/app/account/login/login.html:21
+#: client/app/account/settings/settings.html:67
+#: client/app/account/signup/_form.html:32
+#: client/app/admin/admin.controller.js:1901
+#: client/app/admin/adminrequest.html:28 client/app/admin/preprovider.html:116
+#: client/app/admin/preprovider.html:235
+#: client/app/admin/preproviderlist.html:72
+#: client/app/admin/providerlist.html:39 client/app/admin/userlist.html:25
+#: client/app/request/request.html:104
+msgid "Email"
+msgstr "Електронна пошта"
+
+#: client/app/account/settings/settings.html:118
+msgid "Email Notifications"
+msgstr "Повідомлень По Електронній Пошті"
+
+#: client/app/account/pwdreset/pwdreset.html:49
+msgid "Email address"
+msgstr "Адреса електронної пошти"
+
+#: client/app/admin/requestlist.html:43 client/app/request/myrequests.html:21
+#: client/app/request/myrequests.html:79
+msgid "Ended Requests"
+msgstr "Закінчені запити"
+
+#: client/app/quote/myquotes.html:26 client/app/quote/myquotes.html:90
+msgid "Ended works"
+msgstr "Закінчені роботи"
+
+#: client/app/admin/admin.controller.js:1996
+msgid "Ensure the satisfaction of the customer and ask to write a good review."
+msgstr ""
+"Забезпечте хороший сервіс для клієнта і попросіть,про написання хорошого "
+"відгуку."
+
+#: client/app/request/phoneverify.html:5
+msgid "Enter the code we sent your mobile phone to complete your request"
+msgstr ""
+"Введіть код, який ми вислали на ваш мобільний телефон, щоб завершити запит"
+
+#: client/app/request/phoneverify.html:27
+msgid ""
+"Enter the code you've received to the below textbox and press Approve Code "
+"button."
+msgstr ""
+"Введіть код, який ви отримали в текстовому полі нижче і натисніть кнопку "
+"Затвердити Код"
+
+#: client/app/quote/viewquotes.html:27
+msgid "Enter your details for the reservation"
+msgstr "Введіть дані для замовлення"
+
+#: client/app/account/settings/settings.controller.js:27
+msgid "Error in changing password. Please check your current password."
+msgstr "Помилка при зміні пароля. Будь ласка, перевірте ваш поточний пароль."
+
+#: client/app/account/settings/settings.controller.js:37
+msgid "Error in saving notification settings"
+msgstr "Помилка при збереженні параметрів повідомлень"
+
+#: client/app/account/settings/settings.controller.js:55
+msgid "Error in saving user profile settings"
+msgstr "Помилка при збереженні профілю настройки"
+
+#: client/app/admin/admin.controller.js:1964
+#: client/app/admin/admin.controller.js:1989
+msgid ""
+"Especially for the tasks that are more than 10000 грн., we strongly "
+"recommend you to make a written and signed agreement about the details of "
+"the work to make it official."
+msgstr ""
+"Спеціально для завдань, яких більш ніж 10000 , ми настійно рекомендуємо вам "
+"зробити письмову і підписану угоду про деталі роботи, щоб зробити її "
+"офіційною."
+
+#: client/app/provider/profile.html:205 client/app/provider/provider.html:95
+msgid "Established on"
+msgstr "Заснована на"
+
+#: client/app/request/request.html:45
+msgid "Explain in detail to get a right price."
+msgstr "Поясніть в деталях, щоб отримати правильну ціну"
+
+#: client/app/provider/profile.html:145
+msgid ""
+"Explain your difference and experience. Write some of the important works "
+"you have done."
+msgstr ""
+"Поясніть різницю і досвід. Напишіть деякі важливі роботи, які ви зробили."
+
+#: client/app/admin/preprovider.html:208
+msgid "Extra Address"
+msgstr "Додаткові Адреси"
+
+#: client/components/footer/footer.html:34
+msgid "FAQ"
+msgstr "Часто задаваемые вопросы"
+
+#: client/app/dashboard/dashboard.html:19
+msgid ""
+"Fill a simple request form, get quotes, compare price and quality to select "
+"the best one."
+msgstr ""
+"Заповніть просту форму запиту, отримуйте пропозиції, порівнюйте ціни і "
+"якість, щоб вибрати кращу з них."
+
+#: client/app/request/request.controller.js:302
+msgid "Fill this form to Get Free Price Quotes"
+msgstr "Заповніть дану форму, що б отримати ціни на послуги"
+
+#: client/app/finances/transactions.html:61
+msgid "Final Balance:"
+msgstr "Остаточна сума"
+
+#: client/app/finances/_menu.html:4 client/components/navbar/navbar.html:141
+msgid "Finances"
+msgstr "Фінанси"
+
+#: client/app/provider/addlink.html:13
+#: client/app/provider/provider.controller.js:100
+msgid ""
+"First, copy and paste the gray colored link into the HTML of your website. "
+"Then, paste the web page address you placed the link in blue colored "
+"textbox. Finally, press Save button."
+msgstr ""
+"Хочете підвищити рейтинг свого сайту в пошукових системах і ще додатково "
+"отримати знижку на наші послуги? Скопіюйте посилання нижче, і додайте його у "
+"себе на сайті. Потім, вставте посилання на сторінку вашого сайту, де ви "
+"розмістили нашу посилання. Після чого, будьте впевнені, ваш сайт тепер на "
+"кілька позицій вище в пошукових системах! І наша комісія буде складати 9% "
+"замість 10%."
+
+#: client/app/finances/invoices.html:16 client/app/finances/invoices.html:37
+#: client/app/quote/viewquotes.html:49
+msgid "Firstname"
+msgstr "ім'я "
+
+#: client/app/request/request_form.html:204
+msgid "Firstname and Lastname"
+msgstr "прізвище"
+
+#: client/app/admin/admin.controller.js:1997
+msgid ""
+"For any comments or questions please contact us on support@posluga.ua or "
+"phone 0850 333 22 00"
+msgstr "З будь-яких питань або відгуків пишіть нам support@posluga.ua"
+
+#: client/app/admin/admin.controller.js:1969
+msgid ""
+"For any comments or questions please contact us with the email "
+"support@posluga.ua or phone 0850 333 22 00"
+msgstr "З будь-яких питань або коментарів пишіть нам на support@posluga.ua"
+
+#: client/app/admin/admin.controller.js:1837
+msgid ""
+"For your security and satisfaction, we recommend you to make a written "
+"aggreement with the service provider and not to pay any amount before the "
+"work done."
+msgstr ""
+"Для вашої безпеки і задоволення, ми рекомендуємо вам зробити письмову угоду "
+"з постачальником послуг і не платити до закінчення виконаної роботи."
+
+#: client/app/account/pwdreset/pwdreset.html:5
+msgid "Forgotten Password?"
+msgstr "Забули пароль?"
+
+#: client/app/places/_whyposluga.html:42
+msgid "Free to use. Free to Ask. No obligation to hire."
+msgstr ""
+"Безкоштовно використовувати. Безкоштовно питати. Не обов'язково замовляти."
+
+#: client/app/main/faq.html:12 client/app/main/faq.html:21
+#: client/app/main/main.controller.js:149
+msgid "Frequently Asked Questions"
+msgstr "Поширені запитання"
+
+#: client/app/admin/admin.controller.js:345
+#: client/app/provider/provider.controller.js:37
+#: client/app/quote/quote.controller.js:30
+#: client/app/request/request.controller.js:30
+msgid "Friends in Facebook"
+msgstr "Друзі на Facebook"
+
+#: client/app/admin/admin.controller.js:348
+#: client/app/provider/provider.controller.js:40
+#: client/app/quote/quote.controller.js:33
+#: client/app/request/request.controller.js:33
+msgid "Friends in Vkontakte"
+msgstr "Друзі Vkontakte"
+
+#: client/app/services/services.controller.js:28
+msgid ""
+"From finding the perfect teacher to managing scheduling, we take care the "
+"details so you can focus on learning."
+msgstr ""
+"Від пошуку ідеального вчителя до управління розкладом,ми подбаємо про "
+"деталі, щоб ви могли зосередитися на навчанні."
+
+#: client/app/services/allservices.html:18
+#: client/app/services/services.controller.js:40
+msgid ""
+"From house painting to yoga training, we bring you the right service "
+"providers for all your needs."
+msgstr ""
+"Від будинку живопису до навчання йозі, ми даємо вам право вибору "
+"постачальника послуг для кожного сервісу який вам потрібно."
+
+#: client/app/admin/preprovider.html:69 client/app/provider/profile.html:43
+msgid "Full Name"
+msgstr "Повне ім'я"
+
+#: client/app/main/faq.html:145
+msgid "General"
+msgstr "Загальні"
+
+#: client/components/modal/_viewprofileModalContent.html:16
+msgid "Get 1 Price Quote"
+msgstr "отримати 1 цінову пропозицію"
+
+#: client/app/places/places.controller.js:279
+msgid "Get 5"
+msgstr "Отримати 5"
+
+#: client/components/modal/_viewprofileModalContent.html:11
+msgid "Get 5 Price Quotes"
+msgstr "Отримати 5 цінові пропозиції "
+
+#: client/app/places/_toptenjumbo.html:26
+msgid "Get Free Price Quotes"
+msgstr "отримати безкоштовні цінові пропозиції"
+
+#: client/app/main/main.controller.js:144 client/app/main/main.html:13
+#: client/app/main/main.html:16 client/app/places/places.controller.js:276
+msgid "Get Free Price Quotes For Services."
+msgstr "Отримати Безкоштовно Ціни На Послуги"
+
+#: client/app/main/_getquotes.html:1
+msgid "Get Price Quotes For Services"
+msgstr "Отримати Ціни На Послуги"
+
+#: client/app/main/_getquotes.html:13 client/app/services/subject.html:37
+#: client/app/services/subject.html:70 client/components/footer/footer.html:101
+#: client/components/navbar/navbar.html:65
+msgid "Get Quote"
+msgstr "Отримати ціну"
+
+#: client/app/main/howitworks.html:80
+msgid "Get Started Here!"
+msgstr "Почніть звідси!"
+
+#: client/app/admin/admin.controller.js:2016
+#: client/app/dashboard/dashboard.html:22
+msgid "Get a Free Quote"
+msgstr "отримати безкоштовні цінові пропозиції"
+
+#: client/app/provider/provider.html:123
+msgid "Get a free quote from me"
+msgstr "Отримати безкоштовне пропозицію від мене"
+
+#: client/app/provider/provider.html:202 client/app/provider/provider.html:54
+msgid "Get a free quote to view reviews"
+msgstr "Отримати безкоштовно ціни для перегляду відгуків"
+
+#: client/app/request/request.controller.js:458
+msgid "Get a price quote from"
+msgstr "отримати цінові пропозиції від"
+
+#: client/app/request/request.controller.js:326
+#: client/app/request/request.controller.js:338
+msgid "Get order details from client"
+msgstr "Отримати деталі про замовлення від клієнта"
+
+#: client/app/request/request.controller.js:460
+msgid "Get price quotes from"
+msgstr "Отримайте цінові пропозиції від"
+
+#: client/components/modal/_viewprofileModalContent.html:23
+msgid "Get quote from"
+msgstr "Отримайте пропозицію від"
+
+#: client/app/places/_whyposluga.html:24
+msgid ""
+"Get quotes from trusted businesses we check according to our strict criteria."
+msgstr ""
+"Отримати ціни від фірм, які ми перевірили, відповідно до ваших строгих "
+"критеріях."
+
+#: client/app/admin/admin.controller.js:254
+msgid "Give Price"
+msgstr "Дати Ціну"
+
+#: client/app/admin/admin.controller.js:1927
+#: client/app/request/_listitem.html:131
+msgid "Give Quote"
+msgstr "надати пропозицію"
+
+#: client/app/admin/adminrequest.html:89
+msgid "Give Quote as Provider"
+msgstr "надати пропозицію"
+
+#: client/components/navbar/navbar.html:23
+#: client/components/navbar/navbar.html:62
+msgid "Give Service"
+msgstr "Надати послугу"
+
+#: client/app/admin/admin.controller.js:1919
+msgid "Give a quote for this job now and have a better service profile."
+msgstr ""
+"Дайте пропозицію для цієї роботи зараз і майте кращий профіль обслуговування."
+
+#: client/app/quote/quote.controller.js:616
+msgid "Give the best price offer you can with the information user provided."
+msgstr "Дати найкращу ціну ви можете з інформацією, яку надав клієнт."
+
+#: client/app/admin/admin.controller.js:1920
+msgid ""
+"Give your quote fast. Customers tend to select the quotes that come in 24 "
+"hours. Make sure you have added your profile link to your webpage. Make sure "
+"you have nice photos and explanations about your services. A better profile "
+"leads to more earnings."
+msgstr ""
+"Робіть вашу пропозицію швидко. Клієнти схильні вибирати пропозиції, які "
+"надходять протягом 24 годин. Переконайтеся, що ви додали посилання профілю "
+"на свій сайт. Переконайтеся, що у вас є хороші фотографії і опис ваших "
+"послуг. Кращий профіль приваблює більше прибутку."
+
+#: client/app/main/main.html:29
+msgid "Go"
+msgstr "Зайти"
+
+#: client/app/admin/admin.controller.js:1917
+msgid "Go To Quote Page"
+msgstr "Перейдіть на сторінку з запитами"
+
+#: client/app/admin/admin.controller.js:1890
+#: client/app/admin/admin.controller.js:1974
+#: client/app/admin/admin.controller.js:2020
+msgid "Go To Request Page"
+msgstr "Перейти до сторінки запитів"
+
+#: client/app/admin/admin.controller.js:1856
+msgid "Go To Settings Page"
+msgstr "Перейти до сторінки налаштувань"
+
+#: client/app/admin/preprovider.html:464 client/app/admin/preprovider.html:5
+#: client/app/provider/addlink.html:67 client/app/provider/pronounce.html:58
+msgid "Go back"
+msgstr "повернутися"
+
+#: client/app/admin/admin.controller.js:1918
+msgid ""
+"Go to quote page and click the button to confirm that you have completed the "
+"service."
+msgstr ""
+"Перейдіть на сторінку з запитами і натисніть кнопку, щоб підтвердити, що Ви "
+"виконали послугу."
+
+#: client/app/main/main.html:41
+msgid "Gone are the days of ringing people for quotes!"
+msgstr "Пройшли часи дзвінків і пошуків для отримання ціни на послугу!"
+
+#: client/app/admin/preproviderlist.html:90
+#: client/app/admin/providerlist.html:60 client/app/admin/requestlist.html:108
+msgid "Gorad"
+msgstr "місто"
+
+#: client/app/main/about.html:99
+msgid "Having zero tolerance for mediocre work."
+msgstr "Вводити інновації, створювати нове і вдосконалюватися."
+
+#: client/app/main/main.controller.js:103 client/app/main/testimonials.html:24
+msgid ""
+"Here’s what some of the happy consumers who have taken services through "
+"Posluga.ua are saying."
+msgstr ""
+"Ось що говорять деякі щасливі споживачі, які взяли послуги через Posluga.ua"
+
+#: client/app/main/main.controller.js:218 client/app/main/terms.html:24
+msgid "Here’s what you agree to by using this website."
+msgstr "Ось те, з чим ви погодилися використовуючи даний сайт."
+
+#: client/app/admin/admin.controller.js:1827
+#: client/app/admin/admin.controller.js:1850
+#: client/app/admin/admin.controller.js:1860
+#: client/app/admin/admin.controller.js:1874
+#: client/app/admin/admin.controller.js:1908
+#: client/app/admin/admin.controller.js:1933
+#: client/app/admin/admin.controller.js:1958
+#: client/app/admin/admin.controller.js:2011
+msgid "Hi"
+msgstr "Здрастуй"
+
+#: client/app/places/_howitworks.html:1
+msgid "How Posluga.ua works"
+msgstr "Як працює Posluga.ua"
+
+#: client/app/main/faq.html:274
+msgid ""
+"How can I change a mistake that a client made in a review on my profile?"
+msgstr "Як я можу виправити помилку, яку зробив у відгуку?"
+
+#: client/app/admin/admin.controller.js:1923
+#: client/app/admin/admin.controller.js:1951
+msgid ""
+"How can we give you a better service? Please send your comments to: "
+"support@posluga.ua"
+msgstr ""
+"Як ми можемо поліпшити наше обслуговування? Будь ласка, надсилайте ваші "
+"коментарі за адресою: support@posluga.ua"
+
+#: client/app/main/faq.html:192
+msgid "How do I respond to a service lead?"
+msgstr "Як я можу відповісти на запит?"
+
+#: client/app/main/faq.html:221 client/app/main/faq.html:95
+msgid "How does booking on Posluga.ua work?"
+msgstr "Як бронювати на Posluga.ua?"
+
+#: client/app/main/howitworks.html:12 client/app/main/howitworks.html:21
+#: client/app/main/main.controller.js:213
+#: client/components/footer/footer.html:29
+msgid "How it Works?"
+msgstr "Як це працюює?"
+
+#: client/app/quote/_commentbox.html:31
+msgid "How many stars would you give?"
+msgstr "Скільки зірок ви готові поставити?"
+
+#: client/app/quote/_commentbox.html:66
+msgid "How much did you pay?"
+msgstr "Скільки ви заплатили?"
+
+#: client/app/admin/requestlist.html:99
+#: client/app/request/request_form.html:188
+msgid "How to notify you?"
+msgstr "Як повідомити вам?"
+
+#: client/app/account/signup/_form.html:64 client/app/provider/profile.html:314
+#: client/app/request/request_form.html:236
+msgid "I accept"
+msgstr "я згоден"
+
+#: client/app/quote/givequote.html:139
+msgid "I can provide this service better than others because..."
+msgstr "Я можу надати цю послугу краще, ніж інші, тому що ..."
+
+#: client/app/quote/_wrapper.html:272
+msgid "I completed service, customer can write review"
+msgstr "Я надав послугу, клієнт може написати відгук"
+
+#: client/app/quote/quote.controller.js:106
+#: client/app/request/request.controller.js:106
+msgid "I could not get answers to my questions"
+msgstr "Я не можу отримати відповіді на свої запитання"
+
+#: client/app/quote/quote.controller.js:94
+#: client/app/request/request.controller.js:94
+msgid "I have agreed with one of the posluga.ua requests"
+msgstr "Я домовився з кимось із пропозицій posluga.ua"
+
+#: client/app/quote/quote.controller.js:97
+#: client/app/request/request.controller.js:97
+msgid "I have agreed with someone out of posluga.ua"
+msgstr "Я домовився з кимось поза posluga.ua"
+
+#: client/app/main/faq.html:54
+msgid "I haven’t heard anything back from my request. What do I do?"
+msgstr "я не отримав відповіді на мою пропозицію. Що мені робити?"
+
+#: client/app/admin/admin.controller.js:378
+#: client/app/quote/quote.controller.js:46
+#: client/app/request/request.controller.js:46
+msgid "I just look for prices"
+msgstr "Я просто дивлюся ціни"
+
+#: client/app/main/faq.html:180
+msgid "I just received a request from a consumer. How do I know if it’s legit?"
+msgstr ""
+"Я тільки що отримав запит від споживача. Як мені дізнатися чи законно це?"
+
+#: client/app/quote/quote.controller.js:109
+#: client/app/request/request.controller.js:109
+msgid "I just renonunced"
+msgstr "я просто відмовився"
+
+#: client/app/request/success.html:103
+msgid "I need a different service than the services above"
+msgstr "мені потрібно інше"
+
+#: client/app/quote/givequote.html:169
+msgid ""
+"If the customer accepts your quote, the information in this form will be a "
+"binding contract between you and the customer."
+msgstr ""
+"Якщо клієнт прийняв вашу ціну, інформація в такому вигляді буде юридично "
+"зобов'язуючим договором між вами і клієнтом, і незалежно від того, клієнт "
+"отримує послугу чи ні, ми будемо мати юридичне право отримати наші комісійні "
+"від вас. Якщо Ви не впевнені чи не згодні, будь ласка, не надсилайте цю ціну."
+
+#: client/app/quote/quote.controller.js:620
+msgid "If the user accepts your quote, you will pay %10 commission to us."
+msgstr ""
+"Якщо користувач прийме вашу пропозицію, вам потрібно буде сплатити %10 "
+"комісії нам."
+
+#: client/app/quote/quote.controller.js:618
+msgid "If the user accepts your quote, you will pay %9 commission to us."
+msgstr ""
+"Якщо користувач прийме вашу пропозицію, вам потрібно буде сплатити %9 "
+"комісії нам."
+
+#: client/app/quote/quote.controller.js:633
+msgid "If the user accepts your quote, you will pay us"
+msgstr "Якщо користувач приймає вашу пропозицію, ви будете платити нам"
+
+#: client/app/main/about.html:40
+msgid "If you are a consumer;"
+msgstr "якщо ви споживач"
+
+#: client/app/main/about.html:48
+msgid "If you are a service provider;"
+msgstr "Якщо ви постачальник послуг;"
+
+#: client/app/main/article.html:68 client/app/quote/commentsuccess.html:17
+#: client/app/quote/servicesuccess.html:17
+msgid "If you are satisfied with Posluga.ua,"
+msgstr "Ви задоволені Posluga.ua"
+
+#: client/app/main/faq.html:263
+msgid ""
+"If you cancel a booking prior to the event date, you will be responsible for "
+"covering the Posluga.ua service fee. If you fail to appear at the event for "
+"which you have been booked, you will be responsible for covering the Posluga."
+"ua service fee and your membership may be terminated."
+msgstr ""
+"Якщо скасувати замовлення до дати проведення, ви не будете нести "
+"відповідальність за покриття плати за послуги Posluga.ua. Якщо ви не "
+"з'явитеся на заході, для якого ви були зареєстровані, ви будете нести "
+"відповідальність за покриття плати за послуги Posluga.ua і вашу компанію "
+"можуть видалити на сайті."
+
+#: client/app/request/success.html:57
+msgid "If you decide to choose a price quote, press 'Select Quote' button."
+msgstr "Якщо ви вирішили вибрати ціну, натисніть кнопку \"Вибрати ціну'."
+
+#: client/app/admin/admin.controller.js:1935
+msgid ""
+"If you did not request us to reset and email you your password, please email "
+"contact@posluga.ua and let us know."
+msgstr ""
+"Якщо ви не просили нас, завантажити і відправити вам пароль, будь ласка, "
+"напишіть support@posluga.ua"
+
+#: client/app/admin/admin.controller.js:1947
+msgid ""
+"If you have a website, add the link of your profile to your webpage. When "
+"you do it, not only you will get more business oppurtunities but you will "
+"also increase your rating in google and yandex searches."
+msgstr ""
+"Якщо у вас є сайт, додайте посилання свого профілю на нього. Коли ви зробите "
+"це, ви не тільки отримаєте більше замовлень, але ви також збільшите свій "
+"рейтинг в Google і Яндекс пошуку."
+
+#: client/app/quote/quotedetail.html:41
+msgid "If you have agreed with the customer, the commission amount of"
+msgstr "Якщо ви домовилися з клієнтом, сума комісії"
+
+#: client/app/admin/admin.controller.js:2013
+msgid ""
+"If you have any questions, please email contact@posluga.ua and let us know."
+msgstr ""
+"Якщо у вас є питання, будь ласка зв'яжіться з нами по електронній пошті "
+"support@posluga.ua"
+
+#: client/app/admin/admin.controller.js:1838
+msgid "If you have any questions, you can reach us from support@posluga.ua."
+msgstr ""
+"Якщо у вас є питання, будь ласка зв'яжіться з нами по електронній пошті "
+"support@posluga.ua"
+
+#: client/app/dashboard/dashboard.html:16
+msgid "If you need Service"
+msgstr "Якщо ви потребуєте послуг"
+
+#: client/app/main/about.html:67
+msgid ""
+"If you need a service, take your tea and relax. Posluga.ua is here to do the "
+"work for you."
+msgstr ""
+"Якщо вам потрібна послуга, візьміть чай і відпочиньте. Posluga.ua тут, щоб "
+"зробити роботу для вас."
+
+#: client/app/main/about.html:24
+msgid ""
+"If you need a service, why should you have to chase service providers? "
+"Instead, they should be chasing you! Posluga.ua is about capturing "
+"consumer's service request, sending this request to related local service "
+"providers, and competing them to send price quotes to the consumer to select "
+"the best one."
+msgstr ""
+"Якщо Вам потрібна послуга, чому ви повинні шукати постачальників послуг? "
+"Замість цього вони повинні шукати вас! Posluga.ua займеться Вашим запитом "
+"відправить запит на відповідних місцевих постачальників послуг, і вони "
+"вишлють Вам конкурентні ціни на послугу, щоб вибрати кращу з них."
+
+#: client/app/admin/admin.controller.js:1831
+msgid ""
+"If you need more information to decide, send message to quoters. You can "
+"click the button below to go quote selection page."
+msgstr ""
+"Якщо вам потрібна додаткова інформація, щоб вирішити, відправити "
+"повідомлення продавцю пропозиції. Ви можете натиснути на кнопку нижче, щоб "
+"перейти на сторінку вибору пропозиції."
+
+#: client/components/footer/footer.html:97
+msgid "If you need service:"
+msgstr "Якщо ви потребуєте послуг"
+
+#: client/app/dashboard/dashboard.html:30
+msgid "If you want to give service"
+msgstr "Якщо ви хочете надавати послуги"
+
+#: client/app/admin/adminarticle.html:32 client/app/admin/adminservice.html:99
+#: client/app/admin/articlelist.html:36 client/app/admin/servicelist.html:53
+msgid "Image"
+msgstr "малюнок"
+
+#: client/app/admin/admin.controller.js:362
+#: client/app/admin/admin.controller.js:372
+#: client/app/quote/quote.controller.js:40
+#: client/app/quote/quote.controller.js:53
+#: client/app/request/request.controller.js:40
+#: client/app/request/request.controller.js:53
+msgid "In 2 months"
+msgstr "Протягом 2 місяців"
+
+#: client/app/admin/admin.controller.js:365
+#: client/app/admin/admin.controller.js:375
+#: client/app/quote/quote.controller.js:43
+#: client/app/quote/quote.controller.js:56
+#: client/app/request/request.controller.js:43
+#: client/app/request/request.controller.js:56
+msgid "In 4 months"
+msgstr "Протягом 4 місяців"
+
+#: client/app/admin/admin.controller.js:1965
+msgid ""
+"In addition to that, we recommend you not to pay for the work beforehand. In "
+"cases where materials have to be bought or task has been completed partly, "
+"we recommend you only to pay for those materials or that part. Especially, "
+"if you have selected a service provider with less or no customer reviews, we "
+"recommend you to be more careful."
+msgstr ""
+"На додаток до цього, ми рекомендуємо вам не платити за роботу заздалегідь. У "
+"тих випадках, коли матеріали повинні бути куплені або завдання було "
+"завершена частково, ми рекомендуємо вам тільки платити за ці матеріали або "
+"цю частину роботи. Особливо, якщо ви вибрали постачальника послуг з меншими "
+"цінами або взагалі без відгуків клієнтів, ми рекомендуємо вам бути більш "
+"обережними."
+
+#: client/components/footer/footer.html:19
+msgid "Info"
+msgstr "Інфо"
+
+#: client/app/main/about.html:102
+msgid "Innovating, creating, and improving."
+msgstr "Нововведення, створення і вдосконалення."
+
+#: client/app/provider/profile.html:141
+msgid "Introduction"
+msgstr "Введення"
+
+#: client/app/finances/invoices.html:9
+msgid "Invoices"
+msgstr "Рахунки"
+
+#: client/app/request/request.html:59
+msgid "Is there anything else we should know?"
+msgstr "Є ще щось що нам потрібно знати?"
+
+#: client/app/request/request.html:52
+msgid "Is there something you want closer attention?"
+msgstr "Є щось чому ви хочете приділити пильну увагу?"
+
+#: client/app/admin/admin.controller.js:1922
+msgid ""
+"It is important to win at least 1 of the first 15 quotes you give. The "
+"number of job opportunities we send to you will increase as you win. There "
+"are many ways to win a business opportunity. Create a complete profile page, "
+"reply to business opurtunities on time and give reasonable price quotes."
+msgstr ""
+"Важливо виграти принаймні 1 з перших 15 запитів, на які ви дали ціни. "
+"Кількість запитів, які ми надсилаємо вам, зросте, якщо ви будете пропонувати "
+"найкращі ціни. Є багато способів, щоб збільшити кількість замовлень. "
+"Створити сторінку профілю, відповісти на запити вчасно і дати розумні ціни."
+
+#: client/app/quote/myquotes.html:65
+msgid "It looks like you don’t have any leads yet."
+msgstr "Схоже, що у вас поки немає лідерів "
+
+#: client/app/request/myrequests.html:57
+msgid "It looks like you don’t have any requests yet."
+msgstr "Схоже, що у вас поки немає запитів."
+
+#: client/app/admin/admin.controller.js:2006
+msgid ""
+"It takes just 20 seconds to help people. Click the button below to use your "
+"power now."
+msgstr ""
+"Це займе всього 20 секунд, щоб допомогти людям. Натисніть на кнопку нижче, "
+"щоб використовувати свої сили."
+
+#: client/app/main/_getquotes.html:17
+msgid "It's Free!"
+msgstr "Це безкоштовно!"
+
+#: client/app/main/faq.html:227
+msgid ""
+"It’s pretty simple actually. When you receive a lead you’re interested in, "
+"just respond by sending a quote back. We’ll send that over to the client and "
+"if they like what they see, they’ll accept your quote. Then it’s booked! All "
+"that’s left is for you to show up and do your thing."
+msgstr ""
+"Це досить просто, насправді. Коли ви отримуєте запит який вас цікавить, "
+"просто дайте відповідь, надіславши відповідь назад. Ми відправимо, це "
+"клієнту, і якщо їм сподобається те, що вони бачать, вони приймуть вашу "
+"пропозицію. Тоді він зарезервоване! Все, що вам залишається, це зробити свою "
+"справу."
+
+#: client/app/main/faq.html:163
+msgid "I’m not receiving emails from Posluga.ua. What’s the deal?"
+msgstr "Я не отримую електронні листи від Posluga.ua. В чому проблема?"
+
+#: client/components/modal/_viewprofileModalContent.html:33
+msgid "Just get a single price quote from"
+msgstr "Я не отримую електронні листи від Posluga.ua. В чому проблема?"
+
+#: client/app/main/main.controller.js:214
+msgid ""
+"Just tell us what service you need, and qualified local service providers "
+"will send you their price quotes. Then, compare and hire the provider that's "
+"right for you."
+msgstr ""
+"Просто скажіть нам, які послуги вас цікавлять, і місцеві компанії будуть "
+"посилати вам свої пропозиції. Потім порівняйте і найміть компанію, яка "
+"підходить саме для вас."
+
+#: client/app/admin/admin.controller.js:422
+#: client/app/quote/quote.controller.js:63
+#: client/app/request/request.controller.js:63
+msgid "Keep my number secret"
+msgstr "Просто отримати єдину цінову пропозиціу від"
+
+#: client/app/admin/adminservice.html:107
+msgid "Keywords"
+msgstr "Ключові слова"
+
+#: client/app/admin/preproviderlist.html:152
+#: client/app/admin/providerlist.html:115
+msgid "Landline:"
+msgstr "стаціонарний:"
+
+#: client/app/quote/_wrapper.html:11
+msgid "Last Update:"
+msgstr "останнє оновлення:"
+
+#: client/app/finances/invoices.html:25 client/app/finances/invoices.html:40
+#: client/app/quote/viewquotes.html:58
+msgid "Lastname"
+msgstr "прізвище"
+
+#: client/app/places/_customerreviews.html:1
+msgid "Latest Customer Reviews"
+msgstr "Останні Відгуки Клієнтів"
+
+#: client/app/main/faq.html:174
+msgid "Leads"
+msgstr "Запити"
+
+#: client/app/main/main.html:82
+msgid "Learn More On How It Works"
+msgstr "Детальніше про те як це працює"
+
+#: client/app/provider/provider.controller.js:18
+msgid "Licence"
+msgstr "Ліцензія"
+
+#: client/app/services/services.controller.js:20
+msgid ""
+"Life is too short to clean your own house! Contact us and we find best "
+"people to do it for you."
+msgstr ""
+"Життя надто коротке, щоб займатися прибиранням будинку! Зв'яжіться з нами і "
+"ми знайдемо кращих людей, щоб зробити це для вас."
+
+#: client/app/main/about.html:90
+msgid "Listening intently when given input, criticism, or praise."
+msgstr "Прислухатися до кожного клієнта, готові до критики і похвали."
+
+#: client/app/admin/preprovider.html:156 client/app/admin/preprovider.html:267
+#: client/app/provider/profile.html:70
+msgid "Location"
+msgstr "Місце розташування"
+
+#: client/app/account/login/_login.html:50
+#: client/app/account/login/login.html:5 client/app/account/login/login.html:54
+#: client/app/admin/admin.controller.js:1852
+#: client/app/request/request.html:143 client/app/request/request.html:88
+#: client/components/navbar/navbar.html:42
+msgid "Login"
+msgstr "Вхід"
+
+#: client/app/admin/_admindetailbox.html:186
+msgid "Login Details:"
+msgstr "Дані для входу:"
+
+#: client/app/admin/adminrequest.html:106
+msgid "Login email sent"
+msgstr "пошти для входу відправлені "
+
+#: client/components/oauth-buttons/oauth-buttons.controller.js:23
+msgid "Login with Facebook"
+msgstr "Вхід за допомогою Facebook"
+
+#: client/components/oauth-buttons/oauth-buttons.controller.js:25
+msgid "Login with Odnoklassniki"
+msgstr "Вхід за допомогою Odnoklassniki"
+
+#: client/components/oauth-buttons/oauth-buttons.controller.js:24
+msgid "Login with Vkontakte"
+msgstr "Вхід за допомогою Vkontakte"
+
+#: client/components/navbar/navbar.html:28
+msgid "Logout"
+msgstr "Вихід"
+
+#: client/app/account/login/_login.html:43
+#: client/app/account/login/login.html:47 client/app/request/request.html:136
+msgid "Lost or forgotten your password?"
+msgstr "Втратили або забули свій пароль?"
+
+#: client/app/admin/admin.controller.js:1949
+msgid "Make your customers happy"
+msgstr "Зробіть ваших клієнтів задоволеними"
+
+#: client/app/admin/_admindetailbox.html:305
+msgid "Mark as Paid"
+msgstr "Відзначити як оплачений"
+
+#: client/app/provider/_profilebox.html:36 client/app/quote/_wrapper.html:180
+msgid "Member for"
+msgstr "Зареєстрований"
+
+#: client/app/quote/givequote.html:135
+msgid "Message"
+msgstr "Повідомлення"
+
+#: client/app/admin/admin.controller.js:1870
+msgid "Message to you"
+msgstr "Вам повідомлення"
+
+#: client/app/admin/adminrequest.html:148
+msgid "Messages"
+msgstr "Повідомлень"
+
+#: client/app/admin/preproviderlist.html:132
+#: client/app/admin/providerlist.html:105
+msgid "Mobile 1:"
+msgstr "Мобільний 1"
+
+#: client/app/admin/preproviderlist.html:142
+msgid "Mobile 2:"
+msgstr "Мобільний 2"
+
+#: client/app/admin/preprovider.html:219 client/app/admin/preprovider.html:92
+#: client/app/provider/profile.html:54
+msgid "Mobile Phone"
+msgstr "Мобільний телефон"
+
+#: client/app/admin/preprovider.html:108 client/app/admin/preprovider.html:227
+msgid "Mobile Phone 2"
+msgstr "Мобільний телефон 2"
+
+#: client/app/account/settings/settings.html:58
+#: client/app/account/signup/_form.html:18
+#: client/app/admin/adminservicegroup.html:16
+#: client/app/admin/servicegroup.html:25 client/app/admin/userlist.html:28
+msgid "Name"
+msgstr "ім'я "
+
+#: client/app/account/signup/_form.html:22
+msgid "Name must be at least 3 characters."
+msgstr "Ім'я повинно бути не менше 3 символів."
+
+#: client/app/finances/addmoneybank.html:35
+msgid "Name:"
+msgstr "ім'я :"
+
+#: client/app/main/main.html:54
+msgid ""
+"Need something painted, designed, cleaned, photographed, installed, "
+"repaired, removed or replaced? Just tell us. It's free."
+msgstr ""
+"Потрібні послуги, ремонт, фотосесія, прибирання, ремонт або заміна, та що "
+"завгодно? Просто скажіть нам. Це безкоштовно."
+
+#: client/app/account/login/login.controller.js:37
+#: client/app/admin/admin.controller.js:382
+#: client/app/admin/preproviderlist.html:34
+#: client/app/quote/quote.controller.js:74
+#: client/app/request/request.controller.js:74
+msgid "New"
+msgstr "Нові"
+
+#: client/app/admin/admin.controller.js:1907
+msgid "New Business Opportunity"
+msgstr "Нові можливості для бізнесу"
+
+#: client/app/account/settings/settings.html:21
+msgid "New Password"
+msgstr "Новий пароль"
+
+#: client/app/admin/admin.controller.js:1941
+msgid "New Service Profile"
+msgstr "Новий профайл послуг"
+
+#: client/app/admin/admin.controller.js:2031
+msgid "New business opportunity!"
+msgstr "Нові можливості для бізнесу"
+
+#: client/app/account/pwdreset/pwdreset.html:57
+msgid "New password"
+msgstr "Новий пароль"
+
+#: client/app/admin/_admindetailbox.html:260
+#: client/app/admin/_admindetailbox.html:277
+msgid "No"
+msgstr "Ні"
+
+#: client/app/quote/_otherquotes.html:6
+msgid "No other provider sent a quote for this request yet."
+msgstr "Жоден інший постачальник не відправив ціну за даним запитом."
+
+#: client/app/main/faq.html:72
+msgid "No you don't. It's free and will be free."
+msgstr "Ні. Це безкоштовно і буде безкоштовним."
+
+#: client/app/provider/provider.html:311
+msgid "No:"
+msgstr "ні:"
+
+#: client/app/quote/myquotes.html:69 client/app/request/myrequests.html:61
+msgid ""
+"Not to worry — this likely means you signed up recently. Before long you "
+"should receive your first lead and it will show up right here."
+msgstr ""
+"Не хвилюйтеся - це, ймовірно, означає, що ви підписалися недавно. Перед цим "
+"ви повинні отримати своє перше керівництво і воно буде відображатися прямо "
+"тут."
+
+#: client/app/account/settings/settings.controller.js:34
+msgid "Notifacation settings successfully changed."
+msgstr "Налаштування повідомлень успішно змінені."
+
+#: client/app/account/settings/settings.html:111
+msgid "Notifications"
+msgstr "Повідомлення"
+
+#: client/app/account/login/_login.html:13
+#: client/app/account/login/login.html:16
+#: client/app/account/signup/_form.html:13 client/app/request/request.html:99
+msgid "OR"
+msgstr "чи"
+
+#: client/app/admin/preproviderlist.html:84
+#: client/app/admin/providerlist.html:54 client/app/admin/requestlist.html:102
+msgid "Oblast"
+msgstr "область"
+
+#: client/app/main/faq.html:48
+msgid ""
+"Of course you can. Everything is negotiable. But be respectful and "
+"understanding that everyone has a business to run and livelihood to make. "
+"Most vendors are quoting well thought prices that correctly match the "
+"quality and quantity of service you desire for your job."
+msgstr ""
+"Звичайно ви можете. Все є предметом переговорів. Але будьте шанобливі і "
+"розумійте, що у кожного є бізнес, і потрібні гроші на прожиття. Більшість "
+"виробників пропонують добре продумані ціни, які правильно визначають "
+"кількість і якість обслуговування, яке ви хочете для вашої роботи."
+
+#: client/app/provider/profile.html:221
+msgid "Official Documents"
+msgstr "Офіційні документи"
+
+#: client/app/admin/admin.controller.js:1886
+msgid ""
+"Once you choose a quote, we recommend you to make a written aggreement with "
+"the firm about the work to be done."
+msgstr ""
+"Після вибору пропозиції, ми рекомендуємо вам зробити письмову угоду з фірмою "
+"про роботу, яку належить зробити."
+
+#: client/app/admin/admin.controller.js:1832
+msgid "Once you decide,"
+msgstr "Як тільки ви вирішите"
+
+#: client/app/main/howitworks.html:72
+msgid ""
+"Once you have compared the price quotes of the providers it is up to you to "
+"decide who is right for your job. You can view profiles of each of our "
+"providers on the website as well as consumer feedback and star ratings to "
+"help you make the right decision."
+msgstr ""
+"Після того як ви порівняли ціни постачальників,прийміть рішення, хто "
+"підходить для вашої роботи. Ви можете переглядати профілі кожного з наших "
+"постачальників на веб-сайті, а також відгуки споживачів рейтинг, що допоможе "
+"вам прийняти правильне рішення."
+
+#: client/app/main/faq.html:101
+msgid ""
+"Once you’ve submitted a form about the service you are looking for, related "
+"local service providers will send you a quotes in 24 hours. After that all "
+"you have to do is to select the best offer!"
+msgstr ""
+"Після того як ви відправили форму про послугу, яку ви шукаєте, ми зв'яжемося "
+"з місцевими постачальниками послуг, які будуть посилати вам пропозиції "
+"протягом 24 годин. Після цього, все, що вам потрібно зробити, це вибрати "
+"кращу ціну!"
+
+#: client/app/admin/adminrequest.html:111
+msgid "Opportunity email sent"
+msgstr "пошта для Возможноста відправлені"
+
+#: client/app/admin/adminservice.html:201
+msgid "Option"
+msgstr "опція"
+
+#: client/app/admin/adminservice.html:144
+#: client/app/admin/adminservice.html:193
+msgid "Order"
+msgstr "замовлення"
+
+#: client/app/provider/provider.controller.js:24
+msgid "Other"
+msgstr "інщі"
+
+#: client/app/quote/_otherquotes.html:1
+msgid "Other Quotes"
+msgstr "інші пропозиції"
+
+#: client/app/request/request_form.html:78
+msgid "Other details"
+msgstr "інші деталі"
+
+#: client/app/quote/quote.controller.js:112
+#: client/app/request/request.controller.js:112
+msgid "Other reason"
+msgstr "інші причини"
+
+#: client/app/main/about.html:77
+msgid "Our Manifesto"
+msgstr "наш маніфест"
+
+#: client/app/request/phoneverify.html:56
+msgid "Our mobile phone verification service is free."
+msgstr "наш мобільний телефон служби перевірки безкоштовний"
+
+#: client/app/quote/_detailbox.html:33
+msgid "Ours:"
+msgstr "наше"
+
+#: client/app/main/main.html:267
+msgid "Over 950 Services Available"
+msgstr "Більш ніж 950 послуг доступно"
+
+#: client/app/account/login/_login.html:26
+#: client/app/account/login/login.html:30
+#: client/app/account/signup/_form.html:49
+#: client/app/admin/admin.controller.js:1854
+#: client/app/admin/providerlist.html:42 client/app/request/request.html:113
+msgid "Password"
+msgstr "Пароль"
+
+#: client/app/admin/admin.controller.js:1932
+msgid "Password Reset"
+msgstr "Пароль має бути не менш ніж 3 символи"
+
+#: client/app/account/pwdreset/pwdreset.html:61
+#: client/app/account/settings/settings.html:25
+#: client/app/account/signup/_form.html:53
+msgid "Password must be at least 3 characters."
+msgstr "Відновлення паролю"
+
+#: client/app/account/settings/settings.controller.js:24
+msgid "Password successfully changed."
+msgstr "Пароль успішно змінений"
+
+#: client/app/finances/finances.html:36
+msgid "Payments"
+msgstr "Оплати"
+
+#: client/app/admin/admin.controller.js:1742
+#: client/app/admin/admin.controller.js:352
+#: client/app/provider/provider.controller.js:8
+msgid "Personal"
+msgstr "особистий"
+
+#: client/app/admin/admin.controller.js:1902
+#: client/app/admin/adminrequest.html:34 client/app/quote/_wrapper.html:142
+#: client/app/quote/_wrapper.html:240
+msgid "Phone"
+msgstr "телефон"
+
+#: client/app/admin/providerlist.html:125
+msgid "Phonelist"
+msgstr "список телефонів"
+
+#: client/app/admin/preproviderlist.html:78
+#: client/app/admin/providerlist.html:48
+msgid "Phones"
+msgstr "телефони"
+
+#: client/app/admin/preproviderlist.html:81
+#: client/app/admin/providerlist.html:51
+msgid "Photo"
+msgstr "фото"
+
+#: client/app/provider/profile.html:166
+msgid "Photo or logo that will appear in your profile"
+msgstr "Фото або логотип, який буде відображатися у вашому профілі"
+
+#: client/app/provider/provider.html:162
+msgid "Photos"
+msgstr "Фото"
+
+#: client/app/account/settings/settings.html:79
+msgid "Picture"
+msgstr "Зображення"
+
+#: client/app/admin/_admindetailbox.html:217
+#: client/app/request/_admindetailbox.html:151
+#: client/app/request/_detailbox.html:192
+msgid "Pictures:"
+msgstr "Фотографії про послуги, які ви надаєте"
+
+#: client/app/admin/admin.controller.js:1846
+#: client/app/admin/admin.controller.js:1881
+#: client/app/admin/admin.controller.js:1915
+#: client/app/admin/admin.controller.js:1979
+msgid "Place"
+msgstr "Місце"
+
+#: client/app/admin/_admindetailbox.html:111
+#: client/app/request/_admindetailbox.html:82
+#: client/app/request/_detailbox.html:98
+msgid "Place:"
+msgstr "Місце:"
+
+#: client/app/places/katalog.html:28 client/app/places/places.controller.js:277
+msgid "Places we operate"
+msgstr "де ми працюємо"
+
+#: client/app/admin/preprovider.html:161 client/app/admin/preprovider.html:172
+#: client/app/admin/preprovider.html:183 client/app/admin/preprovider.html:194
+#: client/app/admin/preprovider.html:272 client/app/admin/preprovider.html:283
+#: client/app/admin/preprovider.html:294 client/app/admin/preprovider.html:305
+#: client/app/provider/profile.html:108 client/app/provider/profile.html:75
+#: client/app/provider/profile.html:86 client/app/provider/profile.html:97
+#: client/app/request/request_form.html:120
+#: client/app/request/request_form.html:131
+#: client/app/request/request_form.html:142
+#: client/app/request/request_form.html:49
+#: client/app/request/request_form.html:60
+msgid "Please Select"
+msgstr "Будь ласка, оберіть"
+
+#: client/app/account/login/_login.html:36
+#: client/app/account/login/login.html:40
+msgid "Please enter a valid email."
+msgstr "Будь ласка, введіть вашу діючу електронну пошту."
+
+#: client/app/request/request.html:121
+msgid "Please enter correct login details."
+msgstr "Будь ласка, введіть правильний логін."
+
+#: client/app/account/login/_login.html:33
+#: client/app/account/login/login.html:37
+msgid "Please enter your email and password."
+msgstr "Будь ласка, введіть свою електронну пошту і пароль"
+
+#: client/app/account/pwdreset/pwdreset.html:73
+msgid "Please enter your email."
+msgstr "Будь ласка, введіть свою електронну пошту."
+
+#: client/app/quote/quote.controller.js:609
+msgid "Please give a star rating for this service."
+msgstr "Прошу дати зірки для рейтингу за цю послугу."
+
+#: client/app/request/request.html:79
+msgid ""
+"Please login using the social providers or with the credentials we sent to "
+"your email."
+msgstr ""
+"Будь ласка, увійдіть з допомогою соціальних мереж або з обліковими даними, "
+"які ми вислали по електронній пошті."
+
+#: client/app/main/article.html:77 client/app/quote/commentsuccess.html:26
+#: client/app/quote/servicesuccess.html:26
+msgid "Please share us with your friends."
+msgstr "Будь ласка, поділіться нами зі своїми друзями."
+
+#: client/app/quote/viewquotes.html:71
+msgid "Please write your address."
+msgstr "Будь ласка, напишіть вашу адресу."
+
+#: client/app/main/article.html:83 client/app/quote/commentsuccess.html:32
+#: client/app/quote/servicesuccess.html:32
+msgid "Please..."
+msgstr "Будь ласка..."
+
+#: client/app/services/subject.html:28
+msgid "Popular"
+msgstr "Популярні"
+
+#: client/app/admin/adminservice.html:81 client/app/admin/servicelist.html:50
+msgid "Popular?"
+msgstr "Популярний"
+
+#: client/app/places/_toptenbread.html:5
+msgid "Posluga.ua"
+msgstr "Posluga.ua"
+
+#: client/app/main/blog.html:21
+msgid "Posluga.ua Blog"
+msgstr "Блог Posluga.ua "
+
+#: client/app/main/about.html:7 client/app/main/article.html:7
+#: client/app/main/blog.html:7 client/app/main/contact.html:7
+#: client/app/main/faq.html:7 client/app/main/howitworks.html:7
+#: client/app/main/privacy.html:7 client/app/main/terms.html:7
+#: client/app/main/testimonials.html:7 client/app/places/_katalogbread.html:17
+#: client/app/places/_katalogbread.html:36
+#: client/app/places/_katalogbread.html:5
+#: client/app/places/_katalogbread.html:62
+#: client/app/places/_katalogbread.html:95
+msgid "Posluga.ua Home"
+msgstr "Posluga.ua"
+
+#: client/app/admin/admin.controller.js:1840
+#: client/app/admin/admin.controller.js:1866
+#: client/app/admin/admin.controller.js:1888
+#: client/app/admin/admin.controller.js:1895
+#: client/app/admin/admin.controller.js:1925
+#: client/app/admin/admin.controller.js:1953
+#: client/app/admin/admin.controller.js:1973
+#: client/app/admin/admin.controller.js:2015
+msgid "Posluga.ua Team"
+msgstr "команда Posluga.ua"
+
+#: client/app/main/main.controller.js:222 client/app/main/privacy.html:24
+msgid ""
+"Posluga.ua has created this privacy statement in order to demonstrate our "
+"firm commitment to your privacy. The following discloses the information "
+"gathering and dissemination practices for this website."
+msgstr ""
+"Posluga.ua створила цю декларацію про конфіденційність, щоб продемонструвати "
+"нашу тверду прихильність до вашої особистої інформації. Нижче розкрита "
+"практика збору і поширення інформації на цьому сайті."
+
+#: client/app/main/about.html:51
+msgid ""
+"Posluga.ua is a business that use smart technology and superb marketing to "
+"generate and deliver jobs for you to win. We're the first in Ukraine, and "
+"the market leaders!"
+msgstr ""
+"Posluga.ua це бізнес, який використовує смарт-технології і чудовий маркетинг "
+"для підготовки та надання роботи для вас."
+
+#: client/app/main/article.html:74 client/app/quote/commentsuccess.html:23
+#: client/app/quote/servicesuccess.html:23
+msgid ""
+"Posluga.ua is a little company that lives by the recommendations of "
+"satisified users."
+msgstr ""
+"Posluga.ua це невелика компанія, яка живе за рекомендаціями задоволених "
+"користувачів."
+
+#: client/app/main/howitworks.html:33
+msgid "Posluga.ua is a simple. Here’s how it works"
+msgstr "Posluga.ua це просто. Як вона працює"
+
+#: client/app/main/main.controller.js:226
+msgid ""
+"Posluga.ua is about capturing consumer's service request, sending this "
+"request to related local service providers, and competing them to send price "
+"quotes to the consumer to select the best one."
+msgstr ""
+"Posluga.ua займеться Вашим запитом відправить запит на відповідних місцевих "
+"постачальників послуг, і вони вишлють Вам конкурентні ціни на послугу, щоб "
+"вибрати кращу з них."
+
+#: client/app/main/about.html:36
+msgid "Posluga.ua is the easy way to get price quotes for trades and services."
+msgstr "Posluga.ua це простий спосіб отримати ціни на послуги."
+
+#: client/app/main/about.html:43
+msgid ""
+"Posluga.ua is website that your can list a job request and our intelligent "
+"profile matching system will notify local service providers of your request "
+"and arrange for them to give price quotes to you."
+msgstr ""
+"Posluga.ua це веб-сайт, на якому ви можете залишити ваш запит на послугу, "
+"наша система буде сповіщати місцевих постачальників послуг за вашим "
+"запитом , щоб вони вислали вам свої ціни."
+
+#: client/app/admin/admin.controller.js:1968
+msgid "Posluga.ua is with you in every step."
+msgstr "Posluga.ua з вами на кожному кроці."
+
+#: client/app/admin/adminrequest.html:18 client/app/admin/requestlist.html:120
+msgid "Potential Providers"
+msgstr "Потенційних Постачальників"
+
+#: client/app/admin/preproviderlist.html:19
+msgid "Pre-registered Providers List"
+msgstr "Попередньо зареєстрований список постачальників послуг"
+
+#: client/components/navbar/navbar.html:84
+msgid "Preregister"
+msgstr "попередня реєстрація"
+
+#: client/app/admin/admin.controller.js:1867
+#: client/app/admin/adminrequest.html:142 client/app/quote/_detailbox.html:15
+#: client/app/quote/_wrapper.html:126 client/app/quote/_wrapper.html:224
+#: client/app/quote/givequote.html:31
+msgid "Price"
+msgstr "ціна"
+
+#: client/app/quote/givequote.html:22
+msgid "Price quote and introduction message"
+msgstr "Ваша ціна і повідомлення"
+
+#: client/app/request/success.html:33
+msgid "Price quotes for your request will come in 24 hours."
+msgstr "Ціни для вашого запиту прийдуть протягом 24 годин."
+
+#: client/app/admin/preprovider.html:87
+msgid "Primary Address"
+msgstr "Основний Адреса"
+
+#: client/app/admin/admin.controller.js:1897
+msgid "Privacy"
+msgstr "Конфіденційність"
+
+#: client/app/main/main.controller.js:221 client/app/main/privacy.html:12
+#: client/app/main/privacy.html:21 client/components/footer/footer.html:54
+msgid "Privacy Policy"
+msgstr "Політика конфіденційності"
+
+#: client/app/provider/_ranking.html:24
+msgid "Profile"
+msgstr "Профайл"
+
+#: client/app/admin/preprovider.html:347
+msgid "Profile Photo"
+msgstr "Фото профайлу"
+
+#: client/app/provider/provider.controller.js:148
+#: client/app/provider/providers.html:5
+#: client/components/navbar/navbar.html:136
+msgid "Profiles"
+msgstr "Профайли"
+
+#: client/app/provider/_profilebox.html:115
+msgid "Promote"
+msgstr "Рекламувати"
+
+#: client/app/provider/pronounce.html:12
+#: client/app/provider/provider.controller.js:106
+msgid "Promote Your Profile"
+msgstr "Рекламувати ваш профіль"
+
+#: client/app/provider/profile.html:150
+msgid "Promotion Photos:"
+msgstr "Просування фото"
+
+#: client/app/admin/adminrequest.html:139 client/app/admin/adminrequest.html:25
+msgid "Provider"
+msgstr "Постачальник послуг"
+
+#: client/app/admin/providerlist.html:30
+msgid "Provider No"
+msgstr "Постачальників Немає"
+
+#: client/app/admin/_admindetailbox.html:269
+msgid "Provider Paid:"
+msgstr "Оплачений"
+
+#: client/app/admin/preprovider.html:12
+msgid "Provider Pre-registration Form"
+msgstr "Форма попередньої реєстрації для постачальника послуг"
+
+#: client/app/main/faq.html:142
+msgid "Provider Questions"
+msgstr "Питань для постачальника послуг"
+
+#: client/app/admin/admin.controller.js:2021
+msgid ""
+"Provider completed giving service. Make sure we get the payment and customer "
+"writes a review."
+msgstr ""
+"Постачальник надав послугу. Переконайтеся, що ми отримали оплату і клієнт "
+"пише відгук."
+
+#: client/app/admin/admin.controller.js:2018
+msgid "Provider sent a quote to a customer for request"
+msgstr "Постачальник надіслав пропозицію клієнту за запитом"
+
+#: client/app/admin/userlist.html:34 client/components/navbar/navbar.html:89
+msgid "Providers"
+msgstr "Постачальники послуг"
+
+#: client/app/admin/providerlist.html:13
+msgid "Providers List"
+msgstr "Список Постачальників послуг"
+
+#: client/app/admin/adminservice.html:168
+msgid "Question"
+msgstr "Питання"
+
+#: client/app/admin/servicelist.html:56
+msgid "Questions"
+msgstr "Питання"
+
+#: client/app/quote/_wrapper.html:3
+msgid "Quote"
+msgstr "Пропозиція"
+
+#: client/app/admin/admin.controller.js:406
+#: client/app/admin/admin.controller.js:430
+#: client/app/finances/finances.controller.js:12
+msgid "Quote Commission to Pay"
+msgstr "Комісія за пропозицію"
+
+#: client/app/quote/_wrapper.html:32
+msgid "Quote No"
+msgstr "номер пропозиції"
+
+#: client/app/quote/_chat.html:13
+msgid "Quote Owner"
+msgstr "Власник пропозиції"
+
+#: client/app/quote/_detailbox.html:1
+msgid "Quote details"
+msgstr "деталі пропозиції"
+
+#: client/app/admin/adminrequest.html:116
+msgid "Quote sent"
+msgstr "Ви відправили ціну"
+
+#: client/app/admin/admin.controller.js:419
+#: client/app/quote/quote.controller.js:60
+#: client/app/request/request.controller.js:60
+msgid "Quoter can call me"
+msgstr "Можна дзвонити мені"
+
+#: client/app/admin/adminrequest.html:129 client/app/admin/requestlist.html:123
+#: client/app/main/faq.html:89 client/app/quote/myquotes.html:8
+#: client/components/navbar/navbar.html:131
+msgid "Quotes"
+msgstr "Пропозиції"
+
+#: client/app/provider/_profilebox.html:88
+msgid "Quotes Sent"
+msgstr "відправлені пропозиції"
+
+#: client/app/provider/_profilebox.html:96
+msgid "Quotes Won"
+msgstr "вийграні пропозиції"
+
+#: client/app/main/faq.html:251
+msgid ""
+"Quotes can be updated or cancelled until the lead closes for bidding or "
+"until client accepts your quote. If the client has selected your quote and "
+"the service is booked then you cannot update or cancel."
+msgstr ""
+"Пропозиції можуть бути поновлені або скасовані, поки запит не закриється для "
+"покупки або поки клієнт прийме вашу пропозицію. Якщо клієнт вибрав вашу "
+"пропозицію і послуга заброньована, то ви не можете оновити або скасувати."
+
+#: client/app/request/request.controller.js:208
+msgid "Quotes received"
+msgstr "Отримані ціни"
+
+#: client/app/admin/preproviderlist.html:87
+#: client/app/admin/providerlist.html:57 client/app/admin/requestlist.html:105
+msgid "Rayon"
+msgstr "Район"
+
+#: client/app/admin/preproviderlist.html:93
+#: client/app/admin/providerlist.html:63 client/app/admin/requestlist.html:111
+msgid "Rayongorad"
+msgstr "Район міста"
+
+#: client/app/admin/admin.controller.js:2028 client/app/quote/_wrapper.html:275
+msgid "Read Review"
+msgstr "Читати відгуки"
+
+#: client/app/admin/admin.controller.js:1864
+msgid ""
+"Read customer reviews of the quoter, check his profile. If there are other "
+"quotes, compare this quote with them. If not, wait for them to come until "
+"the quoting closes. If you think this quote is the best, select this quote."
+msgstr ""
+"Читайте відгуки клієнтів постачальника послуг, перевірте його профіль. Якщо "
+"є інші пропозиції, порівняйте ці пропозиції з ними. Якщо ні, то почекайте, "
+"поки вони не з'являться. Якщо ви думаєте, що ця ціна є кращою, виберіть її."
+
+#: client/app/account/settings/settings.html:151
+msgid "Receive Posluga.ua News"
+msgstr "Отримувати новини Posluga.ua"
+
+#: client/app/account/settings/settings.html:133
+msgid "Receive email alerts for active quotes(required)"
+msgstr ""
+"Отримувати сповіщення по електронній пошті для активних пропозицій "
+"(обов'язково)"
+
+#: client/app/account/settings/settings.html:142
+msgid "Receive email alerts for active requests (required)"
+msgstr ""
+"Отримувати сповіщення по електронній пошті для активних запитів (обов'язково)"
+
+#: client/app/account/settings/settings.html:124
+msgid "Receive email alerts for payment and account (required)"
+msgstr ""
+"Отримувати сповіщення по електронній пошті для оплати і рахунку (обов'язково)"
+
+#: client/app/account/settings/settings.html:160
+msgid "Receive notifications for new client reviews"
+msgstr "Отримувати повідомлення про нові відгуки клієнтів"
+
+#: client/app/account/settings/settings.html:172
+msgid "Receive sms alerts for active quotes"
+msgstr "Отримувати повідомлення смс для активних запитів"
+
+#: client/app/account/settings/settings.html:181
+msgid "Receive sms alerts for active requests"
+msgstr "Отримувати повідомлення смс для активних запитів"
+
+#: client/app/admin/admin.controller.js:389
+#: client/app/admin/requestlist.html:52 client/app/quote/myquotes.html:38
+#: client/app/quote/quote.controller.js:81
+#: client/app/request/myrequests.html:30
+#: client/app/request/request.controller.js:81
+msgid "Received Quotes"
+msgstr "Отпримані пропозиції"
+
+#: client/app/services/services.controller.js:24
+msgid ""
+"Regain control of your life with our services to help with all your personal "
+"needs."
+msgstr ""
+"Повернути контроль над своїм життям з нашими послугами, щоб задовольнити "
+"свої особисті потреби."
+
+#: client/app/main/howitworks.html:24
+msgid ""
+"Remodel your house. Find a office cleaner. Book a photographer for your "
+"birthday. Meet the perfect dog-sitter. You can do it all and much more with "
+"Posluga.ua. Just tell us what service you need, and qualified local service "
+"providers will send you their price quotes. Then, compare and hire the "
+"provider that's right for you."
+msgstr ""
+"Переробити ваш будинок. Знайти прибиральницю. Замовити фотографа на "
+"деньнародження. Зустріти ідеальну няню для собаки. Ви можете робити все це і "
+"багато іншого з Posluga.ua. Просто скажіть нам, які послуги вас цікавлять, і "
+"місцеві компанії будуть посилати вам свої пропозиції. Потім порівняйте і "
+"найміть компанію, яка підходить саме для вас."
+
+#: client/app/admin/preprovider.html:418
+msgid "Remove"
+msgstr "Видалити"
+
+#: client/app/admin/preprovider.html:316
+msgid "Remove Address"
+msgstr "Видалити Адреса"
+
+#: client/app/admin/adminservicegroup.html:39
+#: client/app/admin/preprovider.html:432
+msgid "Remove Service"
+msgstr "Видалити послугу"
+
+#: client/app/admin/admin.controller.js:1940
+msgid "Reply to Message"
+msgstr "Відповідь на повідомлення"
+
+#: client/app/main/contact.html:60
+msgid "Reponsible Person"
+msgstr "відповідальна особа"
+
+#: client/app/admin/adminrequest.html:7
+msgid "Request Details"
+msgstr "Деталі запита"
+
+#: client/app/admin/admin.controller.js:1843
+#: client/app/admin/admin.controller.js:1878
+#: client/app/admin/admin.controller.js:1912
+#: client/app/admin/admin.controller.js:1976
+#: client/app/admin/requestlist.html:78
+msgid "Request No"
+msgstr "Номер запита"
+
+#: client/app/admin/_admindetailbox.html:5
+msgid "Request No:"
+msgstr "Номер запита:"
+
+#: client/app/quote/_chat.html:16
+msgid "Request Owner"
+msgstr "власник запиту"
+
+#: client/app/request/_detailbox.html:2
+msgid "Request details"
+msgstr "Деталі запита"
+
+#: client/app/admin/_admindetailbox.html:240
+msgid "Request expired"
+msgstr "Запит минув"
+
+#: client/app/admin/userlist.html:37 client/app/main/faq.html:36
+#: client/app/request/myrequests.html:6
+#: client/components/navbar/navbar.html:126
+#: client/components/navbar/navbar.html:94
+msgid "Requests"
+msgstr "запити "
+
+#: client/app/admin/requestlist.html:22
+msgid "Requests List"
+msgstr "Список Запитів"
+
+#: client/app/request/phoneverify.html:47
+msgid "Resend Code"
+msgstr "відправити код повторно"
+
+#: client/app/admin/admin.controller.js:392
+#: client/app/admin/requestlist.html:55 client/app/quote/myquotes.html:41
+#: client/app/quote/quote.controller.js:84
+#: client/app/request/myrequests.html:33
+#: client/app/request/request.controller.js:84
+msgid "Reservation Made"
+msgstr "Резервація виконана"
+
+#: client/app/quote/quotesuccess.html:5
+msgid "Reservation for your"
+msgstr "Резервація вашої послуги була виконана"
+
+#: client/app/admin/admin.controller.js:1936
+msgid "Reset my Password"
+msgstr "Скинути пароль"
+
+#: client/app/admin/preprovider.html:142 client/app/admin/preprovider.html:253
+msgid "Resolve Address"
+msgstr "Знайти адресу"
+
+#: client/app/admin/preprovider.html:148 client/app/admin/preprovider.html:259
+msgid "Resolved Address"
+msgstr "Знайдені адреси"
+
+#: client/app/admin/adminrequest.html:157
+msgid "Review"
+msgstr "Відгук"
+
+#: client/app/places/_whyposluga.html:33
+msgid ""
+"Review and compare businesses to find the best quality with the lowest price."
+msgstr ""
+"Відгуки і порівняння постачальників, щоб знайти найкращу якість з найнижчою "
+"ціною."
+
+#: client/app/main/faq.html:268 client/app/provider/provider.html:197
+msgid "Reviews"
+msgstr "Відгуки"
+
+#: client/app/admin/userlist.html:31
+msgid "Role"
+msgstr "Роль"
+
+#: client/app/admin/_admindetailbox.html:323 client/app/admin/addfunds.html:37
+#: client/app/admin/adminarticle.html:50 client/app/admin/adminservice.html:226
+#: client/app/admin/adminservicegroup.html:54
+#: client/app/admin/preprovider.html:454 client/app/provider/addlink.html:58
+msgid "Save"
+msgstr "Зберегти"
+
+#: client/app/quote/_commentbox.html:73
+msgid "Save Comment"
+msgstr "Зберегти коментар"
+
+#: client/app/provider/profile.html:300
+msgid "Save Document"
+msgstr "Зберегти документ"
+
+#: client/app/provider/addlink.html:61
+msgid "Save Successful"
+msgstr "збережено успішно"
+
+#: client/app/admin/articlelist.html:23
+#: client/app/admin/preproviderlist.html:57
+#: client/app/admin/providerlist.html:23 client/app/admin/requestlist.html:69
+#: client/app/admin/servicelist.html:24 client/app/admin/userlist.html:18
+#: client/app/quote/myquotes.html:55 client/app/request/myrequests.html:47
+msgid "Search"
+msgstr "Пошук"
+
+#: client/app/admin/_admindetailbox.html:139
+#: client/app/request/_admindetailbox.html:110
+#: client/app/request/_detailbox.html:126
+msgid "Security Checks:"
+msgstr "Перевірка безпеки"
+
+#: client/app/main/main.html:422
+msgid "See All Cities"
+msgstr "Дивитися всі міста"
+
+#: client/app/main/main.html:376
+msgid "See All Services"
+msgstr "Дивитися всі послуги"
+
+#: client/app/main/main.html:257
+msgid "See More Testimonials"
+msgstr "Дивитися інші відгуки"
+
+#: client/app/main/main.html:91
+msgid "See what happy consumers saying"
+msgstr "Подивіться що кажуть щасливі споживачі"
+
+#: client/app/provider/addlink.html:23 client/app/provider/profile.html:24
+msgid "Select"
+msgstr "Оберіть"
+
+#: client/components/modal/_categoryModalContent.html:32
+msgid "Select Service"
+msgstr "Оберіть послугу"
+
+#: client/app/quote/_wrapper.html:280
+msgid "Select This Quote"
+msgstr "Обрати данну пропозицію"
+
+#: client/app/quote/givequote.html:96
+msgid "Select Time"
+msgstr "Обрати час"
+
+#: client/app/request/request_form.html:27
+#: client/app/request/request_form.html:36
+msgid "Select an option"
+msgstr "Оберіть опцію"
+
+#: client/app/request/request_form.html:176
+msgid "Select date and time"
+msgstr "Оберіть дату та час"
+
+#: client/app/provider/profile.html:135 client/app/request/request_form.html:14
+msgid "Select from list"
+msgstr "виберіть зі списку"
+
+#: client/components/modal/_viewprofileModalContent.html:2
+msgid "Select how many price quotes you want"
+msgstr "Оберіть кількість цінових пропозицій"
+
+#: client/app/request/request_form.html:192
+msgid "Select option"
+msgstr "Оберіть опцію"
+
+#: client/app/provider/profile.html:191
+msgid "Select pictures about the services you provide."
+msgstr "Виберіть фотографії, які ви надаєте."
+
+#: client/app/admin/adminrequest.html:209
+msgid "Select quote as client"
+msgstr "Вибрати ціна як клієнт"
+
+#: client/app/request/request_form.html:160
+msgid "Select time"
+msgstr "Обрати час"
+
+#: client/app/provider/profile.html:262
+msgid "Select type"
+msgstr "Обрати тип"
+
+#: client/app/provider/profile.html:210
+msgid "Select year"
+msgstr "Обрати місто"
+
+#: client/app/admin/adminrequest.html:151
+msgid "Selected?"
+msgstr "Вибраний?"
+
+#: client/app/quote/viewquotes.html:76
+msgid "Send"
+msgstr "Надіслати"
+
+#: client/app/admin/adminrequest.html:77
+msgid "Send Login Email"
+msgstr "Надіслати Пошти Для Входу"
+
+#: client/app/quote/_chat.html:48
+msgid "Send Message"
+msgstr "Надіслати смс"
+
+#: client/app/admin/adminrequest.html:83
+msgid "Send Opportunity Email"
+msgstr "Надіслати Пошти Для Можливість"
+
+#: client/app/admin/adminrequest.html:98 client/app/quote/givequote.html:152
+msgid "Send Quote"
+msgstr "Надіслати пропозицію"
+
+#: client/app/admin/adminservicegroup.html:31
+#: client/app/admin/preprovider.html:399 client/app/admin/providerlist.html:66
+#: client/app/admin/requestlist.html:81
+#: client/components/modal/_categoryModalContent.html:25
+msgid "Service"
+msgstr "Послуга"
+
+#: client/app/admin/adminrequest.html:154
+msgid "Service Complete?"
+msgstr "Надати послугу?"
+
+#: client/app/admin/adminservicegroup.html:5
+msgid "Service Group"
+msgstr "Додати Послуги"
+
+#: client/app/admin/preprovider.html:369 client/app/admin/servicegroup.html:13
+#: client/components/navbar/navbar.html:109
+msgid "Service Groups"
+msgstr "Додати Послуги"
+
+#: client/app/admin/servicelist.html:13
+msgid "Service List"
+msgstr "Список Послуг"
+
+#: client/app/admin/preprovider.html:408
+msgid "Service Photo {{$index +1}}"
+msgstr "Послуга фото {{$index +1}}"
+
+#: client/app/admin/adminservice.html:5
+msgid "Service Registration Form"
+msgstr "форма реєстрації послуги"
+
+#: client/app/admin/admin.controller.js:410
+#: client/app/admin/admin.controller.js:434
+#: client/app/finances/finances.controller.js:16
+msgid "Service Taken"
+msgstr "Використовувані послуги"
+
+#: client/app/provider/profile.html:127
+msgid "Service you will provide"
+msgstr "Послуга яку ви надаєте"
+
+#: client/app/admin/_admindetailbox.html:31
+#: client/app/request/_admindetailbox.html:5
+#: client/app/request/_detailbox.html:21
+msgid "Service:"
+msgstr "послуги:"
+
+#: client/app/admin/adminservicegroup.html:24
+#: client/app/admin/preprovider.html:361
+#: client/app/admin/preproviderlist.html:96
+#: client/app/admin/servicegroup.html:28
+#: client/components/navbar/navbar.html:104
+msgid "Services"
+msgstr "послуги"
+
+#: client/app/places/katalog.html:109
+#: client/app/places/places.controller.js:274
+#: client/app/places/places.controller.js:277
+msgid "Services we provide"
+msgstr "Послуги, які ми надаємо"
+
+#: client/app/quote/givequote.html:108
+msgid "Set a specific time that fits to your and client's schedule."
+msgstr "Встановіть певний час, яке підходить вашому клієнтові і графіку."
+
+#: client/components/navbar/navbar.html:18
+msgid "Settings"
+msgstr "Налаштування"
+
+#: client/app/provider/pronounce.html:22
+msgid ""
+"Share your profile or invite your friends to see your profile by clicking on "
+"social network buttons below. You can also send email to your friends by "
+"clicking on envelope button."
+msgstr ""
+"Поділіться профілем або запросіть друзів, щоб переглянути свій профіль, "
+"натиснувши на кнопки соціальних мереж нижче. Ви також можете відправити "
+"електронну пошту своїм друзям, натиснувши на кнопку конверта."
+
+#: client/app/provider/pronounce.html:19
+#: client/app/provider/provider.controller.js:106
+msgid "Share your profile with your friends!"
+msgstr "Поділіться профілем з друзями!"
+
+#: client/app/quote/givequote.html:145
+msgid ""
+"Show that you understand customer's request. Give a price quote for his "
+"needs. Explain why you are trustable and different."
+msgstr ""
+"Покажіть, що ви розумієте, запит клієнта. Дайте цінову пропозицію для своїх "
+"потреб. Поясніть, чому ви надійні і різні."
+
+#: client/app/account/signup/_form.html:2
+msgid "Sign Up"
+msgstr "Реєстрація"
+
+#: client/components/navbar/navbar.html:45
+msgid "Signup"
+msgstr "Реєстрація"
+
+#: client/components/oauth-buttons/oauth-buttons.controller.js:19
+msgid "Signup with Facebook"
+msgstr "Зареєструйтеся за допомогою Facebook"
+
+#: client/components/oauth-buttons/oauth-buttons.controller.js:21
+msgid "Signup with Odnoklassniki"
+msgstr "Зареєструйтеся за допомогою Odnoklassniki"
+
+#: client/components/oauth-buttons/oauth-buttons.controller.js:20
+msgid "Signup with Vkontakte"
+msgstr "Зареєструйтеся за допомогою Vkontakte"
+
+#: client/app/account/pwdreset/pwdreset.html:18
+msgid "Something went wrong. Your attend to reset your password has failed."
+msgstr "Щось пішло не так. Ваша перевстановлення пароля не вдалася."
+
+#: client/app/provider/provider.html:75 client/app/quote/_wrapper.html:71
+msgid "Specialises in"
+msgstr "Спеціалізується на"
+
+#: client/app/admin/admin.controller.js:359
+#: client/app/admin/admin.controller.js:369
+#: client/app/quote/quote.controller.js:37
+#: client/app/quote/quote.controller.js:50
+#: client/app/request/request.controller.js:37
+#: client/app/request/request.controller.js:50
+msgid "Specific time"
+msgstr "Певний час"
+
+#: client/app/admin/admin.controller.js:1954
+msgid "Start by Adding your profile link"
+msgstr "Почніть з Додавання посилання на профіль"
+
+#: client/app/admin/adminrequest.html:40 client/app/admin/requestlist.html:90
+msgid "Status"
+msgstr "Статус"
+
+#: client/app/admin/_admindetailbox.html:17
+#: client/app/request/_detailbox.html:11
+msgid "Status:"
+msgstr "Статус"
+
+#: client/app/admin/adminservice.html:59 client/app/admin/servicelist.html:47
+msgid "Subcategory"
+msgstr "Підкатегорія"
+
+#: client/app/admin/servicelist.html:44
+msgid "Subcategory ID"
+msgstr "Підкатегорія ID"
+
+#: client/app/admin/adminservice.html:17 client/app/admin/servicelist.html:35
+#: client/components/modal/_categoryModalContent.html:11
+msgid "Subject"
+msgstr "Тема"
+
+#: client/app/admin/servicelist.html:32
+msgid "Subject ID"
+msgstr "Тема ID"
+
+#: client/app/provider/profile.html:330
+#: client/app/request/request_form.html:252
+#: client/components/modal/_categoryModalContent.html:51
+msgid "Submit"
+msgstr "Відправити"
+
+#: client/app/admin/articlelist.html:4
+msgid "Successfully added article"
+msgstr "Успішно додана стаття"
+
+#: client/app/admin/admin.controller.js:554
+msgid "Successfully added comment"
+msgstr "Успішно поповнений"
+
+#: client/app/admin/userlist.html:4
+msgid "Successfully added funds"
+msgstr "Успішно поповнений"
+
+#: client/app/admin/requestlist.html:4
+msgid "Successfully added request"
+msgstr "Успішно доданий запит"
+
+#: client/app/admin/admin.controller.js:151
+msgid "Successfully added review as client"
+msgstr "Успішно Додано відгук як клієнт"
+
+#: client/app/admin/admin.controller.js:126
+msgid "Successfully completed quote as provider"
+msgstr "Успішно завершено цитату в якості постачальника"
+
+#: client/app/admin/admin.controller.js:1360
+#: client/app/admin/preproviderlist.html:13
+msgid "Successfully created provider"
+msgstr "Успішне створення постачальника послуг"
+
+#: client/app/admin/preproviderlist.html:4
+msgid "Successfully created provider pre-registration"
+msgstr "Успішне створення постачальника послуг попередньої реєстрації"
+
+#: client/app/admin/servicelist.html:4
+msgid "Successfully created service"
+msgstr "Успішно створена послуга"
+
+#: client/app/admin/servicegroup.html:4
+msgid "Successfully created service group"
+msgstr "Успішно створена послуга"
+
+#: client/app/admin/preproviderlist.html:10
+msgid "Successfully deleted provider pre-registration"
+msgstr "Успішне видалення постачальника послуг попередньої реєстрації"
+
+#: client/app/admin/providerlist.html:4 client/app/admin/requestlist.html:10
+msgid "Successfully deleted provider registration"
+msgstr "Успішно видалена реєстрація постачальника послуг"
+
+#: client/app/admin/admin.controller.js:110
+msgid "Successfully deselected quote as client"
+msgstr "Успішно Скасували вибір пропозиції"
+
+#: client/app/admin/admin.controller.js:138
+msgid "Successfully marked as paid"
+msgstr "Успішно скасував як оплачений"
+
+#: client/app/admin/admin.controller.js:93
+msgid "Successfully selected quote as client"
+msgstr "Успішно обрана цін як клієнт"
+
+#: client/app/admin/admin.controller.js:625
+msgid "Successfully sent login email to provider"
+msgstr "Успішно відправлено"
+
+#: client/app/admin/admin.controller.js:635
+msgid "Successfully sent opportunity email to provider"
+msgstr "Успішно відправлено"
+
+#: client/app/admin/admin.controller.js:238
+msgid "Successfully sent quote as this provider."
+msgstr "Успішно відправлено Цитата як цей провайдер."
+
+#: client/app/admin/articlelist.html:7
+msgid "Successfully updated article"
+msgstr "Успішно оновлені статті"
+
+#: client/app/admin/userlist.html:7
+msgid "Successfully updated funds info"
+msgstr "Успішно оновлена інформація"
+
+#: client/app/admin/requestlist.html:13
+msgid "Successfully updated provider"
+msgstr "Успішно оновлені постачальника"
+
+#: client/app/admin/preproviderlist.html:7
+msgid "Successfully updated provider pre-registration"
+msgstr "Успішне оновлення попередньої реєстрації постачальника послуг"
+
+#: client/app/admin/providerlist.html:7
+msgid "Successfully updated provider registration"
+msgstr "Успішно оновлена реєстрація постачальника послуг"
+
+#: client/app/admin/requestlist.html:7
+msgid "Successfully updated request"
+msgstr "Успішно оновлено запит"
+
+#: client/app/admin/servicelist.html:7
+msgid "Successfully updated service"
+msgstr "Успішно оновлене обслуговування"
+
+#: client/app/admin/servicegroup.html:7
+msgid "Successfully updated service group"
+msgstr "Успішно оновлене обслуговування"
+
+#: client/app/admin/requestlist.html:16
+msgid "Successfully updated user"
+msgstr "Успішно оновлені користувачів"
+
+#: client/components/footer/footer.html:85
+msgid "Support"
+msgstr "Підтримка"
+
+#: client/app/main/contact.html:72
+msgid "Support Center"
+msgstr "Центр підтримки"
+
+#: client/app/quote/_commentbox.html:24
+msgid "Tell about your experience to help others!"
+msgstr "Розкажіть про свій досвід, щоб допомогти іншим"
+
+#: client/app/admin/admin.controller.js:1896
+msgid "Terms"
+msgstr "Умови"
+
+#: client/app/main/main.controller.js:217 client/app/main/terms.html:12
+#: client/app/main/terms.html:21 client/app/request/request.html:161
+#: client/components/footer/footer.html:49
+msgid "Terms of Use"
+msgstr "Умови експлуатації"
+
+#: client/app/main/main.controller.js:102 client/app/main/testimonials.html:12
+#: client/app/main/testimonials.html:21
+msgid "Testimonials"
+msgstr "Відгуки"
+
+#: client/app/account/settings/settings.html:166
+msgid "Text Notifications"
+msgstr "Реєстрація Повідомлення"
+
+#: client/app/quote/servicesuccess.html:11
+msgid ""
+"Thank You For Working With Us. We will notify your customer to write you a "
+"great review!"
+msgstr "Дякую за співробітництво"
+
+#: client/app/quote/commentsuccess.html:11
+msgid "Thank You For Your Review"
+msgstr "Спасибі за відгук"
+
+#: client/app/main/faq.html:60
+msgid ""
+"That's very rare but if that's the case you might try sending a follow-up "
+"message. If you still don’t hear anything you can do another request to see "
+"the multitude of other talent Posluga.ua has to offer!"
+msgstr ""
+"Це дуже рідко, але якщо це так, ви можете спробувати відправити наступне "
+"повідомлення. Якщо ви до цих пір нічого не отримали, ви можете зробити ще "
+"один запит, щоб побачити безліч інших можливостей, які Posluga.ua може "
+"запропонувати!"
+
+#: client/app/request/phoneverify.html:52
+msgid ""
+"The code you have entered is wrong. Enter it correct or wait until timer "
+"ends to resend."
+msgstr ""
+"Код, який ви ввели неправильний. Введіть його правильно або почекайте, поки "
+"таймер не закінчиться для повторного відправлення."
+
+#: client/app/account/pwdreset/pwdreset.html:81
+msgid "The email address you entered is not known."
+msgstr "Адреса електронної пошти яку ви ввели невідома"
+
+#: client/app/admin/admin.controller.js:1971
+msgid "The power is in you, write a review!"
+msgstr "Все в ваших руках, напишіть відгук."
+
+#: client/app/quote/quote.controller.js:100
+#: client/app/request/request.controller.js:100
+msgid "The prices were too high"
+msgstr "Вартість була занадто висока"
+
+#: client/app/quote/_realcomments.html:4
+msgid ""
+"The reviews and stars in this page are written by customers that have taken "
+"the services performed via posluga.ua. We check and guarantee that this work "
+"is really done and interpretation of the facts."
+msgstr ""
+"Відгуки та зірки на цій сторінці написані клієнтами, які взяли послуги, що "
+"виконуються за допомогою posluga.u. Ми перевіряємо і гарантуємо, що ця "
+"робота дійсно виконана і інтерпретацію фактів."
+
+#: client/app/admin/admin.controller.js:2007
+msgid "The specified email address is already in use."
+msgstr "Вказану адресу електронної пошти вже використовується."
+
+#: client/app/main/faq.html:186
+msgid ""
+"The vast majority of requests on Posluga.ua are from honest people because "
+"we use mobile phone verification. However, as it is with most websites, bad "
+"apples can attempt from time to time. Use extra caution when dealing with "
+"requests which contain any of the following. A simple test is to call the "
+"phone number. If it’s a generic answering system, a disconnected number, or "
+"a wrong number be cautious. Please contact us if you are unsure about the "
+"validity of a request."
+msgstr ""
+"Переважна більшість запитів на Posluga.ua взяті з чесних людей, тому що ми "
+"використовуємо перевірку мобільного телефону. Однак, як це буває з більшістю "
+"сайтів, проколи трапляються час від часу. Будьте дуже уважні, працюючи з "
+"запитами, які містять одну з таких дій. Простий тест, зателефонувати за "
+"номером телефону. Якщо це загальна система відповіді, незв'язний номер, або "
+"неправильний номер будьте обережні. Будь ласка, зв'яжіться з нами, якщо ви "
+"не впевнені в правильності запиту."
+
+#: client/app/admin/admin.controller.js:1967
+msgid ""
+"The winning quoter will contact you as soon as possible about the details. "
+"You can also contact the quoter."
+msgstr ""
+"Представник виграшного пропозиції зв'яжеться з вами щодо деталей найближчим "
+"часом. Ви також можете звернутися до нього."
+
+#: client/app/quote/viewquotes.html:6
+msgid "There are"
+msgstr "є"
+
+#: client/app/admin/admin.controller.js:1926
+msgid "There is a new business opportunity, give quote now"
+msgstr "З'явилася нова бізнес-можливість, дайте ціни"
+
+#: client/app/main/faq.html:239
+msgid ""
+"There is a service fee of 10% that is charged when a service is booked. This "
+"fee covers our costs associated with development and maintenance of the "
+"system."
+msgstr ""
+"Існує невелика плата за обслуговування в розмірі 10%, яка стягується, коли "
+"послуга зарезервованна. Ця плата покриває наші витрати, пов'язані з "
+"розробкою і обслуговуванням системи."
+
+#: client/app/quote/quote.controller.js:103
+#: client/app/request/request.controller.js:103
+msgid "There was not enough quotes"
+msgstr "Було недостатньо пропозицій"
+
+#: client/app/request/request.controller.js:161
+#: client/app/request/request_form.html:81
+msgid "Things I want done"
+msgstr "детальніше про послугу"
+
+#: client/app/main/faq.html:125
+msgid ""
+"This is very uncommon but unforeseen issues can arise. This is one reason we "
+"encourage that all bookings happen on Posluga.ua. If you book the service "
+"through our site and the provider does not show up, we can ensure that we "
+"will find another provider to cover the service as soon as possible."
+msgstr ""
+"Дуже рідко, але можуть виникнути непередбачені проблеми. Це одна з причин по "
+"якій ми рекомендуємо, щоб всі замовлення відбувалися на Posluga.ua. Якщо Ви "
+"замовляєте послугу через наш сайт і постачальник не з'являється, ми можемо "
+"гарантувати, що ми знайдемо іншого постачальника, щоб обслужити вас як можна "
+"швидше."
+
+#: client/app/provider/profile.html:371
+msgid ""
+"This page will represent you in front of customers. Use nice photos and "
+"write a nice introduction to create a profile that will earn you new "
+"customers."
+msgstr ""
+"Ця сторінка буде представляти вас клієнтам. Використовуйте хороші фотографії "
+"та напишіть гарне введення, щоб створити профіль, який буде заробляти вам "
+"нових клієнтів."
+
+#: client/app/admin/admin.controller.js:1845
+#: client/app/admin/admin.controller.js:1869
+#: client/app/admin/admin.controller.js:1880
+#: client/app/admin/admin.controller.js:1914
+#: client/app/admin/admin.controller.js:1978 client/app/quote/_detailbox.html:7
+#: client/app/quote/_wrapper.html:134 client/app/quote/_wrapper.html:232
+#: client/app/quote/givequote.html:91
+msgid "Time"
+msgstr "Час"
+
+#: client/app/admin/_admindetailbox.html:235
+msgid "Time Left to Expiration:"
+msgstr "Залишилось часу"
+
+#: client/app/request/_listitem.html:52 client/app/request/_listitem.html:88
+msgid "Time Left to select quote"
+msgstr "Залишилось часу"
+
+#: client/app/admin/_admindetailbox.html:99
+#: client/app/request/_admindetailbox.html:70
+#: client/app/request/_detailbox.html:86
+msgid "Time:"
+msgstr "Час:"
+
+#: client/app/admin/adminarticle.html:16 client/app/admin/articlelist.html:30
+msgid "Title"
+msgstr "Назва"
+
+#: client/app/places/places.controller.js:278
+msgid "Top 10 companies"
+msgstr "Топ 10 компаній"
+
+#: client/app/admin/adminservice.html:90 client/app/admin/servicelist.html:59
+msgid "Top Service"
+msgstr "Популярні послуги"
+
+#: client/components/footer/footer.html:61
+msgid "Top Services"
+msgstr "Топ послуги"
+
+#: client/app/finances/transactions.html:20
+msgid "Transaction Type"
+msgstr "Тип Операції"
+
+#: client/app/admin/userlist.html:40 client/app/finances/_menu.html:9
+#: client/app/finances/transactions.html:9
+msgid "Transactions"
+msgstr "угоди"
+
+#: client/app/account/pwdreset/pwdreset.html:21
+msgid "Try again to change your password"
+msgstr "Спробуйте ще раз, щоб змінити пароль"
+
+#: client/app/provider/_profilebox.html:80
+msgid "Turnover"
+msgstr "оборот"
+
+#: client/app/admin/adminservice.html:152
+msgid "Type"
+msgstr "Друк"
+
+#: client/app/admin/preprovider.html:18
+msgid "UPDATED"
+msgstr "Оновлені"
+
+#: client/app/quote/givequote.html:4
+msgid ""
+"Unfortunately this business opportunity is closed for new quotes. Business "
+"opportunities get closed when customer selects a quote, request receives "
+"enough quotes or request expires."
+msgstr ""
+"На жаль, ця бізнес-можливість закрита для нових пропозицій. Не можливо "
+"зробити пропозицію за ціною , коли клієнт вже вибирав ціну, запит отримав "
+"достатньо пропозицій чи термін запиту минув."
+
+#: client/app/admin/admin.controller.js:1898
+msgid "Unsubscribe"
+msgstr "Відмовитися від підписки"
+
+#: client/app/account/settings/settings.html:198
+#: client/app/account/settings/settings.html:97
+#: client/app/admin/addfunds.html:40 client/app/admin/adminarticle.html:53
+#: client/app/admin/adminservice.html:229
+#: client/app/admin/adminservicegroup.html:57
+#: client/app/admin/preprovider.html:457 client/app/provider/profile.html:333
+#: client/app/request/request_form.html:255
+msgid "Update"
+msgstr "Оновити"
+
+#: client/app/account/settings/settings.html:38
+msgid "Update Password"
+msgstr "Оновити пароль"
+
+#: client/app/admin/adminrequest.html:71
+msgid "Update Provider Profile"
+msgstr "Оновлення Профіль Постачальника"
+
+#: client/app/quote/givequote.html:155
+msgid "Update Quote"
+msgstr "Оновити пропозицію"
+
+#: client/app/admin/adminrequest.html:65
+msgid "Update User Profile"
+msgstr "Оновлення Профілю Користувача"
+
+#: client/app/admin/preproviderlist.html:37
+#: client/app/admin/preproviderlist.html:99
+msgid "Updated"
+msgstr "Оновлені"
+
+#: client/app/admin/preproviderlist.html:102
+msgid "Updated By"
+msgstr "Оновлене За"
+
+#: client/app/admin/articlelist.html:39
+msgid "User"
+msgstr "Користувач"
+
+#: client/app/provider/profile.html:309
+msgid "User Aggreement"
+msgstr "Угода користувача"
+
+#: client/app/account/settings/settings.controller.js:52
+msgid "User Profile successfully changed."
+msgstr "Профіль успішно змінено."
+
+#: client/app/admin/admin.controller.js:1984
+msgid "User sent a message for the request"
+msgstr "Користувач послав повідомлення для запиту"
+
+#: client/app/admin/admin.controller.js:2023
+msgid "User updated a request, login your account to check it."
+msgstr ""
+"Користувач оновив запит, увійдіть у свій обліковий запис, щоб перевірити "
+"його."
+
+#: client/app/admin/userlist.html:13 client/components/navbar/navbar.html:99
+msgid "Users List"
+msgstr "Список користувачів"
+
+#: client/app/admin/admin.controller.js:342
+#: client/app/provider/provider.controller.js:34
+#: client/app/quote/quote.controller.js:27
+#: client/app/request/request.controller.js:27
+msgid "Valid Credit Card"
+msgstr "Діюча кредитна карта"
+
+#: client/app/admin/admin.controller.js:336
+#: client/app/provider/provider.controller.js:28
+#: client/app/quote/quote.controller.js:21
+#: client/app/request/request.controller.js:21
+msgid "Valid Email"
+msgstr "Діюча електронна пошта"
+
+#: client/app/admin/admin.controller.js:339
+#: client/app/provider/provider.controller.js:31
+#: client/app/quote/quote.controller.js:24
+#: client/app/request/request.controller.js:24
+msgid "Valid Mobile Phone"
+msgstr "діючий мобільний телефон"
+
+#: client/app/admin/providerlist.html:163
+#: client/app/provider/_profilebox.html:10 client/app/quote/_wrapper.html:45
+msgid "View Profile"
+msgstr "Подивитись"
+
+#: client/app/admin/admin.controller.js:1868
+msgid "View Quote"
+msgstr "Подивитися пропозицію"
+
+#: client/app/request/_listitem.html:143
+msgid "View Quote You Lost"
+msgstr "Подивитися пропозиції які Ви втратили"
+
+#: client/app/request/_listitem.html:140
+msgid "View Quote You Won"
+msgstr "Подивитись пропозиції що ви вийграли"
+
+#: client/app/admin/admin.controller.js:1841
+#: client/app/request/_listitem.html:125
+msgid "View Quotes"
+msgstr "Подивитись пропозиції "
+
+#: client/app/finances/finances.html:28
+msgid "View Transactions"
+msgstr "Подивитись угоди"
+
+#: client/app/request/_listitem.html:128
+msgid "View Work"
+msgstr "подивитися роботу"
+
+#: client/app/request/_listitem.html:137
+msgid "View Your Quote"
+msgstr "Подивитись вашу пропозицію"
+
+#: client/app/admin/preprovider.html:45
+msgid "Visit Link"
+msgstr "Перейдіть по посиланню"
+
+#: client/app/main/faq.html:198
+msgid ""
+"Visit your Inbox and click on the request you want to respond to. Then "
+"you’ll be given three options: you can go ahead and give a quote, you can "
+"decline the request if you are unavaible or not interested, or you can send "
+"a message to request more information."
+msgstr ""
+"Зайдіть до вхідних і натисніть на запиті на який ви хочете відповісти. Тоді "
+"вам буде надано три варіанти: ви можете йти вперед і дати пропозицію, ви "
+"можете відхилити запит, якщо це неактуально або не цікаво, чи ви можете "
+"відправити повідомлення, щоб запитати додаткову інформацію."
+
+#: client/app/account/login/login.controller.js:19
+#: client/app/admin/admin.controller.js:386
+#: client/app/admin/requestlist.html:49 client/app/quote/myquotes.html:35
+#: client/app/quote/quote.controller.js:78
+#: client/app/request/myrequests.html:27
+#: client/app/request/request.controller.js:78
+msgid "Waiting for Quotes"
+msgstr "Чекаємо пропозицій"
+
+#: client/app/main/main.html:388
+msgid "We are all over Ukraine"
+msgstr "Ми по всй Україні"
+
+#: client/app/main/about.html:83
+msgid "We are committed to:"
+msgstr "Ми зобов \"язуємся:"
+
+#: client/app/services/services.controller.js:22
+msgid ""
+"We are here to help you outsource the services that will save time (and your "
+"sanity)."
+msgstr ""
+"Ми тут, щоб допомогти вам знайти постачальника послуг, що дозволить "
+"заощадити час і нерви."
+
+#: client/app/provider/profile.html:364
+msgid ""
+"We email and SMS you the business opportunities tailored to your profession "
+"(for free)"
+msgstr ""
+"Ми відправимо Вам по електронній пошті і SMS всі запити і пропозиції, що "
+"належать до сфери вашої діяльності (безкоштовно)"
+
+#: client/app/provider/profile.html:357
+msgid "We ensure that your profile to appears on search engines (for free)"
+msgstr ""
+"Ми гарантуємо, що ваша компанія з'явиться в пошукових системах (безкоштовно)"
+
+#: client/app/account/signup/giveservice.html:4
+msgid "We generate and deliver jobs for you to win!"
+msgstr "Ми створюємо і доставляємо робочі місця до вас, щоб ви могли виграти!"
+
+#: client/app/admin/admin.controller.js:1875
+msgid "We have received your"
+msgstr "Ми отримали"
+
+#: client/app/admin/admin.controller.js:1873
+msgid "We have received your request"
+msgstr "Ми отримали ваш запит"
+
+#: client/app/request/success.html:5
+msgid "We have received your {{request.searchtext}} request."
+msgstr "Ми отримали ваш {{request.searchtext}} запит."
+
+#: client/app/request/requestdetail.html:5 client/app/request/success.html:8
+msgid "We have updated your {{request.searchtext}} request."
+msgstr "Ми обновили ваш {{request.searchtext}} запит."
+
+#: client/app/admin/admin.controller.js:1855
+msgid ""
+"We recommend you to change your password from the settings page. If you do "
+"not want to remember it everytime, use Facebook or Vkontakte Login."
+msgstr ""
+"Ми рекомендуємо вам змінити пароль на сторінці налаштувань. Якщо ви не "
+"хочете, пам'ятати про це кожен раз, використовуйте логін Facebook або "
+"Vkontakte."
+
+#: client/app/account/pwdreset/pwdreset.html:31
+msgid "We sent a confirmation link to"
+msgstr "Ми відправили посилання з підтвердженням"
+
+#: client/app/request/phoneverify.html:20
+msgid "We sent a text message to"
+msgstr "Ми відправили текстове повідомлення"
+
+#: client/app/main/faq.html:113
+msgid ""
+"We strongly recommend that you do. If you are contacted directly outside our "
+"system, we encourage you to have them go back to Posluga.ua to send you an "
+"official quote or you can get a quote from provider's profile. Bookings that "
+"are not done on Posluga.ua are not eligible for dispute resolution, secure "
+"payments, verified reviews, or booking protection."
+msgstr ""
+"Ми настійно рекомендуємо вам. Якщо ви зв'язалися безпосередньо за межами "
+"нашої системи, ми рекомендуємо вам повернутися до Posluga.ua щоб відправити "
+"вам офіційне пропозиції або ви можете отримати пропозицію з профілю "
+"постачальника. Замовлення, які зроблені на Posluga.ua не мають права на "
+"вирішення спорів, безпечні платежі, перевірені відгуки або захист бронювання."
+
+#: client/app/main/faq.html:210
+msgid ""
+"We sure don’t. it is absolutely free to receive and respond to leads. We "
+"only charge %10 commisssion from the total amount if you win the lead. If "
+"you add your profile link to your website we will be charging %9 commisssion."
+msgstr ""
+"Ми впевнені, що ні. Це абсолютно безкоштовно, отримувати і відповідати на "
+"запити. Ми беремо тільки 10% комісійних від загальної суми, якщо ви надаєте "
+"послугу. Якщо ви додасте посилання свого профілю на свій сайт, ми будемо "
+"отримувати 9% комісії."
+
+#: client/app/main/faq.html:304
+msgid ""
+"We verify reviews whether they are not obscene, abusive, or fraudulent. I "
+"that's the case we don't show them up on your profile."
+msgstr ""
+"Ми перевіряємо відгуки чи не є вони непристойними, образливими, або "
+"неправдивими. Якщо в цьому причина ми не відображаємо їх в вашому профілі."
+
+#: client/app/main/article.html:71 client/app/quote/commentsuccess.html:20
+#: client/app/quote/servicesuccess.html:20
+msgid "We will be real thankful if you share it with your friends."
+msgstr "Ми будемо дуже вдячні, якщо ви поділитеся ним з друзями."
+
+#: client/app/admin/admin.controller.js:1884
+msgid ""
+"We will first review your request. If we have any questions we will ask you "
+"by phone or email."
+msgstr ""
+"Спочатку ми розглянемо ваш запит. Якщо у нас з'являться які-небудь питання, "
+"ми зв'яжемося з Вами по телефону або по електронній пошті."
+
+#: client/app/request/success.html:45
+msgid "We will notify you by system notifications, email and SMS."
+msgstr ""
+"Ми повідомимо вам через систему повідомлень, по електронній пошті і SMS."
+
+#: client/app/request/request.html:31
+msgid ""
+"We will send your request to the closest and the most outstanding service "
+"providers."
+msgstr ""
+"Ми відправимо Ваш запит на найближчих і найбільш якісних постачальників "
+"послуг."
+
+#: client/app/main/main.html:64
+msgid ""
+"We'll connect you with available businesses in your neighborhood and they'll "
+"email and text you their best prices."
+msgstr ""
+"Ми оповістили існуючі підприємства в вашому районі, і вони будуть висилати "
+"Вам свої найкращі ціни по електронній пошті і смс."
+
+#: client/app/provider/addlink.html:47
+msgid "Web page address you pasted the link above"
+msgstr "Адреса веб-сторінки, яку ви вставили вище"
+
+#: client/app/admin/adminrequest.html:31 client/app/admin/preprovider.html:38
+#: client/app/admin/preproviderlist.html:69
+#: client/app/admin/providerlist.html:36 client/app/provider/profile.html:62
+msgid "Website"
+msgstr "Вебсайт"
+
+#: client/app/admin/admin.controller.js:2010
+msgid "Welcome"
+msgstr "Ласкаво просимо"
+
+#: client/app/admin/admin.controller.js:2012
+msgid ""
+"Welcome to Posluga.ua. Our goal is to make hiring a local service providers "
+"simple and efficient. If you want to get some work done around the house, "
+"learn something new, stage a great event or need any other of the 100s of "
+"services that we offer, then get started here."
+msgstr ""
+"Ласкаво просимо на Posluga.ua. Наша мета знайти кращого постачальника послуг "
+"з кращою ціною для вас. Якщо ви хочете, що б робота по дому була виконана, "
+"дізнатися щось нове, влаштувати весілля або вечірку або ж потрібна яка-"
+"небудь інша з 1000 послуг, які ми пропонуємо, тоді починайте тут:"
+
+#: client/app/admin/admin.controller.js:1851
+msgid ""
+"Welcome to Posluga.ua. We have created an account for you to check the "
+"status of your service requests. Your login details are as follows."
+msgstr ""
+"Ласкаво просимо на Posluga.ua. Ми створили обліковий запис для вас, щоб "
+"перевірити стан ваших запитів на обслуговування. Ваші реєстраційні дані "
+"наступні."
+
+#: client/app/admin/admin.controller.js:1853
+msgid ""
+"Welcome to Posluga.ua. We have created an account for you to give price "
+"quotes to the business opportunities we send to you. When you receive a "
+"business opportunity email from us, use the below login details to enter the "
+"system and give price quotes."
+msgstr ""
+"Ласкаво просимо на Posluga.ua. Ми створили обліковий запис для вас, щоб ви "
+"отримували замовлення і давали ціни на запити, які ми надсилаємо вам. Коли "
+"ви отримаєте замовлення на послуги по електронній пошті від нас, "
+"використовуйте наведені нижче дані для входу в систему і пропонуйте ціни."
+
+#: client/app/main/blog.html:24 client/app/main/main.controller.js:178
+msgid "Welcome to our blog where we share articles and advice about services"
+msgstr ""
+"Ласкаво просимо в наш блог, де ми ділимося статті та поради про послуги"
+
+#: client/app/dashboard/dashboard.html:5
+msgid "Welcome! Wondering what to do next?"
+msgstr "Ласкаво просимо! Хочете дізнатися, що робити далі?"
+
+#: client/app/main/faq.html:157
+msgid ""
+"Well, of course it does! By creating a profile, you are instantly closer to "
+"getting high-paying jobs and tremendous opportunities. We are constantly "
+"refining Posluga.ua to ensure we’re presenting the cleanest and easiest "
+"website for search engines to crawl and index. Not only do we benefit from "
+"search engine traffic, but we also do a lot of online and print advertising, "
+"trade shows/conferences, sponsorships of events, and have exceptional "
+"ongoing relationships with corporate companies."
+msgstr ""
+"Ну, звичайно! Створюючи профіль, ви відразу ж стаєте ближче до отримання "
+"доходу і величезним можливостям. Ми постійно вдосконалюємо Posluga.ua, щоб "
+"гарантувати, що ми презентуємо самий простий веб-сайт для пошукових систем "
+"для сканування та індексування. Ми не тільки отримуємо користь від трафіку з "
+"пошукових систем, але ми також робимо багато онлайн і друкованої реклами, "
+"беремо участь у виставках та конференціях, спонсорських заходах, і маємо "
+"виняткові постійні відносини з корпоративними компаніями."
+
+#: client/app/main/faq.html:24 client/app/main/main.controller.js:150
+msgid ""
+"We’ve tried our very best to make Posluga.ua easy to use. But sometimes "
+"things aren’t quite as clear as they need to be. If you don’t find the "
+"answer you need here, you can also contact us."
+msgstr ""
+"Ми постаралися зробити все,що від нас залежить, щоб зробити Posluga.ua. "
+"простою у використанні. Але іноді не все так просто. Якщо ви не знайшли "
+"потрібну відповідь, ви можете зв'язатися з нами."
+
+#: client/app/quote/_commentbox.html:3
+msgid "What do you think of the"
+msgstr "що ви думаєте про"
+
+#: client/app/request/request.controller.js:162
+#: client/app/request/request_form.html:75
+msgid "What do you want done?"
+msgstr "Що вам треба зробити?"
+
+#: client/app/main/faq.html:257
+msgid "What happens if I do not honor a confirmed booking?"
+msgstr "Що станеться, якщо я не дотримуюся підтвердженого бронювання?"
+
+#: client/app/main/faq.html:131
+msgid "What happens if I need to cancel a service after I’ve booked someone?"
+msgstr ""
+"Що станеться, якщо мені потрібно скасувати послугу після того як я "
+"забронював когось?"
+
+#: client/app/request/request.html:24
+msgid "What happens when I fill the form?"
+msgstr "Що станеться, коли я заповню форму?"
+
+#: client/app/main/about.html:33
+msgid "What is Posluga.ua?"
+msgstr "Що таке Posluga.ua?"
+
+#: client/app/main/faq.html:119
+msgid "What should I do if the service provider does not show up for my event?"
+msgstr ""
+"Що мені слід робити, якщо постачальник послуг не відображається для мого "
+"випадку?"
+
+#: client/app/admin/admin.controller.js:1993
+msgid "What should I do now?"
+msgstr "Що далі?"
+
+#: client/app/admin/admin.controller.js:1863
+msgid "What should I do?"
+msgstr "Що далі?"
+
+#: client/app/admin/admin.controller.js:1883
+#: client/app/admin/admin.controller.js:1966 client/app/request/success.html:22
+msgid "What will happen now?"
+msgstr "Що далі?"
+
+#: client/app/admin/admin.controller.js:1945
+msgid ""
+"When we determine your eligibility for new business opportunities, we look "
+"at various success and trust criteria. If you want more business "
+"oppurtunities, you can do these things:"
+msgstr ""
+"Коли ми визначаємо ваше право на нові бізнес можливості, ми враховуємо різні "
+"досягнення і критерії довіри Якщо ви хочете більше можливостей для бізнесу, "
+"ви можете зробити наступне:"
+
+#: client/app/quote/viewquotes.html:44
+msgid ""
+"When you accept this quote, service provider will reserve his own time for "
+"you and he will pay us a small commission for our service. The price you "
+"accept and information in this form will be a binding legal contract between "
+"you and the provider. If you are unsure to get this service or you may "
+"change your mind later on, do not accept this quote."
+msgstr ""
+"Коли ви приймаєте ціну, постачальник резервує свій час для вас і він буде "
+"платити нам невелику комісію за наші послуги. Ціна, яку ви приймаєте і "
+"інформація в такому вигляді буде юридично зобов'язувальною угодою між вами "
+"та постачальником. Якщо Ви не впевнені, що скористаєтесь цією послугою, або "
+"ви можете змінити своє рішення пізніше, не приймайте(підтверджуйте) цю ціну."
+
+#: client/app/admin/admin.controller.js:1990
+msgid "When you complete your service, go to the quote page and"
+msgstr "Після завершення послуги перейдіть на сторінку пропозиції"
+
+#: client/app/account/pwdreset/pwdreset.html:37
+msgid "When you confirm, your password will be changed."
+msgstr "Після підтвердження, ваш пароль буде змінений."
+
+#: client/app/main/howitworks.html:46
+msgid ""
+"When you post a job, we will guide you through the following steps; what "
+"needs to be done, where the job is located, when the job should start and "
+"your approximate budget. Remember you only provide your job details once and "
+"we do the rest for you."
+msgstr ""
+"При розміщенні роботи, ми будемо давати вам покрокові інструкції: що повинно "
+"бути зроблено, де знаходиться робота, коли повинна починатися робота і ваш "
+"приблизний бюджет. Пам'ятайте, що ви тільки один раз надаєте дані по роботі, "
+"а все інше ми робимо для вас."
+
+#: client/app/request/success.html:66
+msgid ""
+"When you select a quote, Posluga.ua will get notified that your task is "
+"being done so we will start to control every step for your satisfaction."
+msgstr ""
+"При виборі ціни, Posluga.ua отримає повідомлення, що ваша задача виконана, "
+"таким чином, ми почнемо контролювати кожен крок для вашого задоволення."
+
+#: client/app/main/main.html:74
+msgid ""
+"When you're ready, choose the best business for you. We check every business "
+"according to our strict criteria."
+msgstr ""
+"У той час, як ви вибираєте кращого постачальника для себе. Ми перевіряємо "
+"кожного постачальника, відповідно вашим строгим критеріям."
+
+#: client/app/request/request_form.html:155
+msgid "When?"
+msgstr "Коли?"
+
+#: client/app/request/request_form.html:115
+msgid "Where?"
+msgstr "Де?"
+
+#: client/app/main/main.html:20
+msgid "Which service do you need? Who do you look for?"
+msgstr "Яка вам потрібна послуга? Кого ви шукаєте?"
+
+#: client/app/request/request_form.html:5
+msgid "Which service do you want?"
+msgstr "Яка послуга вас цікавить?"
+
+#: client/app/main/faq.html:84
+msgid ""
+"While we do our best to address any issues that are brought to our "
+"attention; we do not endorse, sanction, or verify those providers listed on "
+"Posluga.ua."
+msgstr ""
+"У той час як ми робимо все можливе для вирішення будь-яких питань, які "
+"поставлені перед нами; ми перевіряємо постачальників, перерахованих на "
+"Posluga.ua, але не несемо відповідальність."
+
+#: client/app/admin/admin.controller.js:1948
+msgid "Win business oppurtunities"
+msgstr "Вигравайте замовлення на свої послуги"
+
+#: client/app/admin/admin.controller.js:398
+#: client/app/admin/requestlist.html:61 client/app/quote/myquotes.html:47
+#: client/app/quote/quote.controller.js:90
+#: client/app/request/myrequests.html:39
+#: client/app/request/request.controller.js:90
+msgid "Work Cancelled"
+msgstr "Роботу Скасовано"
+
+#: client/app/admin/admin.controller.js:395
+#: client/app/admin/requestlist.html:58 client/app/quote/myquotes.html:44
+#: client/app/quote/quote.controller.js:87
+#: client/app/request/myrequests.html:36
+#: client/app/request/request.controller.js:87
+msgid "Work Done"
+msgstr "Робота виконана"
+
+#: client/app/main/about.html:96
+msgid "Working hard, taking risks, and enjoying the resulting profit."
+msgstr "Старанно працювати, ризикувати, і насолоджуватися отриманим прибутком."
+
+#: client/app/admin/admin.controller.js:2004
+msgid "Write Review Now"
+msgstr "Написати Відгук Зараз"
+
+#: client/app/quote/_wrapper.html:266
+msgid "Write a review"
+msgstr "Напишить відгук"
+
+#: client/app/admin/admin.controller.js:2005
+msgid ""
+"Write a review for the service you have received, because it will help "
+"immensely to other users, to your service provider and to us."
+msgstr ""
+"Напишіть свою думку про послугу, яку ви використовували, так як світ "
+"потребує вашого відкликання!"
+
+#: client/app/admin/admin.controller.js:1835
+msgid ""
+"Write a review for the service you have taken because the world needs your "
+"review!"
+msgstr ""
+"Написати відгук за послугу, яку вам надали тільки тому, що світові потрібен "
+"ваш коментар!"
+
+#: client/app/admin/admin.controller.js:2000
+msgid "Write a review to help others"
+msgstr "Напишіть свій відгук, щоб допомогти іншим"
+
+#: client/app/provider/provider.html:256
+msgid "Written by:"
+msgstr "Автор:"
+
+#: client/app/admin/_admindetailbox.html:257
+#: client/app/admin/_admindetailbox.html:274
+msgid "Yes"
+msgstr "Ja"
+
+#: client/app/quote/quotedetail.html:58
+msgid "Yes, I won this work"
+msgstr "Так, я виграв цю роботу"
+
+#: client/app/quote/_wrapper.html:22
+msgid "You Won"
+msgstr "Ви Виграли!"
+
+#: client/app/provider/provider.controller.js:615
+msgid ""
+"You already provide this service. You can only create it again if you "
+"provide it in another oblast."
+msgstr ""
+"Ви вже надаєте цю послугу. Ви можете створити її заново, тільки якщо ви "
+"надасте її в іншій області."
+
+#: client/app/request/request.controller.js:299
+msgid "You are sending request to"
+msgstr "Ви надсилаєте запит на"
+
+#: client/app/admin/admin.controller.js:1929
+#: client/app/admin/admin.controller.js:446
+#: client/app/quote/quote.controller.js:70
+#: client/app/request/request.controller.js:70
+msgid "You can call the customer"
+msgstr "Ви можете зателефонувати клієнту"
+
+#: client/app/main/faq.html:137
+msgid ""
+"You can cancel the booking before the event date. But if you want to cancel "
+"the booking after the event date then the provider still has to pay us "
+"commission from the total price as if the service has been given. So in "
+"order to not make the provider mistreated; you must talk with the provider "
+"to decide on another date, another service or any other form of dispute "
+"resolution."
+msgstr ""
+"Ви можете відмінити бронювання до дати проведення. Але якщо ви хочете "
+"відмінити бронювання після дати проведення, то постачальник раніше повинен "
+"заплатити нам комісію від загальної вартості, так якщо б ця послуга була "
+"надана. Тому для того, щоб не розвивати конфлікт з постачальником, вам слід "
+"поговорити з постачальником, щоб прийняти рішення про іншу дату, інший "
+"службі або іншу форму врегулювання спору."
+
+#: client/app/quote/quote.controller.js:261
+msgid ""
+"You can get to  just by completing below issues in your profile. Giving "
+"quotes will increase your priority too."
+msgstr ""
+"Ви можете отримати заповнивши питання нижче, в вашому профілі. Надання "
+"пропозицій так само збільшить ваш пріоритет"
+
+#: client/app/admin/admin.controller.js:2027
+msgid "You can read your review by clicking on button below"
+msgstr "Ви можете прочитати Ваш відгук, натиснувши на кнопку нижче"
+
+#: client/app/admin/admin.controller.js:1942
+msgid "You created a service profile"
+msgstr "Ви створили профіль обслуговування"
+
+#: client/app/admin/admin.controller.js:1909
+msgid "You have a new"
+msgstr "У вас нове"
+
+#: client/app/admin/admin.controller.js:1939
+msgid "You have a new message"
+msgstr "У вас є нове повідомлення"
+
+#: client/app/admin/admin.controller.js:1894
+msgid "You have a new message from"
+msgstr "У вас є нове повідомлення від"
+
+#: client/app/admin/admin.controller.js:1828
+msgid "You have received"
+msgstr "Ви отримали"
+
+#: client/app/admin/admin.controller.js:1859
+msgid "You have received a quote"
+msgstr "Ви отримали ціну"
+
+#: client/app/admin/admin.controller.js:2033
+msgid "You have received a quote for your {{servicetext}} service. Look at:"
+msgstr ""
+"Ви отримали пропозицію для вашої {{servicetext}} послуги. Подивіться на:"
+
+#: client/app/admin/admin.controller.js:1980
+msgid ""
+"You have received a quote of {{body.price}} for your {{body.service}} "
+"service. Look at:"
+msgstr ""
+"Ви отримали ціну для вашого {{body.service}} запиту ({{body.price}} грн). "
+"Деталі:"
+
+#: client/app/admin/admin.controller.js:1957
+msgid "You have selected a quote"
+msgstr "Ви вибрали ціну"
+
+#: client/app/admin/admin.controller.js:1960
+msgid "You have selected a quote for your"
+msgstr "Ви вибрали ціну для вашої"
+
+#: client/app/admin/admin.controller.js:1985
+msgid "You have won a new business"
+msgstr "Ви виграли запит"
+
+#: client/app/request/request.controller.js:198
+msgid "You lost"
+msgstr "Ви втратили"
+
+#: client/app/main/faq.html:316
+msgid ""
+"You may dispute reviews only if they are obscene, abusive, or fraudulent - "
+"even so after our verification."
+msgstr ""
+"Ви можете оскаржувати відгуки тільки якщо вони є непристойними, образливими, "
+"або шахрайськими - навіть в цьому випадку тільки після нашої перевірки."
+
+#: client/app/request/request.controller.js:196
+msgid "You selected a quote"
+msgstr "Ви вибрали ціну"
+
+#: client/app/request/request.controller.js:206
+msgid "You sent a quote"
+msgstr "Ви відправили ціну"
+
+#: client/app/account/pwdreset/pwdreset.html:11
+msgid "You succesfully changed your password."
+msgstr "Ваш пароль був успішно змінений"
+
+#: client/app/quote/quotedetail.html:4
+msgid "You successfully sent your quote. Now, persuade customer to choose you."
+msgstr ""
+"Ви успішно вислали свою пропозицію. Тепер, переконати клієнта вибрати вас."
+
+#: client/app/main/howitworks.html:59
+msgid ""
+"You will be contacted by Posluga.ua via SMS or email within 24 hours if a "
+"service provider that matches your criteria gives you a price quote. If you "
+"want, they can also call you to arrange a time to visit and review the work "
+"that needs doing. Our providers commit to contacting consumers within 24 "
+"hours of accepting a job."
+msgstr ""
+"З вами зв'яжуться через Posluga.ua з допомогою SMS або по електронній пошті "
+"протягом 24 годин, якщо постачальник послуг, який відповідає вашим критеріям "
+"надає вам ціну. Якщо ви хочете, він також може зв'язатися з вами для "
+"організації часу і огляду роботи, яка повинна бути виконана. Наші "
+"постачальники зобов'язуються зв'язатися із споживачами протягом 24 годин з "
+"моменту прийняття на роботу."
+
+#: client/app/admin/admin.controller.js:1885
+msgid ""
+"You will be receiving notifications about price quotes with email and SMS in "
+"24 hours. You can review these quotes in your account page and you can "
+"choose the one you prefer."
+msgstr ""
+"Ви будете отримувати повідомлення про пропозиції з цінами електронною поштою "
+"та SMS протягом 24 годин. Ви можете переглянути дані ціни на сторінці вашого "
+"облікового запису, і вибрати ті, яким віддаєте перевагу."
+
+#: client/app/quote/quote.controller.js:633
+msgid "You will earn"
+msgstr "ви заробите"
+
+#: client/app/request/request.controller.js:193
+msgid "You won"
+msgstr "Ви виграли"
+
+#: client/app/quote/_commentbox.html:18
+msgid "You've got service from"
+msgstr "У вас сервіс від"
+
+#: client/app/places/_whyposluga.html:1
+msgid "Your Benefits"
+msgstr "Ваші переваги"
+
+#: client/app/request/request_form.html:107
+msgid "Your Budget?"
+msgstr "Ваш Бюджет?"
+
+#: client/app/admin/admin.controller.js:1849
+msgid "Your Login Details"
+msgstr "Ваші деталі логина"
+
+#: client/app/quote/_commentbox.html:40
+msgid "Your comments about the service you got"
+msgstr "Ваші коментарі з приводу послуги,яку ви отримали"
+
+#: client/app/admin/admin.controller.js:2025
+msgid "Your customer"
+msgstr "Ваш клієнт"
+
+#: client/app/admin/admin.controller.js:1950
+msgid ""
+"Your customers and the number of job opportunities we send to you will "
+"increase as you get 5 star customer reviews. To get more business, do your "
+"job best and ask your customers to give you 5 star reviews."
+msgstr ""
+"Кількість ваших клієнтів і замовлень, які ми посилаємо до вас зросте, коли "
+"ви отримаєте відгуки 5 зірок від клієнтів. Щоб отримати більше замовлень, "
+"робите свою роботу краще і попросіть Ваших клієнтів дати вам відгуки 5 зірок."
+
+#: client/app/request/request_form.html:227
+msgid "Your email?"
+msgstr "Ваша електронна пошта"
+
+#: client/app/quote/viewquotes.html:53
+msgid "Your firstname"
+msgstr "Ваше ім'я"
+
+#: client/app/quote/viewquotes.html:62
+msgid "Your lastname"
+msgstr "Ваше прізвище"
+
+#: client/app/request/request_form.html:182
+msgid "Your mobile phone?"
+msgstr "Ваш мобильний телефон?"
+
+#: client/app/quote/quote.controller.js:263
+msgid ""
+"Your profile is complete. Give quotes and win them to increase your priority."
+msgstr ""
+"Ваш профіль завершений. Дайте пропозиції і виіграте їх, щоб збільшити свій "
+"пріоритет."
+
+#: client/app/request/_admindetailbox.html:175
+#: client/app/request/_detailbox.html:224
+msgid "Your request will be cancelled, can we learn why you want to cancel it?"
+msgstr ""
+"Ваш запит буде скасований, ми можемо дізнатися, чому ви хочете скасувати "
+"його?"
+
+#: client/app/admin/admin.controller.js:1836
+msgid ""
+"Your review helps other consumers and rewards the service providers who has "
+"done a good work."
+msgstr ""
+"Ваш відгук допоможе іншим споживачам і буде винагородою для постачальників "
+"послуг, які виконали хорошу роботу."
+
+#: client/app/admin/admin.controller.js:2001
+msgid "Your service provider"
+msgstr "Ваш постачальник послуг"
+
+#: client/app/quote/_detailbox.html:27
+msgid "Yours:"
+msgstr "Ваші:"
+
+#: client/app/main/faq.html:169
+msgid ""
+"You’re probably missing out on our emails because your email service has "
+"blocked our emails as spam.  Try adding noreply@posluga.ua to your contact "
+"list of your email provider/software."
+msgstr ""
+"Ви не отримуєте наших листів з причини того, що служба вашої електронної "
+"пошти віднесла їх до спаму. Спробуйте додати noreply@posluga.ua у свій "
+"список контактів електронної пошти."
+
+#: client/app/request/request.controller.js:761
+msgid ""
+"a user with this email exists but his phone is not the provided one. Ask "
+"client to provide you correct phone. The phone should be:"
+msgstr ""
+"користувач з цієї електронної пошти існує, але його телефон не передбачено "
+"той. Попросіть клієнта надати вам правильні телефону. Телефон має бути:"
+
+#: client/app/request/request.controller.js:758
+msgid ""
+"a user with this phone exists but his email is not the provided one. Ask "
+"client to provide you correct email. The email should be:"
+msgstr ""
+"Існує користувач з цього телефону, але його електронною поштою не "
+"передбачено той. Попросіть клієнта надати вам правильну електронну. "
+"Електронної пошти має бути:"
+
+#: client/app/admin/admin.controller.js:1892
+msgid "about"
+msgstr "про"
+
+#: client/app/account/signup/_form.html:70 client/app/provider/profile.html:320
+#: client/app/request/request_form.html:242
+msgid "and"
+msgstr "і"
+
+#: client/app/request/request.controller.js:460
+msgid "and 4 similar service providers"
+msgstr "і 4 подібних постачальників послуг"
+
+#: client/app/main/main.html:406
+msgid "cities and rayons"
+msgstr "міст і районів"
+
+#: client/app/provider/_profilebox.html:70 client/app/quote/_wrapper.html:116
+msgid "clients were happy"
+msgstr "клієнти були щасливі"
+
+#: client/app/provider/profile.html:39
+msgid "company name or brand"
+msgstr "назва компанії або бренду"
+
+#: client/app/admin/admin.controller.js:1991
+msgid ""
+"confirm that you have completed the service - so we will send a notification "
+"to customer to write a review."
+msgstr ""
+"Підтвердіть, що ви надали послугу - таким чином, ми надішлемо повідомлення "
+"клієнту, щоб написати відгук."
+
+#: client/app/admin/admin.controller.js:1903
+msgid "created a request. Please login to your admin account to review it."
+msgstr ""
+"створений запит. Будь ласка, ввійдіть у свій обліковий запис, щоб розглянути "
+"його."
+
+#: client/app/admin/admin.controller.js:1904
+msgid "customer created a request"
+msgstr "клієнт створив запит"
+
+#: client/app/admin/admin.controller.js:2022
+msgid "customer created a request, login your account to check it."
+msgstr ""
+"Клієнт створив запит, увійдіть у свій обліковий запис, щоб перевірити його."
+
+#: client/app/admin/admin.controller.js:1889
+msgid "customer selected a quote for request"
+msgstr "клієнт вибрав ціну за запитом"
+
+#: client/app/admin/admin.controller.js:1963
+msgid "decide with the quote owner about the details of the work to be done."
+msgstr "вирішити з власником пропозиції по ціні про деталі роботи."
+
+#: client/app/provider/provider.html:302
+msgid "doesn't have documents yet"
+msgstr "Немає документів ще"
+
+#: client/app/provider/provider.html:170
+msgid "doesn't have photos yet"
+msgstr "Фото ще немає"
+
+#: client/app/provider/provider.html:210
+msgid "doesn't have reviews yet"
+msgstr "ще немає відгуків "
+
+#: client/app/provider/profile.html:277
+msgid "e.g. Licence of authorization"
+msgstr "Наприклад; ліцензії, дозволи"
+
+#: client/app/admin/preprovider.html:125 client/app/admin/preprovider.html:241
+msgid "email exists for another preprovider"
+msgstr "електронна пошта вже зареєстрована в іншого постачальника послуг"
+
+#: client/app/admin/admin.controller.js:81
+msgid "enter address"
+msgstr "Введіть адресу"
+
+#: client/app/admin/admin.controller.js:83
+msgid "enter firstname"
+msgstr "Введіть ім’я"
+
+#: client/app/admin/admin.controller.js:85
+msgid "enter lastname"
+msgstr "прізвище"
+
+#: client/app/main/_getquotes.html:10 client/app/main/main.html:25
+#: client/app/request/request_form.html:9
+msgid "ex: house cleaning, carpenter, electrician"
+msgstr "чистка, тесляр, електрик…"
+
+#: client/app/provider/profile.html:47
+msgid "firstname"
+msgstr "ім'я "
+
+#: client/app/provider/provider.controller.js:99
+msgid "for example:"
+msgstr "наприклад: "
+
+#: client/app/provider/profile.html:131
+msgid "house cleaning"
+msgstr "прибирання вдома"
+
+#: client/app/main/main.html:399
+msgid "in"
+msgstr "через"
+
+#: client/app/admin/admin.controller.js:2034
+msgid "is the code to complete your verification on Posluga.ua"
+msgstr "це код, щоб завершити перевірку на Posluga.ua"
+
+#: client/app/provider/profile.html:50
+msgid "lastname"
+msgstr "прізвище"
+
+#: client/app/admin/admin.controller.js:2002
+msgid "notified us that they have completed providing your"
+msgstr "повідомив нас, що він завершив надання Вам"
+
+#: client/app/request/_listitem.html:36
+msgid "on"
+msgstr "на"
+
+#: client/app/admin/preprovider.html:98
+msgid "phone exists for another preprovider"
+msgstr "електронна пошта вже зареєстрована в іншого постачальника послуг"
+
+#: client/app/places/katalog.html:49 client/app/places/katalog.html:70
+#: client/app/places/katalog.html:91
+msgid "places we operate"
+msgstr "де ми працюємо"
+
+#: client/app/admin/admin.controller.js:700
+msgid "please enter at least website,company,phone1 and address"
+msgstr "будь ласка, введіть принаймні, сайт, назву компанії,телефон та адресу"
+
+#: client/app/admin/admin.controller.js:1329
+msgid "please fill company name"
+msgstr "Будь ласка, заповніть ім'я компанії."
+
+#: client/app/places/places.controller.js:280
+msgid "price quotes and compare."
+msgstr "Пропозиції цін і порівняння."
+
+#: client/app/account/signup/_form.html:73 client/app/provider/profile.html:323
+#: client/app/request/request_form.html:245
+msgid "privacy policy"
+msgstr "Політика конфіденційності"
+
+#: client/app/admin/admin.controller.js:1944
+msgid ""
+"profile. As we find eligible customers and business opportunities, we will "
+"send you SMS and emails. New customers will come to your feet."
+msgstr ""
+"профіль. Коли ми знайдемо відповідних клієнтів і запити на послуги, ми "
+"надішлемо Вам SMS і електронну пошту. Нові клієнти впадуть до ваших ніг."
+
+#: client/app/admin/admin.controller.js:1829
+msgid "quotes for your"
+msgstr "пропозиції за вашим запитом"
+
+#: client/app/quote/viewquotes.html:12
+msgid "quotes for your request and they are valid until"
+msgstr "пропозиції за вашим запитом і вони дійсні до"
+
+#: client/app/admin/admin.controller.js:1983
+msgid "request"
+msgstr "запит"
+
+#: client/app/admin/admin.controller.js:1987
+msgid "request you have quoted."
+msgstr "на який ви запропонували найкращу ціну."
+
+#: client/app/admin/admin.controller.js:1830
+#: client/app/admin/admin.controller.js:1961
+msgid "request."
+msgstr "запит"
+
+#: client/app/admin/admin.controller.js:1862
+msgid "request. If you have any questions, send message to the quoter."
+msgstr ""
+"запиту. Якщо у вас є які-небудь питання, надішліть повідомлення "
+"постачальника послуги."
+
+#: client/app/admin/admin.controller.js:1910
+msgid ""
+"request. When this request reaches maximum quote count it will be closed for "
+"new quotes. If you are interested, give a quote now."
+msgstr ""
+"запит. Коли цей запит отримає максимальну кількість пропозицій він буде "
+"закритий. Якщо ви зацікавлені, дайте свою ціну!"
+
+#: client/app/admin/admin.controller.js:1876
+msgid "request. You will be receiving price quotes as soon as possible."
+msgstr "запит. Ви будете отримувати ціни як можна швидко."
+
+#: client/app/main/main.html:417
+msgid "requests"
+msgstr "запитів"
+
+#: client/app/quote/_wrapper.html:208
+msgid "requests,"
+msgstr "запити,"
+
+#: client/app/provider/_profilebox.html:51 client/app/provider/provider.html:22
+#: client/app/quote/_wrapper.html:195 client/app/quote/_wrapper.html:97
+msgid "reviews"
+msgstr "Відгуки"
+
+#: client/app/admin/admin.controller.js:1833
+msgid "select that quote and make an appointment."
+msgstr "Оберіть дану пропозицію і домовтесь про зустріч"
+
+#: client/app/admin/admin.controller.js:2017
+msgid "sent a quote for request"
+msgstr "Надіслати пропозицію по запиту"
+
+#: client/app/quote/quotesuccess.html:11
+msgid "service has been made."
+msgstr "Послуга була надана."
+
+#: client/app/main/main.html:395
+msgid "service providers are ready for you"
+msgstr "постачальники послуг чекають вас"
+
+#: client/app/quote/_commentbox.html:9
+msgid "service you've got?"
+msgstr "послуга що ви маєте"
+
+#: client/app/admin/admin.controller.js:2003 client/app/quote/_wrapper.html:26
+msgid "service."
+msgstr "послуги"
+
+#: client/app/places/katalog.html:126 client/app/places/katalog.html:144
+#: client/app/places/katalog.html:161 client/app/places/katalog.html:178
+msgid "services we provide"
+msgstr "послуги, які ми надаємо"
+
+#: client/app/provider/provider.html:277
+msgid "stars"
+msgstr "Зірки"
+
+#: client/app/provider/_profilebox.html:64 client/app/quote/_wrapper.html:110
+msgid "tasks completed,"
+msgstr "завдання завершені,"
+
+#: client/app/account/signup/_form.html:67 client/app/provider/profile.html:317
+#: client/app/request/request_form.html:239
+msgid "terms of use"
+msgstr "Умови експлуатації"
+
+#: client/app/admin/admin.controller.js:1893
+msgid "the customer"
+msgstr "клієнта"
+
+#: client/app/admin/admin.controller.js:1125
+#: client/app/admin/admin.controller.js:576
+#: client/app/admin/admin.controller.js:593
+#: client/app/admin/admin.controller.js:989
+msgid "there are duplicate services, plese check the information you entered"
+msgstr "є повторювані послуги, будь ласка, перевірте введену інформацію"
+
+#: client/app/quote/_wrapper.html:214
+msgid "times were happy"
+msgstr "хороші відгуки"
+
+#: client/app/quote/givequote.html:167 client/app/quote/viewquotes.html:42
+msgid "user agreement."
+msgstr "Угода користувача."
+
+#: client/app/admin/preprovider.html:122
+msgid "user exists in the system, you cannot save with this email"
+msgstr "користувач існує в системі, Ви не можете зберегти це лист"
+
+#: client/app/main/main.html:410
+msgid "we received"
+msgstr "ми отримали"
+
+#: client/app/admin/preprovider.html:50
+msgid "website exists for another preprovider"
+msgstr "сайт існує для іншого preprovider"
+
+#: client/app/quote/quotedetail.html:49
+msgid ""
+"will be added to your account balance and we will update this request and "
+"your winning ratio."
+msgstr ""
+"будуть додані до вашого рахунку, ми будемо оновлювати цей запит, а ви "
+"вигравати співвідношення."
+
+#: client/app/quote/_wrapper.html:19
+msgid "will provide your"
+msgstr "забезпечить ваш"
+
+#: client/app/admin/admin.controller.js:2026
+msgid "wrote a review for your"
+msgstr "написан відгук на ваш"
+
+#: client/app/provider/profile.html:123
+msgid "your address"
+msgstr "Ваша адреса"
+
+#: client/app/provider/_ranking.html:11
+msgid "your priority among other providers"
+msgstr "Ваш пріоритет серед інших постачальників"
+
+#: client/components/footer/footer.html:11
+#: client/components/navbar/navbar.html:56
+msgid "отримай кращу цiну"
+msgstr "отримай кращу цiну"
+
+#~ msgid "Select district"
+#~ msgstr "Оберіть район"
+
+#~ msgid "Select province"
+#~ msgstr "Оберіть область"
+
+#~ msgid "support@posluga.ua"
+#~ msgstr "support@posluga.ua"
+
+#~ msgid "Also on Blog Posluga UA"
+#~ msgstr "Також на блозі"
+
+#~ msgid "Add your profile link to your website to pay %5 commission."
+#~ msgstr ""
+#~ "Додайте посилання на свій профіль на ваш сайт, щоб платити %5 комісії."
+
+#~ msgid "If the user accepts your quote, you will pay %5 commission to us."
+#~ msgstr ""
+#~ "Якщо користувач прийме вашу пропозицію, вам потрібно буде сплатити %5 "
+#~ "комісії нам."
+
+#~ msgid "If the user accepts your quote, you will pay %6 commission to us."
+#~ msgstr ""
+#~ "Якщо користувач прийме вашу пропозицію, вам потрібно буде сплатити %6 "
+#~ "комісії нам."
+
+#~ msgid ""
+#~ "There is a small service fee of 5% that is charged when a service is "
+#~ "booked. This fee covers our costs associated with development and "
+#~ "maintenance of the system."
+#~ msgstr ""
+#~ "Існує невелика плата за обслуговування в розмірі 5%, яка стягується, коли "
+#~ "послуга зарезервованна. Ця плата покриває наші витрати, пов'язані з "
+#~ "розробкою і обслуговуванням системи."
+
+#~ msgid ""
+#~ "We sure don’t. it is absolutely free to receive and respond to leads. We "
+#~ "only charge %6 commisssion from the total amount if you win the lead. If "
+#~ "you add your profile link to your website we will be charging %5 "
+#~ "commisssion."
+#~ msgstr ""
+#~ "Ми впевнені, що ні. Це абсолютно безкоштовно, отримувати і відповідати на "
+#~ "запити. Ми беремо тільки 6% комісійних від загальної суми, якщо ви "
+#~ "надаєте послугу. Якщо ви додасте посилання свого профілю на свій сайт, ми "
+#~ "будемо отримувати 5% комісії."
+
+#~ msgid "stars – based on"
+#~ msgstr "зірки на основі"
+
+#~ msgid "Request"
+#~ msgstr "запит"
+
+#~ msgid "View Article"
+#~ msgstr "Вид Статті"
+
+#~ msgid "Explanation:"
+#~ msgstr "пояснення"
+
+#~ msgid "Please write your email in the explanation so we can identify you"
+#~ msgstr ""
+#~ "Будь ласка, напишіть вашу електронну пошту в поясненні, щоб ми могли "
+#~ "ідентифікувати вас"
+
+#~ msgid "my email address is {{currentUser.email}}"
+#~ msgstr "Моя електронна пошта {{currentUser.email}}"
+
+#~ msgid "Request closed for quotes"
+#~ msgstr "Запит закритий для пропозицій"
+
+#~ msgid "Request closed"
+#~ msgstr "запит закритий"
+
+#~ msgid "Businesses send you price quotes"
+#~ msgstr "Підприємства відправили вам пропозиції"
+
+#~ msgid "Choose the best business"
+#~ msgstr "Виберіть кращу компанію"
+
+#~ msgid "Describe your job online or on phone"
+#~ msgstr "Опишіть вашу роботу в інтернеті або по телефону"
+
+#~ msgid ""
+#~ "a provider with the same mobile or landline phone exists on this website:"
+#~ msgstr ""
+#~ "існує постачальник з таким же мобільним або стаціонарним телефоном на "
+#~ "цьому сайті:"
+
+#~ msgid "has more than 6 images."
+#~ msgstr "Має понад 6 картинок."
+
+#~ msgid "service"
+#~ msgstr "послуга"
+
+#~ msgid ""
+#~ "From death-defying acrobats to side-splitting comedians, booking the "
+#~ "perfect entertainment can turn your dream into a reality."
+#~ msgstr ""
+#~ "Від смертельних акробатів до коміків, бронювання ідеального розваги може "
+#~ "перетворити вашу мрію в реальність."
+
+#~ msgid ""
+#~ "If you have any questions, you can reach us from info@posluga.ua email or "
+#~ "0850-3233-122 phone."
+#~ msgstr ""
+#~ "Якщо у вас є питання, ви можете зв'язатися з нами по електронній пошті "
+#~ "support@posluga.ua"
+
+#~ msgid "3 others"
+#~ msgstr "3 інші"
+
+#~ msgid "Get 4"
+#~ msgstr "Отримати 4"
+
+#~ msgid "Get 4 Price Quotes"
+#~ msgstr "отримати 4 цінові пропозиції "
+
+#~ msgid "and 3 similar service providers"
+#~ msgstr "і 3 подібних постачальників послуг"
+
+#~ msgid "{{providercount}} of our members are ready."
+#~ msgstr "{{providercount}} з наших членів готові"
+
+#~ msgid "Add Funds to {{user.email}}"
+#~ msgstr "Поповнити рахунок {{user.email}}"
+
+#~ msgid "Branch:"
+#~ msgstr "Філія:"
+
+#~ msgid "IBAN:"
+#~ msgstr "IBAN"
+
+#~ msgid "Posluga.ua Internet Services"
+#~ msgstr "Posluga.ua це інтернет послуги"
+
+#~ msgid "Latest Tweets"
+#~ msgstr "Твіти"
+
+#~ msgid ""
+#~ "Doing this will link your webpage to your Posluga.ua Profile and it will "
+#~ "positively affect your ranking on search engines. It will also show your "
+#~ "customers that you offer your services in Posluga.ua's trustable "
+#~ "environment and when you win a quote, you will be paying us %5 commission "
+#~ "rather than %6."
+#~ msgstr ""
+#~ "Хотите повысить рейтинг своего сайта в поисковых системах и еще "
+#~ "дополнительно получить скидку на наши услуги? Скопируйте ссылку ниже и "
+#~ "разместите ее у себя на сайте. Затем, вставьте ссылку на страницу вашего "
+#~ "сайта, где вы разместили нашу ссылку.  После чего, будьте уверенны, ваш "
+#~ "сайт теперь на несколько позиций выше в поисковый системах! И наша "
+#~ "комиссия будет составлять 5%  вместо 6%."
+
+#~ msgid "1,232 cities and rayons"
+#~ msgstr "1232 міста"
+
+#~ msgid "10,232 requests"
+#~ msgstr "10232 запитів"
+
+#~ msgid "13,212 service providers are ready for you"
+#~ msgstr "13212 постачальники послуг чекають вас!"
+
+#~ msgid "What's your email address?"
+#~ msgstr "Яка у вас електронна адреса?"
+
+#~ msgid "Confirm Password"
+#~ msgstr "Підтвердження Пароля"
+
+#~ msgid "Passwords must match."
+#~ msgstr "Паролі повинні співпадати."
+
+#~ msgid "Explore"
+#~ msgstr "Розглянути"
+
+#~ msgid ""
+#~ "Doing this will link your webpage to your Posluga.ua Profile and it will "
+#~ "positively affect your ranking on search engines. It will also show your "
+#~ "customers that you offer your services in Posluga.ua's trustable and "
+#~ "secure environment."
+#~ msgstr ""
+#~ "Ця дія перенаправить вас на сайт Posluga.ua Профіль позитивно вплине на "
+#~ "рейтинг в пошукових системах. Він також покаже вашим клієнтам, що послуги "
+#~ "які ви пропонуєте з Posluga.ua безпечні і вам можна довіряти."
+
+#~ msgid ""
+#~ "If the user accepts your quote, you will pay %5 commission to us. Give "
+#~ "the best price offer you can with the information user provided."
+#~ msgstr ""
+#~ "Якщо користувач приймає вашу пропозицію, ви будете оплачувати 5% комісії. "
+#~ "Дайте кращу пропозицію ціни за допомогою наданої інформації про "
+#~ "користувача"
+
+#~ msgid ""
+#~ "We sure don’t. it is absolutely free to receive and respond to leads. We "
+#~ "only charge 5% commisssion from the total amount if you win the lead."
+#~ msgstr ""
+#~ "Будьте впевнені, що ні. Це абсолютно безкоштовно, щоб отримувати і "
+#~ "відповідати на запити. Ми беремо тільки 9% комісії від загальної суми, "
+#~ "якщо ви отримаєте замовлення."
+
+#~ msgid "Get Data Below Automatically"
+#~ msgstr "отримуй наступні дані автоматично"
+
+#~ msgid "Landline Phone"
+#~ msgstr "стаціонарний телефон"
+
+#~ msgid "tasks completed"
+#~ msgstr "завдання"
+
+#~ msgid "If the user accepts your quote, you will pay"
+#~ msgstr "Якщо користувач приймає вашу пропозицію, ви будете оплачувати"
+
+#~ msgid "1 day member"
+#~ msgstr "зареєстрований на сайті 1 день"
+
+#~ msgid "4. Share your experience with others"
+#~ msgstr "4. Поділіться своїм досвідом з іншими"
+
+#~ msgid ""
+#~ "Feedback is critical to the Posluga.ua experience. All you need to do is "
+#~ "log in and provide feedback about the service you got. We are also keen "
+#~ "to hear any feedback that you have on the Posluga.ua experience."
+#~ msgstr ""
+#~ "Зворотній зв'язок має вирішальне значення для досвіду Posluga.ua. Все, що "
+#~ "вам потрібно зробити, це увійти і забезпечити зворотний зв'язок про "
+#~ "послугу яку ви отримали. Ми також зацікавлені, бути поінформованими про "
+#~ "досвід на досвіді Posluga.ua."
+
+#~ msgid "Get My Free Quote"
+#~ msgstr "Отримати ціну"
+
+#~ msgid "is the code to complete your verification on posluga.ua."
+#~ msgstr "це код, щоб завершити перевірку на Posluga.ua"
+
+#~ msgid "Member for {{count}}"
+#~ msgstr "Член для {{count}}"
+
+#~ msgid "Note:"
+#~ msgstr "Примітка:"
+
+#~ msgid "Quotes Received"
+#~ msgstr "Отримані пропозиції цін"
+
+#~ msgid "Today"
+#~ msgstr "Сьогодні"
+
+#~ msgid "Tomorrow"
+#~ msgstr "Завтра"
+
+#~ msgid "View My Profile"
+#~ msgstr "Подивитись мій профіль"
+
+#~ msgid "You already have a profile with this service, Please choose another"
+#~ msgstr "У вас вже є профіль з даною послугою, будь ласка, виберіть інший"
+
+#~ msgid "You Selected a Quote"
+#~ msgstr "Ви вибрали пропозицію"
+
+#~ msgid "You Sent a Quote"
+#~ msgstr "Ви вислали пропозицію"

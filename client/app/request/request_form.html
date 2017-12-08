@@ -1,0 +1,261 @@
+<form class="form-group" ng-controller="RequestCtrl" ng-submit="switchupdaterequest === false ? createRequest() : updateRequest()" novalidate="novalidate">
+    <div class="large-12 large-centered columns animate-show">
+        <div class="row">
+            <div class="large-10 columns">
+                <label class="font--18 fontweight600 text--dark-gray" for="quote__eventType" translate="">
+                    Which service do you want?
+                </label>
+                <div class="quote--input" id="typeaheadrequest">
+                    <input class="forcetext form-control" focus-if="" id="searchtextid" ng-disabled="request.preselectedprovider" ng-model="request.searchtext" placeholder="{{ 'ex: house cleaning, carpenter, electrician' | translate }}" register-custom-form-control="" required="" type="text" typeahead-min-length="2" typeahead-on-select="onTypeSelect($item)" typeahead-select-on-blur="false" typeahead-select-on-exact="false" uib-typeahead="s.subcat  for s in getSearchtext($viewValue) "/>
+                </div>
+            </div>
+            <div class="large-2 columns">
+                <div class="quote--input padtop20" style="float:right">
+                    <button class="btn btn-primary btn-xs" id="selectFromListButton" ng-click="openSelectListModal()" ng-disabled="request.preselectedprovider" translate="" type="button">
+                        Select from list
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row padtop20" ng-repeat="q in request.service.questions" ng-show="request.service.questions.length> -1">
+            <div class="large-12 columns">
+                <div class="quote--input">
+                    <label class="font--18 fontweight600 text--dark-gray" for="question">
+                        {{ q.question | translateFilterSimple:languageKey }}
+                    </label>
+                    <ui-select close-on-select="true" multiple="" ng-model="request.answers[q.order-1]" ng-show="q.qtype=='Multiselect'" register-custom-form-control="" theme="bootstrap">
+                        <ui-select-match class="ui-select-match" placeholder="{{ 'Select an option' | translate }}">
+                            {{ $item.option | translateFilterSimple:languageKey }}
+                        </ui-select-match>
+                        <ui-select-choices class="ui-select-choices" repeat="option in q.options |  filter: $select.search">
+                            <div ng-bind-html="option.option | translateFilterSimple:languageKey  | highlight: $select.search">
+                            </div>
+                        </ui-select-choices>
+                    </ui-select>
+                    <ui-select ng-model="request.answers[q.order-1]" ng-show="q.qtype=='Singleselect'" register-custom-form-control="" theme="bootstrap">
+                        <ui-select-match class="ui-select-match" placeholder="{{ 'Select an option' | translate }}">
+                            {{ $select.selected.option | translateFilterSimple:languageKey }}
+                        </ui-select-match>
+                        <ui-select-choices class="ui-select-choices" repeat="option in q.options | filter: $select.search">
+                            <span ng-bind-html="option.option | translateFilterSimple:languageKey  | highlight: $select.search">
+                            </span>
+                        </ui-select-choices>
+                    </ui-select>
+                    <input class="forcetext form-control" id="questions{{ q._id }}" ng-model="request.answers[q.order-1]" ng-show="q.qtype=='Textinput'" type="text"/>
+                    <input class="forcetext form-control width150 padright5" id="questions{{ q._id }}" min="0" ng-model="request.answers[q.order-1]" ng-show="q.qtype=='Numberinput'" type="text"/>
+                    <input class="forcetext form-control width150 padright5" id="questions{{ q._id }}" min="0" ng-model="request.answers[q.order-1]" ng-show="q.qtype=='Priceinput'" type="text"/>
+                    <div class="col-sm-6 leftselect" ng-show="q.qtype=='Placeselect'">
+                        <ui-select class="provincex" ng-model="request.answers[q.order-1][0]" on-select="getOblastRayons($item)" register-custom-form-control="" theme="bootstrap">
+                            <ui-select-match class="ab ui-select-match" placeholder="{{'Please Select' | translate}}">
+                                {{$select.selected | itemlangFilter:languageKey}}
+                            </ui-select-match>
+                            <ui-select-choices class="ab ui-select-choices" repeat="p in oblastOptions | filter: $select.search">
+                                <span ng-bind-html="p  | itemlangFilter:languageKey | highlight: $select.search ">
+                                </span>
+                            </ui-select-choices>
+                        </ui-select>
+                    </div>
+                    <div class="col-sm-6 rightselect" ng-show="q.qtype=='Placeselect'">
+                        <ui-select ng-model="request.answers[q.order-1][1]" on-select="getRayonGorads($item)" register-custom-form-control="" theme="bootstrap">
+                            <ui-select-match class="ab ui-select-match" placeholder="{{'Please Select' | translate}}">
+                                {{$select.selected | itemlangFilter:languageKey}}
+                            </ui-select-match>
+                            <ui-select-choices class="ab ui-select-choices" repeat="d in rayonOptions | filter: $select.search">
+                                <span ng-bind-html="d | itemlangFilter:languageKey | highlight: $select.search">
+                                </span>
+                            </ui-select-choices>
+                        </ui-select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row padtop20">
+            <div class="large-12 columns">
+                <div class="quote--input">
+                    <label class="font--18 fontweight600 text--dark-gray" for="description" ng-show="!request.service.questions.length> 0" translate="">
+                        What do you want done?
+                    </label>
+                    <label class="font--18 fontweight600 text--dark-gray" for="description" ng-show="request.service.questions.length> 0" translate="">
+                        Other details
+                    </label>
+                    <textarea class="heightauto marginbottom5" id="description" ng-model="request.description" placeholder="{{ 'Things I want done' | translate }}" required="" rows="5">
+                    </textarea>
+                    <button accept="image/*" class="btn btn-primary btn-sm" multiple="" ngf-keep="false" ngf-max-size="10MB" ngf-multiple="true" ngf-select="onFileSelect($files)" translate="">
+                        Add Photo
+                    </button>
+                    <div class="photodiv" ng-repeat="f in request.files">
+                        <div class="img-wrap">
+                            <span class="close" confirm="{{'Are you sure you want to delete?' | translate}}" ng-click="deleteFile($index)">
+                                ×
+                            </span>
+                            <img height="48" src="{{ f.location }}" width="48"/>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <li ng-repeat="f in errFiles" style="font:smaller">
+                            {{ f.$error }} {{ f.$errorParam }}
+                        </li>
+                    </ul>
+                    {{ errorMsg }}
+                </div>
+            </div>
+        </div>
+        <div class="row padtop20">
+            <div class="large-4 columns">
+                <label class="font--18 fontweight600 text--dark-gray" for="budget" translate="">
+                    Your Budget?
+                </label>
+                <input class="forcetext form-control col-sm-4" clean="true" mask="999999" mask-clean="true" mask-restrict="reject" mask-validate="false" ng-model="request.budget" placeholder="_____ грн." required="" type="text"/>
+            </div>
+        </div>
+        <div class="row padtop20">
+            <div class="large-12 columns ">
+                <label class="font--18 fontweight600 text--dark-gray" for="province" translate="">
+                    Where?
+                </label>
+                <div class="col-sm-4 leftselect">
+                    <ui-select id="oblastselect" ng-model="request.oblast" on-select="getOblastRayons($item)" register-custom-form-control="" required="" theme="bootstrap">
+                        <ui-select-match class="ab ui-select-match" placeholder="{{'Please Select' | translate}}">
+                            {{$select.selected | itemlangFilter:languageKey}}
+                        </ui-select-match>
+                        <ui-select-choices class="ab ui-select-choices" repeat="p in oblastOptions | filter: $select.search">
+                            <span ng-bind-html="p  | itemlangFilter:languageKey | highlight: $select.search ">
+                            </span>
+                        </ui-select-choices>
+                    </ui-select>
+                </div>
+                <div class="col-sm-4 leftselect">
+                    <ui-select id="rayonselect" ng-disabled="enableRayon===false" ng-model="request.rayon" on-select="getRayonGorads($item)" register-custom-form-control="" required="" theme="bootstrap">
+                        <ui-select-match class="ab ui-select-match" placeholder="{{'Please Select' | translate}}">
+                            {{$select.selected | itemlangFilter:languageKey}}
+                        </ui-select-match>
+                        <ui-select-choices class="ab ui-select-choices" repeat="d in rayonOptions | filter: $select.search">
+                            <span ng-bind-html="d | itemlangFilter:languageKey | highlight: $select.search">
+                            </span>
+                        </ui-select-choices>
+                    </ui-select>
+                </div>
+                <div class="col-sm-4 leftselect" ng-show="showGorad">
+                    <ui-select id="goradselect" ng-disabled="enableGorad===false" ng-model="request.gorad" on-select="getRayongoradGorads($item)" register-custom-form-control="" theme="bootstrap">
+                        <ui-select-match class="ab ui-select-match" placeholder="{{'Please Select' | translate}}">
+                            {{$select.selected | itemlangFilter:languageKey}}
+                        </ui-select-match>
+                        <ui-select-choices class="ab ui-select-choices" repeat="n in goradOptions | filter: $select.search">
+                            <span ng-bind-html="n | itemlangFilter:languageKey | highlight: $select.search">
+                            </span>
+                        </ui-select-choices>
+                    </ui-select>
+                </div>
+            </div>
+        </div>
+        <div class="row padtop20">
+            <div class="large-6 columns">
+                <label class="font--18 fontweight600 text--dark-gray" for="when" translate="">
+                    When?
+                </label>
+                <div class="col-sm-12" style="padding-right: 0px;padding-left: 0px;">
+                    <ui-select id="when" ng-model="request.when" on-select="applyWhenOptions($item)" register-custom-form-control="" required="" theme="bootstrap">
+                        <ui-select-match class="ui-select-match" placeholder="{{ 'Select time' | translate }}">
+                            {{ $select.selected.name }}
+                        </ui-select-match>
+                        <ui-select-choices class="ui-select-choices" repeat="w in whenOptions | filter: $select.search">
+                            <span ng-bind-html="w.name | highlight: $select.search">
+                            </span>
+                        </ui-select-choices>
+                    </ui-select>
+                </div>
+            </div>
+            <div class="large-6 columns" ng-show="showWhenPanel">
+                <label class="font--18 fontweight600text--dark-gray" for="when" translate="">
+                    Date and time?
+                </label>
+                <span data-ng-model="request.date" data-xdan-datetimepicker="{timepicker:true, defaultTime:'09:00', minDate:'0',validateOnBlur:true, maxDate:'+1970/01/22'}" id="datetimepicker" ng-disabled="switchupdaterequestlock">
+                </span>
+                <!--  <input class="forcetext form-control" id="datetimepicker" ng-model="request.date" placeholder="{{ 'Select date and time' | translate }}" type="text">
+                </input> -->
+            </div>
+        </div>
+        <div class="row padtop20">
+            <div class="large-6 columns">
+                <label class="font--18 fontweight600 text--dark-gray" for="phone" translate="">
+                    Your mobile phone?
+                </label>
+                <input class="forcetext form-control col-sm-6" clean="true" mask="(999) 999-9999" mask-clean="true" mask-restrict="reject" mask-validate="false" ng-disabled="switchupdaterequest" ng-model="request.phone" ng-model-options="{updateOn: 'blur'}" placeholder="(___) ___-____" required="" type="text"/>
+            </div>
+            <div class="large-6 columns">
+                <label class="font--18 fontweight600 text--dark-gray" for="phone" translate="">
+                    How to notify you?
+                </label>
+                <ui-select ng-model="request.phonenotify" register-custom-form-control="" required="" theme="bootstrap">
+                    <ui-select-match class="ui-select-match" placeholder="{{ 'Select option' | translate }}">
+                        {{ $select.selected.name }}
+                    </ui-select-match>
+                    <ui-select-choices class="ui-select-choices" repeat="p in phoneOptions  | filter: $select.search">
+                        <span ng-bind-html="p.name | highlight: $select.search">
+                        </span>
+                    </ui-select-choices>
+                </ui-select>
+            </div>
+        </div>
+        <div class="row padtop20" ng-show="adminrequest && showuseremail">
+            <div class="large-12 columns ">
+                <label class="font--18 fontweight600 text--dark-gray" for="name" translate="">
+                    Firstname and Lastname
+                </label>
+                <div class="col-sm-4 leftselect">
+                    <input class="forcetext form-control" id="firstname" ng-model="request.firstname" ng-required="adminrequest" register-custom-form-control=""/>
+                </div>
+                <div class="col-sm-4 leftselect">
+                    <input class="forcetext form-control" id="lastname" ng-model="request.lastname" ng-required="adminrequest" register-custom-form-control=""/>
+                </div>
+            </div>
+        </div>
+        <div class="row padtop20" ng-show="adminrequest && showuseremail">
+            <div class="large-12 columns ">
+                <label class="font--18 fontweight600 text--dark-gray" for="name" translate="">
+                    Address
+                </label>
+                <div class="col-sm-12 leftselect">
+                    <input class="forcetext form-control" ng-model="request.address" ng-required="adminrequest" register-custom-form-control=""/>
+                </div>
+            </div>
+        </div>
+        <div class="row" ng-show="showuseremail">
+            <div class="large-12 columns">
+                <label class="font--18 fontweight600 text--dark-gray" for="email" translate="">
+                    Your email?
+                </label>
+                <input class="forcetext form-control" id="email" ng-model="request.email" register-custom-form-control="" required="" type="email"/>
+            </div>
+        </div>
+        <div class="row padtop20" ng-show="showuseremail && !adminrequest">
+            <div class="large-12 columns aggreetermscheck">
+                <input class="termscheck" id="termsaccept" ng-model="request.termsaccepted" required="" type="checkbox"/>
+                <span translate="">
+                    I accept
+                </span>
+                <a target="_blank" translate="" ui-sref="terms">
+                    terms of use
+                </a>
+                <span translate="">
+                    and
+                </span>
+                <a target="_blank" translate="" ui-sref="privacy">
+                    privacy policy
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-12 columns">
+                <button class="button blue marginxtop expand--small flush--bottom js-send-quote btn-block ladda-button" data-style="expand-right" id="submitbutton" ladda-button="laddaLoading" ng-show="switchupdaterequest===false" translate="" type="submit">
+                    Submit
+                </button>
+                <button class="button blue marginxtop expand--small flush--bottom js-send-quote btn-block ladda-button" data-style="expand-right" id="updatebutton" ladda-button="laddaLoading" ng-show="switchupdaterequest===true" translate="" type="submit">
+                    Update
+                </button>
+            </div>
+        </div>
+    </div>
+</form>

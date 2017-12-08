@@ -1,0 +1,49 @@
+<div class="row fittocenter">
+    <div class="small-12 small-centered columns breadcrumbs padtop5 ">
+        <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a itemprop="url" ui-sref="main">
+                <span itemprop="title" translate="">
+                    Posluga.ua
+                </span>
+            </a>
+        </div>
+        <div class="current" ng-show="state === 'stranacompanies'">
+            {{service.subcategory | translateFilter:languageKey }}
+        </div>
+        <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb" ng-show="state !== 'stranacompanies'">
+            <a itemprop="url" ng-href="{{'/top-10/' + service.subcategory.ru.slug}}">
+                <span itemprop="title">
+                    {{service.subcategory | translateFilter:languageKey }}
+                </span>
+            </a>
+        </div>
+        <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb" ng-show="oblast">
+            <a itemprop="url" ng-href="{{'/top-10/' + service.subcategory.ru.slug + '/' + oblast.slug}}">
+                <span itemprop="title">
+                    {{oblast | translatePlaceFilter:languageKey }}
+                </span>
+            </a>
+        </div>
+        <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb" ng-show="oblast && rayon">
+            <a itemprop="url" ng-href="{{'/top-10/' + service.subcategory.ru.slug + '/' + oblast.slug + '/' + rayon.slug}}">
+                <span itemprop="title">
+                    {{setRayonText(rayon)}}
+                </span>
+            </a>
+        </div>
+        <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb" ng-show="oblast && rayon && gorad">
+            <a itemprop="url" ng-href="{{'/top-10/' + service.subcategory.ru.slug + '/' + oblast.slug + '/' + rayon.slug +  '/' + gorad.slug}}">
+                <span itemprop="title">
+                    {{gorad | translatePlaceFilter:languageKey }}
+                </span>
+            </a>
+        </div>
+        <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb" ng-show="oblast && rayon && gorad && rayongorad">
+            <a itemprop="url" ng-href="{{'/top-10/' + service.subcategory.ru.slug + '/' + oblast.slug + '/' + rayon.slug +  '/' + gorad.slug +  '/' + rayongorad.slug}}">
+                <span itemprop="title">
+                    {{rayongorad | translatePlaceFilter:languageKey }}
+                </span>
+            </a>
+        </div>
+    </div>
+</div>

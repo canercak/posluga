@@ -1,0 +1,110 @@
+<section class="pageboxlayout" ng-controller="RequestCtrl">
+    <div class="row">
+        <div class="large-12 columns">
+            <section class="pageboxpart padbottomfixed">
+                <h1 class="pageboxpart__heading white24 helq pageboxredoverall pageboxtitletext">
+                    <span translate="">
+                        Requests
+                    </span>
+                    <div class="small selectsearch transparent--light button flush--bottom float--right mobiledisplaynone">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <div class="input-group" style="width: 180px;">
+                                        <select class="form-control input" disable-invalid-styling="true" disable-valid-styling="true" id="pref-list" ng-change="changeListing()" ng-init="changeListing()" ng-model="status">
+                                            <option translate="" value="allrequests">
+                                                All Requests
+                                            </option>
+                                            <option translate="" value="activerequests">
+                                                Active Requests
+                                            </option>
+                                            <option translate="" value="endedrequests">
+                                                Ended Requests
+                                            </option>
+                                            <option disabled="">
+                                                ──────────
+                                            </option>
+                                            <option translate="" value="2">
+                                                Waiting for Quotes
+                                            </option>
+                                            <option translate="" value="3">
+                                                Received Quotes
+                                            </option>
+                                            <option translate="" value="4">
+                                                Reservation Made
+                                            </option>
+                                            <option translate="" value="5">
+                                                Work Done
+                                            </option>
+                                            <option selected="" translate="" value="6">
+                                                Work Cancelled
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group searchbarstyle">
+                                        <input class="form-control input height32" disable-invalid-styling="true" disable-valid-styling="true" ng-model="query.filter" ng-model-options="filter.options" placeholder="{{'Search' | translate}}" type="text"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </h1>
+                <div class="pageboxpart__inner-border">
+                    <div class="soft fittocenter" ng-hide="requests.length > 0">
+                        <p class="padbottonfixedsmaller">
+                            <strong class="settobolder" translate="">
+                                It looks like you don’t have any requests yet.
+                            </strong>
+                        </p>
+                        <p class="flush--bottom" translate="">
+                            Not to worry — this likely means you signed up recently. Before long you should receive your first lead and it will show up right here.
+                        </p>
+                        <div class="margin2xtop pull--bottom">
+                        </div>
+                        <p>
+                        </p>
+                    </div>
+                    <div class="soft--sides--large padbottonfixedsmaller marginxtop padleft10" ng-show="requests.length > 0">
+                        <h3 class="middletext redpagebox" ng-show="status=== '2' ||  status=== '3' || status=== '4' || status=== '5' || status=== '6'">
+                            {{statusOptions[status-1].name }}
+                        </h3>
+                        <h3 class="middletext redpagebox" ng-show="status==='allrequests'" translate="">
+                            All Requests
+                        </h3>
+                        <h3 class="middletext redpagebox" ng-show="status==='activerequests'" translate="">
+                            Active Requests
+                        </h3>
+                        <h3 class="middletext redpagebox" ng-show="status==='endedrequests'" translate="">
+                            Ended Requests
+                        </h3>
+                        <p class="settobolder hightext helq padbottonfixedsmaller" ng-show="status==='allrequests'" translate="">
+                            Below are all requests you have created. Click on a request to view its details.
+                        </p>
+                        <p class="settobolder hightext helq padbottonfixedsmaller" ng-show="status==='activerequests'" translate="">
+                            Below are your active requests such as the ones that are waiting for quotes, received quotes and and reserved.
+                        </p>
+                        <p class="settobolder hightext helq padbottonfixedsmaller" ng-show="status==='endedrequests'" translate="">
+                            Below are your ended requests such as the ones that are completed or cancelled.
+                        </p>
+                        <p class="settobolder hightext helq padbottonfixedsmaller" ng-show="status=== '2' ||  status=== '3' || status=== '4' || status=== '5' || status=== '6'">
+                            <span style="padding-right:1px" translate="">
+                                Below are your requests with the status
+                            </span>
+                            <span>
+                                {{statusOptions[status-1].name }}
+                            </span>
+                        </p>
+                        <div class="pageboxreviewbox" ng-repeat="request in requests">
+                            <hr>
+                                <div ng-include="'app/request/_listitem.html'">
+                                </div>
+                            </hr>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>

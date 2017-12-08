@@ -1,0 +1,77 @@
+<section class="pageboxlayout">
+    <section class="row">
+        <div class="large-3 columns">
+            <div ng-include="'app/finances/_menu.html'">
+            </div>
+        </div>
+        <div class="large-9 columns">
+            <div class="pageboxpart">
+                <h1 class="pageboxpart__heading white24 helq pageboxredoverall pageboxtitletext" translate="">
+                    Transactions
+                </h1>
+                <div class="pageboxpart__inner-border">
+                    <div class="soft">
+                        <table class="table table-striped" st-table="rowCollection">
+                            <thead>
+                                <tr>
+                                    <th translate="">
+                                        Date
+                                    </th>
+                                    <th translate="">
+                                        Transaction Type
+                                    </th>
+                                    <th translate="">
+                                        Amount
+                                    </th>
+                                    <th translate="">
+                                        Balance
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="t in transactions">
+                                    <td>
+                                        {{t.date | amDateFormat:'DD.MM.YYYY HH:mm'}}
+                                    </td>
+                                    <td>
+                                        <span>
+                                            {{transactionTypes[t.transactionType.objectid-1].name}}
+                                        </span>
+                                        <span ng-show="t.request.sequence !== undefined" translate="">
+                                            (request
+                                        </span>
+                                        <span ng-show="t.request.sequence !== undefined">
+                                            #{{t.request.sequence}})
+                                        </span>
+                                    </td>
+                                    <td ng-class="t.transactionType.add === false ? 'colorred' : 'colorgreen'">
+                                        <span>
+                                            {{t.transactionType.add === true ? '+' : '-'}}{{t.amount.value}} {{t.amount.currency}}
+                                        </span>
+                                    </td>
+                                    <td>
+                                        {{t.balance.value}} {{t.balance.currency}}
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr>
+                            <div class="row">
+                                <div class="large-12 columns padbottonfixedsmaller text--right">
+                                    <span translate="">
+                                        Final Balance:
+                                    </span>
+                                    <span class="settobolder">
+                                        {{finalbalance}}
+                                    </span>
+                                </div>
+                                <div class="large-7 columns text--left marginxtop--small settobolder">
+                                </div>
+                            </div>
+                        </hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

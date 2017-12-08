@@ -1,0 +1,14 @@
+'use strict';
+var express = require('express');
+var controller = require('./local.controller');
+var auth = require('../auth.service');
+var router = express.Router();
+router.get('/mailconfirmation', auth.isAuthenticated(), controller.sendMailAdressConfirmationMail);
+router.post('/mailconfirmation', controller.confirmMailAddress);
+router.get('/passwordreset', controller.resetPassword);
+router.post('/passwordreset', controller.confirmResetedPassword);
+router.get('/loginemail', controller.sendLoginEmail);
+router.get('/loginprovideremail', controller.sendLoginProviderEmail);
+router.get('/opportunityemail', controller.sendOpportunityEmail);
+router.post('/', controller.root);
+module.exports = router;

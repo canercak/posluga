@@ -1,0 +1,51 @@
+<div class="panel-body">
+    <ul class="chat">
+        <li class="left clearfix" ng-repeat="chat in quote.chat">
+            <span class="chat-img pull-left" ng-show="!chat.notsaved">
+                <img alt="User Avatar" class="img-circle" ng-show="chat.sendertype==='provider'" ng-src="{{quote.provider.logo.location}}" rel="nofollow">
+                    <img alt="User Avatar" class="img-circle" ng-show="chat.sendertype==='user'" ng-src="{{chat.sender.picture}}">
+                    </img>
+                </img>
+            </span>
+            <div class="chat-body clearfix" ng-show="!chat.notsaved">
+                <div class="header">
+                    <strong class="primary-font">
+                        <span class="msgusername" ng-show="!chat.notsaved && chat.sendertype==='provider'" style="font-weight:bold;" translate="">
+                            Quote Owner
+                        </span>
+                        <span class="msgusername" ng-show="!chat.notsaved && chat.sendertype==='user'" style="font-weight:bold;" translate="">
+                            Request Owner
+                        </span>
+                    </strong>
+                    <br>
+                        <small class="text-muted pull-right">
+                            <span class="glyphicon glyphicon-time">
+                            </span>
+                            <span am-time-ago="chat.sentAt" class="msgtime">
+                            </span>
+                        </small>
+                    </br>
+                </div>
+                <p ng-show="!chat.notsaved">
+                    {{chat.message}}
+                </p>
+                <hr>
+                </hr>
+            </div>
+        </li>
+    </ul>
+    <!--     <div>
+        <textarea class="form-control" disable-invalid-styling="true" disable-valid-styling="true" id="messagex{{quote._id}}" ng-model="newmessage" required="" rows="2">
+        </textarea>
+        <button class="tiny button" ng-click="createChatMessage(quote)" translate="">
+            Send Message
+        </button>
+    </div> -->
+</div>
+<div ng-hide="request.status.objectid > 3 && request.providerwon === false">
+    <textarea class="form-control" disable-invalid-styling="true" disable-valid-styling="true" id="messagex{{quote._id}}" ng-model="newmessage" required="" rows="2">
+    </textarea>
+    <button class="tiny button" ng-click="createChatMessage(quote)" translate="">
+        Send Message
+    </button>
+</div>

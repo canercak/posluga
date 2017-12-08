@@ -1,0 +1,218 @@
+<div class="large-12 columns" ng-controller="AdminController">
+    <div class="alert alert-success" focus-if="" ng-show="savepreprovider || updatepreprovider || deletepreprovider" role="alert">
+        <h3 class="body-title">
+            <span id="success_message" ng-show="savepreprovider" translate="">
+                Successfully created provider pre-registration
+            </span>
+            <span id="update_message" ng-show="updatepreprovider" translate="">
+                Successfully updated provider pre-registration
+            </span>
+            <span id="delete_message" ng-show="deletepreprovider" translate="">
+                Successfully deleted provider pre-registration
+            </span>
+            <span id="approve_message" ng-show="approvedpreprovider" translate="">
+                Successfully created provider
+            </span>
+        </h3>
+    </div>
+    <div class="form-group pull-left padtop10">
+        <h2 translate="">
+            Pre-registered Providers List
+        </h2>
+    </div>
+    <div class="form-group pull-left padtop10 padleft10 marginbottom5">
+        <button class="tiny button pink" translate="" ui-sref="preprovider">
+            Add New
+        </button>
+    </div>
+    <div class="small selectsearch transparent--light button flush--bottom float--right mobiledisplaynone">
+        <form class="form-inline">
+            <div class="form-group">
+                <div class="form-group">
+                    <div class="input-group" style="width: 180px;">
+                        <select class="form-control input" disable-invalid-styling="true" disable-valid-styling="true" id="pref-list" ng-change="changePreproviderListing()" ng-init="changePreproviderListing()" ng-model="status">
+                            <option selected="" translate="" value="newpreproviders">
+                                New
+                            </option>
+                            <option translate="" value="updatedpreproviders">
+                                Updated
+                            </option>
+                            <option translate="" value="createdpreproviders">
+                                Created
+                            </option>
+                            <option translate="" value="deletedpreproviders">
+                                Deleted
+                            </option>
+                            <option ng-show="nav.isAdmin() === true" value="editorupdated">
+                                Editor Updated
+                            </option>
+                            <option ng-show="nav.isAdmin() === true" value="editordeleted">
+                                Editor Deleted
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group" style="width: 100px;">
+                        <input class="search form-control" disable-invalid-styling="true" disable-valid-styling="true" ng-model="query.filter" ng-model-options="filter.options" placeholder="{{'Search' | translate}}" type="text"/>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <table class="table table-bordered" style="font-size:12px">
+        <thead>
+            <tr>
+                <th style="max-width: 100px !important;" translate="">
+                    Company
+                </th>
+                <th style="max-width: 200px !important;" translate="">
+                    Website
+                </th>
+                <th style="max-width: 150px !important;" translate="">
+                    Email
+                </th>
+                <th style="max-width: 200px !important;" translate="">
+                    Description
+                </th>
+                <th translate="">
+                    Phones
+                </th>
+                <th style="max-width: 45px !important;" translate="">
+                    Photo
+                </th>
+                <th style="max-width: 90px !important;" translate="">
+                    Oblast
+                </th>
+                <th style="max-width: 90px !important;" translate="">
+                    Rayon
+                </th>
+                <th style="max-width: 90px !important;" translate="">
+                    Gorad
+                </th>
+                <th style="max-width: 90px !important;" translate="">
+                    Rayongorad
+                </th>
+                <th translate="">
+                    Services
+                </th>
+                <th ng-show="nav.isAdmin() === true" style="max-width: 90px !important;" translate="">
+                    Updated
+                </th>
+                <th ng-show="nav.isAdmin() === true" style="max-width: 90px !important;" translate="">
+                    Updated By
+                </th>
+                <th>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="preprovider in preproviders | filter: searchKeyword   track by preprovider._id" ng-style="{ 'background-color' : (preprovider.created === true) ? 'rgba(0, 128, 0, 0.11)' : '' }" ts-hide-no-data="" ts-repeat="">
+                <td style="max-width: 100px !important;">
+                    {{preprovider.company }}
+                </td>
+                <td style="max-width: 200px !important;">
+                    <a ng-href="{{preprovider.website}}" target="_blank">
+                        {{preprovider.website}}
+                    </a>
+                </td>
+                <td style="max-width: 150px !important;">
+                    {{preprovider.email}}
+                </td>
+                <td>
+                    <div style="max-width: 200px !important;">
+                        {{preprovider.description}}
+                    </div>
+                </td>
+                <td>
+                    <table>
+                        <tr style="border-bottom-color: black; border-bottom-width: 1px;  border-bottom-style: solid; ">
+                            <div style="width: 150px;">
+                                <td style="font-size:12px;">
+                                    <span translate="">
+                                        Mobile 1:
+                                    </span>
+                                    {{preprovider.phone }}
+                                </td>
+                            </div>
+                        </tr>
+                        <tr style="border-bottom-color: black; border-bottom-width: 1px;  border-bottom-style: solid; ">
+                            <div style="width: 150px;">
+                                <td style="font-size:12px;">
+                                    <span translate="">
+                                        Mobile 2:
+                                    </span>
+                                    {{preprovider.phone2 }}
+                                </td>
+                            </div>
+                        </tr>
+                        <tr style="border-bottom-color: black; border-bottom-width: 1px;  border-bottom-style: solid; ">
+                            <div style="width: 150px;">
+                                <td style="font-size:12px;">
+                                    <span translate="">
+                                        Landline:
+                                    </span>
+                                    {{preprovider.landline}}
+                                </td>
+                            </div>
+                        </tr>
+                    </table>
+                </td>
+                <td style="max-width: 45px !important;">
+                    <img height="30" ng-src="{{preprovider.photo}}" width="20"/>
+                </td>
+                <td style="max-width: 90px !important;">
+                    {{ preprovider.oblast | translateFilterSimple:languageKey }}
+                </td>
+                <td style="max-width: 90px !important;">
+                    {{ preprovider.rayon | translateFilterSimple:languageKey }}
+                </td>
+                <td style="max-width: 90px !important;">
+                    {{ preprovider.gorad | translateFilterSimple:languageKey }}
+                </td>
+                <td style="max-width: 90px !important;">
+                    {{ preprovider.rayongorad| translateFilterSimple:languageKey }}
+                </td>
+                <td>
+                    <table>
+                        <tr ng-repeat="service in preprovider.services" style="border-bottom-color: black; border-bottom-width: 1px;  border-bottom-style: solid; ">
+                            <div style="width: 150px;">
+                                <td style="font-size:12px;">
+                                    {{ service.name }}
+                                </td>
+                            </div>
+                        </tr>
+                    </table>
+                </td>
+                <th ng-show="nav.isAdmin() === true" style="max-width: 90px !important;" ts-criteria="updatedAt">
+                    {{preprovider.updatedAt | amDateFormat:'DD.MM.YYYY'}}
+                </th>
+                <th ng-show="nav.isAdmin() === true" style="max-width: 90px !important;" ts-criteria="updatedby">
+                    {{preprovider.updatedby.name}}
+                </th>
+                <td ng-show="preprovider.created === false" style="max-width: 45px !important;">
+                    <div style="padding-bottom:20px">
+                        <a class="btn btn-warning btn-sm" ui-sref="preprovider({preproviderid: preprovider._id})" uib-tooltip="{{'Edit' | translate}}">
+                            <i class="fa fa-pencil-square-o fa-lg">
+                            </i>
+                        </a>
+                    </div>
+                    <div ng-show="!preprovider.deleted" style="padding-bottom:20px">
+                        <a class="btn btn-danger btn-sm" confirm="{{'Are you sure you want to delete?' | translate}}" href="#" ng-click="deletePreprovider(preprovider._id)" uib-tooltip="{{'Delete' | translate}}">
+                            <i class="fa fa-trash-o fa-lg">
+                            </i>
+                        </a>
+                    </div>
+                    <div ng-show="!preprovider.deleted && nav.isAdmin() === true" style="padding-bottom:20px">
+                        <a class="btn btn-primary btn-sm" confirm="{{'Are you sure you want to approve?' | translate}}" href="#" ng-click="approvePreprovider(preprovider._id,false)" ng-disabled="isDisabled{{preprovider._id}}" uib-tooltip="{{'Approve' | translate}}">
+                            <i class="fa fa-flag-checkered fa-lg">
+                            </i>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <ul boundary-link-numbers="true" class="pagination-sm" max-size="maxSize" ng-change="pageChanged()" ng-model="currentPage" total-items="totalItems" uib-pagination="">
+    </ul>
+</div>

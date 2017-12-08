@@ -1,0 +1,40 @@
+'use strict';
+angular.module('poslugaApp').config(function($stateProvider) {
+    $stateProvider.state('finances', {
+        url: '/dashboard/finances',
+        templateUrl: 'app/finances/finances.html',
+        controller: 'FinancesCtrl',
+        authenticate: true,
+        controllerAs: 'finances'
+    }).state('transactions', {
+        url: '/dashboard/transactions',
+        templateUrl: 'app/finances/transactions.html',
+        controller: 'FinancesCtrl',
+        authenticate: true,
+        controllerAs: 'finances'
+    }).state('invoices', {
+        url: '/dashboard/invoices',
+        templateUrl: 'app/finances/invoices.html',
+        controller: 'FinancesCtrl',
+        authenticate: true,
+        controllerAs: 'finances'
+    }).state('addmoneycard', {
+        url: '/dashboard/addmoneycard',
+        templateUrl: 'app/finances/addmoneycard.html',
+        controller: 'FinancesCtrl',
+        authenticate: true,
+        controllerAs: 'finances'
+    }).state('addmoneybank', {
+        url: '/dashboard/addmoneybank',
+        templateUrl: 'app/finances/addmoneybank.html',
+        controller: 'FinancesCtrl',
+        authenticate: true,
+        controllerAs: 'finances'
+    }).state('newcard', {
+        url: '/dashboard/newcard',
+        templateUrl: 'app/finances/newcard.html',
+        controller: 'FinancesCtrl',
+        authenticate: true,
+        controllerAs: 'finances'
+    })
+});

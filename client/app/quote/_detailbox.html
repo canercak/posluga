@@ -1,0 +1,86 @@
+<h3 class="pageboxpart__heading white24 helq pageboxredoverall pageboxtitletext" translate="">
+    Quote details
+</h3>
+<div class="pageboxpart__inner-border">
+    <div class="soft--sides--large padbottonfixedsmaller padtop20 font16set padleft10">
+        <div class="row padbottom10">
+            <div class="col-md-3" translate="">
+                Time
+            </div>
+            <div class="col-md-9">
+                {{(quote.date && quote.when.objectid ===1) ? (quote.date | amDateFormat:'D MMMM YYYY HH:mm') : whenOptionsProvider[quote.when.objectid-1].name}}
+            </div>
+        </div>
+        <div class="row padbottom10">
+            <div class="col-md-3" translate="">
+                Price
+            </div>
+            <div class="col-md-9">
+                {{quote.price | MonetaryUnit}}
+            </div>
+        </div>
+        <div class="row padbottom10">
+            <div class="col-md-3" translate="">
+                Commission
+            </div>
+            <div class="col-md-9">
+                <span translate="">
+                    Yours:
+                </span>
+                <span>
+                    {{quote.commission | ProviderCommissionUnit}}
+                </span>
+                <span translate="">
+                    Ours:
+                </span>
+                <span>
+                    {{quote.commission | CommissionUnit}}
+                </span>
+            </div>
+        </div>
+        <div class="row padbottom5 padtop10" ng-show="quote.questions.length > 0">
+            <div class="col-md-3" translate="">
+                Details
+            </div>
+            <div class="col-md-9">
+                <div class="row padbottom5 padrightnone" ng-repeat="q in quote.questions">
+                    <div class="col-md-6 padrightnone">
+                        {{q.question}}
+                    </div>
+                    <div class="col-md-6">
+                        <span ng-repeat="answer in q.answers">
+                            {{ answer.option }}{{$last ? '' : ', '}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ng-include="'app/quote/_chat.html'">
+        </div>
+        <div class="row padbottom1 marginnull" ng-hide="request.status.objectid > 3">
+            <a class="tiny button float--right--large flush--bottom marginxends--small marginxsides" id="edit_request" ng-show="state==='quotesuccess'" translate="" ui-sref="givequote({requestid: quote.request._id, providerid: quote.provider._id, id:quote._id })">
+                Edit Quote
+            </a>
+            <a class="tiny button float--right--large flush--bottom marginxends--small marginxsides" id="edit_request" ng-show="state==='quotedetail'" translate="" ui-sref="givequote({requestid: quote.request._id, providerid: quote.provider._id, id:quote._id })">
+                Edit Quote
+            </a>
+        </div>
+    </div>
+</div>
+<!-- <script id="cancelModalContent.html" type="text/ng-template">
+    <div class="modal-header" >
+        <h3><span translate>Your request will be cancelled, can we learn why you want to cancel it?</span></h3>
+    </div>
+    <div class="modal-body">
+        <form role="form" ng-submit='cancelRequest()'> 
+             <label ng-repeat="option in cancelOptions">
+                <input type="radio" ng-model="request.cancelreason" name="name" ng-value='{{option}}'>
+               {{option.name}}
+            </label> 
+            <input class='form-control' ng-model="request.cancelreason.reason" id="othereason" maxlength='300' type='text'>
+            <p></p>
+            <button  type="submit" class="btn btn-primary" id="cancel_request" translate>Cancel</button>  
+        </form>
+    <div class="modal-footer">
+    </div>
+</script> -->

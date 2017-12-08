@@ -1,0 +1,19 @@
+<section class="pageboxlayout" ng-controller="RequestCtrl">
+    <div class="row">
+        <div class="alert alert-success" focus-if="" ng-show="requestupdated===true" role="alert">
+            <h3 class="body-title">
+                <span id="update_message" translate="">
+                    We have updated your {{request.searchtext}} request.
+                </span>
+            </h3>
+        </div>
+        <div class="row padbottom10" focus-if="">
+            <div class="large-12 columns">
+                <section class="pageboxpart padbottomfixed ">
+                    <div ng-include="'app/request/_detailbox.html'">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>

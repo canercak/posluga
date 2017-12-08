@@ -1,0 +1,47 @@
+<div class="pageboxredall" itemscope="" itemtype="http://schema.org/Blog">
+    <nav class="breadcrumbs__background mobiledisplaynone bg--opacity-10 wrapper16" role="">
+        <div class="row fittocenter">
+            <div class="small-12 small-centered columns breadcrumbs padtop5 ">
+                <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <a itemprop="url" ui-sref="main">
+                        <span itemprop="title" translate="">
+                            Posluga.ua Home
+                        </span>
+                    </a>
+                </div>
+                <div class="current" translate="">
+                    Blog
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="header jumbotron-static pageboxhighq relative">
+        <div class="row height100 padtopfixedbigger">
+            <div class="small-12 large-12 columns fittocenter--small marginxtop">
+                <h1 class="bigertext colorwhite padbottonfixedsmaller" translate="">
+                    Posluga.ua Blog
+                </h1>
+                <p class="hightext helq padbottomfixed" translate="">
+                    Welcome to our blog where we share articles and advice about services
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="row" style="max-width: 80em;">
+        <div class="large-8 columns">
+            <div class="table-row" itemscope="" ng-repeat="article in articles">
+                <article itemprop="blogPosts" itemscope="" itemtype="http://schema.org/BlogPosting">
+                    <a class="article-related" ng-href="{{'/blog/' + article.slug}}" target="_self">
+                        <div class="article-banner-image" ng-style="{'background-image': 'url(' + article.image + ')'}">
+                        </div>
+                        <h3 style="font-weight: normal;">
+                            {{article.title}}
+                        </h3>
+                    </a>
+                </article>
+            </div>
+        </div>
+        <div class="large-4 columns" ng-include="'app/main/_rightbar.html'">
+        </div>
+    </section>
+</div>

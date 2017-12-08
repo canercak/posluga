@@ -1,0 +1,68 @@
+<section class="pageboxlayout" ng-controller="RequestCtrl">
+    <section class="row">
+        <div class="large-12 columns">
+            <div class="pageboxpart padbottomfixed">
+                <h1 class="pageboxpart__heading white24 helq pageboxredoverall pageboxtitletext" translate="">
+                    Enter the code we sent your mobile phone to complete your request
+                </h1>
+                <div class="pageboxpart__inner-border">
+                    <div class="soft">
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <div class="media">
+                                    <a href="#">
+                                        <img class="setcorrectimage padrightfixed mobiledisplaynone" ng-show="languageKey === 'en'" src="/assets/images/iphoneen.png" width="250"/>
+                                        <img class="setcorrectimage padrightfixed mobiledisplaynone" ng-show="languageKey === 'ru'" src="/assets/images/iphoneru.png" width="250"/>
+                                        <img class="setcorrectimage padrightfixed mobiledisplaynone" ng-show="languageKey === 'uk'" src="/assets/images/iphoneuk.png" width="250"/>
+                                    </a>
+                                    <div class="pageboxmodalbox">
+                                        <h2 class="schematextfer helq redpagebox padbottonfixedsmaller">
+                                            <span translate="">
+                                                We sent a text message to
+                                            </span>
+                                            <b>
+                                                {{ sentphone }}
+                                            </b>
+                                        </h2>
+                                        <p class="font--18" translate="">
+                                            Enter the code you've received to the below textbox and press Approve Code button.
+                                        </p>
+                                        <div class="flush--bottom">
+                                            <div id="timer_div">
+                                                <label class="font--18 fontweight600 text--dark-gray padright5 displayinline" for="when" translate="">
+                                                    Code
+                                                </label>
+                                                <input class="codeinput" focus-if="" id="code" mask="9999" maxlength="4" name="code" ng-model="codeEntered" placeholder="XXXX" type="text"/>
+                                                <timer class="font--18 fontweight600 padleft5" countdown="120" finish-callback="stopTimer()" interval="1000" max-time-unit="'minute'">
+                                                    {{ mminutes }}:{{ sseconds }}
+                                                </timer>
+                                            </div>
+                                            <div class="padbottom10">
+                                                <button class="button margin2xtop flush--ends expand--small ladda-button" data-style="expand-right" id="approve_button" ladda-button="laddaLoading" ng-click="approvecode()">
+                                                    <span class="ladda-label" translate="">
+                                                        Approve Code
+                                                    </span>
+                                                </button>
+                                                <button class="button margin2xtop flush--ends expand--small ladda-button" data-style="expand-right" id="resend_button" ladda-button="laddaLoading" ng-click="resendcode()" style="display:none">
+                                                    <span class="ladda-label" translate="">
+                                                        Resend Code
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <span class="red font--16" id="wrong_label" ng-show="wrongcode" translate="">
+                                                The code you have entered is wrong. Enter it correct or wait until timer ends to resend.
+                                            </span>
+                                        </div>
+                                        <div style="margin: 15px 0;" translate="">
+                                            Our mobile phone verification service is free.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

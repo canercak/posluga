@@ -1,0 +1,139 @@
+<div class="pageboxredall" itemscope="" itemtype="http://schema.org/BlogPosting">
+    <nav class="breadcrumbs__background mobiledisplaynone bg--opacity-10 wrapper16" role="">
+        <div class="row fittocenter">
+            <div class="small-12 small-centered columns breadcrumbs padtop5 ">
+                <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <a itemprop="url" ui-sref="main">
+                        <span itemprop="title" translate="">
+                            Posluga.ua Home
+                        </span>
+                    </a>
+                </div>
+                <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <a itemprop="url" ui-sref="blog">
+                        <span itemprop="title" translate="">
+                            Blog
+                        </span>
+                    </a>
+                </div>
+                <div class="current">
+                    {{article.title}}
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="pageboxpicture250 bg--black relative" ng-style="{'background-image': 'url(' + article.image + ')'}">
+        <div class="pageboxpr" id="js-pageboxpr">
+        </div>
+        <div class="row" style="max-width: 78em !important; padding-top: 100px">
+            <div class="header-content--bottom fittocenter--small">
+                <div class="large-12 columns padtop30">
+                    <h1 class="bigertext colorwhite" itemprop="name headline">
+                        {{article.title}}
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pageboxhighq pageboxtitletext colorwhite">
+        <div class="row" style="max-width: 78em;">
+            <!-- <div class="large-12 columns">
+                <p class="hightext helq avenir colorwhite flush--bottom">
+                    {{article.description}}
+                </p>
+            </div> -->
+            <div style="float:right">
+                <span datetime="'{{article.date}}'" itemprop="datePublished">
+                    {{article.createdAt | amDateFormat:'DD.MM.YYYY'}}
+                </span>
+                -
+                <span itemprop="author">
+                    {{article.user.name}}
+                </span>
+            </div>
+        </div>
+    </section>
+    <section class="row" style="max-width: 80em;">
+        <div class="large-8 columns">
+            <div class="large-12 columns fittocenter--small padtop10" itemprop="articleBody" ng-model="article.body" ta-bind="">
+            </div>
+            <!--             <span datetime="'{{article.date}}'" itemprop="datePublished">
+                {{article.createdAt | amDateFormat:'DD.MM.YYYY'}}
+            </span>
+            -
+            <span itemprop="author">
+                {{article.user.name}}
+            </span> -->
+            <div class="fittocenter">
+                <h4 class="padbottom10" translate="">
+                    If you are satisfied with Posluga.ua,
+                </h4>
+                <h3 class="settobolder padbottom10" translate="">
+                    We will be real thankful if you share it with your friends.
+                </h3>
+                <h4 class="padbottom10" translate="">
+                    Posluga.ua is a little company that lives by the recommendations of satisified users.
+                </h4>
+                <h4 class="padbottom10" translate="">
+                    Please share us with your friends.
+                </h4>
+                <div>
+                    <img height="200" src="https://s-media-cache-ak0.pinimg.com/736x/58/b2/26/58b226ac8dd7274293c05e8f1503814d.jpg" width="160"/>
+                </div>
+                <h4 class="padbottom10" translate="">
+                    Please...
+                </h4>
+                <div class="padtop10" ng-include="'app/places/_sharebar.html'">
+                </div>
+            </div>
+            <div class="form-group pull-left padtop10">
+                <h2 translate="">
+                    Also on Blog Posluga.ua
+                </h2>
+            </div>
+            <div class="col-md-12 ">
+                <div class="row">
+                    <article class="col-md-4 blog-item blog-item-3col" ng-repeat="article in articles">
+                        <a class="post-url" ng-href="{{'/blog/' + article.slug}}" ng-style="{'background-image': 'url(' + article.image + ')'}" ng-title="{article.title}">
+                            <div class="overlay">
+                            </div>
+                        </a>
+                        <div class="content">
+                            <a ng-href="{{'/blog/' + article.slug}}">
+                                <div class="item-date">
+                                    {{article.createdAt | amDateFormat:'DD.MM.YYYY'}}
+                                </div>
+                                <h3 style="font-size:22px">
+                                    {{article.title}}
+                                </h3>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="form-group pull-left padtop20">
+                <h2 translate="">
+                    Comments
+                </h2>
+            </div>
+            <div id="disqus_thread">
+            </div>
+            <script>
+                (function() {  
+                var d = document, s = d.createElement('script');
+                s.src = '//poslugaua.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>
+                Please enable JavaScript to view the
+                <a href="https://disqus.com/?ref_noscript">
+                    comments powered by Disqus.
+                </a>
+            </noscript>
+        </div>
+        <div class="large-4 columns" ng-include="'app/main/_rightbar.html'">
+        </div>
+    </section>
+</div>

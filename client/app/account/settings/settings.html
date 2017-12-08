@@ -1,0 +1,208 @@
+<section class="row">
+    <div class="large-12 columns">
+        <div class="pageboxpart margin2xtop">
+            <form class="form" name="form" ng-submit="changePassword(form)" novalidate="">
+                <div class="pageboxpart" ng-show="!adminview">
+                    <h2 class="pageboxpart__heading white24 helq pageboxredoverall pageboxtitletext" translate="">
+                        Change Password
+                    </h2>
+                    <div class="pageboxpart__inner-border">
+                        <div class="soft">
+                            <div class="form-group">
+                                <label translate="">
+                                    Current Password
+                                </label>
+                                <input class="form-control" mongoose-error="" name="password" ng-model="user.oldPassword" type="password"/>
+                                <p class="help-block" ng-show="form.password.$error.mongoose">
+                                    {{ errors.other }}
+                                </p>
+                            </div>
+                            <div class="form-group">
+                                <label translate="">
+                                    New Password
+                                </label>
+                                <input class="form-control" name="newPassword" ng-minlength="3" ng-model="user.newPassword" required="" type="password"/>
+                                <p class="help-block" ng-show="(form.newPassword.$error.minlength || form.newPassword.$error.required) && (form.newPassword.$dirty || submitted)" translate="">
+                                    Password must be at least 3 characters.
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="flush--top">
+                            <div class="soft hard--top">
+                                <div ng-class="hasError === 'true' ? 'alert alert-danger' : 'alert alert-success'" ng-show="message" role="alert">
+                                    <h4>
+                                        {{message}}
+                                    </h4>
+                                </div>
+                                <button class="button margin2xtop flush--ends expand--small ladda-button js-ladda-button" data-style="expand-right" type="submit">
+                                    <span class="ladda-label" translate="">
+                                        Update Password
+                                    </span>
+                                    <span class="ladda-spinner">
+                                    </span>
+                                </button>
+                            </div>
+                        </hr>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="pageboxpart margin2xtop">
+            <form class="form" name="form" ng-submit="changeName(form)" novalidate="">
+                <div class="pageboxpart">
+                    <h2 class="pageboxpart__heading white24 helq pageboxredoverall pageboxtitletext" translate="">
+                        Change User Profile Details
+                    </h2>
+                    <div class="pageboxpart__inner-border">
+                        <div class="form-group padleft20 padtop10">
+                            <label translate="">
+                                Name
+                            </label>
+                            <input class="form-control" mongoose-error="" name="name" ng-model="user.name" required="" type="text"/>
+                            <p class="help-block" ng-show="form.name.$error.mongoose">
+                                {{ errors.other }}
+                            </p>
+                        </div>
+                        <div class="form-group padleft20 padtop10">
+                            <label translate="">
+                                Email
+                            </label>
+                            <input class="form-control" mongoose-error="" name="email" ng-model="user.email" ng-pattern='/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i' required="" type="email"/>
+                            <p class="help-block" ng-show="form.email.$error.mongoose">
+                                {{ errors.email }}
+                            </p>
+                            <p class="help-block" ng-show="form.email.$error.email && submitted" translate="">
+                                Doesn't look like a valid email.
+                            </p>
+                        </div>
+                        <div class="form-group padleft20">
+                            <label translate="">
+                                Picture
+                            </label>
+                            <div class="img-wrap">
+                                <img class="padright15" height="96" src="{{ user.picture }}" width="96"/>
+                                <button accept="image/*" class="btn btn-primary btn-sm padleft20" multiple="" ngf-keep="false" ngf-max-size="10MB" ngf-multiple="false" ngf-select="onFileSelect($files)" translate="">
+                                    Change Photo
+                                </button>
+                            </div>
+                        </div>
+                        <hr class="flush--top">
+                            <div class="soft hard--top">
+                                <div ng-class="hasErroruser === 'true' ? 'alert alert-danger' : 'alert alert-success'" ng-show="savemessageuser" role="alert">
+                                    <h4>
+                                        {{savemessageuser}}
+                                    </h4>
+                                </div>
+                                <button class="button margin2xtop flush--ends expand--small ladda-button js-ladda-button" data-style="expand-right" type="submit">
+                                    <span class="ladda-label" translate="">
+                                        Update
+                                    </span>
+                                    <span class="ladda-spinner">
+                                    </span>
+                                </button>
+                            </div>
+                        </hr>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="pageboxpart margin4xtop padbottomfixed" ng-show="!adminview">
+            <form class="form" name="form" ng-submit="changeNotifications()" novalidate="">
+                <h1 class="pageboxpart__heading white24 helq pageboxredoverall pageboxtitletext" translate="">
+                    Notifications
+                </h1>
+                <div class="pageboxpart__inner-border">
+                    <div class="soft">
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <h3 class="helq padbottom10" translate="">
+                                    Email Notifications
+                                </h3>
+                                <div>
+                                    <label>
+                                        <input class="pageboxpart__chadio" disabled="" ng-model="user.notifications.emailaccount" type="checkbox">
+                                            <span class="pageboxpart__chadio-inner-label" translate="">
+                                                Receive email alerts for payment and account (required)
+                                            </span>
+                                        </input>
+                                    </label>
+                                </div>
+                                <div ng-show="userhasprovider">
+                                    <label>
+                                        <input class="pageboxpart__chadio" disabled="" ng-model="user.notifications.emailquotes" type="checkbox">
+                                            <span class="pageboxpart__chadio-inner-label" translate="">
+                                                Receive email alerts for active quotes(required)
+                                            </span>
+                                        </input>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label>
+                                        <input class="pageboxpart__chadio" disabled="" ng-model="user.notifications.emailrequests" type="checkbox">
+                                            <span class="pageboxpart__chadio-inner-label" translate="">
+                                                Receive email alerts for active requests (required)
+                                            </span>
+                                        </input>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label for="email_acceptance">
+                                        <input class="pageboxpart__chadio" id="email_acceptance" name="email_acceptance" ng-model="user.notifications.emailnews" type="checkbox" value="1">
+                                            <span class="pageboxpart__chadio-inner-label" translate="">
+                                                Receive Posluga.ua News
+                                            </span>
+                                        </input>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="padbottomfixed" for="email_rating_notice">
+                                        <input class="pageboxpart__chadio" id="email_rating_notice" name="email_rating_notice" ng-model="user.notifications.emailreviews" type="checkbox">
+                                            <span class="pageboxpart__chadio-inner-label" translate="">
+                                                Receive notifications for new client reviews
+                                            </span>
+                                        </input>
+                                    </label>
+                                </div>
+                                <h3 class="helq padbottom10" translate="">
+                                    Text Notifications
+                                </h3>
+                                <div ng-show="form.userhasprovider">
+                                    <label for="receive_texts">
+                                        <input class="pageboxpart__chadio" id="receive_texts" name="receive_texts" ng-model="user.notifications.textquotes" type="checkbox" value="1">
+                                            <span class="pageboxpart__chadio-inner-label" translate="">
+                                                Receive sms alerts for active quotes
+                                            </span>
+                                        </input>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label for="receive_texts">
+                                        <input class="pageboxpart__chadio" id="receive_texts" name="receive_texts" ng-model="user.notifications.textrequests" type="checkbox" value="1">
+                                            <span class="pageboxpart__chadio-inner-label" translate="">
+                                                Receive sms alerts for active requests
+                                            </span>
+                                        </input>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="flush--top">
+                        <div class="soft hard--top">
+                            <div ng-class="hasError === 'true' ? 'alert alert-danger' : 'alert alert-success'" ng-show="savemessage" role="alert">
+                                <h4>
+                                    {{savemessage}}
+                                </h4>
+                            </div>
+                            <button class="button margin2xtop flush--ends expand--small ladda-button js-ladda-button" data-style="expand-right" type="submit">
+                                <span class="ladda-label" translate="">
+                                    Update
+                                </span>
+                            </button>
+                        </div>
+                    </hr>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

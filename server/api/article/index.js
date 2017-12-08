@@ -1,0 +1,10 @@
+'use strict';
+var express = require('express');
+var controller = require('./article.controller');
+var router = express.Router();
+router.get('/', controller.index);
+router.get('/:id', controller.show);
+router.post('/', controller.create);
+router.get('/slug/:slug', controller.showbyslug);
+router.put('/:id', controller.update);
+module.exports = router;

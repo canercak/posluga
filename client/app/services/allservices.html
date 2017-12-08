@@ -1,0 +1,50 @@
+<div class="pageboxredall" ng-controller="ServicesCtrl">
+    <section class="pageboxpicture bg--black relative" ng-style="{'background-image': 'url(/assets/images/allservis.jpg)'}">
+        <div class="pageboxpr" id="js-pageboxpr">
+        </div>
+        <div class="row">
+            <div class="header-content--bottom fittocenter--small">
+                <div class="large-12 columns">
+                    <h1 class="bigertext colorwhite" translate="">
+                        All Services
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pageboxhighq pageboxtitletext colorwhite">
+        <div class="row soft--ends">
+            <div class="large-12 columns fittocenter--small">
+                <p class="hightext helq avenir colorwhite flush--bottom" translate="">
+                    From house painting to yoga training, we bring you the right service providers for all your needs.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="colorwhite avenir font16set">
+        <div class="row soft--ends">
+            <div class="large-12 columns fittocenter--small">
+                <div class="all-services wrapper" ng-repeat="category in allservices">
+                    <h2 class="bigertext text--black padbottom10">
+                        {{category.categories[0].category | translateFilter:languageKey }}
+                    </h2>
+                    <div class="dynamic-row">
+                        <ul class="column dynamiclist">
+                            <li ng-repeat="s in category.categories">
+                                <!--       <a ng-mouseenter="changePop(s._id)" popover-is-open="popoverIsOpen{{s._id}}" uib-popover-html="htmlPopover">
+                                    {{s.subcategory | translateFilter:languageKey }}
+                                </a> -->
+                                <!--                                 <a ui-sref="subcategory({slug: (s.subcategory | slugFilter:languageKey)})">
+                                    {{s.subcategory | translateFilter:languageKey }}
+                                </a> -->
+                                <a ui-sref="request({type:'new', serviceid: s._id})">
+                                    {{s.subcategory | translateFilter:languageKey }}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

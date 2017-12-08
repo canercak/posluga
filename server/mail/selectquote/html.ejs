@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <!-- If you delete this meta tag, the ground will open and swallow you. -->
+        <meta content="width=device-width" name="viewport"/>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+        <title>
+            <%=TITLE %>
+        </title>
+        <link href="stylesheets/email.css" rel="stylesheet" type="text/css">
+        </link>
+    </head>
+    <body bgcolor="#FFFFFF" leftmargin="0" marginheight="0" marginwidth="0" topmargin="0">
+        <!-- HEADER -->
+        <table bgcolor="#39c" class="head-wrap">
+            <tr>
+                <td>
+                </td>
+                <td class="header container">
+                    <div class="content">
+                        <table bgcolor="#39c">
+                            <tr>
+                                <td>
+                                    <img src="https://poslugaua.s3.amazonaws.com/emailfiles/poslugawhitelogo.png" width="200"/>
+                                </td>
+                                <td align="right">
+                                    <h6 class="collapse" style="font-size: 16px;color:white !important">
+                                        <%= TITLE %>
+                                    </h6>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td>
+                </td>
+            </tr>
+        </table>
+        <!-- /HEADER -->
+        <!-- BODY -->
+        <table bgcolor="" class="body-wrap">
+            <tr>
+                <td>
+                </td>
+                <td align="" bgcolor="#FFFFFF" class="container">
+                    <!-- content -->
+                    <div class="content">
+                        <table>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        <%=TITLE %>
+                                    </h2>
+                                    <p class="lead">
+                                        <%=HINAME %>
+                                    </p>
+                                    <p class="lead">
+                                        <%=TEXT1 %>
+                                        <span style="font-weight: 600">
+                                            <%=SERVICENAME %>
+                                        </span>
+                                        <%= TEXT2 %>
+                                    </p>
+                                    <p class="lead">
+                                        <%=TEXT3 %>
+                                        <span style="font-weight: 600">
+                                            <%=TEXT3a %>
+                                        </span>
+                                        <%=TEXT3b %>
+                                    </p>
+                                    <p class="lead">
+                                        <%=TEXT4 %>
+                                        <table align="center" bgcolor="white" cellpadding="0" style="margin-top:10px;margin-bottom:25px;border-collapse:collapse!important;border-left-style:solid;border-left-width:1px;border-left-color:#ededed;border-right-style:solid;border-right-color:#ededed;border-right-width:1px;width:95%;max-width:532;background:white">
+                                            <tbody>
+                                                <tr>
+                                                    <td bgcolor="#e95c41" height="18" style="width:100%;height:25px;background:#e95c41" width="100%">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding-top:20px;padding-left:6%;border-left-width:1px;border-left-color:#ededed;border-left-style:solid;border-right-width:1px;border-right-color:#ededed;border-right-style:solid">
+                                                        <h3 style="margin:0">
+                                                            <%=SERVICENAME %>
+                                                        </h3>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" style="border-left-width:1px;border-left-color:#ededed;border-left-style:solid;border-right-width:1px;border-right-color:#ededed;border-right-style:solid">
+                                                        <hr style="width:87%;display:block;border-top-color:#585965;border-top-width:1px;margin:1em auto 0.3em;border-style:solid none none">
+                                                        </hr>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-size:14px;line-height:20px;padding-left:6%;border-left-width:1px;border-left-color:#ededed;border-left-style:solid;border-right-width:1px;border-right-color:#ededed;border-right-style:solid">
+                                                        <br>
+                                                            <ul style="padding-left:0">
+                                                                <li class="lead" style="margin:0;list-style:none">
+                                                                    <strong>
+                                                                        <%=DETAILS %>:
+                                                                    </strong>
+                                                                    <%=DETAILSx %>
+                                                                    <table border="0px" cellpadding="0" cellspacing="0" style="border:0px;padding:5px 0px 10px 0px">
+                                                                        <% for(var i=0; i< QUESTIONS.length; i++) {%>
+                                                                        <tbody>
+                                                                            <tr align="left" valign="top">
+                                                                                <td width="50">
+                                                                                </td>
+                                                                                <td align="left" style="padding-left:10px" valign="top">
+                                                                                    <%= (LANGUAGE === 'ru' ? QUESTIONS[i].question.ru : QUESTIONS[i].question.uk)  %>
+                                                                                </td>
+                                                                                <% if(QUESTIONS[i].qtype === 'Multiselect'){ %>
+                                                                                <td align="left" style="padding-left:10px" valign="top">
+                                                                                    <% for(var x=0; x< ANSWERS[QUESTIONS[x].order-1].length; x++) {%>
+                                                                                    <span>
+                                                                                        <%= (LANGUAGE === 'ru' ? ANSWERS[QUESTIONS[x].order-1].option.ru : ANSWERS[QUESTIONS[x].order-1].option.uk )       %>  
+                                                                                        <% if(ANSWERS[QUESTIONS[x].order-1].length === x+1){ %>
+                                                                                         ,  
+                                                                                        <% } %>
+                                                                                    </span>
+                                                                                    <% }   %>
+                                                                                </td>
+                                                                                <% } else if(QUESTIONS[i].qtype === 'Singleselect'){ %>
+                                                                                <td align="left" style="padding-left:10px" valign="top">
+                                                                                    <%= (LANGUAGE === 'ru' ? ANSWERS[QUESTIONS[i].order-1].option.ru : ANSWERS[QUESTIONS[i].order-1].option.uk)       %>
+                                                                                </td>
+                                                                                <% } else if(QUESTIONS[i].qtype === 'Placeselect'){ %>
+                                                                                <td align="left" style="padding-left:10px" valign="top">
+                                                                                    <%= LANGUAGE === 'ru' ? (ANSWERS[QUESTIONS[i].order-1][0].ru  + ',' + ANSWERS[QUESTIONS[i].order-1][1].ru): (ANSWERS[QUESTIONS[i].order-1][0].uk  + ',' + ANSWERS[QUESTIONS[i].order-1][1].uk) %>
+                                                                                </td>
+                                                                                <% } else { %>
+                                                                                <td align="left" style="padding-left:10px" valign="top">
+                                                                                    <%= ANSWERS[QUESTIONS[i].order-1] %>
+                                                                                </td>
+                                                                                <% } %>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                        <% } %>
+                                                                    </table>
+                                                                </li>
+                                                                <li class="lead" style="margin:0;list-style:none">
+                                                                    <strong>
+                                                                        <%=TIME %>:
+                                                                    </strong>
+                                                                    <%=TIMEx %>
+                                                                </li>
+                                                                <li class="lead" style="margin:0;list-style:none">
+                                                                    <strong>
+                                                                        <%=PLACE %>:
+                                                                    </strong>
+                                                                    <%=PLACEx %>
+                                                                </li>
+                                                                <li class="lead" style="margin:0;list-style:none">
+                                                                    <strong>
+                                                                        <%=BUDGET %>:
+                                                                    </strong>
+                                                                    <%=BUDGETx %>грн.
+                                                                </li>
+                                                                <li class="lead" style="margin:0;list-style:none">
+                                                                    <strong>
+                                                                        <%=PHONENOTIFY%>:
+                                                                    </strong>
+                                                                    <%=PHONENOTIFYx %>
+                                                                </li>
+                                                                <li class="lead" style="margin:0;list-style:none">
+                                                                    <strong>
+                                                                        <%=REQUESTNO%>:
+                                                                    </strong>
+                                                                    <%=REQUESTNOx %>
+                                                                </li>
+                                                            </ul>
+                                                        </br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <table bgcolor="#ededed !important" border="0" cellpadding="0" cellspacing="0" style="background-color: #ededed;border-collapse:collapse!important;width:100%!important;font-size:18px!important;color:white!important;text-decoration:none!important;border-radius:0!important; ;text-align:center;margin:0 auto 0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="center" style="text-align:center!important;padding:1px 0" valign="middle">
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
+<p class="centered">
+    <a class="button orange" href="<%=LOOKATREQUEST_URL%>">
+        <%=LOOKATREQUEST %>
+    </a>
+</p>
+<div class="content">
+    <h3>
+        <%= TEXT5 %>
+    </h3>
+    <ul>
+        <li class="lead">
+            <%= TEXT6 %>
+        </li>
+        <li class="lead">
+            <%= TEXT7 %>
+        </li>
+        <li class="lead">
+            <%= TEXT8 %>
+        </li>
+    </ul>
+    <p class="lead">
+        <%= TEXTBESTREGARDS %>
+    </p>
+    <p class="lead">
+        <%= TEXTPOSLUGATEAM %>
+    </p>
+    <div class="content">
+        <!-- content -->
+        <div class="content">
+            <table bgcolor="">
+                <tr>
+                    <td>
+                        <!-- social & contact -->
+                        <table bgcolor="" class="social" width="100%">
+                            <tr>
+                                <td>
+                                    <!--- column 1 -->
+                                    <div class="column">
+                                        <table align="left" bgcolor="" cellpadding="">
+                                            <tr>
+                                                <td>
+                                                    <h5 class="">
+                                                        <%=CONNECTWITHUS %>:
+                                                    </h5>
+                                                    <p class="">
+                                                        <a class="soc-btn fb" href="https://www.facebook.com/poslugaua">
+                                                            Facebook
+                                                        </a>
+                                                        <a class="soc-btn tw" href="https://vk.com/public132891888">
+                                                            Vkontakte
+                                                        </a>
+                                                        <a class="soc-btn gp" href="https://plus.google.com/106506773586563739901">
+                                                            Google+
+                                                        </a>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- /column 1 -->
+                                    </div>
+                                    <!--- column 2 -->
+                                    <div class="column">
+                                        <table align="left" bgcolor="" cellpadding="">
+                                            <tr>
+                                                <td>
+                                                    <h5 class="">
+                                                        <%=CONTACTINFO %>:
+                                                    </h5>
+                                                    <p>
+                                                        <%=PHONE %>:
+                                                        <strong>
+                                                            (063) 796-01-88
+                                                        </strong>
+                                                        <br/>
+                                                        <%=EMAIL%>:
+                                                        <strong>
+                                                            <a href="emailto:support@posluga.ua">
+                                                                support@posluga.ua
+                                                            </a>
+                                                        </strong>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- /column 2 -->
+                                    </div>
+                                    <div class="clear">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- /social & contact -->
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- /content -->
+        <td>
+        </td>
+        <!-- /BODY -->
+        <!-- FOOTER -->
+        <table class="footer-wrap">
+            <tr>
+                <td>
+                </td>
+                <td class="container">
+                    <!-- content -->
+                    <div class="content">
+                        <table>
+                            <tr>
+                                <td align="center">
+                                    <p>
+                                        <a href="<%=TERMS%>">
+                                            <%=TERMSTEXT%>
+                                        </a>
+                                        |
+                                        <a href="<%=PRIVACY%>">
+                                            <%=PRIVACYTEXT%>
+                                        </a>
+                                        |
+                                        <a href="<%=UNSUBSCRIBE%>">
+                                            <unsubscribe>
+                                                <%=UNSUBSCRIBETEXT%>
+                                            </unsubscribe>
+                                        </a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- /content -->
+                </td>
+                <td>
+                </td>
+            </tr>
+        </table>
+        <!-- /FOOTER -->
+    </div>
+</div>

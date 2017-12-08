@@ -1,0 +1,181 @@
+<section class="pageboxlayout" ng-controller="QuoteCtrl">
+    <div class="row">
+        <div class="alert alert-danger" focus-if="" ng-show="requestclosed" role="alert">
+            <h3 translate="">
+                Unfortunately this business opportunity is closed for new quotes. Business opportunities get closed when customer selects a quote, request receives enough quotes or request expires.
+            </h3>
+        </div>
+        <div class="large-8 columns">
+            <section class="pageboxpart padbottomfixed">
+                <div ng-include="'app/request/_detailbox.html'">
+                </div>
+            </section>
+        </div>
+        <div class="large-4 columns" ng-show="!otherquotes.lenght > 0">
+            <section class="pageboxpart padbottomfixed">
+                <div ng-include="'app/quote/_otherquotes.html'">
+                </div>
+            </section>
+        </div>
+        <div class="large-12 columns" ng-show="!requestclosed">
+            <section class="pageboxpart padbottomfixed">
+                <h3 class="pageboxpart__heading white24 helq pageboxredoverall pageboxtitletext" ng-show="state ==='givequote'" translate="">
+                    Price quote and introduction message
+                </h3>
+                <div class="pageboxpart__inner-border">
+                    <div class="soft--sides--large padbottonfixedsmaller font16set padleft10">
+                        <form class="form-horizontal padtop20" ng-controller="QuoteCtrl" ng-submit="switchupdatequote === false ? createQuote() : updateQuote('givequote', quote._id)" novalidate="novalidate">
+                            <div class="form-group">
+                                <div class="col-lg-7">
+                                    <div class="form-group">
+                                        <label class="col-lg-3 control-label" translate="">
+                                            Price
+                                        </label>
+                                        <div class="col-lg-9 col-md-12">
+                                            <input class="forcetext form-control" clean="true" mask="999999" mask-clean="true" mask-restrict="reject" mask-validate="false" ng-change="setCommissionlabel(quote.price.value)" ng-init="setCommissionlabel(0)" ng-model="quote.price.value" placeholder="_____ грн." required="" type="text">
+                                            </input>
+                                        </div>
+                                    </div>
+                                    <!--    <div ng-show="">
+                                    <label class="col-lg-3 control-label" translate>Materials</label>
+                                    <div class="col-lg-9 col-md-12">
+                                        <div class="input-group"> 
+                                            <input type="checkbox"   ng-model="provider.materials" required/> 
+                                            <span translate>Materials are not included in the price (customer should buy)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hidden" >
+                                    <div class="form-group">
+                                        <label class="col-lg-3 control-label" translate>Place</label>
+                                        <div class="col-lg-9 col-md-12">
+                                            <div class="input-group">
+                                          <input type="checkbox"   ng-model="provider.myaddress" required/> 
+                                            <span translate>It should be done in my address</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group hidden" id="divAdd">
+                                        <label class="col-lg-3 control-label" translate>My Address</label>
+                                        <div class="col-lg-9 col-md-12">
+                                            <input class="forcetext form-control"   maxlength="200"  type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hidden" id="ContentPlaceHolder1_PnlTeamSize">
+                                    <label class="col-lg-3 control-label" translate>Team Size</label>
+                                    <div class="col-lg-9 col-md-12">
+                                        <div class="input-group">
+                                            <input aria-describedby="number-of-people"  class="form-control" placeholder="Projede çalışacak kişi sayısı"  type="text"> 
+                                            <span class="input-group-addon" id="number-of-people" translate>person</span>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="alert alert-info" role="alert">
+                                        <span>
+                                            {{commissionLabel}}
+                                        </span>
+                                        <span ng-show="!provider.hasincominglink">
+                                            <a target="_blank" ui-sref="addlink({providerid: relatedprovider, type: 'edit'})">
+                                                {{'Add your profile link to your website to pay %9 commission.' | translate}}
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-7">
+                                    <div class="form-group">
+                                        <label class="col-lg-3 control-label" translate="">
+                                            Time
+                                        </label>
+                                        <div class="col-lg-9 col-md-12">
+                                            <ui-select id="when" ng-model="quote.when" on-select="applyWhenOptions($item)" register-custom-form-control="" required="" theme="bootstrap">
+                                                <ui-select-match class="ui-select-match" placeholder="{{'Select Time' | translate}}">
+                                                    {{$select.selected.name}}
+                                                </ui-select-match>
+                                                <ui-select-choices class="ui-select-choices" repeat="w in whenOptionsProvider | filter: $select.search">
+                                                    <span ng-bind-html="w.name | highlight: $select.search">
+                                                    </span>
+                                                </ui-select-choices>
+                                            </ui-select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="alert alert-info" role="alert" translate="">
+                                        Set a specific time that fits to your and client's schedule.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" id="divSpecific" ng-show="showWhenPanel">
+                                <div class="col-lg-7">
+                                    <div class="form-group">
+                                        <label class="col-lg-3 control-label" translate="">
+                                            Day and Time
+                                        </label>
+                                        <div class="col-lg-9 col-md-12">
+                                            <div class="btn-group btn-group-justified" role="group">
+                                                <div class="btn-group">
+                                                    <span data-ng-model="quote.date" data-xdan-datetimepicker="{timepicker:true, defaultTime:'09:00', minDate:'0',validateOnBlur:true, maxDate:'+1970/01/22'}" id="datetimepicker">
+                                                    </span>
+                                                    <!--   <span data-xdan-datetimepicker="{timepicker:true, format:'d-M-Y H:i', defaultTime:'09:00', minDate:'-1970/01/02',maxDate:'+1970/01/02'}" ng-model="quote.date">
+                                                    </span> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" ng-hide="switchupdatequote">
+                                <div class="col-lg-7">
+                                    <div class="form-group">
+                                        <label class="col-lg-3 control-label" translate="">
+                                            Message
+                                        </label>
+                                        <div class="col-lg-9 col-md-12">
+                                            <textarea class=" heightauto marginbottom5" cols="20" ng-model="initialmessage" ng-required="!switchupdatequote" placeholder="{{'I can provide this service better than others because...' | translate}}" rows="5">
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="alert alert-info" role="alert" translate="">
+                                        Show that you understand customer's request. Give a price quote for his needs. Explain why you are trustable and different.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-12">
+                                    <button class="button orange marginxtop expand--small flush--bottom js-send-quote btn-block" id="send_quote" ng-hide="switchupdatequote" translate="" type="submit">
+                                        Send Quote
+                                    </button>
+                                    <button class="button orange marginxtop expand--small flush--bottom js-send-quote btn-block" id="send_quote" ng-show="switchupdatequote" translate="" type="submit">
+                                        Update Quote
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-12">
+                                    <div class="alert alert-info" role="alert">
+                                        <span translate="">
+                                            By sending this quote you are accepting the
+                                        </span>
+                                        <a ui-sref="terms" target="_blank">
+                                            {{'user agreement.' | translate}}
+                                        </a> 
+                                        <span translate="">
+                                            If the customer accepts your quote, the information in this form will be a binding contract between you and the customer.
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>

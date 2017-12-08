@@ -1,0 +1,64 @@
+<section class="pageboxlayout" ng-controller="QuoteCtrl">
+    <div class="row">
+        <div class="alert alert-success" focus-if="" ng-show="!switchupdatequote" role="alert">
+            <h3 class="body-title" translate="">
+                You successfully sent your quote. Now, persuade customer to choose you.
+            </h3>
+        </div>
+        <div class="large-12 columns">
+            <section class="pageboxpart padbottomfixed">
+                <div ng-include="'app/quote/_detailbox.html'">
+                </div>
+            </section>
+        </div>
+        <div class="large-8 columns">
+            <section class="pageboxpart padbottomfixed">
+                <div ng-include="'app/request/_detailbox.html'">
+                </div>
+            </section>
+        </div>
+        <div class="large-4 columns">
+            <section class="pageboxpart padbottomfixed">
+                <div ng-include="'app/quote/_otherquotes.html'">
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" role="dialog" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal">
+                    X
+                </a>
+                <h3 translate="">
+                    Did you win this work?
+                </h3>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <span translate="">
+                        If you have agreed with the customer, the commission amount of
+                    </span>
+                    <span>
+                        <strong>
+                            {{commissionamount}}
+                        </strong>
+                    </span>
+                    <span translate="">
+                        will be added to your account balance and we will update this request and your winning ratio.
+                    </span>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal" translate="" type="button">
+                    Close
+                </button>
+                <a class="btn btn-warning" translate="">
+                    Yes, I won this work
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

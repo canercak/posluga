@@ -1,0 +1,149 @@
+<div class="media padbottonfixedsmaller">
+    <div class="pageboxmodalbox">
+        <div class="row wrapper18">
+            <div class="large-5 columns fittocenter">
+                <a class="listingtextbigbold" ng-show="state ==='myrequests' && request.status.objectid < 3 && request.service === null" ui-sref="requestdetail({id: request._id})">
+                    {{request.searchtext}}
+                </a>
+                <a class="listingtextbigbold" ng-show="state ==='myrequests' && request.status.objectid < 3" ui-sref="requestdetail({id: request._id})">
+                    {{request.service.subcategory | translateFilter:languageKey}}
+                </a>
+                <a class="listingtextbigbold" ng-show="state==='myrequests' && request.status.objectid === 3" ui-sref="viewquotes({requestid: request._id})">
+                    {{request.service.subcategory | translateFilter:languageKey}}
+                </a>
+                <a class="listingtextbigbold" ng-show="state==='myrequests' && request.status.objectid > 3" ui-sref="quotesuccess({id: request.selectedquote._id, type: 'view'})">
+                    {{request.service.subcategory | translateFilter:languageKey}}
+                </a>
+                <a class="listingtextbigbold" ng-show="state !=='myrequests' && request.providerquoted.result === false && request.providerquoted.selected === false " ui-sref="givequote({requestid: request._id, providerid: request.providerid})">
+                    {{request.service.subcategory | translateFilter:languageKey}}
+                </a>
+                <a class="listingtextbigbold" ng-show="state !=='myrequests' && request.providerquoted.result === true && request.providerquoted.selected === false " ui-sref="quotedetail({id: request.providerquoted.id, type: 'update'})">
+                    {{request.service.subcategory | translateFilter:languageKey}}
+                </a>
+                <a class="listingtextbigbold" ng-show="state !=='myrequests' && request.providerquoted.result === true && request.providerquoted.selected === true && request.providerquoted.providerselected===true" ui-sref="quotesuccess({id: request.providerquoted.id, type: 'success'})">
+                    {{request.service.subcategory | translateFilter:languageKey}}
+                </a>
+                <a class="listingtextbigbold" ng-show="state !=='myrequests' && request.providerquoted.result === true && request.providerquoted.selected === true && request.providerquoted.providerselected===false" ui-sref="quotedetail({id: request.providerquoted.id, type: 'view'})">
+                    {{request.service.subcategory | translateFilter:languageKey}}
+                </a>
+                <p class="listingnewline">
+                </p>
+                <span>
+                    {{request | placeFilterShort:languageKey}}
+                </span>
+                <p class="listingnewline">
+                </p>
+                <span translate="">
+                    on
+                </span>
+                <span>
+                    {{(request.date && request.when.objectid === 1)  ? (request.date | amDateFormat:'D MMMM YYYY HH:mm') : whenOptions[request.when.objectid-1].name}}
+                </span>
+            </div>
+            <div class="large-4 columns fittocenter padtop10" ng-show="state ==='myrequests' && request.status.objectid < 4 ">
+                <span class="listingtextbigbold" ng-show="!request.requestclosed">
+                    {{filterStatus(request)}}
+                </span>
+                <span class="listingtextbigbold" ng-show="request.requestclosed && request.status.objectid === 3">
+                    {{filterStatus(request)}}
+                </span>
+                <p class="listingnewline">
+                </p>
+                <span translate="">
+                    Time Left to select quote
+                </span>
+                <p class="listingnewline">
+                </p>
+                <span>
+                    {{request.validUntil | validityFilter:languageKey}}
+                </span>
+            </div>
+            <div class="large-4 columns fittocenter" ng-show="state ==='myrequests' && request.status.objectid >= 4">
+                <span class="listingtextbigbold">
+                    {{filterStatus(request)}}
+                </span>
+                <p class="listingnewline">
+                </p>
+                <span class="listingtext">
+                    {{statusOptions[request.status.objectid-1].name }}
+                </span>
+                <p class="listingnewline">
+                </p>
+                <span ng-show="request.status.objectid !== 4">
+                    {{request.status.date | amDateFormat:'D MMMM YYYY HH:mm' }}
+                </span>
+                <span ng-show="request.status.objectid === 4 && !request.selectedquote.date">
+                    {{whenOptionsProvider[request.selectedquote.when.objectid-1].name }}
+                </span>
+                <span ng-show="request.status.objectid === 4 && request.selectedquote.date">
+                    {{request.selectedquote.date | amDateFormat:'D MMMM YYYY HH:mm' }}
+                </span>
+            </div>
+            <div class="large-4 columns fittocenter padtop10" ng-show="state !=='myrequests' && request.status.objectid < 4 ">
+                <strong class="listingtextbigbold">
+                    {{filterStatus(request)}}
+                </strong>
+                <p class="listingnewline">
+                </p>
+                <span translate="">
+                    Time Left to select quote
+                </span>
+                <p class="listingnewline">
+                </p>
+                <span>
+                    {{request.validUntil | validityFilter:languageKey}}
+                </span>
+            </div>
+            <div class="large-4 columns fittocenter" ng-show="state !=='myrequests' && request.status.objectid >= 4">
+                <span>
+                    {{filterStatus(request)}}
+                </span>
+                <p class="listingnewline">
+                </p>
+                <span class="listingtext" ng-show="request.providerquoted.providerselected === true">
+                    {{statusOptions[request.status.objectid-1].name }}
+                </span>
+                <span class="listingtext" ng-show="request.providerquoted.providerselected === false && request.providerquoted.selected === true" translate="">
+                    Customer selected another quote
+                </span>
+                <p class="listingnewline">
+                </p>
+                <span ng-show="request.status.objectid !== 4">
+                    {{request.status.date | amDateFormat:'D MMMM YYYY HH:mm' }}
+                </span>
+                <span ng-show="request.status.objectid === 4 && !request.providerquoted.selectedquote.date">
+                    {{whenOptionsProvider[request.providerquoted.selectedquote.when.objectid-1].name }}
+                </span>
+                <span ng-show="request.status.objectid === 4 && request.providerquoted.selectedquote.date">
+                    {{request.providerquoted.selectedquote.date | amDateFormat:'D MMMM YYYY HH:mm' }}
+                </span>
+            </div>
+            <div class="large-3 columns fittocenter">
+                <a class="small button ladda-button js-ladda-button marginxtop expand--small flush--bottom js-send-quote" id="details" name="details" ng-show="state ==='myrequests' && request.status.objectid < 3" translate="" ui-sref="requestdetail({id: request._id})">
+                    Details
+                </a>
+                <a class="small button ladda-button js-ladda-button marginxtop expand--small flush--bottom js-send-quote" id="view_quotes" name="view_quotes" ng-show="state==='myrequests' && request.status.objectid === 3" translate="" ui-sref="viewquotes({requestid: request._id})">
+                    View Quotes
+                </a>
+                <a class="small button ladda-button js-ladda-button marginxtop expand--small flush--bottom js-send-quote" id="view_quotes" name="view_quotes" ng-show="state==='myrequests' && request.status.objectid > 3" translate="" ui-sref="quotesuccess({id: request.selectedquote._id, type: 'view'})">
+                    View Work
+                </a>
+                <a class="small button ladda-button js-ladda-button marginxtop expand--small flush--bottom js-send-quote" id="give_quote" name="give_quote" ng-show="state !=='myrequests' && request.providerquoted.result === false && request.providerquoted.selected === false  && request.requestclosed === false" translate="" ui-sref="givequote({requestid: request._id, providerid: request.providerid})">
+                    Give Quote
+                </a>
+                <a class="small button ladda-button js-ladda-button marginxtop expand--small flush--bottom js-send-quote" id="give_quote" name="give_quote" ng-show="state !=='myrequests' && request.providerquoted.result === false && request.providerquoted.selected === false  && request.requestclosed === true" translate="" ui-sref="givequote({requestid: request._id, providerid: request.providerid})">
+                    Details
+                </a>
+                <a class="small button ladda-button js-ladda-button marginxtop expand--small flush--bottom js-send-quote" id="give_quote" name="give_quote" ng-show="state !=='myrequests' && request.providerquoted.result === true && request.providerquoted.selected === false " translate="" ui-sref="quotedetail({id: request.providerquoted.id, type: 'update'})">
+                    View Your Quote
+                </a>
+                <a class="small button ladda-button js-ladda-button marginxtop expand--small flush--bottom js-send-quote" id="give_quote" name="give_quote" ng-show="state !=='myrequests' && request.providerquoted.result === true && request.providerquoted.selected === true && request.providerquoted.providerselected===true" translate="" ui-sref="quotesuccess({id: request.providerquoted.id, type: 'success'})">
+                    View Quote You Won
+                </a>
+                <a class="small button ladda-button js-ladda-button marginxtop expand--small flush--bottom js-send-quote" id="give_quote" name="give_quote" ng-show="state !=='myrequests' && request.providerquoted.result === true && request.providerquoted.selected === true && request.providerquoted.providerselected===false" translate="" ui-sref="quotedetail({id: request.providerquoted.id, type: 'view'})">
+                    View Quote You Lost
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

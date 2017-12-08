@@ -1,0 +1,192 @@
+<div class="large-12 columns">
+    <div class="alert alert-success" focus-if="" ng-show="  deleteprovider || updateprovider" role="alert">
+        <h3 class="body-title">
+            <span id="delete_message" ng-show="deleteprovider" translate="">
+                Successfully deleted provider registration
+            </span>
+            <span id="update_message" ng-show="updateprovider" translate="">
+                Successfully updated provider registration
+            </span>
+        </h3>
+    </div>
+    <div class="form-group pull-left padtop10">
+        <h2 translate="">
+            Providers List
+        </h2>
+    </div>
+    <!--     <div class="form-group pull-left padtop10 padleft10 marginbottom5">
+        <button class="tiny button pink" translate="" ui-sref="provider">
+            Add New
+        </button>
+    </div> -->
+    <div class="form-group pull-right padtop10">
+        <input class="search form-control" disable-invalid-styling="true" disable-valid-styling="true" ng-model="query.filter" ng-model-options="filter.options" placeholder="{{'Search' | translate}}" type="text"/>
+    </div>
+    <span class="counter pull-right">
+    </span>
+    <table class="table table-bordered" style="font-size:12px" ts-wrapper="">
+        <thead>
+            <tr>
+                <th style="max-width: 100px !important;" translate="" ts-criteria="Company">
+                    Provider No
+                </th>
+                <th style="max-width: 100px !important;" translate="" ts-criteria="Company">
+                    Company
+                </th>
+                <th style="max-width: 150px !important;" translate="" ts-criteria="Website">
+                    Website
+                </th>
+                <th style="max-width: 150px !important;" translate="" ts-criteria="Email">
+                    Email
+                </th>
+                <th style="max-width: 150px !important;" translate="" ts-criteria="Email">
+                    Password
+                </th>
+                <th style="max-width: 200px !important;" translate="" ts-criteria="Description">
+                    Description
+                </th>
+                <th translate="" ts-criteria="Mobile1">
+                    Phones
+                </th>
+                <th style="max-width: 45px !important;" translate="">
+                    Photo
+                </th>
+                <th style="max-width: 90px !important;" translate="" ts-criteria="Oblast">
+                    Oblast
+                </th>
+                <th style="max-width: 90px !important;" translate="" ts-criteria="Rayon">
+                    Rayon
+                </th>
+                <th style="max-width: 90px !important;" translate="" ts-criteria="Gorad">
+                    Gorad
+                </th>
+                <th style="max-width: 90px !important;" translate="" ts-criteria="Rayongorad">
+                    Rayongorad
+                </th>
+                <th translate="">
+                    Service
+                </th>
+                <th style="max-width: 60px !important;" translate="">
+                    Admin Created
+                </th>
+                <th>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="provider in providers" ng-style="{ 'background-color' : (provider.created === true) ? 'rgba(0, 128, 0, 0.11)' : '' }" ts-hide-no-data="" ts-repeat="">
+                <td style="max-width: 90px !important;">
+                    {{ provider.sequence}}
+                </td>
+                <td style="max-width: 100px !important;">
+                    {{provider.company }}
+                </td>
+                <td style="max-width: 150px !important;">
+                    <a ng-href="{{provider.website}}" target="_blank">
+                        {{provider.website}}
+                    </a>
+                </td>
+                <td style="max-width: 150px !important;">
+                    {{provider.user.email}}
+                </td>
+                <td style="max-width: 150px !important;">
+                    {{provider.user.xp}}
+                </td>
+                <td>
+                    <div style="max-width: 200px !important;">
+                        {{provider.description}}
+                    </div>
+                </td>
+                <td>
+                    <table>
+                        <tr style="border-bottom-color: black; border-bottom-width: 1px;  border-bottom-style: solid; ">
+                            <div style="width: 150px;">
+                                <td style="font-size:12px;">
+                                    <span translate="">
+                                        Mobile 1:
+                                    </span>
+                                    {{provider.phone }}
+                                </td>
+                            </div>
+                        </tr>
+                        <tr style="border-bottom-color: black; border-bottom-width: 1px;  border-bottom-style: solid; ">
+                            <div style="width: 150px;">
+                                <td style="font-size:12px;">
+                                    <span translate="">
+                                        Landline:
+                                    </span>
+                                    {{provider.landline }}
+                                </td>
+                            </div>
+                        </tr>
+                        <tr style="border-bottom-color: black; border-bottom-width: 1px;  border-bottom-style: solid; ">
+                            <div style="width: 150px;">
+                                <td style="font-size:12px;">
+                                    <span translate="">
+                                        Phonelist
+                                    </span>
+                                    {{provider.phonelist}}
+                                </td>
+                            </div>
+                        </tr>
+                    </table>
+                </td>
+                <td style="max-width: 45px !important;">
+                    <img height="30" ng-src="{{provider.logo.location}}" width="20"/>
+                </td>
+                <td style="max-width: 90px !important;">
+                    {{ provider.oblast | translateFilterSimple:languageKey }}
+                </td>
+                <td style="max-width: 90px !important;">
+                    {{ provider.rayon | translateFilterSimple:languageKey }}
+                </td>
+                <td style="max-width: 90px !important;">
+                    {{ provider.gorad | translateFilterSimple:languageKey }}
+                </td>
+                <td style="max-width: 90px !important;">
+                    {{ provider.rayongorad| translateFilterSimple:languageKey }}
+                </td>
+                <td style="max-width: 90px !important;">
+                    {{ provider.service.subcategory | translateFilter:languageKey }}
+                </td>
+                <td style="max-width: 120px !important;">
+                    {{ provider.adminCreated}}
+                </td>
+                <td style="max-width: 45px !important;">
+                    <div style="padding-bottom:20px">
+                        <a class="btn btn-warning btn-sm" ui-sref="profile({providerid:provider._id, type: 'editfromadminproviders'})" uib-tooltip="{{'Edit' | translate}}">
+                            <i class="fa fa-pencil-square-o fa-lg">
+                            </i>
+                        </a>
+                    </div>
+                    <div style="padding-bottom:20px">
+                        <a class="btn btn-success btn-sm" ui-sref="provider({providerid: provider._id})" uib-tooltip="{{'View Profile' | translate}}">
+                            <i class="fa fa-eye fa-lg">
+                            </i>
+                        </a>
+                    </div>
+                    <div style="padding-bottom:20px">
+                        <a class="btn btn-danger btn-sm" confirm="{{'Are you sure you want to delete?' | translate}}" href="#" ng-click="deleteprovider(provider._id)" uib-tooltip="{{'Delete' | translate}}">
+                            <i class="fa fa-trash-o fa-lg">
+                            </i>
+                        </a>
+                    </div>
+                    <div style="padding-bottom:20px">
+                        <a class="btn btn-info btn-sm" ui-sref="profile({providerid:provider._id, type: 'editfromadminproviders', createsimilar: true})" uib-tooltip="{{'Create Similar' | translate}}">
+                            <i class="fa fa-rocket fa-lg">
+                            </i>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!--   <div style="padding-bottom:20px">
+                        <a class="btn btn-primary btn-sm" ui-sref="addfunds({providerid: provider._id})" uib-tooltip="{{'Add Funds' | translate}}">
+                            <i class="fa fa-money-o fa-lg">
+                            </i>
+                        </a>
+                    </div> -->
+<ul boundary-link-numbers="true" class="pagination-sm" max-size="maxSize" ng-change="pageChangedProvider()" ng-model="currentPage" total-items="totalItems" uib-pagination="">
+</ul>

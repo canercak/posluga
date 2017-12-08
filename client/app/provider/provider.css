@@ -1,0 +1,93 @@
+.ab .ui-select-choices-row-inner {
+    font-size: 16px;
+}
+
+.ab .ui-select-match-text {
+    font-size: 16px;
+}
+
+.ab .ui-select-match {
+    font-size: 16px;
+}
+
+.ab .ui-select-placeholder {
+    font-size: 16px;
+}
+
+img.ng-thumb {
+    height: 90px;
+    width: 160px;
+}
+
+.photo_column {
+    padding-right: 5px;
+}
+
+.incoming_link {
+    font-family: Courier New;
+    font-size: 18px;
+}
+
+.has-feedback {
+    position: initial;
+}
+
+.img-wrap {
+    position: relative;
+}
+
+.img-wrap .close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 100;
+    opacity: 1;
+    color: #2286AB;
+    line-height: 0.5;
+}
+
+.leftselect {
+    padding-left: 0px;
+}
+
+.rightselect {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.whenselect {
+    padding-top: 10px;
+}
+
+.thumb {
+    width: 24px;
+    height: 24px;
+    float: none;
+    position: relative;
+    top: 7px;
+}
+
+form .progress {
+    line-height: 15px;
+}
+
+.progress {
+    display: inline-block;
+    width: 100px;
+    border: 3px groove #CCC;
+}
+
+.progress div {
+    font-size: smaller;
+    background: orange;
+    width: 0;
+}
+
+.upload_preview {
+    width: 32px;
+    height: 32px;
+}
+
+.rowsixtyeight {
+    max-width: 70em !important;
+}

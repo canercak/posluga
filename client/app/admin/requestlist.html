@@ -1,0 +1,195 @@
+<div class="large-12 columns">
+    <div class="alert alert-success" focus-if="" ng-show="saverequest||updaterequest||deleterequest" role="alert">
+        <h3 class="body-title">
+            <span id="success_message" ng-show="saverequest" translate="">
+                Successfully added request
+            </span>
+            <span id="update_message" ng-show="updaterequest" translate="">
+                Successfully updated request
+            </span>
+            <span id="delete_message" ng-show="deleterequest" translate="">
+                Successfully deleted provider registration
+            </span>
+            <span id="delete_message" ng-show="updateprovider" translate="">
+                Successfully updated provider
+            </span>
+            <span id="delete_message" ng-show="updateuser" translate="">
+                Successfully updated user
+            </span>
+        </h3>
+    </div>
+    <div class="form-group pull-left padtop10">
+        <h2 translate="">
+            Requests List
+        </h2>
+    </div>
+    <div class="form-group pull-left padtop10 padleft10 marginbottom5">
+        <button class="tiny button pink" translate="" ui-sref="request({type:'admin'})">
+            Add New
+        </button>
+    </div>
+    <div class="small selectsearch transparent--light button flush--bottom float--right mobiledisplaynone">
+        <form class="form-inline">
+            <div class="form-group">
+                <div class="form-group">
+                    <div class="input-group" style="width: 180px;">
+                        <select class="form-control input" disable-invalid-styling="true" disable-valid-styling="true" id="pref-list" ng-change="changeRequestListing()" ng-init="changeRequestListing()" ng-model="status">
+                            <option selected="" translate="" value="allrequests">
+                                All Requests
+                            </option>
+                            <option translate="" value="activerequests">
+                                Active Requests
+                            </option>
+                            <option translate="" value="endedrequests">
+                                Ended Requests
+                            </option>
+                            <option disabled="">
+                                ──────────
+                            </option>
+                            <option translate="" value="2">
+                                Waiting for Quotes
+                            </option>
+                            <option translate="" value="3">
+                                Received Quotes
+                            </option>
+                            <option translate="" value="4">
+                                Reservation Made
+                            </option>
+                            <option translate="" value="5">
+                                Work Done
+                            </option>
+                            <option translate="" value="6">
+                                Work Cancelled
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group" style="width: 100px;">
+                        <input class="form-control input height32" disable-invalid-styling="true" disable-valid-styling="true" ng-model="query.filter" ng-model-options="filter.options" placeholder="{{'Search' | translate}}" type="text"/>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <table class="table table-bordered" style="font-size:12px" ts-wrapper="">
+        <thead>
+            <tr>
+                <th style="max-width: 100px !important;" translate="" ts-criteria="sequence">
+                    Request No
+                </th>
+                <th translate="">
+                    Service
+                </th>
+                <th translate="">
+                    Created
+                </th>
+                <th translate="">
+                    Date
+                </th>
+                <th translate="">
+                    Status
+                </th>
+                <th translate="">
+                    Description
+                </th>
+                <th translate="">
+                    Budget
+                </th>
+                <th translate="">
+                    How to notify you?
+                </th>
+                <th style="max-width: 90px !important;" translate="" ts-criteria="Oblast">
+                    Oblast
+                </th>
+                <th style="max-width: 90px !important;" translate="" ts-criteria="Rayon">
+                    Rayon
+                </th>
+                <th style="max-width: 90px !important;" translate="" ts-criteria="Gorad">
+                    Gorad
+                </th>
+                <th style="max-width: 90px !important;" translate="" ts-criteria="Rayongorad">
+                    Rayongorad
+                </th>
+                <!--                <th style="max-width: 150px !important;" translate="" ts-criteria="Email">
+                    Email
+                </th>
+                <th translate="" ts-criteria="Mobile1">
+                    Phone
+                </th> -->
+                <th style="max-width: 120px !important;" translate="">
+                    Potential Providers
+                </th>
+                <th style="max-width: 90px !important;" translate="">
+                    Quotes
+                </th>
+                <th style="max-width: 90px !important;" translate="">
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="request in requests" ng-style="{ 'background-color' : (request.status.objectid < 5) ? 'rgba(0, 128, 0, 0.11)' : '' }" ts-hide-no-data="" ts-repeat="">
+                <td style="max-width: 90px !important;">
+                    {{ request.sequence}}
+                </td>
+                <td style="max-width: 90px !important;">
+                    {{ request.service.subcategory | translateFilter:languageKey }}
+                </td>
+                <td style="max-width: 90px !important;">
+                    {{ request.createdAt | amDateFormat:'D.MM.YYYY HH:mm' }}
+                </td>
+                <td style="max-width: 90px !important;">
+                    {{(request.date && request.when.objectid === 1)  ? (request.date | amDateFormat:'D.MM.YYYY HH:mm') : whenOptions[request.when.objectid-1].name}}
+                </td>
+                <td style="text-weight:600px;max-width: 90px !important;">
+                    {{ statusOptions[request.status.objectid-1].name}}
+                </td>
+                <td>
+                    <div style="max-width: 200px !important;">
+                        {{request.description}}
+                    </div>
+                </td>
+                <td style="max-width: 90px !important;">
+                    {{request.budget}} грн.
+                </td>
+                <td style="max-width: 90px !important;">
+                    {{phoneOptions[request.phonenotify.objectid-1].name}}
+                </td>
+                <td style="max-width: 90px !important;">
+                    {{ request.oblast | translateFilterSimple:languageKey }}
+                </td>
+                <td style="max-width: 90px !important;">
+                    {{ request.rayon | translateFilterSimple:languageKey }}
+                </td>
+                <td style="max-width: 90px !important;">
+                    {{ request.gorad | translateFilterSimple:languageKey }}
+                </td>
+                <td style="max-width: 90px !important;">
+                    {{ request.rayongorad| translateFilterSimple:languageKey }}
+                </td>
+                <!--  <td style="max-width: 150px !important;">
+                    {{request.user.email}}
+                </td>
+                <td style="max-width: 150px !important;">
+                    {{request.phone }}
+                </td> -->
+                <td style="max-width: 120px !important;">
+                    {{request.potentialproviders.length}}
+                </td>
+                <td style="max-width: 90px !important;">
+                    {{request.quotes.length}}
+                </td>
+                <td style="max-width: 150px !important;">
+                    <div style="padding-bottom:20px">
+                        <a class="btn btn-warning btn-sm" ui-sref="adminrequest({requestid: request._id})" uib-tooltip="{{'Edit' | translate}}">
+                            <i class="fa fa-pencil-square-o fa-lg">
+                            </i>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <ul boundary-link-numbers="true" class="pagination-sm" max-size="maxSize" ng-change="pageChangedRequest()" ng-model="currentPage" total-items="totalItems" uib-pagination="">
+    </ul>
+</div>
